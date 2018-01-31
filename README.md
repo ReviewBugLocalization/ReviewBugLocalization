@@ -1,1 +1,2 @@
-This is the repository for ASE2017
+This is the repository for Bug Localization
+We will upload our source code and other files in the future
