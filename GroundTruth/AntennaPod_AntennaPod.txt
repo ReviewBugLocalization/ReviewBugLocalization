@@ -1,0 +1,128 @@
+Surprised to find that this is one of the only apps in the Play Store that supports premium subscription podcasts.,2.1
+That being said, I can't get the auto download feature to work and there seems to be no default sort option, requiring daily manual intervention to get podcasts downloaded and organized.,2.1
+Even tho I set it to delete played episodes and they were still on my phone but not available through this app unless i re-DL the file.,2.1
+**As of 12/24/16 it no longer works.,4.2
+Will try another app for now & try again later.,4.2
+It freezes often during playing of the content.,2.1
+Freezing a lot with latest update Was great but freezing a failing on a lot of podcasts since the last update,1.2
+Worked like a charm , not anymore Used to be great now just freezes indefinitely on my moto G. Please fix it.,3
+Now, with the latest update, the app freezes on completion of a podcast episode and I have to reboot my device.,1.2
+update shows exactly all of the ways the app crashes NOW.,1.3
+Instead of fixing the, they were introduced.,4.2
+Keeps crashing The app opens then crashes.,1.3
+I m kinda disappointed that the bug has not been fixed yet.,1.3	
+Used to be a great app, but after the latest update, it won't work at all.,1.3	
+Every time I try to open the app, it crashes and says "Unfortunately, this stupid app has stopped working".,1.3	
+Don't waste your time with it.,4.1
+Sometimes it stops playing a podcast randomly and has to be restarted.,1.3	
+Also, gpodder constantly gives java sync error.,1.3
+That's a simple bug that should be gone before public release.,1.3
+Can't Disable Lock-Screen Skip Button Overall, it's kind of a cumbersome app, but does well enough.,4.1
+I've lost my place in countless podcasts when my phone gets triggered in my pocket and the button--that I CANNOT remove--gets bumped.,2.7
+No sorting You aren't able to sort podcast subscriptions or podcast episodes.,2.2
+In other words, you cant reverse sort order or manually configure it either.,2.2
+I suspect there is a bug in disabling mobile usage.,2.2
+Crash ed on first use,1.3
+The app will be running on screen (it doesn't matter if the phone is locked or if it is open and active), with or without earphones (no other gadget attached) and it will randomly replay the previous 15-30 seconds.,2.2
+I have never been able to get the automatic downloads to work.,1.1
+Does not work Doesn't work.,4.1
+Hope they fix this soon,4.1
+Reverting to version 1.6.0.9 resolved all the problems for me.,4.1
+There are no errors or entries in the log.,2.1
+Skips and stalls After a recent update I have found a few problems when one episode has finished and moving on to the next.,1.2
+The playback stalls and freezes and plays intermittently, and won't allow me to 'come out' of the episode.,1.2
+The only way to do this is to close the app itself and open it again.,1.2
+Having said that, I have tried a few podcast apps on my android phone and this has suited me better than those up until the recent issues, so I will probably continue to use it and hope that updates resolve the problem,4.1
+I can't skip/seek within an episode.,2.1
+playback speed button doesn't do anything.,2.1
+Very annoying, I can't use any of the audio controls without this happening.,4.1
+Great interface, but buggy I like the user interface of this podcast app but sometimes freezes on a podcast playback and crashes.,2.8
+Bluetooth problem Love this app but I have an issue.,1.3
+Constantly freezes Every time I play a podcast, it freezes.,1.3
+Sometimes it'll actually play, but a lot of the time it simply crashes.,1.3
+Unfortunately it does not work well with bluetooth-audio on Z5 (HSP via Mono Bluetooth Router pro).,1.3
+Good podcast player, terrible file management How come I can't store podcasts on my SD card on my s5??,2.1
+Fix this and I'll come back, going to something more straightforward in the interim.,2.1
+While I like antennapod a lot and have been using it for years, it has finally failed me completely.,4.1
+It has been getting worse in the last few months where it would fail to start the podcast after one completes.,4.1
+I've started to reboot, in hopes of clearing the problem, but that no longer works.,4.1
+I usually try to find the download podcasts using the file manager, but I forgot where it was putting them.,1.1
+It's ok My favorite app has been crashing so I'm trying this, and overall it's ok.,4.2
+The queue is the best feature of this podcast app, and it would be nice if it could be returned to the way it used to be.,4.1
+Useless if you can't open it and use it!!!,4.1
+IN RESPONSE TO YOUR RESPONSE: I reinstalled it, but just how am I supposed to send you a crash report IF I CANNOT OPEN THE DANG APP?,1.3
+I can't get anything except the Google play page that says it's installed.,2.1
+It doesn't show up on my phone except to say it's been successfully installed.,1.1
+But now I can't add new podcasts and it's very frustrating.,2.1
+Nice effort Works but I don't like the layout too much.,2.8
+Gpodder integration stopped working long ago, and now episode auto download doesn't work anymore.,1.1
+Good so far until now i can't seem to update the app.,1.2
+it keeps saying there's error in downloading.,1.1
+Downloads aren't working anymore For some reason, downloading for offline listening stopped working.,1.1
+Podcasts Fail to Load--often.,2.1
+Forces App to Close I thought maybe it was my phone, but when I upgraded, i continued to have problems on BOTH phones.,1.3
+Buggy McBug Bug Every major/minor release is so buggy that it takes a couple of hotfix releases for AntennaPod to be usable again.,1.3
+It would be great to add a "Already Read" sign on the already read podcasts.,2.8
+Stopped showing new podcasts Used to be good, but won't show which podcasts it has failed to refresh.,2.1
+Podcast Addict doesn't have this problem so will be using that from now on.,4.2
+Update: The app will not show me which podcasts have failed or succeeded to download.,1.2
+there's constant freezes where you have to wait 5 minutes even after you close it.,4.1
+Autodownload not working I really used like this app and it was working fine.,1.2
+Please fix it.,4.2
+Don't ever lose internet connection If you lose network connection at any time, such as due to a wifi deadspot, it won't only pause the podcast you're paying, even if it's pre downloaded, it will take full control of your phone abd lock out any and all actions.,1.4
+Stopped working App failed to receive updates of new episodes.,1.2
+I couldn't find the BBC casts I wanted without the URL, so I had to find the URL.,2.4
+I can't delete the episodes I've listened to, they just sit in the list.,2.7
+Bug I thought this was a good app but now I can't download podcast because the filename is too long.,1.1
+App freezes & slow to load podcasts It's good, but always has trouble loading podcoasts.,1.4
+App freezes a lot, so have to exit & keep trying again.,1.3
+Other times, I will try searching for podcasts by category only to get a 404 error.,2.4
+Was terrific, now seems to have major problem.,4.2
+Love the app, but since update or maybe update of Android, some podcasts stop halfway and afterwards it and other podcasts will not start playing (even after force stopping app and restarting app)!,1.2
+I haven't found another podcast app that I'm happier with, yet.,4.2
+The new UI feels a little more intuitive, but the ability to add an episode to queue now takes too many clicks - I generally want to add to queue instead of download, so the big download button doesn't do it for me and instead is a waste of space!,3
+Really don't like the more complicated UI change!,3
+For my usage this is a big negative, add I'm planning my choice of episodes based on the time available.,3
+But the biggest problem is that the new update seems to lock up my phone for no reason.,1.2
+Being able to see all of the titles subscribed to, then click into each and see the available episodes was very good - I can't seem to do that anymore.,3
+Too many crashes and locked up requiring force close.,2.1
+Just can't tolerate the challenges anymore.,4.1
+Didn't work.,4.1
+It didn't find a single podcast I wanted either via url or through the directory.,2.4
+I try typing the names of lots of popular podcasts into the search, but it finds nothing.,2.4
+So unfortunately I can't try this app any further.,4.1
+That's if you're lucky enough for it to provide results at all.,4.1
+I never managed to get a feed added so I can't comment on its functionality as a player.,4.1
+There is no 'play' button, and the only available option is 'skip.',3
+It also won't let me delete a podcast in mid-play unless I 'skip' it.,3
+Please use usual methods of network detection.,3
+Please use usual methods of network detection.,4.2
+Confusing I installed this after Onecast kept crashing.,1.3
+Just found this interface confusing and could never get it to do what I want it to do especially since I was listening mainly in the car and don't want to have to navigate through tons of screens.,2.8
+Hard to add subscriptions I tried it as it looked clean and simple, however, I couldn't add some of my favorite subscriptions and that is one of if not the most important feature.,2.1
+Please fix it.,4.2
+Seems to have weird bugs for example I was downloading an episode but didn't know if it was actually downloading as I couldn't see a progress bar so I tapped the download again and then when I found the download section it was downloading the episode twice.,1.1
+it just doesn't work to me.,4.1
+I can't find radio stations by typing the name of the program or even the station name.,2.4
+no auto delete when you've finished a pod, which is another reason it's hard to know what you've already listened to.,2.8
+To actually play or delete a file you have to find a little drop down arrow menu.,2.8
+Files are not automatically checked as unread so you have to manually check them.,2.4
+Can't work it out Doesn't seem to be a way tp search for podcast feeds from within app.,2.4
+It crashes alot and appears to remove the wrong pod casts when you've finished listening to one.,1.3
+Frequent random crashes Very annoying, hardly usable.,1.3
+Works very well, I love how I can do auto download and update all my podcasts.,3
+roken Second time I tried switching to AntennaPod from DoggCatcher, but search is still not working.,2.4
+Also, not sure what the "Miro Guide" is but clicking on it gives me an error "No peer certificate".,2.1
+flaky Sometimes works sometimes not, didn't always get me the feed uninstalled and installed "beyond pod" instead.,2.2
+Update: getting better by the update OPML import still requires copying of the OPML file to a specific folder (no browsing to the file for easy import) and searching is turrible (!),2.4
+Right now, going podcast by podcast to look for new episodes is a little silly, and with searching being so bad I cannot give up podkicker.,2.4
+Has problems Antennapod works but has some weird issues, the lockscreen control flickers strangely, and sometimes episodes won't download.,1.1
+Sadly it doesn't support auto download on WiFi or at least distinguish between new and new-downloaded in the feeds view.,1.1
+Can't download I loved this app, but I can no longer download, or update my podcasts,1.1
+Did not work.,4.1
+Couldn't get AntennaPod to load ANY podcast feeds.,2.1
+Better search and a more intuitive widget would be nice additions.,3
+The search is pretty limited, it didn't find many of my favorite shows.,2.4
+Can't wait to be able to use this app as my main podcatcher, but right now, during normal use it has caused my Galaxy SIII to crash hard and reboot several times.,1.3
+Fix that and 5 stars.,4.2OPML import doesn't work I followed the OPML import instructions and copied DoggCatcherExport.opml to /storage/sdcard0/Android/data/de.danoeh.antennapod/files/import but when I pressed "Start Input" nothing was listed.,2.1
+To import and OPML file you have to copy it into a specific (and rather obscure) directory.,2.2

@@ -1,0 +1,1129 @@
+5.203 has two big problems.,1.2
+THANKS FOR FIXING THIS: The last two updates (this year) broke message reply..,1.2
+Please fix.,4.2
+After recent updates, Mark read in notification does not work.,1.2
+I've been usinh this since the start, but the last update really need some fixing ASAP!!,1.2
+The attachment need to go back to the TOP not bottom, why would anyone wants to scroll all the way down just to view the attachment?,2.1
+Second, the loading takes more time just to read email.,2.1
+New update still same problem.,1.2
+What happened to PGP all of the sudden not working.,2.1
+Authentication failed for all Gmail accounts.,2.1
+Installed, and reinstalled, many times, the same problem persist.,2.7
+Pls fix the bug for all attachment to show on top of message and not all the way below message.,1.1
+Why would you change things like read all confirmation, and it won't clear notifications from notification bar now.,3
+Latest update is useless, pinch to zoom doesn't work, crashes regularly and runs ridiculously slowly please fix it urgently.,1.2
+Loved this mail app on my older phone w/ Gmail, but on my current phone I cannot get it to work with Yahoo email.,1.6
+After last update it is almost impossible to zoom in/out.,1.2
+When it won't let you zoom out, the emails can't be read and this app becomes useless.,2.1
+Some messages won't allow either to happen even though I was able to with previous versions.,1.2
+Pinch to zoom isn't working.,2.1
+Can zoom in using expanding two fingers but then can't scroll to view all parts of the email and can't pinch to re-shrink the email.,2.1
+Used to be good, butnthe new version crashes constantly, even when I am using other apps.,1.3
+Please fix.,4.2
+Changes the data tables so reverting might be impossible.,3
+Why would you release something so bad when it used to be good?,1.2
+Please fix.,4.2
+Failure After latest update emails won't load and you can't download attachments.,1.2
+K-9 mail user I can't any longer save the attachments to storage.,2.1
+Please fix.,4.2
+Not respecting poll settings I have added an email account that I don't have access to anymore, but I'd still like to have the emails available.,3
+I am constantly reminded that the authentication failed.,2.3
+Can you fix this please?,4.2
+Will give it 5 star when problem is removed.,4.2
+Please fix these problems.,4.2
+Latest updates have destroyed great app No crashes ever until 2017 updates now crashes every 30 seconds.,1.2
+Cannot read a full email before it crashes.,1.3
+Freezes and crashes incessantly, and sometimes eats messages in composition I have been using K-9 Mail for over 2 years due to being stuck with POP3 service on Verizon, and K-9 Mail has increasingly tended to freeze up and sometimes crash; after the update to the latest version available on January 3, 2017, it stopped working entirely.,1.3
+Last update ruined it After last update "Mark as read" from the notification bar no longer works reliable if you have multiple accounts.,1.2
+Can't zoom in emails Since the last update, pinch to zoom does not work when reading emails anymore.,1.2
+Was great but latest update has stopped pinch zoom working if it's not fixed soon will be moving to blue mail.,1.2
+There are probably more problems, but I don't want look for them.,4.2
+Update ruined it Was working fine but now it only sometimes updates the inbox with new emails after polling and pinch to zoom doesn't work properly any more.,1.2
+This sudden inability to zoom is rendering that pointless if I can't read the messages on my phone.,2.1
+Does not work Spent countless time trying to get gmail to work.,2.1
+Keep getting errors.,2.1
+When you try to contact K-9 support you get a message that tells you that any message to that address will be ignored.,2.3
+Only way to get help is through their forum and nobody replies.,3
+This provides a much more predictable ui.,2.8
+Now can't send emails from one of my accounts - UPDATE: fixed by recreating accounts, every folder had to be recreated.,2.7
+The app now crashes every so often, didn't happen before.,1.3
+Though it has a lot of funtionalities, but not for me because I am a casual email checker who fails to organize inboxes with it.,2.1
+PLEASE fix!,4.2
+It crashes, force-closes, and when I reply to messages all the text that I am replying to is a dark blue and cannot be seen.,1.3
+I even downloaded earlier versions to install, but V5.0 which 'might' fix the problem fails to see my import back-up file.,1.1
+I'm a long-time user, but will have to switch apps if this isn't fixed.,3
+Now all of a sudden it won't fetch my pop server email!,2.1
+Unfortunately, started crashing every minute.,1.2
+Can't give higher rating until latest updates get fixed..,1.2
+Works pretty good I can't always reply or delete from the notification window.,2.1
+Was great till update Since the last update, trying to zoom in on text in messages is impossible..,1.2
+Mark as Read Notification Bar not Working Updated Review 1/7/17: for the last month I haven't been able to use the Mark As Read button in the Notification Bar.,2.1
+Don't think I'll use another mail app after this!,2.1
+First time user of app and like the look and customization options however the syncing issue is a problem.,2.3
+Now you can't pinch the screen to change the font size.,2.2
+K9 somehow fail to detect cryptography app installed after the latest update.,1.2
+Can't save any attached file Version 5.202 cannot save any attached file in an e-mail to phone.,2.7
+Had to cease using it Can't use two-factor authentication with Yahoo or Gmail.,2.1
+Used to like it Crashes constantly.,1.3
+I also don't understand why i cannot move emails in trash (deleted in error) back into my inbox!,4.1
+In the trashcan they cannot be fully loaded or replied to.,2.2
+You ruined this app I've been using K-9 for years and loved it.,4.1
+There are so many issues after the last update that had to uninstall the app and go to a different client.,1.2
+Problem with Scrolling Used to work smoothly and fast, but after the latest update the scrolling and zooming inside emails are a pain.,1.2
+Main issues, for me, are account sizes now showing arbitrary large values even when completely empty & that the app now appears randomly laggy.,2.1
+Really liked this app, so please roll back & fix issues in meantime.,4.1
+More update issues Was a great mail app until the latest update (been using it for several years).,1.2
+Emails show up now very small font and I cannot expand it with my fingers.,2.1
+Now you can't even change the displayed names of contacts, I don't want to send mgs with the name on contact list.,2.1
+But worse you can't see text on msg if it considers is a thread msg, even when threaded view is off.,2.1
+Please give us back the older version,2.1
+If I don't see a fix or some sort of announcement indicating you are working on a fix, I'm done with this app.,2.1
+I'll never fully trust your app again.,4.1
+So far so good until the recent two updates that failed the authentication check.,1.2
+Update has broken it It was working really well until the last update, now I can no longer send or receive mail and get connection errors.,1.2
+Now I can't connect to any servers to retrieve emails.,1.4
+Frustration reigns, time lost and still can't get my email.,2.3
+Poor after update Was great till recent update that crashes its database.,1.2
+PLEASE FIX THIS, it has only started doing this with the latest update and makes k9 essentially useless.,4.2
+With the update I can't sync with the server and am not getting any emails,1.2
+Please fix this or simply pull the update.,1.2
+This free solution cured my problems and seems to work better overall.,3
+Used to work Authentication of Office365 account fails even though details have not changed,3
+Please fix.,4.2
+Good one Used for years, but after latest update html is not working correctly in the body of messages,2.1
+However, v5.201 crashes whenever one steels to view an email on Samsung Galaxy s5.,1.3
+It reports null pointer dereference on one of my accounts and ssl handshake error on the other plus there is annoying confirmation dialog on mark all as read which can't be switched off.,2.7
+v5.201: can't use it.,2.5
+V5.201 doesn't display controls when reading individual emails.,2.5
+Lynn I have used this for years and loved it now with.the update I have problem with the mail format.,1.2
+Can't get rid of the From To CC BCC and description.,4.1
+Anyhow I cannot fix so have uninstalled.,2.1
+Poor upgrade The upgrading of database still doesn't work.,2.1
+I have not been able to access my emails still.,2.1
+I cannot receive or delete email.,2.3
+Don't need the extensive list of options per email with poor defaults.,2.1
+Got 12 emails, don't need hundreds of options needing changed.,3
+Let me set one default preset that all emails will adopt by default, just set a button to set email to default preset, then people can change few things they want to change, but make most their setting set to defaults they want easily.,2.1
+Dropping APG for a gpg solution that doesn't work was colossally stupid.,2.1
+Database upgrade fails Can't access any emails or make backups thanks to latest update.,1.2
+Auth Failed The new update always gives me auth fail for gmail.,1.2
+2017 UPDATE (original review 2013) - For approx' 5 years I've used K9 as my main email client.,1.2
+The setup is still a problem, complete hit or miss.,3
+Once I open mail it crashes out.,1.3
+Final straw happened a few days ago when I experienced serious internet connectivity problems, only to discover that K9 Mail had used over 60GB of wifi data over the previous month.,1.4
+Won't work with Yahoo Mail Cannot use with new Yahoo secure sign in.,1..5
+Wonky app Things that no longer work: - list items don't gray out after reading them - unable to mark or place a star on listed mail - deletion mail from within them doesn't work, moving a piece of mail to a folder doesn't move it - not all mail in list is present.,2.7
+Updating and Crashing Since the update all I can do is upgrade folders, then it crashes.,1.2
+Please fix.,4.2
+Just did the latest update but now I can't zoom the message in or out.,1.2
+Don't trust I used this app for a long time.,4.1
+You get 1 to 2 lines of text that you have to scroll to make your choice: select, delete, move, or whatever options there are.,3
+BUT I can't say anything good about until I can momento my password  exactly.,4.1
+Also, what's the point in spam folder when you can't mark things as spam?,3
+Could be a little more simple when setting up (like auto poll not working until background sync is set to always) but once sorted it's a good mail client (other than the above issues).,3
+Used to love it But it doesn't work with 2 step encryption now, can't even log in.,1.5
+sometimes mail gets stuck in the outbox or fails to delete messages or fails to load a message.,2.1
+...but the keyword search will not go far back in the archive.,2.1
+No real exchange support without webdav I really wanted to try it but without real exchange support its worthless to me.,2.1
+Couldn't even get past the sign up page; 3 links were dead.,2.1
+Can't send emai No matter what I do I can't send email.,2.1
+4 days no email from google does any one even support this app anymore.,2.1
+Won't work with Yahoo or Gmail With Yahoo and Gmail I get not the right user name or password.,2.7
+Unable to add another gmail account Fix the errors.,2.7
+Google authenticator support plx Cannot login to my gmail, guess why.,2.7
+Update: Cannot handle more than one email account other than that I'd give it 5 stars.,1.2
+I can't connect my work exchange account.,1.4
+I like the app, but I can't use it until I can connect to my work email.,1.4
+Unfortunately K9 crashes randomly on Android 6.01 (Moto g4 plus).,1.6
+I cannot send email from my AOL accounts.,2.3
+Can't edit connection after initial setup as far as I can see so reinstalled having read that initially setting up over WiFi may have been the problem (!),1.4
+Update doesn't work.,1.2
+Maybe it's caused by me being in China, but given that the mail server is in China also I fail to see why it doesn't work correctly.,1.4
+Accessibility issues - fonts Devs: Only a set range of font sizes are available, which is a blemish on an otherwise awesome app.,3
+Now everytime I try to delete mail it freezes and crashes.,1.3
+Fix it,or pull it.,4.1
+Push mail do not work.,1.3
+It is good interface, but push nail do not work and dep end entirely on polling.,2.1
+I do not remember, but proably I saw a screen during installation that it do not support the popular email like hotmail, yahoo, gmail etc..,1.1
+Light notification not working As I said light notification not working on Samsung s7 .,2.1
+Did not work For office 365,1.3
+Please fix.,4.2
+I'll reinstall once they fix this bug, but until then i cannot recommend this app.,1.1
+Since then, notification comes every five minutes regarding "email failed to send.",1.4
+Annoying enough that I finally uninstalled today and will check out newer apps.,4.1
+But recently I have tried to add a new Gmail account but it failed.,2.1
+K9 please fix this!,4.1
+Bug in notifications Although I DO NOT HAVE vibrations activated in notification settings, I'm getting notification vibrations whenever a new message arrives.,2.1
+Often won't mark messages as read.,2.2
+Used to be my favorite Lately I've been having issues where it won't push emails for hours.,2.1
+I'll try to manually refresh and it shows there are emails but it won't "grab" them.,2.1
+I still use it but the app crashes then emails don't load properly.,1.3
+Unified Inbox fails to show new messages.,2.1
+Keep getting "no text" or "no subject" connection error when I open mail.,2.1
+Push isn't reliable When the display is off for a couple of hours, push notifications aren't sent any more and a manual poll has to be done to resolve the issue.,2.1
+Doesn't deliver important e-mails Used for 2 years but has consistently failed to deliver e-mails addressed only to me, unless they're spasm.,3
+There are lots of issues, but the latest bug is in that when sending emails they often time out instantly and I get a "failed to send" notification in my notification bar and they remain in the outbox.,1.4	
+Can't use it.,4.2
+I've cleared my cache, now tried uninstalling and reinstalling but get so far in the setting up process and each time the app just crashes, over and over.,1.3
+Today I missed a very important email because of this, and STILL can't get it to work.2.7
+Great for searching older emails Could use a more clean design.,2.4
+Notifications no longer work Syncing correctly on Motorola phone, but as of a few weeks ago no longer displays notifications (they are switched on for the app and other apps all working fine).,2.1
+Please fix.,4.2
+Doesn't sync Sync is disabled with no way to enable it, so notifications don't work.,2.1
+No second account Works great but I cannot add a second Gmail account.,2.7
+please fix Have used this app for many years on three phone.,3
+Wish this could be fixed because I really liked this app!,3
+Eventually had to uninstall it because it's impossible to change an account password once it's entered.,2.1
+Can't use now.,4.2
+Gmail fail Google says it's not a secure app.,2.7
+For some reason, the MailListWidget is no longer available and I can't get it to install on my Note 7.,2.1
+Cannot set up Despite entering correct account details app will not set up gmail account.,2.7
+Rubbish Error while entering email then crashes.,1.3
+Cannot add 2nd account No add account function.,2.1
+Cant add documents You can attach photos and rubbish but you cannot attach anything in any of your folders like a doc or a pdf.,2.1
+so what is the problem.,4.2
+Next you cant share to whatapp on android 4.,2.1
+You cant save to a different location.,2.1
+You cant select some headings text on an email.,2.1
+if it cannot connect to your server it does not give you a warning.,1.4
+Can't keep working like this, I'll have to move on.,2.1
+Needs improvement Notifications don't always work and mail is slow to arrive in inbox .,2.1
+Needs updating Will not auto sync with Marshmallow 6.0.1 on LG G5.,1.2
+The format on my screen is impossible.,4.2
+Can't return the mail to my inbox - too much beating around the bush!,2.1
+Can't risk missing any important messages, so next step: TOTAL REMOVAL (uninstalling it, if that's your jargon).,3
+Sync is not working properly.,2.1
+It used to re adjust and keep the email screen width and made it longer.,2.1
+So, it no longer works.,4.1
+Doesn't work Not getting any email.,2.1
+Still not working on imap settings identical to inbuilt email app.,2.1
+PLEASE FIX,4.2
+Please respond for all your long time users.,4.2
+Syncing disabled Push mail has not been working for some time, meaning delayed incoming mail.,1.4
+Push email not working I have tried all the settings from net and forums but not receiving real time email.please help.,1.4
+Auto sync doesn't work.,2.7
+It still hangs on fetch, sporadically It's been 3 years that I have this problem in Cyanogen.,3
+Can't login to my yorku mail account.,2.7
+Is there a way to force a message to remain in my inbox forever?,2.1
+Very frustrating, cannot find how to change account information (servers, passwords, etc.) anywhere.,2.1
+No longer works Was my email app of choice was the past few years but since Marshmallow 6.0.1 no longer fetches emails reliably - constantly reverts to 'syncing disabled',2.7
+Bugs Some emails get bugged and i can't view them.,2.6
+which they've made so simple to understand.,3
+I went there, couldn't make heads or tails of it.,1.2
+Major bug that needs to be fixed.,3
+Didn't work for me!,4.2
+cant log in.,1.5
+Still can't save attachments to SD card Since Android L, all my apps EXCEPT K9 can save to the SD card.,2.7
+To the extreme Fails to forward, fails to tell you!,4.1
+Can't resend.,4.2
+However it has issues with email syncing and it can drain your battery unexpectedly.,2.7
+I hoped that it stays on my phone for ever but the recent sync issues have been a problem for me.,2.7
+Fix this problem will return back to 5 stars.,4.1
+It is with real regret that I am probably going to uninstall it because I can't get it to work for me.,4.1
+The problem is that mail is downloaded on some accounts only to disappear, never to be seen again.,2.7
+I have googled this (and the problem is widespread) but no answers that work.,2.4
+I am prepared to believe that it is a configuration issue but I am obviously too thick to work it out.1,6
+Unread notification not working since last year.,2.1
+Connection error I keep getting a connection error when I open emails in my Hotmail and yahoo email.,1.4
+Please fix.,4.2
+Doest Work with exchange Tried the app on my nexus 7 for my work exchange mails, but it failed to work.,1.6
+Could not find server even though the settings work fine with lots of other mail clients.,1.4
+It's set to minimum demand but still too greedy, so regrettably will be removed for something more lightweight.,2.1
+Poor No resizing for fotos,doesn't show pics size when attached.,2.1
+Can't connect to hotmail account I actually love the app but for some reason I cannot sync with my hotmail account.,1.4
+I find it odd that no other mail app I've used had this problem, yet this is supposed to be one of the best mail apps available.,2.1
+Can't save attachments, better than default mail client I've been Using k-9 for years.,2.1
+But its become buggy/unstable and now I am faced with syncing disabled and no way to fix it.,2.1
+No Hotmail At the very start it states the the majority of free hotmail accounts won't work.,2.1
+I like that the developers don't mind reviews but want a chance to fix a problem.,4.1
+Only thing is the app itself says it doesn't work.,2.1
+Does not work with Hotmail.,1.3
+Can't open my exchange email.,2.1
+Now it can't do automatic setups!,2.1
+Even providing an SSH server is a Machts nichts help.,2.1
+What IS your problem?,4.2
+Doesn't accept exchange server Keeps saying the URL is not valid although it works with every other Android mail app I've tried do far.,2.1
+Connection Error Keep getting no text connection error.,1.4
+Very Sad So recently I've been having problems with K9 mail and despite my best efforts it still persists.,4.1
+I have had problems checking my other accounts on it after checking one of them, for instance if I check one email account and then try to check another the program just hangs.,3
+23/4/2016 - same applies....only this time gmail fails to configure as the app doesn't comply with modern security standards...oh well.,2.1
+Fix it so it will work with Gmail with no problems please Vary annoying trying to get this app to work properly with Gmail Gmail keeps blocking it.,2.2
+Keeps saying a valid url for the exchange account could not be found.,2.1
+It's funny because plenty of other email apps don't have a problem.,4.1
+Like it so far No fault in the app but Google has blocked me from signing into my Gmail account because this app doesn meet the security requirements.,2.6
+Keeps stopping Used to be great, but now crashes (stops) several times each day on my new phone.,1.3
+Outgoing mail Fails Frequently outgoing mail's fail ..error 500 or something like that..hours trying no use.,1.4
+I may have to abandon K-9 if that's not an option.,4.1
+Some folders I've been unable to see at all.,4.2
+Sorry, it now crashes and has become unusable.,1.3
+Can't print or share emails.,2.1
+What a load of rubbish as I couldn't get into anything after down loading app.,1.1
+Thanks if you reply also won't let me set up account either.,2.3
+Darkening theme doesn't work at all.,2.1
+Great app Doesn't work with the prim,2.1
+Sync not working properly Pls tell me how to make proper settings for reliable sync.,2.7
+Reinstalled k9, reply button now doesn't show, can't find any solutions.,1.1
+Getting super frustated - please respond to this with how to fix!,4.2
+Security Can't use with gmail because it doesn't meet modern security standards.,2.6
+I started getting "failed to send email" notifications and the app appeared to be degrading over time.,1.4
+No two factor Can't connect to gmail.,1.4
+Won't sign in to Google accounts Couldn't sign in to my Google account and then received an email from Google saying that "Someone just tried to sign in to your Google Account from an app that doesn't meet modern security standards".,2.6
+I think there might be settings, but i can't find anything.,2.1
+RECENT ISSUE - There's a bug that causes the screen to scroll up unpredictability whenever you zoom in...its maddening.,2.1
+I will try to reinstall.,1.1
+External Storage is not working I have googled for a good app which can save internal memory from my emails and it's attachments.,2.3
+Downloaded K9 but it is not working.,1.1
+Can't use Contact Groups K9 is not a bad email client - I've used it for several years, but you can't send to Groups you defined in your Contacts.,2.1
+Meh I cannot get beyond the fugly UI.,2.8
+Can't be used with an exchange server?!,4.1
+WAS Great for multiple accounts No longer works with Gmail, app doesn't meet modern security standard according to Google.,2.6
+I would love to give it a 5 star but i cant figure out how to print an email.,3
+Won't sync with server anymore Had to uninstall and have tried multiple times to install again.,2.7
+It Works It works, but I can't figure out how to add more than one account, and it would be nice if you could add custom folders.,2.7
+Didn't work Would not take my Gmail username n password no matter how I entered it or what I did.,2.1
+Didn't work for me Tried multiple times to get this to work, never could.,4.2
+Sad that K9 mail isn't able to handle the upgrade.,1.2
+I can't even signing in in it,1.5
+Doesn't 3 Can't get Gmail account to install.,1.1
+K9 Perhaps its me, but can't get my gmail account set up here.,3
+Update issues Still love the app but since the November update it fails to update on my Droid Turbo.,1.2
+Can't use my gmail account with this app,2.7
+Error cannot connect to server.,1.4
+Crashes, Cannot Compact.,1.3
+Installed new update, tapped sync - CRASH.,1.2
+Doesn't work for My note 3 anymore.,1.6
+Looked it up and fixed it once and can't fix it this time.,2.1
+Can't get any mail!,2.1
+Fix decode function.,3
+Why its no longer works with easy pgp?,2.1
+Does not work with exchange 2010 thus I can not use it.,1.3
+Was OK for a little while, then one of my accounts inexplicably had SMTP blocked because of "previous abuse".,2.1
+can't send emails and I expect if I get my ISP's postmaster to reset permissions it'll happen again soon.,3
+Still crashing When download many messages the app crashing every time,1.3
+PLEASE FIX,4.2
+Please fix.,4.2
+I used to love this App, but now I can't trust that my emails won't get deleted.,4.1
+PLEASE FIX,4.2
+but cannot send email to a group of contact,2.3
+Doesnt show a single email,2.1
+Don't waste time :/,4.2
+PDF and xls downloads won't often work if downloaded with this app, compare to other ones.,1.1
+Can't get exchange account set up I've heard a lot about this app and was excited to try it out, but I can't get my exchange email set up.,2.7
+K-9 mail Rubbish it just allows you one email,4.1
+Don't work Wouldn't connect to virginmedia / nil world client.,1.4
+Such a shame This *used* to be great, however since May 2015, I've been unable to get ANY new email across any of my many email accounts - and as such have had to get accustomed to Google's main offering.,4.1
+I updated K-9 tonight, but it refuses every account I have, saying either the username and/or password is at fault, when none of them are incorrect.,1.2
+These are things the Yahoo app cannot do.,4.1
+Didn't get it to work Tried several times to get it to work and failed.,2.1
+Auto sync not working Since i updated last time auto sync is not working however poll frequency is set on every 2 minutes please fix i have been using this from 4 long years and love this.,1.2
+Keeps crashing since last update What changed??,1.2
+Ive been using for years and have liked, but K9 keeps crashing and is unusable for the past several days.,1.2
+K9 mail My email on phone failed so Verizon had me download this one.,1.1
+It's not working.,2.1
+Was good Now doesn't work.,2.1
+Used to be good Now, it just keeps freezing up - it has become unusable.,2.1
+K-9 still has some basic issues.,3
+Couldn't get one of 3 gmail accounts to work on it though.,2.7
+Ability to adjust FONT size is limited when using on a Tablet.,2.2
+On a high-res screen, you'll need your magnifying reading glasses.,2.1
+It works well except you can't deal with attachments because K9 doesn't know how to deal with the Chrome OS file system.,3
+However, it now constantly freezes and crashes.,1.3
+Cannot authenticate I am unable to authenticate any of my email accounts.,2.7
+It gives me the error that my password is incorrect, but my password is perfectly fine verified it on another app.,2.2
+no dev support what so ever for thead app.,1.6
+Doesnt work with gmail Tried to setup a gmail account and google blocked it due to "not meeting security standards",2.6
+Unable to open attachments The email supposed contain a pdf file, however it shown as winmail.dat any ideas how to fix it?,2.1
+Can't access onion mail with this Is there a way to retrieve my onion mail with this.,1.4
+May be Yahoo, may be K-9, but I haven't worked out yet how to stop getting emails from Yahoo saying I have had an unauthorised login attempt.,1.5
+Uninstalled This App keeps deleting my Emails and giving me errors.,1.1
+Other than that, it is very user un-friendly, ugly and doesn't work all too good.,2.1
+Won't delete messages from server I selected the option to remove messages from the server when I delete them in k-9, but it won't actually do it.,2.2
+Fetch mail Unable to fetch mail on Samsung Note 4 for Nexus 7 for the longest time now I force shut the application like I used to when changing a fetching time but that doesn't work anymore either to fetch the mail on an interval,2.1
+Expunge doesn't work.,2.1
+Great functionality, but doesn't work If it worked, it'd be the best.,2.1
+Got mostly errors, cant send pictures ifbi have more then 1 attached.,2.1
+No amount of effort could fix it.,4.1
+Doesn't work after that,2.1
+Won't work with aol.,2.1
+Opening the app just shows one mail and I only have one account.,2.7
+Can't search email on server This app works well on the most basic email functionalities, but it's quite frustrating not to be able to searh old email on the server.,2.7
+Doesn't work with Sony Experia Won't import settings.Won't allow manual entry.,2.1
+However I'm on Nexus devices only now so I get the latest & greatest updates when they become available.,1.2
+Trouble with attachments Forwarding attachments fails frequently and old emails keep showing up as "new" at the bottom of the list.,2.2
+AUTH PLAIN failed.,2.3
+Constant AUTH PLAIN failed when sending.,2.3
+K9 also has a bug where it can partially download a message, just partial headers and then can never get the whole message, the email then appears to be corrupted and listed as 'no subject', and nothing will bring it back.,1.1
+k9 can't retrieve attachments over phone data these days.,2.4
+No support, can't get it running.,1.6
+Never really failed me until recently.,2.3
+Decided to try another App for awhile so deleted my email accounts, cleared the data file & stopped the program in App settings so it wouldn't be using data.,2.7
+The problem is that it doesn't sync anymore.,2.7
+I have to refresh the app in order to receive new email.,2.1
+Please fix.,4.2
+Mike Could not open or print PDF attachment message said document my be corrupt I tried it on my mail app and it printed without receiving any message that the document may be corrupt.,2.1
+Won't work on Sony Xperia z5 Loved this app on my Samsung and now it won't install on my new Sony Xperia Z5.,1.6
+It's no problem to send a file via mail and Skype but this app is not in the context menu.,2.1
+No longer works with Gmail Used work great for many years now as my all in one email app.,2.1
+Recently it cannot send from Gmail account unless one changes the google account security settings to "allow less secure apps" then all is back to usual function.,2.6
+Delete from server doesn't work The setting to always delete from server when I delete doesn't stay set in Android 5.1.1.,2.1
+Won't send email Email stays in the outbox even after manually initiating a send command.,2.1
+Failing for gmail authentication Didn't work for gmail.,2.1
+Could not get it started, so deleted it.,2.1
+Outgoing mail won't work Incoming mail is working but outgoing isn't.,2.1
+Even changed my password to see if the reset would create different results.,2.1
+disappointed it won't work for me,4.2
+Constantly crashes.,1.3
+It's very slow.,4.2
+Cannot connect thru WorxHome I have no luck to acces my corp email via WorxHome/Citrix.,2.1
+Cannot setup Exchange account The same configuration works for the others but not this app.,2.1
+It crashes randomly, is impossible to set up with Exchange and does not even properly support Push!,1.3
+In stock client you just enter MS Exchange email address and password, done.,4.1
+Please fix.,4.2
+Should fix the source code but have no time.,3
+Not polling Has been working great for years, now all of the sudden it will not poll my emails - love the app, but if it doesn't work will have to uninstall.,1.3
+Recently, I have had some issues I can't resolve and there doesn't seem to be an easy way to get tech support.,2.1
+The issue now is that gmails keep getting pulled down to phone even after read and deleted on phone.,2.1
+I'm looking for a new app as I can't figure out how to fix what should normally be an easy fix.,1.4
+Now get annoying certificate errors.1,6
+The app doesn't give proper error messages so I have no idea what is wrong.,2.1
+Just picking emails to delete has been a nightmare.,3
+Please fix it.,4.2
+Please fix.,4.2
+Do not like updated version.,1.2
+I get certificate errors every couple of weeks and the only recommended solution is to delete and reinstall my accounts.,1.1
+It also seems to forget that I want messages deleted from the server anytime an update to the software is made, causing me to have to delete email twice, the second time when I use a different device.,1.2
+Can't Use it.,4.2
+Best interface with unacceptable bug 80% of the time, deleting email's results in crash notification: "Unfortunately K-9 Mail has stopped.",1.3
+Messages dont display properly Font size setting works when it wants.,2.1
+By contrast getting "cannot connect to server" after using the exact same methods that work with other clients is frustrating in the extreme.,1.4
+Could not connect with my institution Whereas other mail apps could connect via exchange.,1.4
+Can't log on with Gmail I'm frustrated trying to log on with my Gmail.,1.5
+But also, even if you have to enter a password you could still be vulnerable depending on how the app stores your passwords.,2.6
+Latest version mangles attachments I love this app, but since the last update I can't open any attachments, not pictures or PDFs or Office documents.,1.2
+Can't add gmail account.,1.4
+Couldn't stop the app so restarted everything.,2.1
+I can't afford to keep buying data for my phone,4.1
+Unfortunately I'm going to have to find a different app until this is fixed!,2.1
+Sucks the life out of my phone and will not work without a full phone reboot.,2.1
+Since it only sync the unread email only, i cant review with other old email,2.1
+Doesn't work Says it cannot connect to server yet the password is correct.,1.4
+Some issues Search doesn't work for server,3
+Cannot connect to server.,1.4
+Doesn't work with Exchange I used to love this app.,2.1
+Syncing The app says that there is a problem syncing when I try to set up my account.,2.1
+I cannot send or receive email.,2.3
+Please assist me.,4.2
+Since then the performance has been terrible and it crashed multiple times per day.,3
+Please fix these issues or I will have to continue using another app.,3
+Can't install!,4.2
+Constantly getting -505 error,1.4
+Certification error Please fix the certification error.,4.1
+Its ok, but could be better Its OK, but when an email has a picture or there is more text, you have to press a button to download the picture or another button for the complete text.,2.1
+This almost always never works with out exiting the email which takes you back to the inbox.,2.1
+You then have to reopen the email.,2.1
+Sometimes you have to repeat this process several times before it works.,2.1
+Please fix!!!.,4.2
+Please fix.,4.2
+No longer works with gmail.,1.3
+But I had to axe it after it started sending emails before I finished writing them.,2.1
+Endless trouble with Gmail I couldn't get it to connect to my Gmail account, it just kept throwing errors.,1.4
+Terrible app This app crashes, at a minimum, daily..,4.2
+Sometimes it will crash several times per day.,1.3
+Shuts Down Offen Nice App except just about every time I read my email and delete what I don't want or, empty the trash it pops up and tells me K-9 Mail has stopped working and then, shuts down and I have to restart it.,1.3
+Just hate it Crashes with every try to login..,4.2
+App stopped working I have used and loved this app for a few years now across 3 or more phones, but just recently it stopped retrieving e-mail for no reason although settings are correct.,1.3
+When there are images in the body of the message fit to screen makes all the texts of the body very small and the image is full width of the screen.,3
+Please fix.,4.2
+Also unfortunately the app can't be moved to SD without total loss of app data.,2.6
+Cant trash I receive a new email and there is all the emails that trashed 4 different times no matter what i try there is is all the emails i read and put in the trash.,2.2
+Cannot create account Can't send email because I can't create my Gmail account in the first place.,1.5
+After entering my password, I can't click Next.,2.1
+if there was a way to backup settings AND emails for exporting to a new device i would give it full marks.,3
+Ok, not great Couldn't get exchange account to work so it's getting deleted from my phone.,3
+If it is not configured by the user you will loose all that you archive due to the fact it creates a Archive folder that is not linked and when you change to link folder or change to different folder it you will loose all in the unlinked Archive folder it created.,3
+This issue has been around for many years and they have not addressed it yet ,3
+It's utterly ridiculous that you can't simultaneously add multiple attachments, and have to go through workaround loops to do so.,2.1
+You have to exit out to the messages list and long click.,3
+Issues with saving email attachments I am unable to save email attachments to my SD Card.,3
+Now crashing almost every time I delete a message either from within the message or from the lost of messages.,1.3
+Don't notice till you log in via web and see that hundreds of emails that you thought were deleted are all still sitting there.,1.5
+Doesn't push I can't get the push notifications to work on either account.,3
+Terrible for gmail IMAP Creates too many push connections.,3
+I just downloaded aqua, and though I haven't used it enough to know if I actually like it, it seems to do the trick and opens messages quickly.,3
+Threaded View not working Love this app unfortunately I can't live without threaded view by subject in the unified mailbox.,3
+Used to love this but now can't turn off the new mail notifications so uninstalling.,3
+Wouldn't work I just downloaded this and it will not allow me to add any accounts.,3
+K9 This app crashes more than Evel Knievel!,1.3
+Latest version gives error 505 when installing?,1.2
+Now Won't Send I've used K9 for some years happily, although I really don't like the very childish capital letter highlight of each message on list view, but I can't seem to get rid of it.,3
+Now won't send email at all, despite applying this morning's fix.,2.3
+Continually fails authentication for incoming mail servers which I know are correct.,3
+Can't open links Something with a recent update prevents my from opening links.,1.2
+Can't move from trash to inbox on pop3 Even when set to never delete from sever you can't move stuff from trash back to inbox in pop3.,2.1
+Still Doesn't work with Microsoft Exchange Server It's a great app, Ans works great with tasker.,3
+But despite of various configurations and settings, I still can't connect to my Microsoft Exchange server account.,1.4
+Please provide a solution to this.,4.1
+Crashes It crashes far too often making it useless.,1.3
+It was the best Don't work any longer.,4.1
+I thought I didn't have this problem before in old version(can't remember whst version it was).,1.2
+Doesn't support PGP/Mime While K9 supports PGP/Inline for encrypted mail, it doesn't support the better and more widely used PGP/Mime standard.,1.6
+Please provide fix.,4.2
+Just will not send or receive emails!,2.1
+Crash city Nexus 4, stock rom (latest) and crashes every time I multi select emails (e.g to bulk delete).,1.3
+Happens on Kaiten (fork) as well, so clearly a major issue with the build and not update for months has fixed it despite constantly sending crash logs.,1.2
+Crashes Continually crashes.,1.3
+Encrypted emails show attachments I get two attachments everyone I send an encrypted email from my Mac desktop to my android phone...this doesn't work!!!,2.1
+Please fix!!,4.2
+Please fix.,4.2
+Cannot trust any Android mail app ...not even this one, though it seems to be the best of a bad batch.,3
+Do not use K-9 if you have more than a few hundred messages in your email system.,2.1
+If I made a folder, display it.,2.1
+Can't believe that the marking of spam emails is so convoluted!,2.1
+How to add more than one account?,2.1
+If there are certificate errors with one of your accounts, it will endlessly flash your LED, regardless of your settings, until you resolve it.,2.1
+No groups from Contacts in Compose When composing an email, my contact groups are not available as a recipient.,2.1
+Reboot problem I've had the App for years and have been happy with it.,2.1
+I did a reset on my phone and re-installed my critical Apps and the problem was still present.,2.1
+I removed K9, rebooted my phone, and it has only crashed once in the last 7 days.,1.3
+So, while there may be an underlying problem with Android 5, it becomes a critical problem with K9 installed.,2.1
+Update dont work After update 5.005 I get SSL problem, please fix it.,1.2
+Annoying Tired of constantly getting errors about connection and not being able to read email.,1.2
+bob mackey does not work as advertised.,2.1
+So I can decrypt my mail with the help of APG, but sending mail is a nightmare (aka doesn't work).,2.1
+Got too fed up with the constant "failed to send" notifications,2.1
+Seems to be a common issue in most email clients.,3
+and delete emails from local and server fails and all emails daleted are downloaded again
+Tried to set up Gmail, but failed login.,1.5
+Received email from Google that sign-in attempt through "unsecure app" was blocked.,2.1	
+I don't know if this is a K9 problem, or Google being idiots/a**holes.,4.1
+Please fix.,4.2
+Crashes It crashes a bit too often everyday at least once or twice using galaxy s4,1.3
+Latest Latest update sucks I keep getting certificate errors.,1.2
+Checked online & other users have the same issue.,3
+Doesn't send emails :( I cannot send any email.,2.1
+There is no way to contact the devs.,1.4
+Can't print email body I can't find a way to print the body of an email on my SG4, only attachments .,2.1
+since upgrade, can't send from hotmail.,1.2
+How come it can't just let us choose the external sd root path?,2.1
+Chews up your data plan Apparently this has been an issue for years and it is still not fixed.,2.1
+A mail app for geeks only I was looking for a mail app to replace the painfully slow yahoo app.,2.1
+Now since upgrade has nothing but numbers and symbols I will not upgrade again!,1.2
+Only way to unlock is to kill the app.,4.1
+Exchange doesn't work,2.1
+Good for getting email but not sending I don't have much problem with this app as far as checking my mail.,2.1
+But what really bothers me is every time I try to send mail it gives me the error "some messages not sent".,2.1
+Android email doesn't work good for receiving mail, that is why I got K9, but I have to use it to send mail.,3
+All I get is a message saying "handshake failed".,2.3
+Bogus mail client Does not work with lotus note mail.,2.1
+Page has an issue displaying full content.,2.1
+if they dont care about a problem that is repeatable and proven to not be a network error then I don't care either.,2.1
+Can't control display The Web site says there are settings that I can alter but my version has no settings button or tab that I can find.,2.1
+Overall it was a good mail client as it allows many customization where default Gmail app can't provide, such as theme, font size etc.,2.1
+Lollipop upgraded, broke K-9 Now that I have Lollipop installed on my S5, k-9 doesn't display emails properly.,1.2
+I have to return to inbox and reopen the email 2-3 times in order to read the message.,2.1
+Crashes Used k9 for years, now it crashes or blanks out all the time.,1.3
+Bugs After update recently, I can't delete emails.,1.2
+But lately on my LG G3 with latest android update 5.0x it is very slow opening and displaying my emails.,2.1
+Sometimes it doesn't display at all until I scroll to the next email and then back again to force it to reload.,2.1
+After some update it does not work the same,1.2
+Problems with Lollipop Not downloading all mail and notifications not working after lollipop update.,2.1
+I note others having the same problems.,4.2
+Fix it and you've got 5,4.2
+only imap, pop3 and exchange server option is available and none of them works with my company email.,3
+I love this app but recently I have had problems where different emails, html or text will show as blank messages.,3
+I have had problems when I am on Wifi or on mobile service.,4.1
+:( I will change once this gets resolved as I have full cofidence that the will fix the problems with the recent update.,1.2
+I cant receive mail anymore?,2.1
+Can someone fix this?,4.1
+Cannot access Penn State email since the update.,1.2
+I don't understand why and this needs to be fixed.,3
+Fix please?,4.1
+It worked flawlessly until the recent update and now it won't work with my university's server configuration (Penn State).,1.2
+Crash Can't handle a simple gmail.,2.1
+Can't copy/paste email text?,2.1
+Can't auto add contact to address book?,2.1
+Just copying text is a lesson in frustration and if you can manage to do it, you can't paste it anywhere!,2.1
+How to setup?,4.1
+No matter what address I enter it won't work.,2.1
+Gmail not working Says incorrect password?,2.1
+So this app cannot handle two factor Auth.,2.1
+Pls fix it Latest version makes my phone lag and overheat..pls fix this then I'll give 5 stars..thank you,2.1
+Worthless Pretty worthless when it won't take the emails I have been using for years.,2.1
+Nexus 7 Will Not Update Get an error during update on Nexus 7.,1.2
+Cannot figure out how to post bug on website.,2.1
+Not Office365 This all worked fine until my employer switched to Office 365.,2.1
+Cheri Followed all the instructions in manual and cannot set up gmail.,2.1
+Can't select custom notification May seem petty but that is a deal breaker for me.,2.1
+However something happened and it Uninstaller itself and when I reinstalled it, I couldn't get my AOL accounts set up again.,2.1
+Extremely Buggy Used to a very solid app for years now it crashes all the time and lots of problems sending mail.,1.3
+Tried uninstalling and reentering settings but it said it couldn't connect.,1.4
+Ok but refuses to sync Ok used to sync my mail all the time but somewhere in a recent update it forgot hiw to and I can't make it sync automatically.,1.2
+Just sits there waiting for manual sync please sort it out.,2.1
+Please fix.,4.2
+The box to the left to check off emails is gone and I can't add my AOL accounts.,2.1
+It's also available on F-Droid market with older versions too [v5.002] felt flaky [v5.004] trying now.,1.2
+was very hopefull but...suck Cant find where to add a 2nd account.,2.7
+Cant change the server type of an already created account.,2.7
+Couldnt for the life of me find where to delete an account..uninstalling and cant believe people are so impressed...or perhaps I expect more as a systems administrator?,2.7
+A subfolder is missing More precisely I cannot see a subfolder in my mailbox from K-9.,4.2
+Would not work Would not authenticate at setup.,1.2
+I no longer waste time with programs/apps that don't work.,2.1
+Please fix the issue and get 5 stars.,4.2
+Please fix.,4.2
+Aol mail Used to be able to get aol mail now it will not work with it.,2.1
+Doesn't work on Nexus 9 Not worth trying.1,6
+Tried reinstalling and now I can't even set up ONE account!,2.7
+I'll keep an eye on the change log and decide what to do.,1.5
+Just can't find a way to like it.,4.1
+Just can't do it.,4.1
+Uninstalled it thinking it might need a wipe (cache/dalvik/folder delete) but now it won't even run after install.,1.1
+Problem with 2FA Doesn't work with Gmail and 2fa.,4.1
+Otherwise it's a fine app but I can't afford to have my email app suck my battery dry and leave me without juice.,4.1
+FIX THIS!,4.2
+Can't figure out how to download files larger than say 50K.,2.1
+Tried adjusting the settings to 5 Meg push but still doesn't work.,2.1
+Can't complete simple actions like deleting emails.,2.1
+Any mail you accidentally delete is gone forever because you "can't move or copy messages not synchronized with the server".,2.1
+I end up having to send out another email account because one can not get set up completely.,2.3
+Similar to others, I can see my mail Can't see any of my mail.,2.1
+With the latest version it freezes constantly and takes forever to load mail folders.,2.1
+It crashes and doesn't remove deleted items from the inbox until I exit and go back into the app.,1.3
+Needs fixing I liked how it used 10mb of memory compared at others in the 30mb range.,2.1
+But it does not download the complete messages or pick.,1.1
+Sometimes pics still won't download.,2.1
+I like the app, but I receive an error message saying "Failed to send some messages" EVERY time I send an email.,2.3
+Hopefully they fix the SSL issue so it recognizes a valid SSL again.,2.1
+Unresolved security/privacy issue Issue 1877 is still present - please fix.,2.6
+I frequently am unable to see my email, just a white box instead of the message.,2.1
+Sometimes playing with the theme settings will fix it but its not worth the hassle every time I want to check my email.,2.1
+I can't even get past the setup screen with my gmail account.,2.1
+Cannot open attached pdf files Always get a message saying that files are corrupted!
+I hope you can fix this.,4.1
+Crashes Every Time on large messages Used to be good but it can't handle large emails any more.,1.3
+Will they ever fix it?,4.1
+Will not send messages I cannot send messages through this app, have to uninstall then reset up.
+Then there is a 20% chance it will work.,2.1
+Not so good anymore this used to be a pretty good app however now it has issues could not get it to send email and created my account with wrong info.,2.1
+The only way to change it is by deleting the account.,2.1
+Actually I had to delete the app.,4.1
+This really needs to be fixed.,4.1
+From 5 to 3 Since the last few update, all it does is freeze up or crash.,1.2
+It's just that you have to manually add each email account you want to use like you did with the basic 'Email's app.,2.1
+Was good Downloads do not work at all.,1.1
+Kept failing syncing with yahoo Sorry guys.,2.7
+I really like your app, but until you fix synchronization problems with yahoo I can only give you 3 stars.,4.1
+Command: authenticate plain response; #2# [no [ authentication failed " etc. , and I received email from Google saying they blocked access cause the app is using less secure authentication, and they did it so I be protected by modern security standards , and that if I allowed it I'd be easier to attack , please fix this asap,2.6
+Don't like it I can't even put an email, it shuts down or close before the opening page.,4.1
+Please fix.,4.2
+Notification Mark as Read from notification doesn't work, also, keeps hanging on Drafts folder.,2.1
+Buggy Used for over a year but it never actually worked right.,3
+cannot transfer to new phone I actually like this mail app.,4.1
+Didn't work Authentication issues!,1.4
+This app could be great, but they've taken something simple and turned it into something overly complex that doesn't really work.,2.1
+Don't waste your time with this app.,4.1
+Would frequently get errors when getting emails on other devices due to k9mail opening so many connections.,2.1
+Emails can recive but won't send Got 4 different email account and on every one I can recive emails but can't send emails on any of the accounts,2.1
+Doesn't work with active exchange,4.1
+Sorry if the facility is there but you should make it easy to find and set up ie 1 click spam reject and remember .,2.1
+You can't format text - i.e. No bold/italic/underline etc.,2.1
+K9 sends a 550 error: User is unknown.,2.1
+The app is failing Something is hiding the text, like a white box.,2.1
+The app is failing Something is hiding the text, like a white box.,2.1
+updated k-9 again (this time by mistake) and company email is down.,3
+Please fix.,4.2
+No Exchange 2010/2013 Support I do understand technical limitations implied and why this app does not support newer versions of Exchange, however it is really important to keep up with new major mail server releases.,3
+Dogshit Utter crap, crashes all the time.,1.3
+Don't bother.,4.0
+Please improve the UI.,3
+Lagging my note 2 Ever since last update my phone has been seriously lagging, have to restart and remove battery several times a day.,1.2
+I can't stand what it's doing to my phone.,4.1
+Why can't the developer fix a simple but annoying problem?,4.1
+Doesn't connect Bought a new phone tried to install it and cannot find in and outgoing servers.,2.1
+Not working Cant set up any of my emailed accounts, not sure what happened.,2.1
+Not syncing my exchange 2010 email id Pls fix it.,2.1
+Keeps crashing It's nice enough to use, but it crashes ALL THE TIME.,1.3
+The biggest problem is a failure to auto-scan for new mail.,3
+Can't Send email Liked the way it displayed emails, received no problems, but can't send mail.,2.1
+Trouble with gmail Can't get this to work with 2 step verification on gmail using the app specific password.,2.1
+Very functional, but could be much better Been using this app for years, mostly because when I started using it, it was the best available.,2.1
+Don't rely on your bug tracker.,4.1
+How did you manage to get such a brilliant app written in the first place with that attitude.,2.1
+First time using this app and would rate it much higher if they would resolve the bug.,4.2
+Cannot import my settings!,2.1
+It crashes every time I try to import the file!,1.3
+Does not work with Office 365 through Exchange protocol,2.1
+Used to be great now doesn't work at all This was a great email app until it was updated, now "it appears to have stopped working" which is rubbish.,1.2
+Stopped working on Android 5.0.1 Superb email app BUT no longer works after Android update.,1.2
+Problems galore with Lollipop K9 was the best solution (especially) for people with multiple E-mail accounts both on Android Jellybeans and KitKat versions.,2.1
+After last update have been getting errors.,1.2
+Uninstalled and reinstalled and still getting errors.,2.1
+Nothing but problems Atatchments do not attach, says they do but they dont, try to set folders for storage and tells me browser not found, its just so buggy, not impressed at all.,2.1
+Didn't work with exchange 2010,4.1
+Now constantly crashes checking IMAP box with over 125 msgs.,1.3
+It was no problem with me for a long time.,3
+Kind of glitchy Frequently fails to send replies.,2.1
+Can't believe.,4.2
+Don't work,4.2
+Since last update I cant send any emails.,1.2
+Cannot use my own webmail I have been using K9 Mail for years now and it was my favorite but I cannot log into , my own server.,1.5
+Please fix.,4.2
+Rubbish - keeps crashing No support Ask you not to rate the app bur send a mail and you get NO support App keeps crashing and has made whole phone un useable Have taken app off and cannot re install.,2.1
+Can't seem to sync with the Outlook app I've been through the settings several times and just can not find a way to sync with Outlook.,2.1
+Syncing is disabled, seems many have the same issue.,2.1
+Reverse order texts, jibberish texts received by others YOU CAN NO LONGER USE K9 FOR MULTIPLE ACCOUNTS.,2.1
+More often than not texts come in reverse order, short texts are split into multiples unnecessarily, and longer texts sent are received in jibberish and cannot be read.,2.1
+Please fix this, app is unusable right now.,4.2
+Please fix.,4.2
+Totally messed up my email, I can no longer use this app for anything.,2.1
+Fix please.,4.2
+Got a software update for Lollipop, and I continue to get certificate errors!,1.2
+Threaded view doesn't work, configuration is a nightmare, but the worst is Battery life.,2.1
+Just crashed and will not connect to server to recognize accounts.,1.3
+Problems with AOL mail Been using for a couple of years and had to reinstall and now will not connect to AOL mail.,1.4
+Something happed As of 11/18/14 it is no longer getting email please fix asap.,2.1
+didn't work with exchange,4.1
+Not working with Yahoo I've used this app for several years, but due to the latest update it hasn't worked with Yahoo for over a month so I'm sorry to say that I'm deleting this app for another email client.,1.2
+Can't delete from within an email.,2.1
+Latest version crashes frequently This was my favorite email app until the latest version.,1.3
+The latest version crashes frequently, so I found a different email app.,1.3
+Doesn't display any messages Does not display any of my messages so useless,2.1
+It's ok But it doesn't include contact and calendar sync for exchange.,2.1
+Terrible It crashes every time I use it.,1.3
+Can never use it more then 5 minutes until it crashes.,1.3
+I get an "com.fsck.k9.mail.CertificateValidationException: Handshake failed" error in the log.,1.5
+My Gmail accounts work just fine***, but I'm fairly certain the problem is with K9 because the Gmail app sends mail on my iCloud account just fine.,2.1
+When it's working, this is a great app -- PLEASE FIX IT!,4.1
+***EDIT: it's started giving me certificate errors on my Gmail accounts as well now.,2.1
+Km Mail Cannot get it to work on Samsung Note.,1.6
+Default confirm are wrong and cannot be changed.,4.1
+Crashtag anynomous K-9 is the client from hell, i can't even add my very first, email address to the client without it crashing, it's the least stable client on planet neptune.,2.1
+Doesn't work with exchange/outlook,4.1
+With k9 mail you have to configure the outgoing settings with charter accounts.,2.1
+( My provider does not offer IMAP ) A few days ago it crashed, and when I restarted it all 900+ messages were gone.,1.3
+k9 not working in mly fone.,4.1
+Horrible Could not make any sense of this.,2.1
+Would not accept my Gmail credentials and the import setrings tried to find things in my google drive.,2.7
+The fact it is being reported in ver 5.001 suggests upgrading are not going to fix it.,1.2
+Since last update the mail is not working even with gmail.,1.2
+Please the apps 5 star status :-),4.2
+Having problem with all the email you cannot reply.,2.1
+Gmail just had a terrible update.,4.1
+My only complaint is the group conversations isn't working.,2.1
+Doesn't appear to work at all, and that's just going to Gmail :-( Load 26 more just displays some error message which is gone too fast to read and returns you to the same empty screen.,2.1
+Pain Setting up is a pain and doesn't always work.,2.1
+Can't connect to Gmail / Security problem This app doesn't have the high security protocols to connect to Gmail.,1.4
+You have to set your Google Gmail account to a less secure setting to let this app connect.,2.1
+So don't use this app.,4.2
+Worked well, now garbage Since the last update, I've been getting certificate errors.,2.1
+Based on what I'm seeing here, other puerile are having the same problem.,2.1
+I am unable to set up my yahoo account ...,1.4
+Went from amazing to awful Each upgrade seems to make it slower and more bloated, frequent errors and freezing issues are a daily occurrence,1.2
+Used to depend on it, now had to delete it I've been big fan and recommended k9 to many folks, especially for imap users, but the latest version has been deleting dozens of email everyday.,2.1
+Cannot send mail I cannot send email!,2.3
+Please fix.,4.2
+This was the best, now I can't send mail.,2.1
+Errors galor Can't send email.,2.1
+Now it will not receive new email, and manual loading take forever.,4.1
+Can't open attachments!,4.2
+Issues sense last update Great app (normally) and I use it for years but sense last update I keep getting Errors sending emails from my ipage email accounts .,1.2
+I have the folloeing issues though: I get 'connot send' send errors in a loop since I once had a send error, the msg ia in the notifications but it is too long to read and for some reason it is not in the app's 'error' folder.,2.1
+The other issue is that there is no way to select multiple emails, you eather select all or one.
+It won't get fixed either.,4.2
+No longer works note 4 Was my favorite email app, just upgraded to the Galaxy Note 4 and I am unable to upload AOL just get a server error message.,2.1
+Looked around for a replacement but could not find anything I like as much as this one.,4.1
+Please fix.,4.2
+I also just got a new phone & can't even set it without an error!,2.3
+Couldn't connect to exchange server Expected to connect to my company's Exchange.,1.4
+Instead: it tells me "Setup couldn't finish.Cannot connect to server(IOException),1.4
+Get this so it does not show up and you will get a 5
+Last Update Rendered It Unusable The program demands I 'Update Outgoing Server Authentication: AUTOMATIC' whatever that means.,1.2
+Now, it won't automatically download my emails and notify me, even having set it to do so for every 1 hour, and when I do download the emails I can't actually read any of them due to the constant 'connection error' that occurs!,2.1
+The past couple weeks sending problems Love this app, BUT the past couple of weeks can't send email.,2.3
+But I don't look forward to that!,3
+Doesn't work Since the last update, I can't send any emails out.,1.2
+Bad update I have been using this app for years, never had a problem until last update.,1.2
+Flawless until last update...would be 5 stars but: Spam folder disappeared, app stopped receiving new email, and it gives an IO error for the inbox.,1.2
+You just lost me over a 100 email.4.,1
+Fix it.,4.2
+This Don't Work,Are You Kidding Me Or What.,4.1
+Cannot Sign Up,Total Utter Rubbish.,1.5
+Of very little use as you can't reply to trail mail....please give better suggestions for these problems,2.3
+Folder Problems Last few updates I can't move mail between folders.,1.2
+With the latest release it happened twice to read a message and the attached document and then loose it: the read message cannot be find any more.,2.1
+Reinstalled but same problem.,4.1
+Please fix.,4.2
+Good but currently screwed Works great generally but since last two updated can't send mail.,2.3
+Please advise After this update all my accounts disappeared and I can not add any email accounts at all.,1.2
+Couldn't even set it up Null exceptions all over the place.,2.1
+Can't seem to upload Google Mail Doesn't seem to work seamlessly with a lot of mail clients light Google or Gmail, Cablevision, hot mail etc,2.1
+Didn't work with yahoo or gmail I tried to set up smtp for multiple accounts, but they all failed.
+Cant send emails I use this with my school account but when I try to send emails from the app.
+It always fails.,4.2
+K9 then cant connect/accept certificate.,1.4
+Please fix.,4.2
+Have used K9 for years now so hope this will be fixed soon as I'd like to stick with it.,2.1
+Some this update, it now doesn't work.,1.2
+I get an error message telling me I can't change my user name.2.7
+But cannot sent email after update.,1.2
+Please fix.,4.2
+Since the update, I cannot send email.,2.3
+Since I updated, I cannot send email.,2.3
+Doesn't work My emails never made it into this app.,2.1
+Takes up too much memory & it crashes each time you try to empty Trash folder to free space.,1.3
+Cannot attach images from camera.,2.1
+Latest versions poor quality Can't send messages with latest version.,2.1
+Cannot connect to server.,1.4
+yahoo problem does it or does it not work with yahoo acounts ?,2.1
+i cannot send emails!!!!,4.1
+Can't find something as simple as creating a new folder.,2.1
+Battery draining on nexus 5 Please fixed soon, after an update, it extremely draining my battery very fast.,1.2
+I can't trust it is showing me my latest email,4.1
+Keeps crashing On my Z3 compact, it crashes after a few minutes use.,1.3
+Uninstalled after update Was a great app but ever since the update, I keep getting certificate errors even though everything is configured correctly.,1.2
+Also I noticed my battery drains faster because of always getting the errors.,1.2
+Couldn't be happier and no more stupid error messages!,2.1
+Can't see a tt hing wrong with them but am now having some Issues with messages downloading fully.,2.1
+I planned to go to the developer site to report this, but I cant find where to leave this info.,2.1
+I have tried your suggestion, but it doesn't work.,1.3
+I have tried reinstalling, and it failed again.,2.1
+You can post here if and when you fixed the problem.,2.1
+Useless since last upgrade Nearly always crashes after a few seconds.,1.3
+Last update made a mess out of previously good K-9.,1.2
+when i switched to the moto x, copied all of the settings exactly from the nexus, and yet the icloud account cannot be configured to send mail.,2.1
+sadly deleting K9 from my phone since it's useless to me if i cannot send mail from it.,2.1
+Recent update v 5.0 broke app The update made installation problems and I can't add accounts,1.2
+Buggy Nice that it's open source but with Gmail, I often get blank messages or "connection error" after I tap on new messages in my inbox.,2.1
+Upgrade broke it Cannot send email.,2.3
+Please fix.,4.2
+This is a big problem.,4.2
+And, no, I don't want to spend hours navigating your user UN-friendly site just to try to report this.,2.1
+AOL error AOL used to install automatically, now I have to change the parameters for pop3.,2.1
+I tried to send you a bug report but that link didn't work,2.1
+I hope they are able to fix this issue so I can setup my email in K9 again (but for now Blue Mail will work).,2.1
+Push for Hotmail not working Lots of options, but for some reason the push feature was not working, although scheduled polling worked fine.,3
+Please fix.,4.2
+PGP Fail I have APG installed, and K9 lists 2 copes of APG in the list.,2.1
+Can't send email with the new upgrade.,1.2
+Fix it or send me the last version Used it since 4 years.,4.2
+Please fix.,4.2
+Was perfect, was 5 star The most recent update sends error notifications for no reason, and has some other issues too,1.2
+Please fix.,4.2
+The recent update blocks me from sending email.,1.2
+Kind of useless to have an email app that can't send emails.,2.1
+thanks for breaking your app since the update yesterday, i am unable to send mail.,2.1
+but don't beta test upgrades on users.,1.2
+Now I can't send emails, but I can receive them.,2.1
+Do not update it or it may fail.,1.2
+After pulling my hair out, I think I have discovered the latest update requires the user to go into the settings and reconfigure different options and it seems to be working again.,1.2
+Please, please fix whatever happened in the last update!!!,4.2
+Can't send email Was this new version even tested?I can't send any email!,2.1
+I have a mail server at home which downloads and deletes my Yahoo emails (which is why I don't use Yahoo's app).,2.1
+No Hotmail support Tried setting up a Hotmail account on this, only to find out it can't be done.
+Broken implementation Can't access or send new mail except over wifi now (Internet & Gmail apps still work fine over cell or wifi) .,2.1
+And I can't select & delete multiple messages anymore.,2.1
+K9 email Worked perfect before last update---- please fix,1.2
+Update killed it Used to work perfect and now I get force closes and can't send even after a complete reset the after hours of tech support I tried added the account back into k9 while leaving the old one still in k9 and it sent an email once then crashed again deleted all accounts and added them back and again some send some don't no matter what hour outbox says it looks like it sent but never get delivered anywhere.,1.2
+Can't use it anymore, it keeps crashing!!!,4.2
+If theres nothing wrong dont change it Have had no problems for the better part of 2 years and now ive installed the update i cant send emails.,1.2
+Why cant people just leave things alone?,4.2
+This new update is a big disappointment I can not retrieve my apple/mac email now.,1.2
+Please fix.,4.2
+Update added www to outgoing server All of a sudden I could no longer send email, only receive.,2.1
+I went to the server settings for outgoing mail, and clicked next and immediately got an error.,1.2
+Thought I'd post this in the review section in case others come here with the same issue,2.1
+Latest upgrade broke it Keeps crashing, cannot use.,4.1
+Please fix.,4.2
+No longer works App used to be great but no longer works.,2.1
+When I try to open it, I repeatedly get an error message that says the app has stopped working.,2.1
+stopped working after update was a great app now after the update it is useless please fix,1.2
+Keep crashing Ever since this one installed it keep crashing.,2.1
+K9 Upgrade makes it crash repeatedly!,1.2
+Don't install!,4.2
+Latest Update No Good Since the latest update it will not send out forwarded emails.,1.2
+Latest update causing issues Ever since the update I get daily errors about an invalid certificate.,1.2
+I am not worried about a MitM attack, so just quit nagging me - or if there is a real error, tell me what it is.,2.1
+Upgrade broke it Now getting cert error.,1.2
+Upgrade broke it Has been a great email client, but recently a lot of persistent quirks - doesn't show my most recent mail, although they show up in notifications.,2.1
+Don't load this version The latest version 5RC1 breaks with many popular mail services.,2.1
+Hold off until they fix it.,2.1
+Recent update Used no work great but since I updated earlier today I can't send email.,2.3
+Please fix.,4.2
+Please fix this, otherwise I need to search for a new mail app.,3
+Lastest update broke Yahoo certificates Keep getting certificate errors with latest update (v5.000).,2.1
+Never had a problem before this update.,1.2
+Problems sending mail with 5.0 Just updated, can't send mail.,1.2
+Please fix.,4.2
+Can't send email with newest update.,1.2
+Update sucks I can't send mail after update.,1.2
+can't sign in i can't sign to my gmail account.,2.1
+I cant download attachments or view them.,2.1
+Looks like Gmail but does not work like Gmail at all.,2.1
+The widget is fine but I can't put it in my quick app section at the bottom of the screen for my Samsung Galaxy.,1.6
+Wish they would create an icon too as well as the widget with the counter.,2.1
+In android 2.3.7 Sony Xperia U to check mail you have to retrieve it manually with the refresh button otherwise the app can't do it for itself on the background.,2.1
+Nisa51 I can't send mail with this anymore something broken somewhere2.7
+Cannot log in Every time I try to set up gmail account it gives an error .,1.5
+The issue I ran into was I couldn't install more than five accounts.,4.2
+iCloud accounts not supported After entering email address and password it indicates it can't contact server and doesn't setup account.,2.1
+Would love to give five star when these two updates are available in future.,1.2
+I can't send mail to any one.,2.3
+It is a must and should be included in next release for a 5 star.,2.1
+Can't sign in I changed my Gmail password and now I can't sign on.,2.1
+You have to manually select each error and mark it as "2nd class" to hide it (no multi-select option) - there is no apparent way to tell K9 to actually remove it.,2.1
+Another issue - minor, but irritating - is if you click on an email with the intention of opening it, instead of opening it you instead get a list of emails from the same person.,2.1
+Email not syncing Great app but the push functionality isn't working.,2.1
+Changed my review to 2* Lately it become slower and gives 'fail to send email' errors.,2.3
+The last update claiming to have fixed this did not.,1.2
+Good but still lacking This is one great email client for android!,2.1
+Spam filter So did a search for spam filter this app pops up first so I give it a go...no spam filter not even inside the client, huh.Don't see the value of having the app come up for search results of spam filter out maybe I missed the filter, if I did please point it out,2.1
+Can't fetch attachments Every time I try to download an attachment it says "connection error" yet everything else works just fine on every other app in the sane network and location,2.1
+free or not; if it doesn't work it's still crap.,4.1
+Push feature not working by default.,2.1
+I try to open mail and then I get a message no message?,4.1
+It just pretended to refresh giving no error messages, making me wrongly think that I simply had no new mail.,2.3
+Can't email developer The developer's email address is invalid.,2.1
+The app keeps crashing.,1.3
+Doesn't work at all Keeps crashing ever since I installed it.,1.2
+I was looking for an email app for my moto x to replace the stock app which would not delete multi-emails.,2.1
+I am technically savvy, but getting help from K9 is impossible.,2.1
+Also the app doesn't always display email correctly.,2.3
+Anyway to use GCM for notifications so I can Greenify and not miss push notifications?,2.1
+There are so many bugs it isn't even funny!,2.1
+Not to mention, this app doesn't even support S/MIME certificates for signing and encrypting emails.,2.1
+Oh, but they give you the option to use another app for this, but that app doesn't even support one of the most popular certificate types (S/MIME).,2.1
+Lousy I cannot even do a simple primary folder of the Gmail!,2.1
+I am using nexus 5 with exchange mail, please fix it.2.7
+No Exchange 2010 Support I honestly liked it till I found out it won't support Exchange 2010 .,2.1
+I checked opening the same account through a browser but didn't find any problem there!,2.1
+Dealbreaker bug: Emails duplicating notifications, cant stop the loop.,2.1
+Slow, crashes a lot Whenever I try to sync my gmail accounts (each with 5k+ emails) the app crashes every few minutes.,1.3
+Cant import email accounts!,4.1
+Couldnt test well.,4.1
+But I don't know since when, I can't send email through this app.,2.3
+Sounds great BUT It's basically impossible to select a text.,2.1
+I have found this bug now only.,3
+Inbox not working I have installed the app and amazingly for first one week everything works fine with the ms exchange server.,4.1
+The on board email program don't do this.,3
+There is a syncing problem.,4.1
+Searching the Internet I find this is a problem.,2.1
+Doesn't sync or shows mail I don't know why but there's nothing inside just load 25 more mails and when I do its still nothing.,2.1
+The main bug which entitles you to score 1 star to this server is that it doesn't remember the addressee you previously filled in.,2.1
+Sometimes making me feel stupid infront of the customer cause I know I sent them an email and I can't find it on the phone even if I force load more emails.,2.1
+Unified messages inbox Cannot get ride of the all inbox and unified messages inbox.
+Fix this,I used to be able to get rid of these from the view.,2.1
+Can't use until fixed.,4.1
+Terrible first impression Auto account setup doesn't even work with Hotmail.,2.1
+It lets me try to sync my improperly set up account and then crashes.,1.3
+App seems good but if i cant have all my email in one place what is the purpose of the app?,2.1
+Some little things Like deleting several mails at once without opening or clicking on a link inside a twitter app notification email does not work on a Samsung galaxy s4.,1.6
+If this works for you, then enjoy using what the best email client available for Android.,2.1
+Tried searching for help on how to fix that and found nothing.,2.1
+Can't correctly resize.,4.2
+Auto-sync fail Mostly pretty satisfied.,4.1
+Please fix.,4.2
+Stucks This app doesn't update the yahoo email accounts automatically.,1.2
+One more thing i noticed which is missing is: it doesn't show is it up to date or not.,2.1
+Buggy Once you have 1000+ emails things get slows, and worse, the app crashes a lot.,1.3
+Update issues K9 mail intermittently crashes when replying after latest update,1.2
+It now requires me to click download compete message, show attachment, etc etc.,2.1
+Update still cant download some attachments connection error.,1.2
+2nd Account I was unable to set up more than one account.,2.1
+I searched but could not find a way to add another account.,2.1
+Can't push yahoo mail I can't get push mail from my yahoomail.,2.1
+Check boxes What happened to the check boxes so you can delete only the messages you want to not all or one at a time I liked it when I could check 2-3 and delete then read the ones I wanted to please bring back the check boxes,2.1
+Couldn't connect to OWA Wanted an OWA client but couldn't connect.,1.4
+Didn't work with my schools email server,1.4
+Y change Cannot see what's new email.,2.3
+Can't see threaded inbox+sent Wasted over an hour on trying to display only inbox and sent mails in conversations.,2.1
+Great but won't delete hotmail messages from server When deleting a message in K9 for a hotmail account it remains on the server.,2.1
+Exchange not working Exchange mail does not work (IOexception error).,2.1
+Can receive, but cannot send mails While sending e-mail from K-9, socket timeout exception always occurs, while other mail applications are easily able to send mails.,2.1
+Please fix.,4.2
+Did not live up to the hype I was looking for an email server to replace the default one on android phone.,2.1
+The default wouldn't allow my emails to stay deleted.,2.1
+When I looked up how to fix it all the advice kept saying to get this server.,1.4
+First I couldn't delete a lot of emails at one time.,2.1
+Flattens my battery Was horrified today to find that this app has a major power problem.
+Not working on 4.4.3 It is OK....better than the stock android email client but it isn't working on 4.4.3 ...notification not working,2.1
+Just show me my freaking email, and let me reply.,2.1
+that's all I'm looking to do on my phone.,4.1
+You can't quickly pick multiple emails to delete 3 clicks to puck each one.,2.1
+Ugh Cant search emails?,2.1
+Don't like the different colours at the start of each message either, but appart from that it works.
+I can't move email from trash to inbox.,2.1
+Exchange don't work :-(1,6
+Worst part is not being able to star messages without tripping the scroll bar.,2.1
+Dowloaded app okay but then tried to remove spam but did not find settimgs and web offered no help because outdated and lack of simple of simple steps.,2.1
+Maybe I couldn't figure out how to use it, but I definitely didn't like it.,4.1
+Try other mail apps It crashes when I upload my resume.,1.3
+Sometimes won't pull up mail content and crashes if I try to refile a message into a Google Mail folder.,1.3
+Crashy lately Latest version is suddenly failing to send and receive reliably.,2.1
+Major Defect Doesn't work with Gmail IMAP or POP!!,2.1
+K9 is no longer working.,4.1
+Good The app has often problems to synchronise.,3
+The best solution in this case is to kill and restart the app.,3
+Highly configurable but still cannot fit message body to screen width.,1.2
+I've been through everything to enable sync and can't find any button to press.,3
+Now, I can't email anything using my Verizon email address.,3
+Its ok I can't receive mail.2.7,3
+It's not working at all, not for any one of the mail accounts, and even more for Hotmail.,3
+It's not working.,2.1
+Not working right lately Keeps freezing and closing whenever I back out of a email .,2.1
+Please fix.,4.2
+Illogical For someone who is used to emails on PC this app works in a very strange way, for one thing for some unknown reason it keeps loosing emails from the inbox when checking for new ones I've set it to save all emails but that does,nt work, I'm using a tablet not a phone and have plenty of room, why can't these email apps work the same as normal PC programmes.,1.5
+Move function is no longer available No function to move mail from trash folder I.e. undelete,2.1
+Use to love this app It has stopped working, won't sync anymore.,2.1
+Thus it no longer updates my email.,1.2
+Can't save attachments Was fantastic before update, but now won't save attachments.,1.2
+I've turned on the Log bit, but am unable to send you the data.,1.5
+I have Samsung S4 4.2.2 so Logcat App won't work and tried computer method and it was just double Dutch to me!,1.5
+This morning it failed to send any messages.,2.1
+I uninstalled and tried reinstalling and it doesn't work.,2.1
+Didn't work I get an ioexception error, which I think is due to K-9 not supporting Exchange 2007/2010 yet.,2.1
+Don't like stock Samsung mail but I guess I'm stuck with it because I can't find another mail app I like.,2.1
+Exchange Mail Doesn't Work IOException every time.,4.1
+Please fix.,4.2
+Just can't get the attachments to save to the SD.,2.3
+Keeps giving me an error when I try to do it.,4.1
+If they fix this, then they will have a top notch application here.,2.1
+Sync problem Of late has been unreliable in fetching mail.,2.1
+Needs an update With 4.3 JellyBean, when an email is in the notification bar the app crashes using the fast open via notification tab.,1.2
+the screen display (folders, not individual messages) shows multiple message headers as if they were overlaid on each other, displaced by a few pixels, on my Droid DNA - while the native mail client does not display the problem.,2.1
+Can't connect to Exchange 2010 ...get the same IO error and it doe not recognize my Exchange Server FQDN so can't connect.,1.4
+No multi select I used to be able to select multiple emails, now suddenly today I can't figure out how to do that!,2.1
+I get a lot of spam, so I'd this isn't fixed quickly I'm going to have to find another program.,2.1
+I've rebooted, cleared the cache, and it still won't load emails before April 8.,2.1
+When I setup my exchange account, the app told me that my server REQUIRES me to allow it full access and control over MY phone.,2.1
+Keeps crashing I loved this app for my email but I think I'm gonna have to uninstall it because it keeps crashing on my nexus 10.,2.1
+Why would you remove a helpful productivity tool?,4.1
+Meetings (ICS file) not opening in nexus 5 It is a good app but can't see you the meeting request in nexus 5.,2.1
+Only problem is when effin Google changed things.,4.1
+If it aint broke, dont fix it!,4.1
+The only way I can delete a msg is by opening each one and deleting.,4.1
+Mail search does not work Searching older mails from server is not supported although it tries to do the same.,2.1
+K-9 guys please update this feature.,1.2
+Exchange not working Exchange mail does not work (IOexception error).,2.1
+Every time you try to read messages, there's a hair trigger "pull to refresh" function that sends it into a loop of expensive data polling - no way to shut it off.,2.1
+Unfortunately selecting threaded conversations doesn't work as expected.,2.1
+And attachments can't be forwarded without downloading them.,2.1
+Useless Can't even input 1 email address without problems.,2.1
+Now can't read email, all folders have Command: *sensitive* error message.,2.1
+Lots of problems lately w gmail, so betting it is a K-9 / Google problem.,2.1
+Not being able to read email on the go from any gmail accounts is a real problem.,2.1
+Q & A I want to know how to receive emails only from my contact list and stop all the junk mail but It seems that there is no easy way to reach you other than this.,3
+Was great, but I'm searching for a new email app now Over the last month it's crashed more and more.,4.2
+This week, it crashes when I try to move an email to another folder.,1.3
+Also, after I send an email and go to the next message the new message doesn't show.,2.3
+Just wondering if deleting and reinstalling will fix it.,4.1
+Crashes a lot While I understand my phone is older, replying to an email shouldn't crash the entire app, but I have to give props to the interface.,1.3
+Please fix bug keeps notifying me in the notification bar "failed to send some messages" .,4.1
+Please fix.,4.2
+How can I get it to stop notifying me failed to send some messages?,4.1
+Please check this.,4.2
+It constantly freezes, it's slow to get things done, even simple things like marking all as read takes ages to perform and sometimes freezes the whole app.,2.1
+Can't find an option to set up for POP3.,2.1
+Therefore, can't use.,4.1
+But it does not bring email from server properly anymore.,2.1
+It's such a known issue that a widget has been written to try to stop it.,2.1
+Why would I need all these colored boxes with the first initial of the sender?,4.1
+Failed to send message.,2.3
+Crap Doesn't work with exchange,2.1
+You have to zoom in to be able to see.4.1
+Uninstalling now since an update us not yet available to fix this.,4.1
+Unfortunately it blocks my S2 exactly after every 5 days This used to be a good application, but now i found out that it's guilty to block my Samsung S2 exactly a few minutes before my S2 achieves 5 days of system time (without a single reboot).,1.6
+The issue is that it does not sync your calendar or tasks which means you'll have to install a separate program for that.,2.1
+Crasherama This crashes every 20 seconds, locking my phone.,1.3
+If I can't open attachments in the app it's garbage to me,4.1
+Please fix it, so it can be a great simple n powerful email client.,4.1
+3* K-9 Mail is almost perfect but has problem with attachment winamil.dat.,2.1
+I don't buy excuse that it is MS Outlook's problem because other apps are fine with it.,2.1
+I wrote to the devs twice as I couldn't work.,4.1
+how to fix it and no reply.,4.1
+Eh Had all the features I want but it keeps failing,2.1
+Asus TF 700 Infinity Even after update K9 does not work.,1.2
+However, it sometimes fails to sync and gets stuck on some process that uses up all the CPU on the phone.,3
+The only way to be able to read emails without endless back and forth scrolling is in landscape mode, and even that doesn't work for some formats.,2.1
+Poor update I can't send emails anymore with the same settings as before the update.,1.2
+Please fix.,4.2
+The recent colour explosion has made it visually unappealing for me, and worse yet, there is no way to opt out of the rainbow.,2.1
+Fit to page doesn't work!!!,4.1
+Ever since the last update, fit-to-page doesn't work, and despite several emails no response from the developer :-(,1.2
+A lot that's good But it's getting real annoying that quite a few messages don't come through and instead just show a subject line with a body that says "no text.",2.1
+P770 Sometimes refresh doesn't work,2.1
+This new update looks better than the old style This is a great email client that should be used by everyone.,1.2
+Only issue I have with it right now is that when zooming and scrolling in Android 4.4 Kitkat things seem to he skipping everywhere.,2.1
+This issue is 3 years old according to your Git page.,4.1
+I lost data, can't attach file?,2.6
+easier spam control I am attacked by a lot of spam emails, and I simply can't figure out the proper method of moving these emails to a spam folder immediately.,2.1
+some simple way would be sufficient to be added.,2.1
+Can not delete email accounts easily, i had to remove the whole app.,2.1
+Cannot import contacts from outlook?,2.1
+There are several open bug reports about these issues, so maybe in time this will get fixed.,2.1
+Nice apparently but Can't find my opened emails.,2.1
+Nope, no joy here Tried to configure this for Gmail, followed setup instructions to the letter (multiple times), couldn't get it to work.,2.1
+Search does not work Decent app but search doesn't work.,2.1
+Tech support horrible Great app.,2.1
+Do not seek tech support.,2.1
+Don't Like!,4.2	
+I can't just click on a message to erase it.,4.1
+Can't remove the default signature.,2.1
+Viewing on my phone I cannot expand and view on my samsung Galaxy s4.,1.6
+Worsening now Now can't scroll page via same page link id.,2.1
+Not working since 4.4.2 update Not showing the first 5- 7 lines of new emails after my note3 updated to android 4.4.2.,1.2
+Terrible Never worked.,3
+So, lucky for me, I use Titanium Backup and just restored the previous apk and data.,2.7
+btw, it does not work, the icon does not have anything to do with the email!!!!!,2.1
+Don't like the recent upgrade Great email client but this upgrade changed many of my options/settings.,1.2
+Poor Why can't I select messages anymore?,4.1
+If you have verizon, don't bother.,4.1
+It simply will not work.,4.1
+Why can't I move files out of the trash that I accidentally delete?,2.1
+I can see that the email is in the K9 trash folder but for the life of me I cannot find a way to move it back to the inbox.,2.1
+Even if I forward the email to myself out of the trash can I get a message saying cannot download from server.,2.1
+Don't like the new update I wasn't even given a choice of whether or not to install it.,1.2
+Junk Does not work well with any of my accounts.,2.1
+Was working fine until the last update; now I'm having a problem retrieving my mail.,1.2
+Please fix.,4.2
+Slow, frequently freezes prompting wait or forced restart.,4.1
+And if I had the time to trawl forums for info, then I wouldn't have the problem in the first place!,2.1
+besides,it's poll frequency doesn't work.,2.1
+Does not work with Imap accounts at t-online.,2.1
+Stopped working after 24 hours Simply would not update the inbox after a day, I raised the size of messages allowed and the number, but it polled and returned nothing so with regret uninstalled.,2.1
+It was good while it lasted but it didn't last long.,1.2
+IMAP IDLE PUSH doesn't work on kitkat.,2.1
+Good until it failed Worked consistently well until, one time only, it said, "Sorry, temporarily stopped working" after I tried to send one of the most important emails of my life to my fiance.
+As I say, good until it failed.,2.1
+Whenever I mark several messages and try to delete them, it crashes.,1.3
+It is a shame; I loved the customization available on syncing folders.,2.1
+I don't like that you can't copy and paste written text in the app.,2.1
+I also don't like that you can't attach a document from your 'my files' section of the phone.,2.1
+push notification not working.,4.1
+Can't open any file in attachment,back to standard E mail app,everything works and opens fine.,2.1
+Good features It's such a good app, it has a lot of features, that stock app couldn't provide.,2.1
+Also, it has scary icon, and may be it'll be good to add some themes.,2.1
+Can no longer add second account I just changed devices and added K9 to my new device, since I loved it, and now there is no menu option to add a second account.,2.1
+Tried to reinstall but now won't let me connect.,1.4
+After trying various mail apps that either crashed or would not register my email accounts, I came across the highly rated K-9 mail app.,1.3
+That is, until it started acting buggy with my Gmail account and I was unable to send or receive mail.,2.1
+i saw many of us who use k9 got same problem, dev please fix.,4.1
+On my Galaxy Tab 2 7.0", it's nearly impossible to click a select/check box without opening the message.,1.6
+Wonder what's the issue.,3
+Fix multi select Works great but don't like how you have to select multiple emails to delete
+Not for Outlook Nice app., but no good for Outlook as it will not display sub-folders , not even sent mail .,2.1
+There is no way to get around this and not put something on the bottom of everything?,4.1
+I am not able to send the reports.,2.3
+Does not work , takes about 15 minutes to download headers and then fails.,2.1
+Cannot open attachment It was okay but now it cannot open attachment.,2.1
+Does not work Tried all options to set up hotmail/outlook but does not work.,2.1
+Could not get to work.,4.1
+Anti spam function not working I tested K9 because stock email does not handle spam for my Pop mail.,2.1
+Unfortunately it doesn't do anything.,4.2
+Cannot attach local files It is a great program.,4.1
+The only problem is i cannot attach local files.,2.1
+Am i using it wrong or is it just like that.,4.2
+If the wifi is on and I am not on a connection, I get a " couldn't log in check username and password" notification message.,1.5
+I tried uninstalling and reinstalling the app and also did a factory reset on the phone but the notification messages continued so I have uninstalled the app.,2.1
+Has its problems I use to never have a problem with this app, but recently it stops working for no reason.,2.1
+Useless with gmail The app is useless with Gmail as there is no feature to archive or star a message in one click - it requires three clicks.,2.1
+Fix the select feature Jeremy is right.,4.2
+DIdn't work.,4.2

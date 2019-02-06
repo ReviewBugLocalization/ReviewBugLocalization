@@ -1,0 +1,185 @@
+The restore note icon for a trashed note is a little confusing change the icon please and how I delete only one note from trash instead of deleting everything from trash ,rest working great,3
+Please as others have also requested make the preview mode default view mode.,3
+Nice,simple note taker but notes use abbreviations which the spell checker can't handle elegantly.,3
+Please allow us to turn it off.,3
+But Why don't you allow users to organize the tasks in folders?,2.1
+I think this error started after the 1.5.1 update "minor fixes in layout and font changes".,1.1
+Its not interpreted in Linux desktop client (which is what I expected).,3
+Reinstalling was no solution.,1.2
+Can not use in on my phone.,1.1
+I uae this app for a long time and never sett any pin, and suddenly i can not access my notes because this apps requesting for pin!!,1.5
+Please remove auto creation of tags and image addition option,3
+Can't find widget option,2.8
+Not much use if it doesn't work everywhere.,4.2
+That time I was not looged in to my account, infact I had not created any account.,2.7
+But today when I was trying to take back up of all the notes before formatting the mobile, I created my account on simple note with my gmail id.,2.7
+But unfortunately when I created my account here, I have lost all my notes made here and I am just left with 9 notes.,2.7
+I am not able to understand where my remaining notes have gone.,4.1
+Cant login on app Can login on web, but app i cant.,1.5
+Now I can't access it,I never created a PIn.,1.5
+Hope u can fix this bug asap.,4.1
+Sync doesn't work properly App doesn't sync properly between Android app, desktop app (Win 10) and web app.,2.7
+Some notes missing in desktop app, can't sync it.,2.1
+Sometimes shared notes will not edit, jumps back to last input after an edit and short pause, frustrating.,2.1
+After this update Security pin of the app is not working.This is awful as one can keep private info in the app.,1,2
+Fix it asap.,4.1
+But after updating I'm unable to activate pin.,1,2
+Please fix.,4.2
+can't connect to my gmail account,1.5
+But the automatic link detection is annoying and can't be disabled.,2.1
+Please if someone can help and get it fixed I will absolutely change this to 5 stars,4.1
+Doesn't work After couple weeks sync between Android and PC stopped working.,2.7
+I could not find web clipper?,4.1
+So there is no way to backup your notes and to restore it to your phone?,2.7
+The only issues I've found are that Markdown links don't ,2.1
+No copy and paste functions in this app Devs:Is this a bug or a feature?,2.2
+But I just found out that I cannot paste anything into a note on the phone app!,2.1
+I'll keep it on my phone for a short time to see if the developer adds this option.,4.2
+Great and simple app, but I plan to use it also for to do lists which I sorely miss, is there a work around.,4.1
+Can't move to SD card Simple and reliable but can't move it to my SD card,2.7
+Why can't you have a Google login option?,1.5
+Please fix.,4.2
+Nice, small big to fix I really like it: it's simple and effective with a nice looking design.,3
+But I've experienced what I believe to be a bug: Sometimes I can't rename the tags from the edit board, after pressing save it doesn't actually save the change.,2.1
+It also does not have Dropbox sync and if the Simplenote servers are down, you won't have any backup to your notes.,2.3
+Cannot Collaborate The app keeps saying to add email address to the tags, but the email address is already in there.,2.1
+Will change rating when it has been fixed :),4.2
+Now I can't depend wholly and solely on it anymore.,4.1
+It can not sync with google ,2.7
+Since then the app does not work and force closes every time.,1.3
+I really don't get it how you could have made such a beautiful app for the iOS, and yet such an ugly one for android.,2.8
+They can't even be found in the trash.,2.3
+Please correct this bug.,4.1
+I cant believe that no function of undo.,4.1
+Cant add space in tags name.,2.1
+Cant sign in Knew exactly correct info but keep cant sign in!,1.5
+Why would Simplenote want access to your personal notes?,3
+What I think is, why don't U just show the word counter so we can see it everytime and delete icon instead of hidding them on a menu.,3
+And why I can only share the document one by one?,3
+Doesn't work well Keeps crashing.,1.3
+Worst note app ever Whats the use of an app if it cant hold its content.,2.7
+Please fix.,4.2
+I am unable to retrieve the information.,2.4
+From reading the comments, I realize others have encountered the same issue.,4.1
+:( Given that the whole point of notes is to preserve information, this app fails its core function in the most unpredictable manner and hence becomes absolutely useless.,2.7
+You can't get back what's lost.,2.7
+Good app BUT can't share notes from other notepad apps like colornote fiinote etc. to this app.,2.1
+Please solve this then five stars.,4.2
+It works well but automaticly creates a link out of any number i put in which has made it to annoying for me to continue using.,3
+Amazing but with problems This is an amazing app but it loses data out of nowhere......fix this and it is definitely the best app out there.,2.1
+And it would be really great if we can hide this app.,3
+Lost my data-Twice For some reasons it deletes some of my important data, it happened with me twice, can't take it any more, uninstalling,2.6
+I then exit the note onto the home screen of the app and select the note again but it goes blank.,2.1
+I'm considering deleting the app if there isn't an update to fix this by the end of the month,4.1
+But recently I try to type some short story on simplenote and then find the problem.,4.2
+I cant share a multible note at one time please give the ability of multi select to share more than one note at once.,3
+TOO Simple - Can't add photos or attachments?,2.1
+What is the point of having tags if I can't search for them?,2.4
+ADD TAB SUPPORT I want to use this app to take notes, but with not TAB function, it is impossible to create multi-layered lists.,3
+Needs to be fixed asap or else I will have to stop using the app.,4.1
+They can be recovered by going on the web app online and using the history feature (not available in the app), but this bug makes it impossible for me to recommend, and NEEDS to be fixed ASAP.,3
+The note is not in my trash and I am unable to restore it.,2.1
+Fix this.,4.2
+Samsung S3 mini Cannot do search.,2.4
+Can't trust it yet!,4.1
+No consistent syncing It only syncs when it feels like it and there is no way to manually initiate a synchronization.,2.7
+Renaming a tag does not work!,2.1
+Text overlaps with next line and the only way to fix it is to close the file then reopen it again, every single time, and this happens in all 3 of my Android devices.,2.1
+Nice but some bugs with tags In the "edit tags" page most of my tags do not display the number of notes they are linked to, even though there are definetly some notes labeled with those tags.,2.1
+Nice App, Glaring Issue I really like the app and would like to give it 5 stars, but there is a glaring issue that has been simply overlooked.,3
+I will be typing and then think that I may have mistyped the word, but I cannot read it because it is hidden beneath that icon.,2.3
+I would be using this on a daily basis, but I think I am going to have to find an application that doesn't stop me from being able to read what I am writing.,3
+Preview of notes in the list is better here in the app than on the website.,3
+An archive feature would be nice as well, so as not to clutter the list but still be able to access old notes.,3
+However, I really, really, really don't like the font they have chosen for writing the notes and it's not possible to change it.,3
+Beautiful app but one thing I cannot understand is why a text note app doesn't have a copy to clipboard button or even a share button (in mobile version) on the main list?,3
+It's a great app but When I open note I can't scroll down, please fix that, and also have you considered adding dates?,3
+You just don't do that.,4.2
+I really like this app, but I can't give it 5 stars until there is a checklist feature.,3
+Tags can't even be more than one word.,2.3
+Don't download it!,4.1
+It will randomly delete text from your notes, and it cannot be undone.,2.2
+Too buggy Inspite of so many updates claiming to fix it, i see no improvements.,4.1
+Can't have important data at such risks, i am shifting to something more stable like Evernote.,2.7
+5 stars if theming options are available.,4.1
+Cannot increase fonts.,2.1
+Simple but buggy Sinplenote is great but it has a serious synchronization bug: When you open a note that is just being synchronized it messes up this note and you end up with a version a lot older.,1.2
+note not saved automotically lost a lot of work when I had to restart the tablet.,2.3
+It's definitely simple I just can't see what it offers me beyond Keep or a few other simple note-taking apps out there.,4.1
+Incredible app when it works but crashes all the time for me at the moment #,4.1
+Dissapointed Got this app as it was compatible with my older 4.0.3 tablet that won't support OneNote, and because it offers offline note access - which Evernote no longer supports for free.,1.6
+So this app has a nice niche market in that it has better compatibility than OneNote and supports a critical feature for free which Evernote does not.,1.6
+However, Simplenote does not support note templates, or COPYING a note, and therefore is useless to me.,1.6
+that is so basic I can't comprehend why that don't have that feature yet.,4.1
+Good app, bad security There is a security issue.2.6
+Which it should, please fix this.,4.2
+The HTML does not work on mobile platform.,2.1
+Can't update list Needs to have a manual update.,1.2
+Broken app - don't use!,4.2
+So I was out doing some errands and had to update the note.,1.2
+So Simplenote is great overall, just stay away from the Android client until they fix this disaster.
+I will have to switch editors until this gets fixed.,4.2
+data loss, notes not synced, improperly formatted i was working on some notes for the past 4 hours and my notes are not synced across my devices (macbook, ipad, nexus 4, nexus 7).,2.7
+Don't use it on Android - it throws away your notes or scrambles them I just made a note this morning.,4.1
+Don't use it!,4.2
+But I can't trust it on Android.,4.2
+** update 6/18/2014 ** I just reinstalled it on my Galaxy Note 3 and my Android tablet.
+Later I checked the phone, and the "update" had been removed.,1.2
+It totally fails at this.,4.1
+Unfortunately, there's still issues with random disappearing edits.,2.1
+Was hands-down 5 Star App--BUT ANDROID BUG UPDATE 6/1/14: STILL having issue with recent text disappearing on timeout.,1.2
+their solution was 'just use SN on other platforms for now' like 3months ago UPDATE: AGGGH!,1.2
+This issue was fixed briefly after the update, i started trusting it again & its continued--i have now lost HUGE blocks of text/work.,1.2
+Sharing notes fails Simplenote android fails to share notes to other tagged users, and uses a ridiculous amount of data in the process.,2.1
+I lost my priority note just today and I can't trace them back.,2.7
+Loses notes Love the Website, but the app has some serious bugs, like losing entire notes when switching between apps - very frustrating,2.1
+Seems like others are having the same issue,2.1
+I haven't been able to verify this but it seems to only happen in landscape mode.,2.1
+I don't know if this is just a problem on the Note Pro, but I really hope it's resolved soon.,4.1
+Ghost Notes not fixed It created 62 blank notes on its own and wouldn't delete them.,1,2
+Now notes fail to update on nexus 4.,1,2
+Sync on the tab has also been an issue so we will see if that improves.,2.7
+Editing on a phone often involves accidental mistakes, but there is no way to go back within this app.,2.1
+Update: I downgraded to 2 star, because the sync problem--as many reviewers have pointed out--is increasingly annoying for me.,1,2
+Sync doesn't always work and there's no way to force a sync via a button.,2.1
+Simple fixes which will make this app into a 5 star one!!!!,3
+Often I open it, and then I have to wait for an indeterminate amount of time until simplenote decides it's time to sync and I can then finally see my newest notes.,2.7
+Simple but Tag is not working.,2.1
+Recently I updated the app, now I also have these syn problems.,1,2
+There are many bugs in this app even after many updates.,1,2
+The idea and UI are good but very poor execution.,2.8
+It's lucky this feature is available or I'd be way more than just a little annoyed and disappointed.,4.1
+I can't login on the Internet.,1.5
+I know you can improve it, but for me it doesn't worth it, so I'm giving up on this.,3
+Good service for note taking but app fails sometimes Lost changes to notes several times and had to write everything again and sometimes fails to sync.,2.1
+Not reliable, please fix.,4.1
+UPDATE: version 1.1.1 didn't fix the problem with sync.,1,2
+Uh oh pin lock doesn't work I can still open the app through Android task list without challenged by pin,2.1
+Can't sign up with the app from my Acer Iconia A1-811.,1.5
+Trying to sign up for an account with the app produced an error: "Can't sign in with that account.",1.5
+Trying to create an account from the website now produces error:"That account is not available.",1.5
+So the problem seems to be with the app from the Acer Iconia A1-811 or with Android 4.2.2.,4.2
+I couldn't recommend this at all.,4.1
+You just have to wait and hope that something got it; a noncloud notetaking app with exporting is more reliable.,2.1
+This is a pretty fatal flaw for a notetaking app, but is still my favorite cloud-note keeping method for its barebonedness and simplicity (just don't forget to at least meet the basic needs of what notetaking needs),3
+does not sync automatically in the background To have it update, you must be online and open the app.,3
+I docked 2 stars coz it has bad sync issues with their OS X app.,2.1
+The main reason I went with Simplenote was the cross-platform sync in a cleaner package than Evernote, and it's disappointing I can't trust it.,4.1
+Definitely it is a sync error that should be fixed!,2.7
+I create my account so I could be able to access my notes.,2.7
+I had to reset my cellphone so I uninstalled the app and then reinstall it.,4.2
+Right now cannot be used.,4.2
+Hi I have created an account and also some notes/tags.,4.2
+I'm sorry, but not my cup of tea here!,4.2
+:-D Edit: As of today, I just opened my web app to find out that it has syncing errors.,2.7
+I hope you can fix it asap ,4.2
+PS- in all honesty, once the sync didn't work- ever- its a wrap for this app.,2.3
+I don't like relying on automatic backup only to have it fail.,1.3
+Really can't see why people rave about this.,4.1
+I can't stand getting blasted in the face with white light, I really hate it.,4.1
+Why can't it just sync at home?,2.1
+But now I find a glaring bug -- if you simultaneously edit a note on the iPad and Android, the earlier edits are silently overwritten,1.1
+This app does sync periodically, but I can't for the life of me figure out how often it does.,2.1
+Color Note fan I downloaded but I didn't find anything better than Color Note, so I deleted, 2 stars is worth.,4.1
+Error Every time I try to sign in on the app, I get an error.,1.5
+And despite getting a welcome email, I can't log into the app with the credentials.,1.5
