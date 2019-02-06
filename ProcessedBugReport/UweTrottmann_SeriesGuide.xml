@@ -1,0 +1,1650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bugrepository name="UweTrottmann_SeriesGuide">
+	<bug id="320">
+		<buginformation>
+			<summary>Strange behavior when I unwatch the last episode seen. </summary>
+			<description>When I unwatch the last episode seen in a show, the next episode SeriesGuide tells me to watch is not the good one. (SeriesGuide version 7.2-beta1) Steps to reproduce the bug: Add a show (I'll take Family Guy for example as it has a lot of episodes). Let's say I have seen the whole season 1 and the first episode of season 2, so I flag them all as seen. Next episode SeriesGuide tells me to watch is now 2x02, as expected. I accidentally flag episode 2x02 as watched. I then flag episode 2x02 as not watched yet in the seasons section. Go back to the main screen (when you see all your shows), SeriesGuide now tells me that the next episode of Family Guy I have to see is : 11x04 (???) To go back to normal, go to the seasons section of the show, find season 11 and, with the action button on the right, flag all the episodes as "watched none". You can reproduce once again that bug by flagging the next episode to see as seen and flag that episode as not watched yet. SeriesGuide will always tell you that, with my example, the next episode to see is 11x04. Why 11x04? I don't know... Looks like that bug happens to the shows with multiple seasons (I can reproduce this problem with Simpsons show, Futurama or The Wire). I don't know if I was very clear with that bug, I'll provide a video if needed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/FlagTask.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/901b4a403246f2a3f1e0146e526ec2ad11e54093</commit_url>
+		</Commits>
+	</bug>
+	<bug id="452">
+		<buginformation>
+			<summary>Transparent tabs indicator is wrong color on dark theme </summary>
+			<description>Reported on Twitter</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/EpisodesActivity.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/EpisodeDetailsActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/7be66463a9f49bf21c893191080f2723f9f0f2b9</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/77ee1fdae959676763159cdfd0cb1220a5c3a6ba</commit_url>
+		</Commits>
+	</bug>
+	<bug id="485">
+		<buginformation>
+			<summary>Add option to open added show from add dialog </summary>
+			<description>Suggested on G+</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/values/strings.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/dialogs/AddShowDialogFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/0272a001b6930c8b523e405ee2bd1fb3619d262a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="122">
+		<buginformation>
+			<summary>Expanded notification displays too many shows </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/service/NotificationService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/ca269bf2d989e37e5785008ae2e1a27d36f916a6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="241">
+		<buginformation>
+			<summary>In single pane layout seasons do not update on overview changes </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/FlagTask.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/SeasonsFragment.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/OverviewFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/80d9802fa06361792b85e81f438012b152e0dbbf</commit_url>
+		</Commits>
+	</bug>
+	<bug id="53">
+		<buginformation>
+			<summary>Option menu items duplicate on orientation change </summary>
+			<description>Only when switching from multi-pane to single-pane layout.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/DBUtils.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/EpisodesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/8c9207af267320e3a7d2bf5bb753fc3da0e79e64</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/e2172a833e0f2f2f4d28ed4b3867a4e13dd368a8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="445">
+		<buginformation>
+			<summary>Add show list menu options in search, maybe overview </summary>
+			<description>Reported on G+ and also planned internally. Currently show search result cards do not have any of the menu functionality as show cards in the Shows tab. Remedy that. Bonus: add in overview as well.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowSearchFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/ShowTools.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/fcb691bdfdd031d60307a9e4333d722e1b5ec9d8</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/54ca52e1e20422be3734a9d81460e3e6b3630abf</commit_url>
+		</Commits>
+	</bug>
+	<bug id="86">
+		<buginformation>
+			<summary>[Search] Filter suggestions when searching within show </summary>
+			<description>With how the suggestion system is currently designed in Android it is as far as I researched impossible to add per-activity filters like one can do by overriding onSearchRequested() for regular search. An alternative would be to turn off suggestions for search inside OverviewFragment, but guess what, AFAIK not possible. If anyone has viable solutions, I'm listening. E.g. you could create another SearchActivity which handles just searches from OverviewFragment. This way you could specify a different selection. However I still have only the user query as dynamic parameter, no?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/dialogs/AddDialogFragment.java</file>
+			<file>SeriesGuide/src/main/res/layout/add_dialog.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/786d6babb210ba48c569dde6831e3e9f7f22adee</commit_url>
+		</Commits>
+	</bug>
+	<bug id="92">
+		<buginformation>
+			<summary>Text cut off for 'Recommended' tab </summary>
+			<description>Seems to happen on non HD screen devices in portrait. See viewpagerindicator issues (not looking that up right now). Small devices affected.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/res/values/styles.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/680c6e05037fcd819b0386b113966929dd12e4ba</commit_url>
+		</Commits>
+	</bug>
+	<bug id="45">
+		<buginformation>
+			<summary>[GoogleTV] Investigate channel tuning </summary>
+			<description>Tune into a channel from within SeriesGuide</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/fragment_friends.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/TraktFriendsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/5c1729c6962d1fa9bd981fc652a9db9da2f81445</commit_url>
+		</Commits>
+	</bug>
+	<bug id="79">
+		<buginformation>
+			<summary>Fix PendingIntent conflict between notifications and Widget </summary>
+			<description>Likely because I clear all pending intents when creating a notification widget PIs don't work anymore.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/appwidget/ListWidgetProvider.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/service/NotificationService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b79e1611a35f9f9305b8de1bb5097f26c2064494</commit_url>
+		</Commits>
+	</bug>
+	<bug id="257">
+		<buginformation>
+			<summary>Little bug with infinite activity </summary>
+			<description>In the latest beta (v6beta1), go to the activity section in portrait mode with infinite activity unchecked (if it's already checked, uncheck it then go back to main menu, then go to activity section), then check this option and rotate your device in landscape mode. See? The layout keeps that "infinite activity mode" (with no separator) but you can't go further than 30 days. Same happens when you do the same from landscape mode to the portrait one.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/UpcomingFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/6ec509d43f4459a80326bfc29e9d30547dc4b710</commit_url>
+		</Commits>
+	</bug>
+	<bug id="294">
+		<buginformation>
+			<summary>Bring back search inside a show </summary>
+			<description>I kind of accidentially removed that by always forwarding the user to the search activity. Fix!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/res/menu/overview_menu.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/NowFragment.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/SearchActivity.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/SearchFragment.java</file>
+			<file>SeriesGuide/res/values/strings.xml</file>
+			<file>SeriesGuide/src/main/res/menu/now_menu.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/settings/NowSettings.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/OverviewFragment.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/OverviewActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/7c369113f374de1c662aa64791612fe32d27b869</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/8d97baca6532a5643ad2475f46ae88eee472140c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="78">
+		<buginformation>
+			<summary>[GetGlue] Infinite loop between PrepareRequestTokenActivity and Browser </summary>
+			<description>Not that critical because you have to choose 'Allow' in the browser each time. You can always go back to the app. Investigate if this can really happen (I guess if no valid code is sent back, the task will just try to authenticate with GetGlue again, and again, you get the idea).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/getglueapi/PrepareRequestTokenActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/9eb706acce81078512dffec7c84cd287f38af26b</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/835ad9e0d322f54cba29c46d087dbf5b3ef2b49f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="44">
+		<buginformation>
+			<summary>Investigate using Mediaportal API </summary>
+			<description>MPextended</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/adapters/ActivitySlowAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/594097ba6129c9def80843ea6af7b89895217159</commit_url>
+		</Commits>
+	</bug>
+	<bug id="40">
+		<buginformation>
+			<summary>[trakt-java] Investigate deserialization crash for user/friends </summary>
+			<description>It only happens with a watching entry. 10-30 03:49:57.048: E/AndroidRuntime(2023): Caused by: com.google.myjson.JsonParseException: The JsonDeserializer com.jakewharton.trakt.TraktApiService$5@44ebbfd8 failed to deserialize json object { "type":"episode","action":"checkin", "show":{ "title":"Fringe", "year":2008, "url":"http://trakt.tv/show/fringe", "imdb_id":"tt1119644","tvdb_id":"82066", "tvrage_id":"18388", "first_aired":1219734000, "country":"United States", "overview":"The series follows a Federal Bureau of Investigation "Fringe Division" team based in Boston. The team uses unorthodox "fringe" science and FBI investigative techniques to investigate a series of unexplained, often ghastly occurrences, some of which are related to mysteries surrounding a parallel universe.", "runtime":60, "network":"FOX", "air_day":"Friday", "air_time":"9:00pm", "certification":"TV-MA", "images":{"poster":"http://vicmackey.trakt.tv/images/posters/87.jpg","fanart":"http://vicmackey.trakt.tv/images/fanart/87.jpg","banner":"http://vicmackey.trakt.tv/images/banners/87.jpg"}}, "episode":{"season":1,"number":1,"title":"Pilot","overview":"When all the passengers on a plane die, FBI agent Olivia Dunham investigates the events and her partner almost dies. A desperate Olivia looks for help from Dr. Walter Bishop who has been institutionalized. Olivia, Dr. Bishop and his son Peter begin to discover what really happened on Flight 627 and begin to uncover a larger truth.","first_aired":1220943600,"url":"http://trakt.tv/show/fringe/season/1/episode/1","images":{"screen":"http://vicmackey.trakt.tv/images/episodes/87-1-1.jpg"}} } given the type class com.jakewharton.trakt.entities.WatchedMediaEntity</description>
+		</buginformation>
+		<fixedFiles>
+			<file>build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/4f493e205c55b1cddebdb32c9abc4740b73d4c70</commit_url>
+		</Commits>
+	</bug>
+	<bug id="246">
+		<buginformation>
+			<summary>Switching seasons using ActionBar dropdown </summary>
+			<description>Hi, I'd love to have possibility to switch season on screen with list episodes. I was thinking that it would be nice to be able to use ActionBar.NAVIGATION_MODE_LIST to display list of seasons and quickly switch it. Reason of this request is that I watch "whose line is it anyway" in random order and I often check if I already watched that episode, and it's pain to click back and select another season. I could write pull request if you like that. Best Miko</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/loaders/SeasonsLoader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b87e7a0b8570b39d14b96f554277e1ceca92f309</commit_url>
+		</Commits>
+	</bug>
+	<bug id="455">
+		<buginformation>
+			<summary>SwipeRefreshLayout with RecyclerView causes drawing delays in Now tab </summary>
+			<description>When loading data any view inside SwipeRefreshLayout is not drawn (including the progress indicator). Only once data loading is complete drawing resumes. Removing the SwipeRefreshLayout completely fixes the issue. Investigating... Notes: https://code.google.com/p/android/issues/detail?id=78191 nope, has no effect. seems related to how SRL draws, making test project for bug report. Not related to high CPU activity of one or more AsyncTaskLoader (tested using loaders which do Patter.compile() iterations before passing dummy data). Next: possible related to network activity</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/fragment_now.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/0e0f42c9e941b9171a72a942e50e59bf41669236</commit_url>
+		</Commits>
+	</bug>
+	<bug id="443">
+		<buginformation>
+			<summary>Next episode in Shows tab not updated on data changes </summary>
+			<description>Reported on G+ and via email It's likely we don't correctly trigger an update to the next episodes upon finishing a trakt sync or toggling watched state in the Upcoming/Recent tabs.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/EpisodeTools.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/da64fdcbf129857368139d092b393483e7d16735</commit_url>
+		</Commits>
+	</bug>
+	<bug id="331">
+		<buginformation>
+			<summary>trakt sync not working on HTC phone </summary>
+			<description>Reported via email. [...] updating from trakt does not work on my AT&T HTC One. Updating, both auto and manual, works fine on my Nexus 7. On my HTC One, it's not that it never communicates w/ trakt, just that it never updates from trakt. I can Checkin to an episode, and mark an episode as watched, and both of those are successfully sent to trakt. I know those actions are successful both by the message that series guide shows AND by the fact that those actions do get updated on my Nexus 7 series guide. I've tried turning on and off the only update over wifi setting, it fails to update either way, so that's not related. Oh, one last piece of info about my HTC One is: Android: v4.3 HTC Sense: v5.0 Software number: 3.17.502.3 HTC SDK API level: 5.45</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...sGuide/src/main/java/com/battlelancer/seriesguide/ui/ConnectTraktCredentialsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/c3fd1cefa55447f30d52d8d135072869b40a4fb0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="494">
+		<buginformation>
+			<summary>[API] Getting TV show release year (or release date) </summary>
+			<description>So there are some TV shows with the same name, e.g. The Flash 2014 and The Flash 1990. I think it's more convenient if we (extension devs) can get the release year or the release date of the show through com.battlelancer.seriesguide.api.Episode. Really hope you can implement it.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>api/src/main/java/com/battlelancer/seriesguide/api/Episode.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/loaders/EpisodeActionsLoader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/ec1bc19a592a429ecd75e9a5a3e64b45b216b1b7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="133">
+		<buginformation>
+			<summary>Do not notify about specials if user set to hide them </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/provider/SeriesContract.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/DBUtils.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/service/NotificationService.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/UpcomingFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/05ba9734ff89680b73ea15f9d995faefb0276746</commit_url>
+		</Commits>
+	</bug>
+	<bug id="80">
+		<buginformation>
+			<summary>Investigate trakt-java failure for empty shows </summary>
+			<description>Example profile: jllafond Results in exceptions when firing. Suspicion that this is caused by item {"title":null,"year":0,"imdb_id":null,"tvdb_id":null,"tvrage_id":null,"seasons":[{"season":1,"episodes":[1,2,3]}]}. Do some testing and look at the stack traces.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/DBUtils.java</file>
+			<file>SeriesGuide/src/main/AndroidManifest.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowsActivity.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/6dc13ac3d1a31aaabb0bd68af0b63903593a5a9a</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/2c97f5c0a3ce9bbf99efe95cbd5af796900b38ea</commit_url>
+		</Commits>
+	</bug>
+	<bug id="132">
+		<buginformation>
+			<summary>New update mechanism renders language selector useless </summary>
+			<description>Somehow override last edit times selection?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/SeriesGuidePreferences.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/provider/SeriesGuideProvider.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/da898f58f27f59c33286ef019741003cc1d70f29</commit_url>
+		</Commits>
+	</bug>
+	<bug id="126">
+		<buginformation>
+			<summary>Up action in activity screen may exit app </summary>
+			<description>If the app was not previously launched and you access the activity screen via the list widget pressing the up button takes you back to the home screen. Looks like there is a bug with the support libraries up navigation support.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/UpcomingRecentActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/dcf30a00b7af5002e7477bdb4a8fe63065e63ec3</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/50f02696123000d4eaba4741efe1bf6cad070bb8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="442">
+		<buginformation>
+			<summary>Some shows that are classified as ended don't say that in the show list </summary>
+			<description>Reported on G+</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/thetvdbapi/TheTVDB.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/DBUtils.java</file>
+			<file>...sGuide/src/main/java/com/battlelancer/seriesguide/dataliberation/DataLiberationTools.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/OverviewFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/dataliberation/JsonImportTask.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ListsFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/dataliberation/JsonExportTask.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/dialogs/AddShowDialogFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowsFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/provider/SeriesGuideContract.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/f67cbc04e207f9ce555ec12c317961084ffb8538</commit_url>
+		</Commits>
+	</bug>
+	<bug id="419">
+		<buginformation>
+			<summary>Skips get reset after trakt sync </summary>
+			<description>Reported on G+ Code seems fine, so is my library. Looks like a more intricate issue. Keep investigating.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/TraktTools.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/6d27ae383effc3ffac275e5b73313723c6a78f02</commit_url>
+		</Commits>
+	</bug>
+	<bug id="431">
+		<buginformation>
+			<summary>In "Manage lists" items get unselected when scrolling out of view </summary>
+			<description>Reported via email. Feels like a view recycling bug.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+			<file>...uide/src/main/java/com/battlelancer/seriesguide/ui/dialogs/ManageListsDialogFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/03eb126e24a077cb86f8cb584a25ed3ba5308052</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/26637baf7d0a6df490625dab8d8aa27f66c1d34e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="394">
+		<buginformation>
+			<summary>Movies removed from trakt watchlist are re-added when syncing </summary>
+			<description>Removing a movie from the watchlist works as expected, it is also properly removed on trakt. However, on the next sync the movie is added to the watchlist (locally + trakt) again. Find out why!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/MovieTools.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b9d4385a16de993dafbf64926b402d5bc490d815</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/0c9d1900ea797e2ba220da11454ba1f43d24ada2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="141">
+		<buginformation>
+			<summary>Action Bar menu on main screen sometimes invisible </summary>
+			<description>Reappears once the Lists tab is selected. Another report: when returning from upcoming/recent via up to the home screen, it is also missing.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/ShowsActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/fff703ea4348e6736f1f2be2f421c7582b510e66</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/a7edf17fa1f9a1866e48e513aaf3900d1cfddc0c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="223">
+		<buginformation>
+			<summary>Overview does not refresh on provider changes </summary>
+			<description>E.g. if a new image url or a description is stored by the update task the content does not refresh. Make sure the update task notifies the correct/all relevant URIs.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/UpdateTask.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/90afa65a6e104b1a3e10db1a6f2b5fa059773db9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="222">
+		<buginformation>
+			<summary>Tablet show list network and time text does not wrap properly </summary>
+			<description>Because we use seperate TextViews instead of one and string-building the text it does not wrap. So change that and make sure the text properly wraps then!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+			<file>SeriesGuide/proguard-rules.pro</file>
+			<file>SeriesGuide/res/layout/shows_row.xml</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/ListsFragment.java</file>
+			<file>SeriesGuide/res/layout/shows_row_wide.xml</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/ShowsFragment.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/CheckinActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/d120efdb4688da05185050a58be8a5c2672ab02d</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/1d3ba000d5bc19a3b9cb4f23a9e9218e27773af2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="197">
+		<buginformation>
+			<summary>[trakt] Auto-add shows only once </summary>
+			<description>If shows are multiple times inside the activity stream, they get added multiple times. Avoid that.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/UpdateTask.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/335affc3ff7c55f02c9099b8c86053c9b7d650b3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="183">
+		<buginformation>
+			<summary>Content Providers Now Private By Default with API 17 </summary>
+			<description>Which causes a lot of crashes like this: E/AndroidRuntime(26208): FATAL EXCEPTION: Binder_1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/AndroidManifest.xml</file>
+			<file>SeriesGuideFree/AndroidManifest.xml</file>
+			<file>...e/src/main/java/com/battlelancer/seriesguide/ui/dialogs/GenericCheckInDialogFragment.java</file>
+			<file>SeriesGuideBeta/AndroidManifest.xml</file>
+			<file>SeriesGuideX/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/2018208829f354c73bf9501913781d198383ce45</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/079b303cb9696232642fd839024e41f2b387644e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="140">
+		<buginformation>
+			<summary>MultiChoice ListView not working in DialogFragment </summary>
+			<description>On Jelly Bean everything is fine, but boy does this not work in any other version. Why? See ListsDialogFragment.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/dialogs/ListsDialogFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/d25f510a31faaab385124c09d35575ae3118e976</commit_url>
+		</Commits>
+	</bug>
+	<bug id="168">
+		<buginformation>
+			<summary>[trakt] Watchlist tab in add screen </summary>
+			<description>Kind of makes sense, doesn't it?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/AddActivity.java</file>
+			<file>SeriesGuide/res/values/strings.xml</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/TraktAddFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/c145c993d1507f3aa16a34636bb013e32c4532cc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="156">
+		<buginformation>
+			<summary>Sort episodes by rating </summary>
+			<description>Actually a nice idea, maybe display the rating in the episode list as well.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/Constants.java</file>
+			<file>SeriesGuide/res/values/strings.xml</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/EpisodesFragment.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/Utils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b0947d8aec5b0091b3a428b1f3ee148bbfca0fb9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="195">
+		<buginformation>
+			<summary>Checkbox state of "Include unwatched flags" not stored </summary>
+			<description>In the trakt.tv Settings menu the state of the "Include unwatched flags" will not stored and reset from SharedPreferences unlike to all other preferences in the settings menu.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/SeriesGuidePreferences.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/TraktSyncActivity.java</file>
+			<file>build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/173972eac1ae185977f5c562d7e9edd85ef68a3d</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/ab300bccba627e3dca0da5e684a80ca9e3e9c681</commit_url>
+		</Commits>
+	</bug>
+	<bug id="235">
+		<buginformation>
+			<summary>List names with some special chars are reset </summary>
+			<description>Quoting Tom: I tried to create a list name with a dash ("-"), as soon as I typed the dash, the already entered text would disappear. I found if I tried to first type some other symbol (say "="), it wouldn't display, but the text also didn't disappear, and now typing a dash also didn't cause the text to disappear. Fix the filter. I had a look at the filter for the text field, but couldn't find anything wrong so far. So far it resets to " " when entering a dash or an uptick. Allow dashes (check if the create id algorithm will not fail and still produce uniques).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...Guide/src/main/java/com/battlelancer/seriesguide/ui/dialogs/ListManageDialogFragment.java</file>
+			<file>SeriesGuide/src/main/res/layout/dialog_buttons.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/dialogs/AddListDialogFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/d380f8822b88a5a7058b765ca556a8b4d83b00b1</commit_url>
+		</Commits>
+	</bug>
+	<bug id="194">
+		<buginformation>
+			<summary>Sync to/from trakt.tv canceled after rotating Device </summary>
+			<description>Hy Uwe, i have find an issue in the sync process. Steps to reproduce: Go to Settings -> Services -> trakt.tv hit "Sync to SeriesGuide" or "Sync to trakt.tv" rotate the device -> indeterminate ProgessBar disappear and Toast "Sync canceled" will shown regards, David</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/dataliberation/JsonExportTask.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/dataliberation/DataLiberationFragment.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/dataliberation/JsonImportTask.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/c6edd0d3f792dfaccacefaf186ea1af48bba98ba</commit_url>
+		</Commits>
+	</bug>
+	<bug id="157">
+		<buginformation>
+			<summary>Empty view in add screen is a progress indicator. </summary>
+			<description>Fix that!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/service/NotificationService.java</file>
+			<file>SeriesGuide/res/layout/traktaddfragment.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/61e8d2a5c5b72891ed6306fe8907bf5c19d09539</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/d7fafe045bd3b6830c24f44326d1d886a727e951</commit_url>
+		</Commits>
+	</bug>
+	<bug id="396">
+		<buginformation>
+			<summary>If sorted by next episode, ended shows should be sorted last </summary>
+			<description>User reported, not confirmed, yet When sorting shows by next episode, continuing and ended shows are mixed. Could you show ended shows after the continuing?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...sGuide/src/main/java/com/battlelancer/seriesguide/settings/ShowsDistillationSettings.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/e17bdb207da0f0241c5ce6fc1bd2919b8c8039e5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="427">
+		<buginformation>
+			<summary>When adding a show, watched/collected episodes not always loaded </summary>
+			<description>Reported on G+ When adding a show, AddShowTask does not abort if loading watched/collected episodes fails. It probably shouldn't. Old train of though: sync will add watched/collected episodes. However, with the new v2 syncing algorithm this might not be true any longer all the time.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/AddShowTask.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/a738578b0d6dfb96ac3f26337be4830c6617832b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="345">
+		<buginformation>
+			<summary>Ratings cache does not time out </summary>
+			<description>Currently up to the last 10 ratings are cached for episodes in TraktSummaryTask, using a LRU strategy to evict old entries. Meaning, even if some time has passed, the cached value will still be returned instead of refreshed. Potential solutions: Clear the cache after a timeout. Or: add timestamps to its entries and throw them away once over a certain threshold (minutes)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/OverviewFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/EpisodeDetailsFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/TraktSummaryTask.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/55c823a1542dfa9daf803285817bc720adf93403</commit_url>
+		</Commits>
+	</bug>
+	<bug id="184">
+		<buginformation>
+			<summary>Shouts don't respect selected theme. </summary>
+			<description>Try using Android Dark theme. I believe this was by design, but look into it anyhow.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/SeriesGuideApplication.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/TraktShoutsFragment.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/TraktShoutsFragment.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/TraktShoutsActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/4c0e925802491cf0deae422345254d0cca4e8552</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/76b91bd458e93294177041f5a9ee349508177577</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/110d373c1e994aee856064815a1dd08a79fcb509</commit_url>
+		</Commits>
+	</bug>
+	<bug id="37">
+		<buginformation>
+			<summary>Automatically backup show database </summary>
+			<description>As a user pointed out the backup folder can then be synced via dropbox or anything else.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout-v11/appwidget_v11_compact.xml</file>
+			<file>SeriesGuide/src/main/res/layout-v11/appwidget_v11.xml</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/SeriesGuidePreferences.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/provider/SeriesGuideDatabase.java</file>
+			<file>SeriesGuide/src/main/res/layout-ldrtl/appwidget_v11_compact.xml</file>
+			<file>SeriesGuide/src/main/res/layout-ldrtl/appwidget_v11.xml</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/BaseActivity.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/BackupTask.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/TaskManager.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/be9a7b1540b203f45169b847c3cad95dd48c616c</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/fdf04f76a089d75af713d49eb9a3c15bd1f00218</commit_url>
+		</Commits>
+	</bug>
+	<bug id="393">
+		<buginformation>
+			<summary>Notification settings not disabled if notifications are disabled </summary>
+			<description>https://plus.google.com/b/112462818579768957964/112031979119612536593/posts/QSaW6Dvf7gc</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/SeriesGuidePreferences.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/db11c4b2fe7308e30923c1da6e6c705ed30cc287</commit_url>
+		</Commits>
+	</bug>
+	<bug id="422">
+		<buginformation>
+			<summary>No error message if set watched/collected/etc. fails </summary>
+			<description>Reported on G+. Actually there should be. Guess parsing the failure response is somehow broken (trakt returns an array of what worked, failed, etc.). Handle responses in FlagTapedTask and throw an error toast if response not_found has elements.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/FlagTapedTask.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/EpisodeTools.java</file>
+			<file>SeriesGuide/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/6dc07066ea4965ba37cfa48b761aa60fe3f3eb6d</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/85971ea22c83d8ce9489a7cfb046a2b772ca770a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="436">
+		<buginformation>
+			<summary>Misleading error for check-in to non-existent (on trakt) episode </summary>
+			<description>Reported on G+ The API might return a 404 if it can't find an episode. Then it would be easy to intercept the RetrofitError and show a different error message. Also look at movies.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/TraktTask.java</file>
+			<file>SeriesGuide/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/f777a8205ea9d3d03e62ed3c332ee8c8b0bde97f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="346">
+		<buginformation>
+			<summary>Some 4.1 tablets incorrectly using v17 (4.2) layouts </summary>
+			<description>Related to #340. Identified devices Prestigio 5580C PRO DUO, 8", Android 4.1 Nextboook 8 HD nx008hd8g, 8", Android 4.1.1 Sources https://plus.google.com/b/112462818579768957964/111426884411114266467/posts/NXKWNR4MgtQ https://plus.google.com/b/112462818579768957964/104891481008472832405/posts/WaM7SpwVcyV</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...ain/res/layout-v17/upcoming_multipane.xml</file>
+			<file>...s/layout-v17/trakt_credentials_dialog.xml</file>
+			<file>...e/src/main/res/layout-v17/drawer_left.xml</file>
+			<file>...ide/src/main/res/layout-v17/shows_row.xml</file>
+			<file>.../res/layout-v17/add_searchresult_wide.xml</file>
+			<file>...src/main/res/layout-v17/services_more.xml</file>
+			<file>.../res/layout-v17/appwidget_v11_compact.xml</file>
+			<file>...src/main/res/layout-v17/appwidget_big.xml</file>
+			<file>...ain/res/layout-v17/appwidget_big_item.xml</file>
+			<file>...rc/main/res/layout-v17/stats_fragment.xml</file>
+			<file>...de/src/main/res/layout-v17/search_row.xml</file>
+			<file>...c/main/res/layout-v17/tvdbaddfragment.xml</file>
+			<file>...c/main/res/layout-v17/shouts_fragment.xml</file>
+			<file>.../main/res/layout-v17/add_searchresult.xml</file>
+			<file>...c/main/res/layout-v17/list_dialog_row.xml</file>
+			<file>...de/src/main/res/layout-v17/trakt_sync.xml</file>
+			<file>...ide/src/main/res/layout-v17/appwidget.xml</file>
+			<file>...rc/main/res/layout-v17/services_watch.xml</file>
+			<file>...Guide/src/main/res/layout-v17/billing.xml</file>
+			<file>...res/layout-v17/connect_trakt_fragment.xml</file>
+			<file>...rc/main/res/layout-v17/episodedetails.xml</file>
+			<file>...sGuide/src/main/res/layout-v17/friend.xml</file>
+			<file>...rc/main/res/layout-v17/getglue_footer.xml</file>
+			<file>...c/main/res/layout-v17/progress_dialog.xml</file>
+			<file>...ide/src/main/res/layout-v17/buttonbar.xml</file>
+			<file>.../main/res/layout-v17/ratingbar_narrow.xml</file>
+			<file>...ide/src/main/res/layout-v17/ratingbar.xml</file>
+			<file>...e/src/main/res/layout-v17/list_dialog.xml</file>
+			<file>.../main/res/layout-v17/traktaddfragment.xml</file>
+			<file>...rc/main/res/layout-v17/shows_row_wide.xml</file>
+			<file>...c/main/res/layout-v17/upcoming_header.xml</file>
+			<file>.../src/main/res/layout-v17/upcoming_row.xml</file>
+			<file>.../layout-v17/movies_watchlist_fragment.xml</file>
+			<file>...main/res/layout-v17/firstrun_fragment.xml</file>
+			<file>...de/src/main/res/layout-v17/add_dialog.xml</file>
+			<file>...e/src/main/res/layout-v17/episode_row.xml</file>
+			<file>...main/res/layout-v17/overview_fragment.xml</file>
+			<file>...layout-v17/buttonbar_services_stacked.xml</file>
+			<file>...rc/main/res/layout-v17/checkin_dialog.xml</file>
+			<file>...de/src/main/res/layout-v17/season_row.xml</file>
+			<file>...res/layout-v17/movie_details_fragment.xml</file>
+			<file>...src/main/res/layout-v17/appwidget_row.xml</file>
+			<file>...c/main/res/layout-v17/movies_fragment.xml</file>
+			<file>...main/res/layout-v17/upcoming_fragment.xml</file>
+			<file>...Guide/src/main/res/layout-v17/checkin.xml</file>
+			<file>...e/src/main/res/layout-v17/drawer_item.xml</file>
+			<file>...src/main/res/layout-v17/episode_pager.xml</file>
+			<file>...es/layout-v17/buttonbar_services_wide.xml</file>
+			<file>.../main/res/layout-v17/seasons_fragment.xml</file>
+			<file>...src/main/res/layout-v17/appwidget_v11.xml</file>
+			<file>...main/res/layout-v17/show_info_regular.xml</file>
+			<file>...rc/main/res/layout-v17/getglue_header.xml</file>
+			<file>.../main/res/layout-v17/show_info_narrow.xml</file>
+			<file>...de/src/main/res/layout-v17/movie_item.xml</file>
+			<file>.../res/layout-v17/activity_fix_get_glue.xml</file>
+			<file>...sGuide/src/main/res/layout-v17/backup.xml</file>
+			<file>...t-v17/activity_singlepane_drawer_wide.xml</file>
+			<file>...esGuide/src/main/res/layout-v17/shout.xml</file>
+			<file>...es/layout-v17/episodes_multipane_wide.xml</file>
+			<file>...main/res/layout-v17/upcoming_row_wide.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/65bf8aa2dee024ae536d36d6b304c50645ceebad</commit_url>
+		</Commits>
+	</bug>
+	<bug id="178">
+		<buginformation>
+			<summary>[report] Add Fragment crashes if selected row is invisible? </summary>
+			<description>Exception class: java.lang.NullPointerException Source method: AdapterView.getPositionForView() "Tried to add a few popular shows immediately after another" java.lang.NullPointerException</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/AddFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/cb483ac3e0894e266fffc4a4e5c5c3747ce43d60</commit_url>
+		</Commits>
+	</bug>
+	<bug id="187">
+		<buginformation>
+			<summary>Disconnect trakt, activity screen crashes if friends does not exist anymore </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/UpcomingRecentActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/281e7ead477b018bc8fb72fe795d0ad76550e052</commit_url>
+		</Commits>
+	</bug>
+	<bug id="193">
+		<buginformation>
+			<summary>Next episode in lists does not update live </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/Utils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b22cac324eb27ec34c2486d122006d8d40531553</commit_url>
+		</Commits>
+	</bug>
+	<bug id="192">
+		<buginformation>
+			<summary>[TVDb] Shows not found by search </summary>
+			<description>The TVDb search API exposed to third-party applications is much worse than what is offered through their website. Shows are not found for partial title Shows are not found where only a non-English title exists, except if the search language is expressly changed to that language (e.g. SG 'Content language' setting) No autocomplete Examples: PSYCHO PASS C Money Control Hopefully the promised new API will solve these problems. Update: trakt is planning v2.0 for mid-2014 with potential international support and better search. Hopes are up!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/AndroidManifest.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/SearchActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/bf2f8407a589fe057541cc68a8bea6a34230329c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="390">
+		<buginformation>
+			<summary>Swipe refresh not working if list is empty </summary>
+			<description>Pulling down is not working if there are no items and the empty view is shown. Investigate android/support/v4/widget/SwipeRefreshLayout.java.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/fragment_stream.xml</file>
+			<file>...Guide/src/main/java/com/battlelancer/seriesguide/widgets/EmptyViewSwipeRefreshLayout.java</file>
+			<file>SeriesGuide/src/main/res/layout/fragment_comments.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/f6561962490c46ab1a16f9ae76812ea875469702</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/092fc59b44adf6022a898b71e18f634c06f11bee</commit_url>
+		</Commits>
+	</bug>
+	<bug id="384">
+		<buginformation>
+			<summary>Show list with Unwatched filter is stale </summary>
+			<description>After changing the filters, it triggers an update. This should NOT happen, as this is handled completely by the loader framework and this code has remained untouched a while. Misinterpreted bug report. Show list cutoff for unwatched episodes is not refreshed on activity re-recreation as old loader is apparently re-used, ergo the cut-off is not updated to the current time, ergo shows with just released episodes do not show up. Original report</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/e2e4b79978928107a1b5ea59a0da0ff562d8a26a</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/ae8c999550e00337b61ae638dc4a33072254daf4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="435">
+		<buginformation>
+			<summary>"Set (all older) watched" should only mark unwatched, released episodes </summary>
+			<description>Suggested on uservoice Mostly concerning submitting to trakt (database doesn't care) which will create new watches for already watched episodes. "Set all older watched" should only set unwatched/skipped "Set watched" for season should only set unwatched/skipped and released "Set watched" for show should only set unwatched/skipped and released Exclude specials when changing watched/collected state of show Side effects: breaks set watched season/show for episodes with no release date set increase in data sent to trakt (used mostly on seasons or shows that are completely unwatched, maybe check if number of episodes sent for season = total number of episodes in that season, then send only season) hardened against episodes on trakt not in SG (will only set watched what can be seen in SG)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/Constants.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/EpisodeTools.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/provider/SeriesGuideContract.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/TimeTools.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/ac4fa4798c3f69b16bac8d341c4914e3e41571ad</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/0040e0cf4ca31e212a565c133ee6db46e8bc4b45</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/eb5eedea0c81c36a7788838fa2e99051702e96ce</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/7b52204d0964281641d10177abcab93535818c58</commit_url>
+		</Commits>
+	</bug>
+	<bug id="353">
+		<buginformation>
+			<summary>Widget configuration change not reflected immediately </summary>
+			<description>When changing the widget type or any widget settings those changes only show when the widget updates again, not immediately after saving the changes. This is restricted to the items, the static content updates fine. Possible solutions: Have a look at the DashClock source code how it handles instant widget updates.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/appwidget/ListWidgetConfigure.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/5e177ef6690b966f911fc8573815f06df7b9bfeb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="438">
+		<buginformation>
+			<summary>When searching, added shows can be added again </summary>
+			<description>Searching for show in "Add tab" that is in the show list. Should display that show is already in show list. Maybe also change trakt lists to display already added shows, but with an added indicator (e.g. show check mark instead of add button).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/loaders/TvdbAddLoader.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/loaders/TraktAddLoader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/d620366471d4e5bad99e1e91ff6326225d8d53fd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="160">
+		<buginformation>
+			<summary>Image loading in add show uses too many AsyncTasks on scrolling fast </summary>
+			<description>Results in crashes on slower devices, because they can't keep up with finishing the tasks. Try to fail gracefully or Limit concurrent image downloader tasks, sequential execution or one task using a queue.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/menu/lists_menu.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ListsActivity.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/ImageDownloader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/053c45c0bbcb15cccbd3a6013434f0fae7a2e5ee</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/9bf16f3215960ce8809afd2a88ee236d5351237a</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/9456678cda15c2cf057b1c6a0781b8a79fe833c7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="38">
+		<buginformation>
+			<summary>Work around crash when navigating away after checking in fails </summary>
+			<description>If the cancel dialog wants to appear, we fail. Apparently someones onSaveInstanceState got already called (we use the fragment manager of the share dialog, that's a starting point).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/adapters/ActivitySlowAdapter.java</file>
+			<file>...sGuide/src/main/java/com/battlelancer/seriesguide/dashclock/UpcomingEpisodeExtension.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/appwidget/ListWidgetService.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/sync/SgSyncAdapter.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/ShowTools.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/EpisodeTools.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ActivityFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/appwidget/AppWidget.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/0a88c4e1e1b1b3fb4546ee39a04aa0693473186e</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/7a3315831ee018a6502ea38a4dbc71e1a7dec052</commit_url>
+		</Commits>
+	</bug>
+	<bug id="216">
+		<buginformation>
+			<summary>Shouts dialog is too small on Nexus 7 </summary>
+			<description>"The Shouts box on old episodes appears too small to be useful on my Nexus 7." I guess always using a full screen activity should solve that problem.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/lint.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/9ff98a6cd2860b54f985484a31e530acf756752e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="202">
+		<buginformation>
+			<summary>Check-in Toast Doesn't Honor Season/Episode Display Format </summary>
+			<description>Shows 1x01 when I have it set to S01E01.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+			<file>...esGuide/src/com/battlelancer/seriesguide/ui/dialogs/TraktCancelCheckinDialogFragment.java</file>
+			<file>SeriesGuide/libs/sg-okhttp-2.0.0.jar</file>
+			<file>SeriesGuide/res/values/strings.xml</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/TraktTask.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/99bb60c348bceaa7e891bb9dca101632981e1c11</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/0f548da4fa6c4bdfc779984c0acb67d695740331</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/3930ecafe1855489fce7bf0b1798f06a9f4dfe28</commit_url>
+		</Commits>
+	</bug>
+	<bug id="161">
+		<buginformation>
+			<summary>First list name 'Favorites' confusing </summary>
+			<description>Kind of did not change that, or did I want to rename favoriting to starring? Anyhow, fix it, so it is not confused with the existing 'Favorites' mechanism.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/res/values-sl/strings.xml</file>
+			<file>SeriesGuide/res/values-sk/strings.xml</file>
+			<file>SeriesGuide/res/values-pl/strings.xml</file>
+			<file>SeriesGuide/res/values-fi/strings.xml</file>
+			<file>SeriesGuide/res/values-pt-rPT/strings.xml</file>
+			<file>SeriesGuide/res/values-zh-rTW/strings.xml</file>
+			<file>SeriesGuide/res/values-pt-rBR/strings.xml</file>
+			<file>SeriesGuide/res/values-da/strings.xml</file>
+			<file>SeriesGuide/res/values-bg/strings.xml</file>
+			<file>SeriesGuide/res/values-tr/strings.xml</file>
+			<file>SeriesGuide/res/values-ro/strings.xml</file>
+			<file>SeriesGuide/res/values-nl/strings.xml</file>
+			<file>SeriesGuide/res/values-de/strings.xml</file>
+			<file>SeriesGuide/res/values-ar/strings.xml</file>
+			<file>SeriesGuide/res/values-cs/strings.xml</file>
+			<file>SeriesGuide/res/values-hu/strings.xml</file>
+			<file>SeriesGuide/res/values-es/strings.xml</file>
+			<file>SeriesGuide/res/values-hr/strings.xml</file>
+			<file>SeriesGuide/res/values/strings.xml</file>
+			<file>SeriesGuide/res/values-it/strings.xml</file>
+			<file>SeriesGuide/res/values-fr/strings.xml</file>
+			<file>SeriesGuide/res/values-nb/strings.xml</file>
+			<file>SeriesGuide/res/values-el/strings.xml</file>
+			<file>SeriesGuide/res/values-ko/strings.xml</file>
+			<file>SeriesGuide/res/values-sv/strings.xml</file>
+			<file>SeriesGuide/res/values-ru/strings.xml</file>
+			<file>SeriesGuide/res/values-lt/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/045442d4eff0bbb771a60ad395d6df577e01090b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="411">
+		<buginformation>
+			<summary>Collection indicator should not count unreleased episodes </summary>
+			<description>On the seasons tab the watched indicator on top is marked if i have watched all episodes yet aired, but the collection indicator is not marked if i also collected these episodes and there are more to be aired in the future. I think it unaired episodes should not be counted as uncollected.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/DBUtils.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/provider/SeriesGuideContract.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/04e88d6c7a3d2f7e081a915264da77f6c02f4720</commit_url>
+		</Commits>
+	</bug>
+	<bug id="413">
+		<buginformation>
+			<summary>Toolbar height in landscape mode </summary>
+			<description>The Toolbar height in landscape mode it too large. Just set layout_height to ?attr/actionBarSize instead of using minHeight. minHeight may be removed. Sorry for not sending PR, I am unable to build the app and check if everything is correct. But the fix is really easy so you will fix it in a few seconds.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/toolbar_transparent.xml</file>
+			<file>SeriesGuide/src/main/res/layout/toolbar_gradient_fit.xml</file>
+			<file>SeriesGuide/src/main/res/layout/toolbar.xml</file>
+			<file>SeriesGuide/src/main/res/layout/toolbar_gradient.xml</file>
+			<file>SeriesGuide/src/main/res/layout/toolbar_transparent_fit.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/3b725c5ddaa44ec4b4d9f44202f5d257b8279340</commit_url>
+		</Commits>
+	</bug>
+	<bug id="188">
+		<buginformation>
+			<summary>[trakt] Option to add shows to watchlist </summary>
+			<description>Since you add the watchlist tab in the app, I think it would be great to add an option to put a show in our trakt watchlist, why not adding this option when we long press a show in the add screen?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/item_addshow_wide.xml</file>
+			<file>SeriesGuide/src/main/res/menu/add_dialog_popup_menu.xml</file>
+			<file>SeriesGuide/src/main/res/layout/item_addshow.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/TraktAddFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/TvdbAddFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/AddFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/0c9412a0f525acd5993bcc372bc2993feb09f829</commit_url>
+		</Commits>
+	</bug>
+	<bug id="228">
+		<buginformation>
+			<summary>Auto-Backup not created </summary>
+			<description>Check where SeriesGuide is trying to store the backup. However odly enough b4upgr backups do work...</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/BaseActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/8ba6cddaa62a739adf9bdcd978e65e646722855a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="189">
+		<buginformation>
+			<summary>[GetGlue] Helpful error message if no IMDb id </summary>
+			<description>Right now only the check box is unchecked which is veeeery unintuitive.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/TraktShoutsFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/streams/StreamFragment.java</file>
+			<file>SeriesGuide/src/main/res/values/dimens.xml</file>
+			<file>...Guide/src/main/java/com/battlelancer/seriesguide/widgets/EmptyViewSwipeRefreshLayout.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b534694204205b4c5a6edaa7e5145d3f2192cf36</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/cc16d053bcde3afebaff8b42704c80a6cabf1e38</commit_url>
+		</Commits>
+	</bug>
+	<bug id="416">
+		<buginformation>
+			<summary>Movies without release dates are sorted first, not last. </summary>
+			<description>I think they should be sorted last since as far as I can tell they're all movies in the future.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/MovieTools.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/loaders/MovieLoader.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/adapters/MoviesCursorAdapter.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/items/MovieDetails.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/MovieDetailsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/c28eb3c48558a9f54afb4899fd0be59e320ea234</commit_url>
+		</Commits>
+	</bug>
+	<bug id="402">
+		<buginformation>
+			<summary>Display estimate of watched time stat if there are many shows </summary>
+			<description>If the library has a lot (=hundreds) of shows, calculating the total watched time can be slow. Solutions: Display an initial estimate while still calculating the actual result in the background (hard, as we still need to query the episodes database to get the number of episodes per show for a useful estimate) Cut off at a fixed number of shows and say "more than x days..."</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/4c4de4672082925c41474ef5e71bbca693638443</commit_url>
+		</Commits>
+	</bug>
+	<bug id="364">
+		<buginformation>
+			<summary>Full trakt sync does not reset collected or watched flags </summary>
+			<description>Full trakt sync does not re-set flags for shows not included in either trakt library or collection anymore.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/TraktSync.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/27fc11978973b5eef8a597316f61e11f349c7993</commit_url>
+		</Commits>
+	</bug>
+	<bug id="166">
+		<buginformation>
+			<summary>Display name of item that is added to a list </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/res/layout/list_dialog.xml</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/dialogs/ListsDialogFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/MovieTools.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/1b3b709e8f8818a646dbdc9b5983e6ebecd646e9</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/a2811c29d175bbaf6323040436b221e727029515</commit_url>
+		</Commits>
+	</bug>
+	<bug id="199">
+		<buginformation>
+			<summary>Time offset wizard with live examples </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/71fa1861ff84a2e71568ef7f435ef22bad2e82f0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="210">
+		<buginformation>
+			<summary>Add more services </summary>
+			<description>https://play.google.com/store/apps/details?id=com.netflix.mediaclient https://play.google.com/store/apps/details?id=com.hulu.plus Or simpler: https://play.google.com/store/apps/details?id=com.cisi.activities searches many services Look if there are any public intents available which we could use, like e.g. for IMDb or the Play Store ap.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...sGuide/src/main/java/com/battlelancer/seriesguide/dashclock/UpcomingEpisodeExtension.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/DBUtils.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/settings/WidgetSettings.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/appwidget/ListWidgetService.java</file>
+			<file>...de/src/main/java/com/battlelancer/seriesguide/appwidget/ListWidgetPreferenceFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/appwidget/AppWidget.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/cdbd300afaa3d81b4581b3e201e8b3446513bb15</commit_url>
+		</Commits>
+	</bug>
+	<bug id="238">
+		<buginformation>
+			<summary>Navigating up from the Backup/Restore pane, post-backup, triggers a crash message </summary>
+			<description>In the current SeriesGuide Beta v5beta3, after executing a (JSON) Backup operation from the Settings, tapping the Up icon from the SeriesGuide action bar results in the following error message. This appears to occur whether the backup is still in progress, or has already completed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/MovieTools.java</file>
+			<file>SeriesGuideFree/AndroidManifest.xml</file>
+			<file>SeriesGuideBeta/AndroidManifest.xml</file>
+			<file>SeriesGuideX/AndroidManifest.xml</file>
+			<file>SeriesGuideBB/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/c70f3103de6494e44289684943fab1fa24bafa41</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/07ab2c2b4dd0cf79b31e79e6b1d96858c38659c4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="173">
+		<buginformation>
+			<summary>[TVDb] Add new languages </summary>
+			<description>Notably Chinese (and Japanese?). Test if there would actually be a problem displaying those on older Android versions (hide them then).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/64d6a019460468711b039d96e755c90cbb1ceb94</commit_url>
+		</Commits>
+	</bug>
+	<bug id="359">
+		<buginformation>
+			<summary>Some 4.1 tablets incorrectly handle layout qualifiers </summary>
+			<description>First we had #346. Now with v11, which introduced GridView mirroring in RTL layouts (style in layout-ldrtl-v17 folder) those are again incorrectly used by some 4.1.x tablets. This leads me to believe that those tablets will use any folder that has the highest version qualifier (in this case v17, which is Android 4.2.x), ignoring if it is higher than their API level. Screenshot from user:</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout-ldrtl/grid_shows.xml</file>
+			<file>SeriesGuide/src/main/res/layout-ldrtl/grid_movies.xml</file>
+			<file>SeriesGuide/src/main/res/layout/grid_movies.xml</file>
+			<file>SeriesGuide/src/main/res/layout/grid_shows.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/53f3184d87ceeabf3e994801c6132cb6ceb188b9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="403">
+		<buginformation>
+			<summary>Launch via app icon may not resume where expected </summary>
+			<description>Launch into the app via the list widget (assuming from a notification is the same) Go to home screen. Launch app via launcher icon. Expected: app resumes where left off. Actual: app builds new stack on top of existing activities (e.g. shows show list, but back returns to previous task stack)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/bac1deef8d1d9a73703b5a4ded7060c3c80f9c8a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="371">
+		<buginformation>
+			<summary>NPE for EventBus.getDefault() in AsyncTask.onPostExecute </summary>
+			<description>Getting reports for a weird NPE in https://github.com/UweTrottmann/SeriesGuide/blob/v12/SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/MovieTools.java#L354. Guarded it for now, but still unsure what is going on (maybe GC snags it away?)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/MovieTools.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/29be14f8d70bdfedd2016996258cf25089666e27</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/2f0506d2d611d8e3573b31722952794fcef5f167</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b9d09c777295b01c2a41dbce98076bf3200e29cc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="415">
+		<buginformation>
+			<summary>Movie ListView re-use image downloading problem. </summary>
+			<description>Notice "Yoga Hosers" and "Clerks III" (maybe it's only Kevin Smith movies that have this problem!). This only happens when scrolling fast and the image for the original movie to which the poster belongs is not in the memory cache.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/adapters/MoviesCursorAdapter.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/adapters/MoviesAdapter.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/Utils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/99713e75ce8f322fa7324b42b7540e04a72b138b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="165">
+		<buginformation>
+			<summary>Display episode title in check in comment to avoid confusion </summary>
+			<description>Display the episode title by default as check in comment to avoid people confusing trakt style check ins with GetGlue style check ins.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/dialogs/CheckInDialogFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/edbc07e6cf45d2a452c442095653f26056109a5a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="159">
+		<buginformation>
+			<summary>Add show through dialog, + button not disappearing </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/AddFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/dialogs/AddShowDialogFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b5bd19b289f89067afd7f6ce55527bd459583ab5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="213">
+		<buginformation>
+			<summary>More data sets for widget </summary>
+			<description>Hi! First of all thanks for your amazing work on this, I have gladly supported you by buying X version. However, there is what I am missing badly - I do use this app for tracking my progress in shows that has been already published. You have a data set showing next unseen episode of each show to be displayed on homepage. I am not sure what you call this data set in English version, it's third option in select on homepage. It would be great to choose this set to be displayed by widget! :) Thanks for your work! Tom</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/item_show_wide.xml</file>
+			<file>SeriesGuide/src/main/res/layout/item_show.xml</file>
+			<file>SeriesGuide/src/main/res/layout/grid_shows.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/e1e20d635fd3511fdae6fb77f0b68b4d2a1b885b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="206">
+		<buginformation>
+			<summary>Intents that allow third party apps to integrate with SeriesGuide </summary>
+			<description>Following on from a post on the G+ comunity about intergration (not sure how to link back to it) I would love to be able to add an action item to my app that the user can press to view the show or episode in SeriesGuide. This would send either the seires id (view seires overview/give the user a change to add it), or an episode id (view the episode details/give the user a change to add the show), where the id's are the ones from TheTVDB.com. Also having an option to automatically mark something as viewed in SeriesGuide could also be useful. This could be implemented fairly easily using explicit intents where the other apps use something like intent.setComponent(new ComponentName("com.battlelancer.seriesguide","fullActivityName");</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/drawer_left.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowsActivity.java</file>
+			<file>api/src/main/java/com/battlelancer/seriesguide/api/Intents.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/4639a2f18e48c5d0754ad18c8d319a16628b77eb</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/9ce62f3c31f6027514a88195bf5697cdd9fcfe97</commit_url>
+		</Commits>
+	</bug>
+	<bug id="212">
+		<buginformation>
+			<summary>More ways to sort lists </summary>
+			<description>Reported on uservoice Sort by title next episode (show and episode items only, sort seasons last)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/item_action_add.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/73002788fa9586d825dc40e906408d67b61e59db</commit_url>
+		</Commits>
+	</bug>
+	<bug id="158">
+		<buginformation>
+			<summary>Shouts activity looks scary inverted on GB. </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/TimeTools.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/bd6be5b64e5b74cfba7146ba21433283b1ecd98e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="164">
+		<buginformation>
+			<summary>Make library tab more visible (move it to the left) </summary>
+			<description>Discovery seems to be a little hard right now.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/AddActivity.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/TraktAddFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/85c126511ee249291738bac8f71fb4934bfdcecd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="399">
+		<buginformation>
+			<summary>Trim guest star names </summary>
+			<description>Guest star names sometimes include additional trailing or leading spaces, make sure those are removed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/Utils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/0e1fb5c3a0eff51b998c345d995a89d27d54dc7d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="400">
+		<buginformation>
+			<summary>[trakt] Localize status toasts after trakt actions </summary>
+			<description>Currently SG just displays the message sent from trakt (e.g. "rated Friends 1x01" + " (trakt)"). However, this might not be necessary once trakt 2.0 launches (may include non-English support).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+			<file>build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/14de3150ce1b6f8a1abfbd84e45270b25215c1f1</commit_url>
+		</Commits>
+	</bug>
+	<bug id="467">
+		<buginformation>
+			<summary>Cloud does not handle check-ins well </summary>
+			<description>Reported on G+ When connected to Cloud + trakt, the watch set on the trakt side is never downloaded. Hence manually need to set as watched. Which triggers a duplicate watch on trakt... Issue since trakt v2.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/OverviewFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/EpisodeDetailsFragment.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/MovieDetailsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/691f1a0c24f01e38a0f8a739ea6e55b89233a590</commit_url>
+		</Commits>
+	</bug>
+	<bug id="98">
+		<buginformation>
+			<summary>Incorrect relative time below Android 4.0 </summary>
+			<description>SDK level 10 Hi,</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/EpisodesFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/85c3b6e1fdd9dc4364f838c8a256626703a1655c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="67">
+		<buginformation>
+			<summary>[TVDb] Prevent episode (and season) duplicates </summary>
+			<description>If TVDb gets screwed up duplicate episodes and seasons can happen easily on updating because SeriesGuide doesn't delete old entries to preserve the watched status. Figure something out!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/SeasonsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/18689b8b6dad9db7cc26ebfdc639c5010a646e99</commit_url>
+		</Commits>
+	</bug>
+	<bug id="261">
+		<buginformation>
+			<summary>Can enable Restore button while Backup is running </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/dataliberation/DataLiberationFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/994fbf87258bd4f3eebaee92e73c406a596084b5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="66">
+		<buginformation>
+			<summary>[Google TV] TVDb button in Upcoming unreachable via DPAD </summary>
+			<description>Same for the show link button.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/service/NotificationService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/ad8cc7ac16151e3233a835369d63c0fac1b191af</commit_url>
+		</Commits>
+	</bug>
+	<bug id="72">
+		<buginformation>
+			<summary>Changing episode sorting not reflected in episode pager </summary>
+			<description>Especially a problem as we now highlight the selected episode in the list. It is done by position and changing the sorting screws this up greatly.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/EpisodeDetailsActivity.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/EpisodesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/5c17e5f2b42090613ad141554d454a1e83f35b02</commit_url>
+		</Commits>
+	</bug>
+	<bug id="100">
+		<buginformation>
+			<summary>Show Absolute Number of Episode </summary>
+			<description>Hey, it would be great, if some Series could show the absolute Number of Episode. Like this: (List of Episodes for Season 2:) Episode 1 (12) << 12 would the 12th Episode of the whole Serial Best Regards</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/cf1657ce7b1602100faf6ad52f31c50507a49c3b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="288">
+		<buginformation>
+			<summary>SecurityException: caller uid XXXX is different than the authenticator's uid </summary>
+			<description>See http://stackoverflow.com/questions/3774282/securityexception-caller-uid-xxxx-is-different-than-the-authenticators-uid. The XML files declare them directly, however, in the SgAutheticator I get the package name. But that should always be the correct one, no?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/res/layout/fragment_connect_trakt_info.xml</file>
+			<file>SeriesGuide/src/main/res/layout/fragment_cloud_setup.xml</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ShowsActivity.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/ConnectTraktFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/a413e444a912f88b9dbe2b6660ce961daf2d7a5e</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/808838bb5823ef03f50afd9ee2c65898d99cd329</commit_url>
+		</Commits>
+	</bug>
+	<bug id="65">
+		<buginformation>
+			<summary>Progress dialog sticks when not entering trakt credentials </summary>
+			<description>Checking in the first time, not saving trakt credentials: progress dialog stays around. Confirmed on: Google TV</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/res/layout/trakt_credentials_dialog.xml</file>
+			<file>SeriesGuide/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/fde3d8252c18f9bf48bd9a35878bf3a21852d699</commit_url>
+		</Commits>
+	</bug>
+	<bug id="101">
+		<buginformation>
+			<summary>Crash when selecting notification after deleting show </summary>
+			<description>For an unknown reason the cursor check here fails (EpisodeDetailsActivity), it seems to return something albeit the episode has been deleted. Debug!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/EpisodeDetailsActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/e026bcb67a20075736ac4df659284cdaf1e8149f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="313">
+		<buginformation>
+			<summary>Going back after forward to billing activity does not go back, but up. </summary>
+			<description>E.g. try to add a home screen shortcut without active X subscription. You are forwarded to the billing activity. If you go back, you are going up instead until the top setting screen (afterwards the app quits).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/Utils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/e09dff990ace254eb7540fe28e3bf409f10bae4d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="461">
+		<buginformation>
+			<summary>Past-midnight handling not appropriate for Japanese shows </summary>
+			<description>Reported in #460 and on Google+ Anime airing the hour past midnight is stored using the correct date in TheTVDB. Hence SG incorrectly adds a day to the release date. Japanese midnight shows with actual air dates: http://thetvdb.com/?tab=series&id=269872&lid=7 http://thetvdb.com/?tab=series&id=289884&lid=7 http://thetvdb.com/?tab=series&id=278626&lid=7 http://thetvdb.com/?tab=series&id=262954&lid=7 http://thetvdb.com/?tab=series&id=289907&lid=7 An U.S. midnight show with "wrong" air dates: https://forums.thetvdb.com/viewtopic.php?t=22791 http://thetvdb.com/?tab=series&id=292421&lid=7 Possible fixes: Apply past midnight fix for only US shows better, until we have examples for other countries Do NOT apply past midnight fix for Japanese shows</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/TimeTools.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/d6e7e097aae0e498a89fad339c550ecfd07b079a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="105">
+		<buginformation>
+			<summary>Hide hidden shows from new check in screen </summary>
+			<description>And look for other things I overlooked...</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/CheckinActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/ba0777f01e21a6de3f24243d0debd476c814f1f7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="139">
+		<buginformation>
+			<summary>Collected flag in overview not representing actual state </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/OverviewFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/df6714adf6099e211699df0dc7180fdf7790ae38</commit_url>
+		</Commits>
+	</bug>
+	<bug id="501">
+		<buginformation>
+			<summary>Infinite calendar omits episodes aired before 1.1.1970 </summary>
+			<description>Episodes aired before the 1.1.1970 (start of the Unix timestamp) do not show up in the recent tab with the 'infinite calendar' option activated.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/DBUtils.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/adapters/CalendarAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/7f1f8e517daa572008d9e97b7344d479a395c226</commit_url>
+		</Commits>
+	</bug>
+	<bug id="266">
+		<buginformation>
+			<summary>Crash due to foreground activity on SyncAdapter service </summary>
+			<description>Can't add new shows because add task does show toasts! 06-04 15:16:42.517: E/AndroidRuntime(15789): FATAL EXCEPTION: SyncAdapterThread-1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/dialogs/AddShowDialogFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/efa18eef6b5cbf935446e3a71247d078c287800d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="110">
+		<buginformation>
+			<summary>[trakt] Submit collected flags when uploading to trakt </summary>
+			<description>Get collected flags when adding a show. Sync with your trakt collection/library so you don't have to add shows manually. Mark seen of whole seasons, mark seen until submitted to trakt.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/build.gradle</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/util/TraktUpload.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/provider/SeriesGuideContract.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/e793266ec7d84deefe476bd7705f1d51608a4fa9</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/e77b6efe9d6615ee0d3f59f6ce1a7fc8cb0ee7f3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="462">
+		<buginformation>
+			<summary>[api] Add absolute episode number property </summary>
+			<description>Suggested via email Send the absolute episode number to extensions.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>api/src/main/java/com/battlelancer/seriesguide/api/Episode.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/loaders/EpisodeActionsLoader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/a2a3447a8ff8fe0b1e0c7d66e5c063643ccbd1de</commit_url>
+		</Commits>
+	</bug>
+	<bug id="476">
+		<buginformation>
+			<summary>FAB displayed on wrong tab </summary>
+			<description>It's possible for the FAB to be displayed on the "now" tab as a result of the FabAbsListViewScrollDetector getting confused about which Fragment is currently being shown. Personally, I don't like hiding the FAB, but I'm not sure how you'd like to handle it. An easy fix would be just to check to see if the grid has focus or not:     if (!view.hasFocus() || totalItemCount == 0) {</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...esGuide/src/main/java/com/battlelancer/seriesguide/util/FabAbsListViewScrollDetector.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/a2e21ed38553c9ce55f0be8a1f05ba9cd42b7c63</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/116efd5c2a482ab7992c4663eada0abfd9498d4a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="270">
+		<buginformation>
+			<summary>Last notification time is not set when tapping a new episode notification </summary>
+			<description>Should result in the same behavior as if clearing a notification (delete intent).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/EpisodesActivity.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/service/NotificationService.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/UpcomingRecentActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b65771f5f0a83fbea10f6611fce4d9c465dcad79</commit_url>
+		</Commits>
+	</bug>
+	<bug id="63">
+		<buginformation>
+			<summary>Wrong error message when trying to delete show while updating </summary>
+			<description>Fix that!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/7e7cab6ca3bda11df9f9aff99e5cf9a4aaf71f4e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="77">
+		<buginformation>
+			<summary>[trakt] Going back from credentials dialog displays uncancelable progress </summary>
+			<description>Sigh Solution: Listen for the dialog getting canceled and try to dismiss the progress dialog fragment. Or don't put the progress dialog on the back stack (which I thought I already do...).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/util/ShareUtils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/8531c3cae5662dbe97add97a9d5506a77fa5d754</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/9295677e312a7305c982e69eed3a3c618ce711c3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="88">
+		<buginformation>
+			<summary>Autocorrect time for ALL US time zones </summary>
+			<description>If anyone wants to help, please install the Debugger.apk from the Downloads section and send in the displayed time zone code. sigh Android seems to have multiple time zone IDs per big time zone. GPS or phone network detection is out of question (no support for Google TV or devices which don't have GPS or cellular). Already supported: Eastern: America/Detroit America/New_York Central: America/Chicago Mountain: America/Denver Pacific: America/Phoenix (no summer time) America/Los_Angeles Full list of all Android time zone IDs: https://gist.github.com/1035596</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/BackupDeleteActivity.java</file>
+			<file>SeriesGuide/src/main/res/layout-ldrtl/backup.xml</file>
+			<file>SeriesGuide/src/main/res/layout/backup.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/400f979ad65f3ee4173fc78338bb010b157f766f</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/5c1775044f697dc6a13f63fff914d12fccbc4a79</commit_url>
+		</Commits>
+	</bug>
+	<bug id="113">
+		<buginformation>
+			<summary>Hide non-aired episodes from checkin screen </summary>
+			<description>Better this way, there might be some people in the future, but those should be the exception.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/adapters/MoviesCursorAdapter.java</file>
+			<file>SeriesGuide/src/com/battlelancer/seriesguide/ui/CheckinActivity.java</file>
+			<file>SeriesGuide/src/main/java/com/battlelancer/seriesguide/ui/MovieDetailsFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/b0d2fe62a4e4371473564cfb826553d56306080e</commit_url>
+			<commit_url>https://github.com/UweTrottmann/SeriesGuide/commit/6e2f0060d1dcf7ce1bb9efb9649c56d9faf79872</commit_url>
+		</Commits>
+	</bug>

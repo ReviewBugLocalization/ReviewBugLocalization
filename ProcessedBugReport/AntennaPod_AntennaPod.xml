@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bugrepository name="AntennaPod_AntennaPod">
+	<bug id="283">
+		<buginformation>
+			<summary>Most Recent Episode incorrect following podcast with no episodes </summary>
+			<description>v0.9.7.5 In the podcast list screen, when there is a podcast with no episodes, it is displayed as "Most Recent Episode" of the next podcast in the list. The subsequent "Most Recent Episode" timestamps are are also incorrect, each being shuffled up i.e. podcast number 3 has the timestamp from podcast 4, podcast 4 has the timestamp from podcast 5 and so on. Device: Samsung Galaxy Ace 2 GT-I18160 Android 4.1.2</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/adapter/FeedlistAdapter.java</file>
+			<file>src/de/danoeh/antennapod/storage/PodDBAdapter.java</file>
+			<file>src/de/danoeh/antennapod/storage/FeedItemStatistics.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/e38746f906f9ddfb7600b2113f8934bc4117e6ec</commit_url>
+		</Commits>
+	</bug>
+	<bug id="453">
+		<buginformation>
+			<summary>show number of items in queue </summary>
+			<description>Hi! With the new UI the user is not able to know how many episodes he has in the queue (or at least I don't know how to see it). Seems necessary to me.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/storage/PodDBAdapter.java</file>
+			<file>src/de/danoeh/antennapod/activity/AudioplayerActivity.java</file>
+			<file>src/de/danoeh/antennapod/activity/MainActivity.java</file>
+			<file>res/layout/nav_listitem.xml</file>
+			<file>src/de/danoeh/antennapod/adapter/NavListAdapter.java</file>
+			<file>src/de/danoeh/antennapod/storage/DBReader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/d9a610fb61028845349d98c4e1574778a7cfc05e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="337">
+		<buginformation>
+			<summary>Feature request: jump buttons on lock screen widget </summary>
+			<description>Sometimes when listening to podcasts one gets distracted a bit, but not intense or long enough to pause the podcast playback, for example when sitting on a train and there's an announcement where one does not know from the beginning if it is important for oneself. In such cases I like to jump back some seconds in the playback where the jump buttons in the player come in quite handy. But it would be even nicer if those buttons were also on the lock screen widget, as this way one would not have to unlock the phone and fire up antennapod to do so.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/UserPreferences.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/13d0a3570b3634da777a791e89008ad7cef5bd29</commit_url>
+		</Commits>
+	</bug>
+	<bug id="109">
+		<buginformation>
+			<summary>A2DP </summary>
+			<description>Hi, first of all, thank you for that impressive app, I am really enjoying it. Here my feature request: I have a bt headset with display and it would be nice, if I could get meta informations of the podcasts displayed there. I am not sure if this is part of the a2dp specs, but here are the specs: https://www.bluetooth.org/Technical/Specifications/adopted.htm Thanks and keep on working on this nice piece of software!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/09e37010c31dbf739a0937fa522c842628548c63</commit_url>
+		</Commits>
+	</bug>
+	<bug id="243">
+		<buginformation>
+			<summary>Automatic feed updates are slow when device is asleep </summary>
+			<description>I noticed that automatic feed refreshes for the ~ 50 feeds I subscribed to can take up to around 20 minutes when the device is asleep, in contrast to less than a minute when the device is awake. This is happening because AntennaPod fails to hold a WakeLock while it is refreshing feeds or downloading media files. As a consequence, after the FeedUpdateReceiver's onReceive() method returns, the device will go back to sleep, although the actual downloads are still pending.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>AndroidManifest.xml</file>
+			<file>src/de/danoeh/antennapod/service/download/Downloader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/967e322913b5505029ecdcd084c058a5b286d274</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1758">
+		<buginformation>
+			<summary>OPML Scheme not working on Marshmallow </summary>
+			<description>When clicking on a .opml file in a mail the schema does not seem to work. I am only offered to open the file with Chrome or HTML-Display. By looking at the manifest it seems that AntennaPod should pick the extension up.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8e281890dd1a41cbb969e32c16d57f6ecff93953</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/47bde42a1e741041d6357f5c414207375b6b42fe</commit_url>
+		</Commits>
+	</bug>
+	<bug id="336">
+		<buginformation>
+			<summary>Problem with derTag Podcast - 0 byte files vanish </summary>
+			<description>When I add the Feed http://podcast.hr2.de/derTag/podcast.xml it shows all files/episodes as 0 Byte. They are not automatically downloaded. I can download manually and listen to every episode. Every time the feed updates the first entry vanishes (even when downloaded) until everything is gone. Recent version (0.9.8.0) from play store on Android 4.1.1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/syndication/namespace/NSRSS20.java</file>
+			<file>src/de/danoeh/antennapod/feed/FeedItem.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/9d30e697e61c1af61cbcc2789c87dc05c1265c8b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="450">
+		<buginformation>
+			<summary>New UI: "Downloading podcast data" in notification area </summary>
+			<description>Since the latest update with the new UI I can't delete Antennapod from the notification area. "Downloading podcast data" with the syncing logo always stays in the notification area without any option/possibility to remove it from there After the sync process it should be possible to remove the entry from the notification area</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/download/DownloadService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/a174b4db75d00f0391e493e1ba849a1bb996fbf5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1012">
+		<buginformation>
+			<summary>FR: Detailed list view for Gpodder and Itunes search page </summary>
+			<description>Hi The current search results page is in thumbnails views which is fine but most of the time the titles and names etc are cutoff which makes it hard to see what the podcast is about. Sometimes the icons for the podcasts are generic which makes it harder to recognize what is going on. This might not be an issue with searches with couple results but when the search results return tens of results it makes it a tedious job to go into the details one by one to see what the podcast is about. thanks</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/res/layout/fragment_itunes_search.xml</file>
+			<file>app/src/main/res/layout/addfeed.xml</file>
+			<file>app/src/main/res/layout/gpodnet_podcast_list.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/fd836fd0c13f7b5245db7286bd442a60a1800bfa</commit_url>
+		</Commits>
+	</bug>
+	<bug id="695">
+		<buginformation>
+			<summary>Autodownload based on charging isn't working in the 1.1rc1 release. </summary>
+			<description>It had been implemented using the method outlined here: http://developer.android.com/training/monitoring-device-state/battery-monitoring.html However, that method isn't working anymore. In the logs we see that the call to intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1) is returning -1. It isn't clear why this happened. We could resolve it by creating two different power connection listeners, ones that just handled connected/disconnected. I'd be interested in figuring out why this happened however. What changed? Continuing to look at it.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/receiver/PowerConnectionReceiver.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/abdf9a3f2839fdde04a1c0096705897497b4bebe</commit_url>
+		</Commits>
+	</bug>
+	<bug id="905">
+		<buginformation>
+			<summary>Share website url comes out as share url </summary>
+			<description>Hi it would be nice when we share the url or the podcast if the all the data sent to other apps properly. now no show name podcastname etc us listed. It can be similar to how browsers passes data to other apps.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/util/ShareUtils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/b0c464d6ba2f0ed57a8255d7ae1999ef0f2e2acc</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8721dab1bccde56eb9697b5084df5fcdeb861b0a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="285">
+		<buginformation>
+			<summary>Back 30 seconds does not work if less than 30 seconds have been played </summary>
+			<description>When playing an episode, pressing the << button goes back 30 seconds. If you were less than 30 seconds into an episode, that button press doesn't do anything. I would have expected the episode to go back to 0. (I believe the same might be happening with the >> button if you're less than 30 seconds away from the end of the episode, but I can't test/confirm right now)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackServiceMediaPlayer.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/7dec032d2cfb8835e29cb939b596752380650dcb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="284">
+		<buginformation>
+			<summary>Regression in 0.9.7.5: "Settings" menu does not update itself for changes in submenus. </summary>
+			<description>Setting the number in "Episode cache" does not update until Setting menu gets closed and opened again. In 0.9.7.4 it worked as expected. Similar behaviour can be observed also within "Automatic download": Setting the tick at "Automatic download" does not enable "Enable Wi-Fi filter". To get "Enable Wi-Fi filter accessible you need to exit from the "Settings" menu completely and choose "Settings/Automatic download" again.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/activity/PreferenceActivity.java</file>
+			<file>src/de/danoeh/antennapod/preferences/UserPreferences.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/bfc5ddc15d083a367ed16167ae0e87a826474e41</commit_url>
+		</Commits>
+	</bug>
+	<bug id="96">
+		<buginformation>
+			<summary>Regression in 0.9.6.3: Download of videos from "All CNET Video Podcasts (HD)" fails </summary>
+			<description>After upgrade from 0.9.6.2 to 0.9.6.3 (fdroid repo) videos from http://feeds.feedburner.com/cnet/allhdpodcast cannot be downloaded any more. The download fails almost immediately. After downgrade back to 0.9.6.2 the download works again.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/download/HttpDownloader.java</file>
+			<file>src/de/danoeh/antennapod/service/download/APRedirectHandler.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/0d8bdf6d23843874d0f61ebbca6acc9ffdd3ae13</commit_url>
+		</Commits>
+	</bug>
+	<bug id="82">
+		<buginformation>
+			<summary>Can't play audio from guardian.co.uk podcast </summary>
+			<description>I have used SparseRSS to play audio from this feed http://www.guardian.co.uk/global-development/series/global-development-podcast/rss but Antennapod doesn't allow one to play audio: it just shows the show notes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/syndication/namespace/NSRSS20.java</file>
+			<file>src/de/danoeh/antennapod/syndication/namespace/atom/NSAtom.java</file>
+			<file>src/de/danoeh/antennapod/syndication/namespace/NSMedia.java</file>
+			<file>src/de/danoeh/antennapod/syndication/util/SyndTypeUtils.java</file>
+			<file>tests/src/de/danoeh/antennapod/test/TestFeeds.java</file>
+			<file>src/de/danoeh/antennapod/syndication/handler/SyndHandler.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/19297a1c255f331d5beaa1ccaa73948fc195597d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1007">
+		<buginformation>
+			<summary>Grey text in "recently listened" </summary>
+			<description>All items in the "recently listened" view are grey. I guess grey text implies that the episode is not new and the user listened to it. The problem is with the dark theme the contrast of grey text on dark grey background is a bit low. And it does not make any sense to indicated if something was listened in a view that implies that all its elements aren't new.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemlistFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/FeedItemlistAdapter.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/PlaybackHistoryFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/58ebf7ed039cf79e11f7330a385db3dc631cd7af</commit_url>
+		</Commits>
+	</bug>
+	<bug id="327">
+		<buginformation>
+			<summary>Media content not shown and not loaded, when added to existing rss item </summary>
+			<description>Example of rss feed: http://news.tut.by/rss/s~1185.rss. Updated weekly. Initially, items in feed are populated without media content. This is an announcement. AntennaPod shows this item with no media content attached. After one - two days there media content was added. AntennaPod shows that no media content was attached to this rss item after updating feed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/feed/FeedItem.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/d597b056fbcc1feccc4c747106a25300a6e10da2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="333">
+		<buginformation>
+			<summary>No intent to call Antennapod to subscribe a podcast. </summary>
+			<description>Antennapod doesn't have a way for other apps to subscribe a podcast. For example, feed:// and itpc:// urls don't subscribe with Antennapod, so Tunesviewer can't subscribe a podcast with Antennapod.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>AndroidManifest.xml</file>
+			<file>src/de/danoeh/antennapod/util/URLChecker.java</file>
+			<file>src/instrumentationTest/de/test/antennapod/util/URLCheckerTest.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/859eabb7a302d79948ca9da4ceb886908932482a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="443">
+		<buginformation>
+			<summary>Re-attempting podcast download every 2 seconds </summary>
+			<description>One of the feeds I subscribe to references an episode that has either been deleted, moved or renamed. With the new version of AP, it ends up repeatedly trying to download it every 2 seconds - I had to remove episode from the queue to stop it. Is this something to do with the new code to re-attempt failed downloads?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/storage/DBTasks.java</file>
+			<file>src/de/danoeh/antennapod/service/download/DownloadService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/0513302c78d20c41899caacdf27b9313f1c2b973</commit_url>
+		</Commits>
+	</bug>
+	<bug id="325">
+		<buginformation>
+			<summary>Last played: sort order </summary>
+			<description>IMHO it would make more sense if the last played episode would come first. Short: reverse order</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/storage/PodDBAdapter.java</file>
+			<file>src/de/danoeh/antennapod/storage/DBReader.java</file>
+			<file>src/instrumentationTest/de/test/antennapod/storage/DBReaderTest.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/5cabac4691ddccd0028d2f2bfe419070cd9e3489</commit_url>
+		</Commits>
+	</bug>
+	<bug id="669">
+		<buginformation>
+			<summary>When playing, pause doesn't work in the lists </summary>
+			<description>In either the All Episodes or Queue, it is possible to play the episode using the play button at the right of the item. This button changes into a pause button as expected; however, it doesn't function as one. If tapped upon, it goes into the media view without pausing. Note: it is possible to pause using other methods, but the button in the list view never changes between play and pause after it has changed to pause.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/DefaultActionButtonCallback.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/NewEpisodesFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/ActionButtonUtils.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/QueueListAdapter.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/NewEpisodesListAdapter.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/PlaybackHistoryFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/QueueFragment.java</file>
+			<file>.../src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackServiceMediaPlayer.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/feed/EventDistributor.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/feed/FeedMedia.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemlistFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/FeedItemlistAdapter.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/PlaybackPreferences.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/13012a2c41214fd4f3ded3306f224a01e673f956</commit_url>
+		</Commits>
+	</bug>
+	<bug id="245">
+		<buginformation>
+			<summary>Support for paged-feeds </summary>
+			<description>Support for paged-feeds (RFC 5005) would help a lot ! please see http://podlove.org/paged-feeds/ The podcast http://cre.fm/feed/m4a/ uses it for example. Currently I can only see the first page, the last 30 episodes. I don´t find any other android app that supports it.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemlistFragment.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/storage/DBTasksTest.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/OnlineFeedViewActivity.java</file>
+			<file>app/src/main/res/menu/feedlist.xml</file>
+			<file>app/src/androidTest/java/de/test/antennapod/storage/DBReaderTest.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/menuhandler/FeedMenuHandler.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/feed/Feed.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/service/download/HttpDownloaderTest.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/storage/DBTestUtils.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/config/StorageCallbacksImpl.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/ad04a80ae7b2091c94b0d007c2a78d97e7af871d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="286">
+		<buginformation>
+			<summary>Feature Request: Per-feed option to not add episodes to new list </summary>
+			<description>I am subscribed to 2 high-frequency podcasts (daily 07:00 and 19:00 radio news), which I only infrequently listen to: maybe once a week I'll manually download the latest episode. But those 2 feeds show up with 2 new episodes per day in the list of recent episodes, which to me only represent noise. I would appreciate a way to "hide" the episodes from these feeds in the list of new episodes. This would be a per-feed option, "do not show new episodes in list". With such a feature, i could go to the Feed and download the latest episode, only when I want to listen to an episode. The rest of the time, those episodes don't fill up the newest episodes, and that list has more meaningful items in it ;)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/PodDBAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c5d05d338aefda7a7832538bd18b4702c8dce587</commit_url>
+		</Commits>
+	</bug>
+	<bug id="708">
+		<buginformation>
+			<summary>Update translations for AntennaPod 1.1 </summary>
+			<description>We've been making some good progress over the last few months and it's time to get ready for a new release. To get ready for that I submitted the current strings file to Transifex. Per @danieloeh I used the 'tx' client. I documented the steps I took on the wiki (https://github.com/AntennaPod/AntennaPod/wiki/Updating-Translations). However, I'm not sure I did it properly (this is my first time using Transifex). I'd appreciate it if someone (perhaps @danieloeh) could comment on if things look correct in the instructions and in the Transifex project (https://www.transifex.com/organization/antennapod/dashboard/antennapod). Thanks</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/res/values-az/strings.xml</file>
+			<file>core/src/main/res/values-es/strings.xml</file>
+			<file>.gitignore</file>
+			<file>core/src/main/res/values-cs-rCZ/strings.xml</file>
+			<file>core/src/main/res/values-ca/strings.xml</file>
+			<file>core/src/main/res/values-ko/strings.xml</file>
+			<file>core/src/main/res/values-it-rIT/strings.xml</file>
+			<file>core/src/main/res/values-iw-rIL/strings.xml</file>
+			<file>core/src/main/res/values-da/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/06fff4bb1616279b3f756f654a1c548ba8abc906</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/947657a6c931217f2539c2018382b2c788f86d95</commit_url>
+		</Commits>
+	</bug>
+	<bug id="425">
+		<buginformation>
+			<summary>Scheme "pcast" </summary>
+			<description>Can you add the following scheme to AndroidManifest.xml <data android:scheme="pcast" /></description>
+		</buginformation>
+		<fixedFiles>
+			<file>AndroidManifest.xml</file>
+			<file>src/de/danoeh/antennapod/activity/OnlineFeedViewActivity.java</file>
+			<file>src/de/danoeh/antennapod/util/URLChecker.java</file>
+			<file>src/de/danoeh/antennapod/activity/MainActivity.java</file>
+			<file>src/instrumentationTest/de/test/antennapod/util/URLCheckerTest.java</file>
+			<file>src/de/danoeh/antennapod/activity/DefaultOnlineFeedViewActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/dbff918e3a41e5e348f3d501d899c463a409f93e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="633">
+		<buginformation>
+			<summary>Please bring back the Refresh icon </summary>
+			<description>After a recent upgrade, the Refresh icon is no more available in the top bar (in all views). Now one must click the top-right "three dots" icon, and then select refresh, which I find cumbersome. Please consider bringing back the old refresh icon (at least in the single podcast view), beside the Search icon, or even instead of it.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/res/menu/queue.xml</file>
+			<file>app/src/main/res/menu/feedlist.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/menuhandler/MenuItemUtils.java</file>
+			<file>app/src/main/res/menu/new_episodes.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/66785b3551d0485ef880106d6e4aaf37dbb3d43f</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/5ce9503c5d23f23b0d53f4ae6ad9c02965c57776</commit_url>
+		</Commits>
+	</bug>
+	<bug id="753">
+		<buginformation>
+			<summary>AntennaPod fails to resume after a phone call </summary>
+			<description>When a phone call is received via a Bluetooth headset and 'Pause for interruptions' is set in the settings, the podcast playback stops correctly, but never resumes when the phone call ends. When on the other hand, it is interrupted by GPS navigation messages (e.g. Waze), it correctly resumes playing the podcast. I din't think it is relevant, but 'Headphone' disconnect and 'Headphone reconnect' are also enabled.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>.../src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackServiceMediaPlayer.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/UserPreferences.java</file>
+			<file>app/src/main/res/xml/preferences.xml</file>
+			<file>core/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/db0ce285a35841e1a781794b9214099bce38244d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="579">
+		<buginformation>
+			<summary>IOError: ENAMETOOLONG when downloading episode with long title </summary>
+			<description>Apparently AntennaPod stores audio files using the episode title as the filename (as opposed to using the original filename from the URL). If the episode title is too long then it is not possible to download the episode due to a filesystem limitation -- it can still be streamed though. The typical limit for a filename on common filesystems is 255 bytes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/DownloadRequester.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/e127fa79c7d1cb6baf38c9a50125b5dc9be7bde7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="551">
+		<buginformation>
+			<summary>Make scroll position in Queue view persistent </summary>
+			<description>The scroll position should of the Queue list should be saved and remembered, at least for the session if not in a persistent manner. I tend to keep quite a lot of podcast episodes in the AntennaPod queue for later listening (20-40 episodes). The current/recent episodes always reside at the bottom. So each time I want to select one of them, I need to scroll down all the way. When I change to the All Episodes view (to trigger a manual refresh for example) and then change back to Queue I have to scroll down again. This happens multiple times each day for me, so I'd be glad if this enhancement could be implemented soon. Thanks for working on AntennaPod!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/QueueFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/241fc6c33453c38ba048b042c5d23650a6bd1580</commit_url>
+		</Commits>
+	</bug>
+	<bug id="545">
+		<buginformation>
+			<summary>Unable to interpret correct dates on a podcast </summary>
+			<description>Hi There I have been trying to add a certain podcast feed to antennaPod list. It is the podcast for "Richard Herring's Leicester Square Theatre Podcast". Every time I add the feed it thinks every podcast is today. The next day when I updated the feed it increments the day and shows every podcast as today. I've had the feed in the app for a week and it does the same thing every day. The issue looks very similar to an issue reported before, #178, which was marked as won't fix because the was a legal issue with that feeds contents. The feed in this case is sourced via a feedburner link, I would have assumed there would have been some legal checks performed on it. I have check the pubDate values and they are all different dates. However I did notice that the timezone region is listed as GMT, not something like +0000. <pubDate>Fri, 2 May 2014 10:10 GMT</pubDate></description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/syndication/util/SyndDateUtils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/72d1bce2830126f465533a191eb15b853bf19aae</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1117">
+		<buginformation>
+			<summary>Can't build release version </summary>
+			<description>It looks like the added use of RxJava has caused us to be unable to build the release version. I received this error after doing a clean and then an assembleRelease: :app:proguardRelease</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/proguard.cfg</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/2af0f7ef7c590aa806efa452e49380d72b0dc87b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1102">
+		<buginformation>
+			<summary>NullPointerException for some Gpodder Actions </summary>
+			<description>java.lang.NullPointerException: Attempt to read from field 'long java.util.Date.milliseconds' on a null object reference</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/GpodnetSyncService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/bf93cf3259d1464d9c9d99b32b362676845c7700</commit_url>
+		</Commits>
+	</bug>
+	<bug id="593">
+		<buginformation>
+			<summary>Add an 'Empty Queue' command </summary>
+			<description>Consider the following use case: User is subscribed to a number of podcasts User's queue is full with previously downloaded podcasts All the episodes in the queue are stale. The user doesn't want to listen to them (they already listened to them, they got behind, whatever). With the current model the user would have to manually remove all the episodes from the queue, one by one. That can be very time consuming and tedious with a long queue. If there were a 'empty queue' or 'clear queue' command the user could issue that command, all the episodes in the queue would be removed and then, when the system auto-updates, the queue would be filled with the latest episodes from their various subscriptions. Worthwhile?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/res/menu/queue.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/QueueFragment.java</file>
+			<file>core/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/2bea83706b37c7fe5d4b687236aaad4ccca6a0c9</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/85778b4aaa4a4cd2ae7fde80bb01afdc3632d123</commit_url>
+		</Commits>
+	</bug>
+	<bug id="829">
+		<buginformation>
+			<summary>Deadlock during playback in 1.2 alpha </summary>
+			<description>I ran in to a deadlock issue when testing 1.2 build 53 on my HTC One M7 running 5.0.2. It started when playback was getting interrupted by navigation. Some of the interruptions worked and then eventually playback just never resumed. Eventually I hooked it up to adb logcat and was able to see it generate the traces.txt file. The entire time it was locked it was printing lots of these messages: 05-23 16:38:10.624: D/PlayerWidgetService(1653): Service was called while updating. Ignoring update request</description>
+		</buginformation>
+		<fixedFiles>
+			<file>.../src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackServiceMediaPlayer.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/53bf17ada858f000c59ffdb53146599f225a7de6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1274">
+		<buginformation>
+			<summary>Play position should not be lost when skipping episode and keeping it is on </summary>
+			<description>Skipping episode should not reset play position. When you resume playing antenna should continue at the time you left unless smart toggle to read has been triggered. (In which case skipping episode should remove it from queue even though keep skipped episode preference is on)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/29a4e27493918f7fdf2867367cbe2f27ab1d7424</commit_url>
+		</Commits>
+	</bug>
+	<bug id="168">
+		<buginformation>
+			<summary>Resume failed downloads </summary>
+			<description>It would be cool, if dropped downloads (mostly due to no connectivity) could be resumed and not downloaded completely again.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/download/HttpDownloader.java</file>
+			<file>src/de/danoeh/antennapod/service/download/DownloadService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/00ef0f6e771f4de0230800444f50bb3a00981f0d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="368">
+		<buginformation>
+			<summary>Display should go to sleep when a video is paused </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/activity/MediaplayerActivity.java</file>
+			<file>src/de/danoeh/antennapod/activity/VideoplayerActivity.java</file>
+			<file>src/de/danoeh/antennapod/util/playback/PlaybackController.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/1048939f69a1924a8a9509b493a2f0ed46648941</commit_url>
+		</Commits>
+	</bug>
+	<bug id="432">
+		<buginformation>
+			<summary>No reaction on prev / next over avrcp </summary>
+			<description>Hey! Antennapod shows no reaction when prev or next is pressed on the bluetooth device. I did not test a wired headset. It should jump an amount of minutes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/12660478a8249e55bd24d3503504dcf6b25482b3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1128">
+		<buginformation>
+			<summary>NullPointerException when using 'targetView' </summary>
+			<description>This has been reported on Google Play in a couple of spots now. I'm not entirely sure why we're seeing this now but weren't before. The simple solution is to check everything for null first, but it would be better to know why it's null in the first place. First example: java.lang.NullPointerException: Attempt to read from field 'android.view.View android.widget.AdapterView$AdapterContextMenuInfo.targetView' on a null object reference</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/AudioplayerActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/MainActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/34b572545e9a7b3d771ca942a3e797e9b32f1d39</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1101">
+		<buginformation>
+			<summary>Explicitly Download an Episode when on mobile data doesn't work </summary>
+			<description>The user is prompted to either 'enqueue' or 'allow temporarily', if they choose 'allow temporarily', nothing happens. (well the system says it's being downloaded, but it's not actually being downloaded)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/glide/ApOkHttpUrlLoader.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/download/AntennapodHttpClient.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/1e1b5ff99b0d0ffb8c5948ba96d01e410905177c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="553">
+		<buginformation>
+			<summary>Playback speed controls missing since latest update 0.9.9.5 </summary>
+			<description>Two days ago I updated my phone (Nexus 5) to Android 5.0/Lollipop. Antennapod works like before. But yesterday there was a new Antennapod update (0.9.9.5) and now the playback speed controls are missing. I'm able to set the playback speeds in the setting menu, but I can't speed up the playback in the podcast view when listening to an podcast. I tried to uninstall und reinstall Prestissimo, but this doesn't help.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/com/aocate/media/ServiceBackedMediaPlayer.java</file>
+			<file>core/src/main/java/com/aocate/media/MediaPlayer.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/604d04ae21ab0cbcca24cbbefabdaa443b064c37</commit_url>
+		</Commits>
+	</bug>
+	<bug id="351">
+		<buginformation>
+			<summary>Feed does not correctly update </summary>
+			<description>The following feed does not correctly update with AntennaPod: http://podcast.hr2.de/derTag/podcast.xml Once I add the podcast to AntennaPod everything is fine. As soon as I try to make an update, new entries are not added, intead the latest entry is removed. So if I 2 times try to make an update, the first 2 entries are removed. Seems to be a bug of Antennapod. Please fix this issue. thanks chris412</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/syndication/namespace/NSRSS20.java</file>
+			<file>src/de/danoeh/antennapod/feed/FeedItem.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/9d30e697e61c1af61cbcc2789c87dc05c1265c8b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="437">
+		<buginformation>
+			<summary>Unable to add Flattr connection </summary>
+			<description>[ AntennaPod, v0.9.8.3, Samsung G4 mini, Android 4.2.2 ] Right now it seems as if Flattr has changed some URL settings. If I try adding the connection to Flattr, I get towards the dialogue to enter my credentials, submit and afterwards receive a 404 popup. Unfortunately AntennaPod doesn't know the connection succeeded. Checking the Flattr website I do see a working connected AntennaPod application.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/syndication/namespace/NSITunes.java</file>
+			<file>build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/4dd97c6ccaa681b007c5556575eb7fff709caa59</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/65324d0ba9b85df439feac6ba3ad7da0a1ebf076</commit_url>
+		</Commits>
+	</bug>
+	<bug id="386">
+		<buginformation>
+			<summary>AntennaPod doesn't respond to external "Fast Forward", "Next", "Previous" etc. input. </summary>
+			<description>Hi, All media players I use and have used on Android respond to standard external input for "Fast Forward, "Next", "Previous" etc. inputs. I was surprised when AntennaPod only responds to "Play/Pause" but none of the other media controls. This matters since I use the HeadsetButton Controller app and also Bluetooth headsets with more than "Play/Pause" controls and they do not work with AntennaPod. It would be very helpful if AntennaPod could respond like other players to external playback controls</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/12660478a8249e55bd24d3503504dcf6b25482b3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="621">
+		<buginformation>
+			<summary>Thumbnails zoomed in too far </summary>
+			<description>I believe this started happening in the 1.0 release. I listen to a podcast that puts the episode number in the mp3-embedded thumbnail. AntennaPod used to display the entire image, but now zooms it (to fill the description area?). This crops out part of the episode number. At first I thought it was doing a fit-to-height zoom. Then I rotated my phone to landscape and it cropped the width the same, but also severely cropped the top and bottom, to the point of being silly.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/res/layout/cover_fragment.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/6621df48fcdc44d8f7cd2c6254349d54f3a03b07</commit_url>
+		</Commits>
+	</bug>
+	<bug id="741">
+		<buginformation>
+			<summary>Issues Reported from Google Groups "Please(!) bring back the "all episodes" list" </summary>
+			<description>I had a discussion with someone on the Google Group for AntennaPod. I'm not quite sure why they're experiencing the issues they're seeing. If it's something to do with the device they're using or if this is a usability issue or some combination of the two. He seems frustrated enough that we should probably consider what is going on and think about how it could be addressed. I'm following up with the author to find out what device they're using. Tim: Sad enough that you had to switch from the play list to "all episodes" every time you launch the app for a few months now, the "all episodes" lists is now missing completely. If I want to listen to an episode now, I have to search 3 lists to find it. This makes this great app almost unusable. Additionally, you have to scroll very, very carefully now not to swype one of the episodes out of the list.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/NavListAdapter.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/MainActivity.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/ui/MainActivityTest.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/ui/PlaybackTest.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/NewEpisodesListAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/beabcf4302a9e703a3fefa114ff946acb593b7e2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="972">
+		<buginformation>
+			<summary>NullPointerException in PlaybackController when media is null </summary>
+			<description>'media' is used, but can actually be null sometimes. Should be guarded. java.lang.NullPointerException: Attempt to invoke interface method 'int de.danoeh.antennapod.core.util.playback.Playable.getDuration()' on a null object reference</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/util/playback/PlaybackController.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8399da878faff6f6b649ad4c893f212e3f9beb7b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="543">
+		<buginformation>
+			<summary>Persistent notification and lockscreen controls for Android 5.0 </summary>
+			<description>One of Android 5.0 APIs is the Media playback. Quoting from here, http://developer.android.com/about/versions/android-5.0.html, "If you are implementing notifications that present media playback status or transport controls, consider using the new Notification.MediaStyle template instead of a custom RemoteViews.RemoteView object. Whichever approach you choose, make sure to set the notification's visibility to VISIBILITY_PUBLIC so that your controls are accessible from the lock screen. Note that beginning in Android 5.0, the system no longer shows RemoteControlClient objects on the lock screen. For more information, see If your app uses RemoteControlClient." Notification.MediaStyle can be found here: http://developer.android.com/reference/android/app/Notification.MediaStyle.html Unfortunately, the solution provided in Issue #405 doesn't seem like it will be supported in Android 5.0 and on.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>.../src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackServiceMediaPlayer.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/d697fab7eb8202fceca52895dd5dee2e4f139247</commit_url>
+		</Commits>
+	</bug>
+	<bug id="580">
+		<buginformation>
+			<summary>Generated filename is the same for every episode and therefore episodes are overwritten </summary>
+			<description>I am having trouble with the following feed: http://www.ndr.de/info/podcast2988.xml AntennaPod seems to construct the following filename for every episode: "Echo der Welt - Das Auslandsmagazin.mp3". The download links are in the form of e.g. "http://media.ndr.de/download/podcasts/podcast2988/AU-20141212-1609-3442.mp3". As it always generates the same filename, only the most recently downloaded episode is really available. AntennaPod shows the availability of all downloaded episodes, but it obviously always plays the same file, which is the most recently downloaded one.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/DownloadRequester.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c33081b909a800aeae138a9ded37f4358e36b66c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="595">
+		<buginformation>
+			<summary>add a refresh button to the queue view </summary>
+			<description>moved from the "soon closed" issue #458 It would be nice, if the queue view would get an "refresh" button, too. This is the only reason why i call the "all episode" view.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/res/menu/queue.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/QueueFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/86e5e9ea1373980576f76ad1abf676a4c9911fac</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/77840bea99c206a593b14f2683e0d520d2274c91</commit_url>
+		</Commits>
+	</bug>
+	<bug id="387">
+		<buginformation>
+			<summary>Playback and queue corrupts when an episode that was played outside of the queue finishes. </summary>
+			<description>I'm working off the develop branch, fetched two hours ago. Normally I wouldn't write a bug report about the develop branch, but considering you merged it to the master branch 6 hours ago, I think it's fine. To reproduce this Have an empty queue Go the podcasts tab and play something directly from the list (so without adding anything to the queue). Finish the episode (doesn't matter how: skip, slide, listen) Repeat 2, but make sure it's the same episode 4a. Notice that you can't play the episode. 4b. Notice that the episode is now in the queue, but can't play it from there either 4c. Remove and repeat 4 will result in the same situation. How to get out of this situation (sometimes) Play a different episode Finish the episode (doesn't matter how: skip, slide, listen) The app should skip to the next episode Sometimes you can play this, sometimes you can't, but when you can and the episode finishes, things will go back to normal.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackService.java</file>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackServiceMediaPlayer.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c4e0078382c6ea048456e127cc887476d48a6686</commit_url>
+		</Commits>
+	</bug>
+	<bug id="436">
+		<buginformation>
+			<summary>Sleep timer: automatically show number pad </summary>
+			<description>Would it be possible to automatically select the text box & display the number pad? Since entering a number is the main/only function of this dialogue, it's a bit annoying to have to click into it first every time.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/layout/time_dialog.xml</file>
+			<file>src/de/danoeh/antennapod/dialog/TimeDialog.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8a951d0dbf220e2c7b26b18d6dbc1de4ed5cf718</commit_url>
+		</Commits>
+	</bug>
+	<bug id="742">
+		<buginformation>
+			<summary>Major missed use case: Managing everything from 'All Episodes' </summary>
+			<description>I think we missed a major use case of 'All Episodes' From a recent play store review: All episodes listing removed No clue why it was removed, now I have to look at a list with barely visible episodes. The old listing was far better. Showed episodes and clearly showed what was new. Silly change for the sake of change. Nothing beneficial.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/NavListAdapter.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/MainActivity.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/ui/MainActivityTest.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/ui/PlaybackTest.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/NewEpisodesListAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/beabcf4302a9e703a3fefa114ff946acb593b7e2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="540">
+		<buginformation>
+			<summary>Playback history doesn't work </summary>
+			<description>When I access the Playback history area of AntennaPod, all of the entries there are at least a few weeks old. Also they are not listed chronologically.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/PodDBAdapter.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/storage/DBReaderTest.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/DBReader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/d2ee409530405d0004787ca734455f6679904a56</commit_url>
+		</Commits>
+	</bug>
+	<bug id="568">
+		<buginformation>
+			<summary>AntennaPod fails on protocol relative urls </summary>
+			<description>On protocol relative url AntennaPod prepends http:// which leads to an unusable url of form http:////example.com</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/util/URLChecker.java</file>
+			<file>app/src/androidTest/java/de/test/antennapod/util/URLCheckerTest.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/DownloadRequester.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/bde86e018ade4a8d3977fa7198f5f19ee2a32ec9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="596">
+		<buginformation>
+			<summary>Too easy to accidentally mark all episodes as read </summary>
+			<description>I have just done it. For a while I have been fearing the possibility and now it has turned into a reality. Because, in All episodes view, 'Refresh' option is right above 'Mark all episodes as read', and also in part due to me being slightly retarded, I accidentally touched the latter in place of the former. With no confirmation requested and no undo option available, I am now unaware of what episodes I have and haven't heard, and moderately bemused over this situation. I really wish there were a confirmation step or an undo option to this. Thank you for your time, attention and a great app.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/menuhandler/FeedMenuHandler.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/NewEpisodesFragment.java</file>
+			<file>core/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/4b8a3c00caef6b1f9aa21a8a5dacac7bccb6e9f8</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/49c714a5a5720eb2abb42f178088475084b41031</commit_url>
+		</Commits>
+	</bug>
+	<bug id="964">
+		<buginformation>
+			<summary>DefaultActionButtonCallback tries to create GpodnetEpisodeAction when there's no episode </summary>
+			<description>This was reported for 1.2 and 1.3alpha. It appears to be happening because of this line. We get to this line only when the condition on line 59 is false, which means the episode has no media, but the GpodnetEpisodeAction.Builder is going to try to get the download URL for the 'media', which the item doesn't have (or we wouldn't have gotten here). I think that we actually don't want to use Gpodder in this case. The user is never actually given a choice in this view to mark an episode with media as played. So this really shouldn't be present. This mark as 'read' is really only for website only entries. Which, means that the string used here is probably wrong too. ava.lang.NullPointerException</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/menuhandler/FeedItemMenuHandler.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/DefaultActionButtonCallback.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/51e3f55561c5d34a51de1543028f12635acb6de9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1339">
+		<buginformation>
+			<summary>NullPointerException in 1.4.0.5 (reported via Google Play) </summary>
+			<description>Android 5.1 Device: d802 java.lang.NullPointerException: Attempt to read from field 'java.lang.String de.danoeh.antennapod.core.feed.FeedItem.title' on a null object reference</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/0ef38407e35ec8e693896884522c10bc07448a2c</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c5d99a84b288d30afd0a2b54bb557fdbcdc9e56b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="970">
+		<buginformation>
+			<summary>NullPointerException in ExternalPlayerFragment </summary>
+			<description>We can sometimes get a NullPointerExeception somewhere in ExternalPlayerFragment. I think what's happening is that the null pointer is actually 'controller' and due to optimization it doesn't manifest itself until some actual member data is accessed, which doesn't happen until getImageUri on FeedMedia. java.lang.RuntimeException: Error receiving broadcast Intent { act=action.de.danoeh.antennapod.core.service.playerNotification flg=0x10 (has extras) } in de.danoeh.antennapod.core.util.playback.PlaybackController$6@41d387e8</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ExternalPlayerFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/21976aca14031b113f020acee4465d88176b7f11</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1305">
+		<buginformation>
+			<summary>Starting Bluetooth playback on reconnect doesn't always work correctly </summary>
+			<description>The best example is when your device is paired with a car stereo. AntennaPod will start playback as soon as the device connects to the car. However, the car stereo may not have the Bluetooth source selected. As a result AntennaPod podcasts will be playing through episodes, but the user will have no idea this is happening. As far as they're concerned they just started their car and are driving somewhere listening to the radio/cd/nothing. One thought for how to resolve this so that it works properly for people with Bluetooth headsets is to have a setting that determines if AntennaPod will start playback on bluetooth reconnect. It has also been suggested that AntennaPod should vibrate some when it starts playback due to a Bluetooth reconnect. This behavior changed in AntennaPod 1.4 alpha, so I think we should try to resolve it before we release 1.4.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/androidTest/java/de/test/antennapod/ui/PreferencesTest.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/UserPreferences.java</file>
+			<file>app/src/main/res/xml/preferences.xml</file>
+			<file>core/src/main/res/values/strings.xml</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/3cc5eee0ff2d5eb650a71c78235229422322a3a6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="623">
+		<buginformation>
+			<summary>OPML Import </summary>
+			<description>Currently app only allows OPML import from a given directory, would be nice if this opened up a file dialog instead and allowed user to select the OPML file.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/DirectoryChooserActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/OpmlImportFromPathActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/preferences/PreferenceController.java</file>
+			<file>app/src/main/res/layout/opml_import.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/66121d606ed07608e61aeb43e4847e9c2df8cbbd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="376">
+		<buginformation>
+			<summary>Bad Voltage Podcast Download is not working </summary>
+			<description>Hallo, I added the bad voltage podcast with this url: http://www.badvoltage.org/feed/mp3/ The stream is working fine. When I try to download it i get a notification that the download has finished with a 404. I get that error on a nexus 7 2013 with android 4.4 and on the htc one x with cm 4.4 nightly.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/util/URIUtil.java</file>
+			<file>src/de/danoeh/antennapod/service/download/HttpDownloader.java</file>
+			<file>src/instrumentationTest/de/test/antennapod/util/URIUtilTest.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/b454ab09740dc8557a670c9c1d4bc8cd19ea129c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="558">
+		<buginformation>
+			<summary>Queue doesn't work since update </summary>
+			<description>Since I loaded the latest update yesterday, the podcast queue no longer works. It will not always continue to the next podcast, or maybe it simply stops playing after a period of time. I need a podcast player that will always play the next podcast in the queue indefinitely.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/com/aocate/media/ServiceBackedMediaPlayer.java</file>
+			<file>core/src/main/java/com/aocate/media/MediaPlayer.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/604d04ae21ab0cbcca24cbbefabdaa443b064c37</commit_url>
+		</Commits>
+	</bug>
+	<bug id="571">
+		<buginformation>
+			<summary>Please use different controls on lock screen </summary>
+			<description>Hi, first of all, thanks for the app. On the lock screen using Android 5 / Lollipop, the app offers these controls: Play, Pause, Stop. I'd prefer a different set of controls: Rewind, Play/Pause*, Forward. (* The control should change depending on the current state of playback.) Use case is simple: While listening, I often rewind a few seconds if I missed something during a podcast. Also, I never use "stop", only "pause".</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/UserPreferences.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/13d0a3570b3634da777a791e89008ad7cef5bd29</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1876">
+		<buginformation>
+			<summary>Swipe gestures in episode details - description not updated </summary>
+			<description>If you tap on an episode, you get a details view including (I assume) a WebView that displays the description. Swiping left/right switches to the next/previous episode, so it changes title, icon, feed title, duration,... The description gets reloaded (progress indicator visible) but it does not change to the description of the new episode you just switched to. This happens in the playlist as well as in the episodes list of a single feed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/6ea9242fff747e990ca7945fc5016d0a3495d1f7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="559">
+		<buginformation>
+			<summary>Can't switch to a different podcast while one is playing in v0.9.9.5 </summary>
+			<description>If i have a podcast playing currently I can't go find another one and play that one instead. This previously worked in other versions. When i click on a different podcasts play button it goes to the playing screen but has the podcast I was listening to stopped but set as the active podcast. This is occurring v0.9.9.5 on the Lollipop operation system, Nexus 5 phone. Restarting, clearing the chase or rebooting didn't make a difference either. (same as sthesing)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/com/aocate/media/ServiceBackedMediaPlayer.java</file>
+			<file>core/src/main/java/com/aocate/media/MediaPlayer.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/604d04ae21ab0cbcca24cbbefabdaa443b064c37</commit_url>
+		</Commits>
+	</bug>
+	<bug id="39">
+		<buginformation>
+			<summary>Reorder objects in playlist easier </summary>
+			<description>Make it possible to reorder objects in the playlist by long press on the arrow on the right. Sorry i don't know who the function is named but most music players on Android do it that way.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/drawable-xhdpi/ic_action_overflow_dark.png</file>
+			<file>project.properties</file>
+			<file>src/instrumentationTest/de/test/antennapod/util/URIUtilTest.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/menuhandler/FeedItemMenuHandler.java</file>
+			<file>.../src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackServiceMediaPlayer.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/util/URLChecker.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/asynctask/PicassoProvider.java</file>
+			<file>res/drawable-mdpi/ic_new_dark.png</file>
+			<file>res/drawable-mdpi/ic_action_overflow_dark.png</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/DownloadsFragment.java</file>
+			<file>res/drawable-xxhdpi/ic_new_dark.png</file>
+			<file>res/drawable-mdpi/ic_action_overflow.png</file>
+			<file>src/de/danoeh/antennapod/opml/OpmlReader.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/DownloadLogAdapter.java</file>
+			<file>res/drawable-mdpi/ic_drawer_dark.png</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/RunningDownloadsFragment.java</file>
+			<file>assets/Roboto-Light.ttf</file>
+			<file>app/proguard.cfg</file>
+			<file>res/drawable-xxhdpi/ic_action_overflow.png</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/download/HttpDownloader.java</file>
+			<file>src/de/danoeh/antennapod/util/URIUtil.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/MainActivity.java</file>
+			<file>res/values/strings.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/service/PlayerWidgetService.java</file>
+			<file>app/src/main/res/xml/preferences.xml</file>
+			<file>res/drawable-xhdpi/ic_new.png</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/PodDBAdapter.java</file>
+			<file>AndroidManifest.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/SubscriptionFragment.java</file>
+			<file>src/de/danoeh/antennapod/activity/PreferenceActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/preferences/PreferenceController.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/receiver/PowerConnectionReceiver.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/PlaybackHistoryFragment.java</file>
+			<file>res/drawable-xxhdpi/ic_drag_handle_dark.png</file>
+			<file>res/xml/preferences.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/OpmlImportFromIntentActivity.java</file>
+			<file>tests/src/de/danoeh/antennapod/test/FeedHandlerTest.java</file>
+			<file>res/drawable-hdpi/ic_new_dark.png</file>
+			<file>res/drawable-xhdpi/ic_drawer.png</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ExternalPlayerFragment.java</file>
+			<file>src/de/danoeh/antennapod/storage/DBWriter.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/util/playback/PlaybackController.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/DBWriter.java</file>
+			<file>res/drawable-xhdpi/ic_drawer_dark.png</file>
+			<file>res/drawable-hdpi/ic_drawer.png</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/FeedInfoActivity.java</file>
+			<file>res/drawable-mdpi/ic_drag_handle.png</file>
+			<file>src/de/danoeh/antennapod/service/download/HttpDownloader.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/DefaultActionButtonCallback.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/download/DownloadService.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/dialog/EpisodesApplyActionFragment.java</file>
+			<file>res/drawable-xxhdpi/ic_drag_handle.png</file>
+			<file>res/drawable-xxhdpi/ic_action_overflow_dark.png</file>
+			<file>res/drawable-xxhdpi/ic_drawer_dark.png</file>
+			<file>submodules/dslv</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/QueueFragment.java</file>
+			<file>description/en.txt</file>
+			<file>assets/Roboto.ttf</file>
+			<file>res/drawable-hdpi/ic_action_overflow_dark.png</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/asynctask/DownloadObserver.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/MediaplayerInfoActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/AllEpisodesFragment.java</file>
+			<file>res/drawable-mdpi/ic_drag_handle_dark.png</file>
+			<file>res/drawable-xhdpi/ic_drag_handle.png</file>
+			<file>res/drawable-mdpi/ic_new.png</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/ImportExportActivity.java</file>
+			<file>src/de/danoeh/antennapod/util/flattr/FlattrUtils.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/EpisodesFragment.java</file>
+			<file>CHANGELOG.md</file>
+			<file>res/drawable-xhdpi/ic_new_dark.png</file>
+			<file>res/drawable-hdpi/ic_drag_handle_dark.png</file>
+			<file>res/drawable-xxhdpi/ic_drawer.png</file>
+			<file>res/drawable-xhdpi/ic_drag_handle_dark.png</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemFragment.java</file>
+			<file>res/drawable-hdpi/ic_action_overflow.png</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/gpodnet/PodcastListFragment.java</file>
+			<file>res/drawable-hdpi/ic_new.png</file>
+			<file>res/drawable-hdpi/ic_drag_handle.png</file>
+			<file>src/de/danoeh/antennapod/service/download/DownloadService.java</file>
+			<file>src/de/danoeh/antennapod/storage/PodDBAdapter.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/gpoddernet/GpodnetService.java</file>
+			<file>res/drawable-xhdpi/ic_action_overflow.png</file>
+			<file>res/drawable-mdpi/ic_drawer.png</file>
+			<file>src/de/danoeh/antennapod/activity/MediaplayerActivity.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/feed/FeedMedia.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/AboutActivity.java</file>
+			<file>build.gradle</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/OpmlImportFromPathActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/NewEpisodesFragment.java</file>
+			<file>app/src/main/AndroidManifest.xml</file>
+			<file>res/drawable-hdpi/ic_drawer_dark.png</file>
+			<file>app/src/main/res/layout/import_export_activity.xml</file>
+			<file>res/drawable-xxhdpi/ic_new.png</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/itunes/ItunesAdapter.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemlistFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/FeedItemlistAdapter.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/GpodnetSyncService.java</file>
+			<file>src/de/danoeh/antennapod/fragment/ItemDescriptionFragment.java</file>
+			<file>.tx/config</file>
+			<file>core/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/29a4e27493918f7fdf2867367cbe2f27ab1d7424</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/941fa9062e2ac1709e8c99208e2f63226fe2c7a8</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/3945fb2fd967254518ede49aa879a091e0ab9141</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/921665167f50f85683cdd7154e62fc48841687c1</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/abdf9a3f2839fdde04a1c0096705897497b4bebe</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/a01f0b1b7ac68e55263e9a2d6d45494425dd56b1</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/58ebf7ed039cf79e11f7330a385db3dc631cd7af</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/f022ddaf8f3444b9be02829bd0fb358f625db37b</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/473444291f68c7f8a205712c1b51fad74b0b1420</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/cca91b12b9df7c23121b4c01172863ff64d35cfe</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/9bd7c3108023c4a822c1e02bf3de9bc560c4abab</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c5d05d338aefda7a7832538bd18b4702c8dce587</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/21976aca14031b113f020acee4465d88176b7f11</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/7335a079567dd4df884a52c2b1a8722ad1ffeca0</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8f8a24d6aabee1eae6219699c04e37391d17c8e5</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/236757e80309d496a6ef6a44ec6d7e3f85852484</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/d3491d1858bf33f894f07652169254b5821b0e9d</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/51e3f55561c5d34a51de1543028f12635acb6de9</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/02653918f0290dcff582987b52cd99c6ea707ed9</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/01cfe2a94b680127f89de34d1ba95105bb303d40</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/dfcfe15dd043e5957b196da072b5bf4aa93049ce</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8399da878faff6f6b649ad4c893f212e3f9beb7b</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/bda6cfb379dfcfb73f274b64b59a1e6844053816</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8da0dd67955de4ab715ce15b577f1ad82ca0cdfe</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/2924955b61f9c3cc7280138a21bfa1b58448bd5c</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/05cb09e4fad0befb08396b58dbd5bc2699383e20</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/b454ab09740dc8557a670c9c1d4bc8cd19ea129c</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/b9a1f663230735fa7274f7fa84e47befa096d93e</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/0f3b77ed8e9a738039cd4f4fbd11919b1f2c6f93</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8090431d302db205cdc54bd2d2e2d32ce5e751c0</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/fdf1ca44b8bf50917b20b10d28fe5d488c663ef6</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/562bbf21f056e03aa13d5b48a5cdb16031495f2f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="968">
+		<buginformation>
+			<summary>IndexOutOfBoundsException in RunningDownloadsFragment </summary>
+			<description>I believe this is caused by a race condition. The item is removed from the list before getItem is called. We could solve this by just checking the index in getItem before returning, but that could still cause a race condition. Better would be to see if we should be operating on a copy of the list, synchronizing access to it somehow, or using a better method of identifying downloads. java.lang.IndexOutOfBoundsException: Invalid index 7, size is 7</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/menuhandler/FeedItemMenuHandler.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/DefaultActionButtonCallback.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/QueueFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemlistFragment.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/download/DownloadService.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemFragment.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/asynctask/DownloadObserver.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/RunningDownloadsFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/AllEpisodesFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/PlaybackHistoryFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/473444291f68c7f8a205712c1b51fad74b0b1420</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/d4fb1b09686cb998c850dc52abb9654e27bd31e9</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/23f666a24d9469fb42cebe659573260126cbd51e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="363">
+		<buginformation>
+			<summary>Navbar is shown while playing videos </summary>
+			<description>The Navbar is shown so not the complete screen is used while playing videos.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/res/values/styles.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/VideoplayerActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/a8ae853cfd1e65de2aea8bc11e3373bd90e72f76</commit_url>
+		</Commits>
+	</bug>
+	<bug id="822">
+		<buginformation>
+			<summary>Download indicator not show on the New Episodes list </summary>
+			<description>When downloading an episode from the New Episodes list the download progress bar isn't shown.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/AndroidManifest.xml</file>
+			<file>app/src/main/res/layout/new_episodes_listitem.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/7aafe23b6b7eaddffedeb3f5539a5cfeb0f3e2f8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="765">
+		<buginformation>
+			<summary>NullPointerException in DragSortController.onScroll </summary>
+			<description>From version 1.1.1, decoded from the playstore crash using 'retrace.sh' java.lang.NullPointerException</description>
+		</buginformation>
+		<fixedFiles>
+			<file>library/drag-sort-listview/src/main/java/com/mobeta/android/dslv/DragSortController.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/f207ba2152baa95a6a4b740a9136f4a9d7f31dbd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="942">
+		<buginformation>
+			<summary>Deadlock in PlaybackService.saveCurrentPosition </summary>
+			<description>A user reported a deadlock via Google Play. After looking at the dump I think what's happening is this: saveCurrentPosition is synchronized and calls PlaybackServiceMediaPlayer.getPSMPInfo() which is itself synchronized. PlaybackServiceMediaPlayer.setPlayerStatus (which is synchronized) calls saveCurrentPosition. Since these things can happen from different threads we wind up with deadlock. Thread dump: ----- pid 29288 at 2015-06-22 14:37:04 -----</description>
+		</buginformation>
+		<fixedFiles>
+			<file>.../src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackServiceMediaPlayer.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c2ca3e1bbdfb67a5b8bc6dea6a4f80d900ac65c7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1848">
+		<buginformation>
+			<summary>Non-functional options menu entry </summary>
+			<description>Opening the downloads fragment and afterwards the subscriptions fragment creates a non-functional options menu entry</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/SubscriptionFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/36bb2f9bd7a1c5108f918e7c1604d60bbe62e66e</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/d22f2fc184de6a6c23424ea3dc4f165685cbfa8a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="566">
+		<buginformation>
+			<summary>Automatic feed updates not working </summary>
+			<description>Automatic feed updates not working. I was wait some days, restarted phone - nothing helps. Only manual update works (top right button). My settings: Mobile network updates disabled. Wifi updates enabled. Wifi filter disabled. Update interval 1 hour. AntennaPod 0.9.9.5 Android 4.1.1 (Prestigio Multiphone 4055 DUO)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/AndroidManifest.xml</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/UserPreferences.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/receiver/FeedUpdateReceiver.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c49357c4d00f025ef78a84c290512f240d88b586</commit_url>
+		</Commits>
+	</bug>
+	<bug id="758">
+		<buginformation>
+			<summary>Don't obfuscate with ProGuard </summary>
+			<description>It can make a mess of the crash reports. Yes, if we keep the mapping we could reproduce them. But is there any upside to obfuscating? We're an open source application. There's no IP to protect? I'm considering adding -dontobfuscate to proguard.cfg. Are there any reasons I shouldn't? (see http://stackoverflow.com/questions/9651703/using-proguard-with-android-without-obfuscation for some potential problems and a solution)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/proguard.cfg</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8f8a24d6aabee1eae6219699c04e37391d17c8e5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="412">
+		<buginformation>
+			<summary>App exits after changing theme </summary>
+			<description>If I go to Settings and change the theme, then click the back button or the settings icon, the app closes. It doesn't show a Force Close or any error, just returns to the home screen. Tested with 0.9.8.3 on Android 4.4 (CM11)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/activity/PreferenceActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/e715a43ac978a1d0593b7a4fb17730d6c2dae79a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="374">
+		<buginformation>
+			<summary>Make it possible to remove last podcast of playlist </summary>
+			<description>It seems impossible to delete the last podcast of the playlist. Even if skipping this episode (effectively completely clearing the playlist), it still can't be removed from within its feed overview. The only options offered are to skip the epidosde (which doesn't make any sense) and to add it to the playlist again.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackService.java</file>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackServiceMediaPlayer.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/dfa10a5989ad3b99dbd4f32742aa76de448af92c</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/54051da5f7a29c91bf9b59fe89cc3a70a3379460</commit_url>
+		</Commits>
+	</bug>
+	<bug id="827">
+		<buginformation>
+			<summary>OPML Import not working with Podcast Addict backup </summary>
+			<description>When I attempt to import the file linked below the app appears to do nothing with Options 1 and 2 on the import screen. I also attempted sharing the file to AntennaPod and got a message box containing "An error occured:Parser Exception()" https://gist.github.com/CWftw/bf6e36e28360762db5b6</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/OpmlImportFromIntentActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/OpmlImportFromPathActivity.java</file>
+			<file>app/src/main/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/dfcfe15dd043e5957b196da072b5bf4aa93049ce</commit_url>
+		</Commits>
+	</bug>
+	<bug id="947">
+		<buginformation>
+			<summary>Another MediaRequestHandler Erro </summary>
+			<description>It seems our fallback method doesn't always work... We had two of these reported today. java.lang.RuntimeException: An error occured while executing doInBackground()</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/asynctask/PicassoProvider.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/f2dd49d533475a9486ed00ba88abf30489b59519</commit_url>
+		</Commits>
+	</bug>
+	<bug id="563">
+		<buginformation>
+			<summary>No fullscreen video in android 5.0 </summary>
+			<description>There is a narrow edge around the video. No fullscreen anymore with nexus 5</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/res/values/dimens.xml</file>
+			<file>app/src/main/res/layout/videoplayer_activity.xml</file>
+			<file>core/src/main/res/values-v11/dimens.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/VideoplayerActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/bf0257a405f5ad7dee39c52ddd6f669c3893ed31</commit_url>
+		</Commits>
+	</bug>
+	<bug id="629">
+		<buginformation>
+			<summary>"Unknown Error" when resuming streamed podcast and streaming podcast suggestion </summary>
+			<description>Every time I pause a podcast that is being streamed and try to resume it, I'm treated with an "Unknown Error" prompt. see pic http://i.imgur.com/ohDHLC7.png Also, with podcast streaming in general, I'd love to see an option with streaming where it'll attempt to download the full podcast as I'm listening to it. It really bothers me that I can be streaming a two-hour long podcast on my wifi network and then an hour into the podcast I step out of my wifi network range and the podcast just stops. You'd think that after an hour there would've been enough time for Antennapod to passively download the whole thing. Why not simply just download the whole podcast from the beginning, you ask? I want to start listening immediately. I don't want to wait for the podcast to fully download before listening to it.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/gpoddernet/GpodnetService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/ca3cebb463a136082493f0bda8f090d1bc130e20</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/bfd2d21677bfd822160a4400242096762e912633</commit_url>
+		</Commits>
+	</bug>
+	<bug id="401">
+		<buginformation>
+			<summary>Remove HTML in Episode Listings </summary>
+			<description>Episode descriptions which have HTML in them look funky when displayed in the list view.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>assets/about.html</file>
+			<file>src/de/danoeh/antennapod/activity/OnlineFeedViewActivity.java</file>
+			<file>build.gradle</file>
+			<file>src/de/danoeh/antennapod/activity/DefaultOnlineFeedViewActivity.java</file>
+			<file>assets/LICENSE_JSOUP.txt</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/a2757866402f01c6683d0ba17cf19e3e7d158fbe</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1053">
+		<buginformation>
+			<summary>If AntennaPod force closes images are no longer refreshed </summary>
+			<description>Steps to reproduce: Cause AntennaPod to force close somehow Restart AntennaPod Images are not displayed This seems more apparent with the Glide update from #1043 but that could be because or prior use of images was masking the problem.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/glide/ApOkHttpUrlLoader.java</file>
+			<file>app/src/main/res/xml/preferences.xml</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/UserPreferences.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/dbaae4aa69b20ab6a650be73aeb944157ad8b43f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="574">
+		<buginformation>
+			<summary>Notification control improvements </summary>
+			<description>These are various requested future enhancements to the notification controls. Combine play & pause into 1 button Make notification swipe away instead of using stop/close button Add rewind button Here is the old discussion about how to implement these: #480 (comment)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/e9ed796fd432f8bcd9b41f52c2777b00cadcbed8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1456">
+		<buginformation>
+			<summary>Player: Toggle "time left" and "total time" </summary>
+			<description>Sometimes it's more useful to show how much time is needed for the current podcast to end instead of the total time. It's a user experience thing.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/MediaplayerActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/14fec88e5be5671dfa9713ca64dd1d030066fcde</commit_url>
+		</Commits>
+	</bug>
+	<bug id="979">
+		<buginformation>
+			<summary>PodcastListFragment tries to call loadChildFragment on a null activity </summary>
+			<description>We do this same sort of thing elsewhere (calling getActivity() from the callback). So, we should be sure to apply the fix elsewhere as well. Reported on Google Play from a Nexus 5 on Android 5.1. java.lang.NullPointerException: Attempt to invoke virtual method 'void de.danoeh.antennapod.activity.MainActivity.loadChildFragment(android.support.v4.app.Fragment)' on a null object reference</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/gpodnet/PodcastListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/fdf1ca44b8bf50917b20b10d28fe5d488c663ef6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="366">
+		<buginformation>
+			<summary>File doesn't stop playing?! </summary>
+			<description>Recently this problem showed up. I think its related to the new 0.9.8.1 release but can't be sure. My podcast finishes playing and AntennaPod gets into a stuck state. It looks like the file is still playing. I can't get it to stop or allow me to delete the file. I can delete the app's data but that's a tad extreme. Some screenshots of what I see... http://yasmar.net/?attachment_id=187 http://yasmar.net/?attachment_id=188</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackService.java</file>
+			<file>src/de/danoeh/antennapod/service/playback/PlaybackServiceMediaPlayer.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/dfa10a5989ad3b99dbd4f32742aa76de448af92c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1974">
+		<buginformation>
+			<summary>CastManager.addMediaRouterButton NPE </summary>
+			<description>Version: 1.6.0.7 java.lang.NullPointerException: Attempt to invoke virtual method 'void de.danoeh.antennapod.core.cast.SwitchableMediaRouteActionProvider.setRouteSelector(android.support.v7.media.MediaRouteSelector)' on a null object reference</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/play/java/de/danoeh/antennapod/core/cast/CastManager.java</file>
+			<file>app/src/play/java/de/danoeh/antennapod/activity/CastEnabledActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/b46b2247b46f36f28e14e536c9f8ce605091b015</commit_url>
+		</Commits>
+	</bug>
+	<bug id="895">
+		<buginformation>
+			<summary>NullPointerException in DownloadLogAdapter OnClickListener </summary>
+			<description>java.lang.NullPointerException</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/DownloadLogAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/18218b04401efb8ecd36b2650e0478151bd1d863</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/05ce266043dbc06d0c508547086eabfdffa36246</commit_url>
+		</Commits>
+	</bug>
+	<bug id="506">
+		<buginformation>
+			<summary>Way to delete/clear download log? </summary>
+			<description>The log in the "Downloads" section appears to keep every download (successful and failed) forever. It would be great to be able to clear the log since it's getting very long.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/PodDBAdapter.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/DownloadLogFragment.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/DBWriter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/4c50c4b801fcbbc62d19803f40baba5a5f9e0148</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8f9c9c8d3bb63a2257ad710ec4283d47c3df8bc9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="664">
+		<buginformation>
+			<summary>[Feature Request] Play/pause directly from the queue without changing to the playback screen. </summary>
+			<description>Hi, There's a play/pause button to the right in the queue but it takes you to the playback screen when you press it. I would like for it to simply start playing or pause and stay in the queue view while adding a long press option to be taken to the playback screen.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/DefaultActionButtonCallback.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/NewEpisodesFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/ActionButtonUtils.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/QueueListAdapter.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/NewEpisodesListAdapter.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/PlaybackHistoryFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/QueueFragment.java</file>
+			<file>.../src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackServiceMediaPlayer.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/feed/EventDistributor.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/feed/FeedMedia.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/fragment/ItemlistFragment.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/FeedItemlistAdapter.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/PlaybackPreferences.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/13012a2c41214fd4f3ded3306f224a01e673f956</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1949">
+		<buginformation>
+			<summary>Atom image </summary>
+			<description>With atom feeds AntennaPod currently loads the image from the logo element. However the atom RFC states logo should be a 2:1 image and icon a 1:1. I think the easiest thing to do would be try to load the image from icon first and then fall back to logo when in the atom NS. Somewhere in this file. However it might be better to allow multiple images in a feed. Then the two images in feeditemlist_header/ItemlistFragment could be different and not just a blurry stretched version of the same image. 👍 1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/syndication/namespace/atom/NSAtom.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/baf15690204e3c3993e19aa72486c0bc80b80f52</commit_url>
+		</Commits>
+	</bug>
+	<bug id="316">
+		<buginformation>
+			<summary>Auto downloading doesn't download new podcasts immediately but waits for the next interval </summary>
+			<description>When the automatic download updates the feeds and a new episode is found, that episode is not downloaded immediately. Instead AntennaPod will wait for your custom set update interval (2h in my case). Leaving the house with an undownloaded episode is a bit annoying, easpecially when the download would have only taken a few seconds on your wifi. I did not test if that issue appears when setting a high update interval, but if it does one would receive all new episodes only after a high delay. My personal fix is to regularly check for new podcasts and hitting the update button manully, but I would like AntennaPod to be purely push- and not pull-style.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/download/DownloadService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/7365fc3d5d595665063cc14bcf22b855956f7537</commit_url>
+		</Commits>
+	</bug>
+	<bug id="470">
+		<buginformation>
+			<summary>Cannot remove episode without file </summary>
+			<description>One item of this feed doesn't have a file: http://www.radioeins.de/archiv/podcast/die_profis_benecke.xml/feed=podcast.xml It looks like this: <item></description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/dialog/FeedItemDialog.java</file>
+			<file>src/de/danoeh/antennapod/adapter/ActionButtonUtils.java</file>
+			<file>src/de/danoeh/antennapod/adapter/DefaultActionButtonCallback.java</file>
+			<file>src/de/danoeh/antennapod/util/menuhandler/FeedItemMenuHandler.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/b87db6841955995d7963ae4899e7d404ab06da2e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="464">
+		<buginformation>
+			<summary>Missing "Mark as read" for individual items without media attachment in "All Episodes" view </summary>
+			<description>A minor usability annoyance: When a podcast has an intermittent article in the feed that doesn't have a media attachment, the only way to get it out of the "All Episodes" view is through the "Mark all as read" item on the list. Only those entries with media enclosures have the individual "Mark as read" items. Unless I've been missing the obvious - in that case I'm suggesting to make it better visible, e.g. in the same place (article details) where you can find it for articles with media enclosures.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/dialog/FeedItemDialog.java</file>
+			<file>src/de/danoeh/antennapod/adapter/ActionButtonUtils.java</file>
+			<file>src/de/danoeh/antennapod/adapter/DefaultActionButtonCallback.java</file>
+			<file>src/de/danoeh/antennapod/util/menuhandler/FeedItemMenuHandler.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/b87db6841955995d7963ae4899e7d404ab06da2e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="935">
+		<buginformation>
+			<summary>Remove button to Flattr AntennaPod </summary>
+			<description>Now that AntennaPod isn't being maintained by @danieloeh any longer and a team of people are working on it, Daniel, mentioned that he felt we should change who the Flattr money goes to. After discussing with Daniel and @mfietz we decided that we should remove the ability to flattr the app. The reason being that since the team is split up, there's no one person who the money should go to. At the moment we have no expenses (apart from time). So there really isn't a great way to deal with the revenue Flattr was providing. We are, of course, very pleased that people like the app enough to donate. We just don't know how to deal with those funds justly, and as a result felt it would be better to remove the ability to Flattr AntennaPod directly. This should resolve #507 and #567 as we just won't support accepting money any longer. If people have a better idea of what to do, please share it here.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/util/flattr/FlattrUtils.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8cb5f68dd7f0b050e8d51f4b5f3320c6bad8c9f4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="868">
+		<buginformation>
+			<summary>NoClassDefFoundError after setting Gpodder.net preferences </summary>
+			<description>To reproduce: Emulator: Nexus One, Android 2.3.7 Open AntennaPod Go to Settings Go to gpodder.net Click 'Login' Enter your credentials Click 'Login' When you get the chance to create or select your device, click the back arrow Force Close 06-07 22:03:40.520: E/AndroidRuntime(695): FATAL EXCEPTION: main</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...src/main/java/de/danoeh/antennapod/activity/gpoddernet/GpodnetAuthenticationActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/1e49bacc9507b0137ec4c46b3622974f8ad729e0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="101">
+		<buginformation>
+			<summary>same title, different rss feed </summary>
+			<description>http://www.dradio.de/podcast/ dradio-kommentar: there are two rss feeds with the same name, mixedup @ import ->Edit title (request) one question: when do items expire? expert delete,archive,fav settings ;) regards Markus</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/storage/DownloadRequester.java</file>
+			<file>src/de/danoeh/antennapod/feed/Feed.java</file>
+			<file>src/de/danoeh/antennapod/storage/DBTasks.java</file>
+			<file>src/instrumentationTest/de/test/antennapod/storage/DBReaderTest.java</file>
+			<file>src/instrumentationTest/de/test/antennapod/storage/DBTasksTest.java</file>
+			<file>src/de/danoeh/antennapod/service/download/DownloadService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c1c3dc593e928d70ede348c4d097272c4df4947d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="471">
+		<buginformation>
+			<summary>Crash when clicking the refresh icon too soon </summary>
+			<description>Antennapod crashes (android does three short vibrations and the message "The application ... has stopped unexpectedly") if you do the following: From the "All episodes" window, open the left menu and select a podcast from the "Podcast" list While the podcast episode list is loading (i.e. the episodes list is not displayed yet, only a rotating circle is displayed) click on the "refresh" icon in the upper-right corner Crash happens (version 0.9.9.1 on android 2.3.6)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/fragment/SearchFragment.java</file>
+			<file>src/de/danoeh/antennapod/fragment/ItemlistFragment.java</file>
+			<file>src/de/danoeh/antennapod/fragment/NewEpisodesFragment.java</file>
+			<file>src/de/danoeh/antennapod/fragment/QueueFragment.java</file>
+			<file>src/de/danoeh/antennapod/fragment/PlaybackHistoryFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c88ee27baab53a69bc6bd9038971fc0af00b2c33</commit_url>
+		</Commits>
+	</bug>
+	<bug id="461">
+		<buginformation>
+			<summary>A podcast's Icon will not download. </summary>
+			<description>I am having a problem with the podcast Science Friday's Image; It always fails to download with the error java.net.URLsyntaxException: Illegal character in authority at index 7: http://assets.libsyn.com/images/sciencefriday/Podcast600.png I thought it might have somthing to do with that URL being a redirect to http://static.libsyn.com/p/assets/8/7/5/d/875d8a73b6f3a653/Podcast600.png so I saved a copy of scifriaudio.xml to my Dropbox with the first URL replaced with the second; got the same error but with the second URL. since I only get this error on the one podcast I would not mind just placing the image file in the directory it needs to be in, But I'm not sure how to do that. (placed a image-Podcastname file with all the rest of them, nothing happens)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/util/URLChecker.java</file>
+			<file>src/instrumentationTest/de/test/antennapod/util/URLCheckerTest.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/74294bad557e7079dac30b45853cba1271046d6f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="105">
+		<buginformation>
+			<summary>Overlay of the track list </summary>
+			<description>When I come back from track details this happens http://lh3.ggpht.com/-gBHCmW77-Eg/URLYR2jp7bI/AAAAAAAAADA/46pcBYVyQxM/s640/Screenshot_2013-02-07-00-21-27.png</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/activity/FeedItemlistActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/c712bf1e5908218a475c95f05fcb84d6cfb7dbfc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="887">
+		<buginformation>
+			<summary>NullPointerException in PicassoProvider </summary>
+			<description>Basically sentBitmap.getConfig can return null under certain circumstances. java.lang.RuntimeException: Transformation blur crashed with exception.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/asynctask/PicassoProvider.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/f29413f3b3c24270553fd560860228d7983d1083</commit_url>
+		</Commits>
+	</bug>
+	<bug id="48">
+		<buginformation>
+			<summary>New podcasts overwrite existing files if filenames coincide </summary>
+			<description>Some feeds give all their audio files the same name (e.g. http://rss.sciam.com/sciam/60-second-earth). This will lead to AntennaPod overwriting the existing audio file when a new episode is downloaded, so basically only one episode can be present at any time.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/storage/DownloadRequester.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/256cfd2001ce30529bf3b5762ed1390630de96a3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="110">
+		<buginformation>
+			<summary>failing Downloads through shutdown wifi? </summary>
+			<description>Hi, I am experiencing lots of failed downloads on cm10.1 nightly on a Samsung Galaxy Nexus. I assume it's because the wifi gets turned of after not working with the phone. Is it possible, that AntennaPod "blocks" this while downloading something. Thanks a lot!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>AndroidManifest.xml</file>
+			<file>src/de/danoeh/antennapod/service/download/Downloader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/967e322913b5505029ecdcd084c058a5b286d274</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1026">
+		<buginformation>
+			<summary>FeedMediaSizeService is overactive </summary>
+			<description>Currently it tries to download the size for every item, even if we already have the size. There are a couple of reasons: getFeedMediaUnknownSizeCursor() should check if KEY_SIZE <= 0, but it checks > Integer.MIN_VALUE, which is everything Some servers always return 0 for this query, so we'll just always ask how big they are: (example showing some logging that has been added) 07-19 21:59:31.030: D/FeedMediaSizeService(21038): Getting size currently 0 for https://my.slate.com/subscriptions/media/3c83...........mp3</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/feed/FeedMedia.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/FeedMediaSizeService.java</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/PodDBAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/9fb4b790f37cc297a50130f5afda3e77a774ee4e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="106">
+		<buginformation>
+			<summary>Can't see items when in Dark theme </summary>
+			<description>Switch to dark theme, Settings >> Select theme >> Dark View one of your feeds View an article The article contents are displayed with a white background and off-whiteish text so the text cannot be read! The background needs to be black/dark. Switch to light theme and all is ok, white background with dark text.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/fragment/ItemDescriptionFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/cca91b12b9df7c23121b4c01172863ff64d35cfe</commit_url>
+		</Commits>
+	</bug>
+	<bug id="884">
+		<buginformation>
+			<summary>force close with version 1.2 and XIAOMI MIUI devices </summary>
+			<description>Unable to use Version 1.2 on my Xiaomi"MI3" (Android 4.4.4 Miui 6.5.4) and Xiaomi "MI Note 4G". (Android 4.4.4 Miui 6.5.11) Force close on start with : NoSuchMethod org.apache.commons.lang3.StringUtils.join Version 1.1.2 has no Problem. And Version 1.2 works on a Nexus 7.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/java/de/danoeh/antennapod/core/storage/PodDBAdapter.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/QueueRecyclerAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/0e68ef5b2ab86bc4703cdf8f2f86872ce2bd96e6</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/8d60c3b4e9da28e4db5a59eb3847cd1d5dea5c92</commit_url>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/9e71e76edab6390b58c05bb731e396adf23e57ea</commit_url>
+		</Commits>
+	</bug>
+	<bug id="89">
+		<buginformation>
+			<summary>Appears to have issues with gzip encoded feeds. </summary>
+			<description>EscapePod has recently updated their feeds to use gzip encoding on the feed results. http://feeds.escapeartists.net/EscapePod Looking at the results that come back thru the browser using Fiddler (http tracer) I see that the orginal URL redirects (302) to http://escapepod.org/feed/rss2 which redirects (301) to http://escapepod.org/feed/ all of these have HTTP header of Content-Encoding: gzip. Looking at the downloaded feed in the cache directory I can see that the feed is still gzipped rather than unzipped to plain text. Antenapod throws a "Download failed Unsupported Feed type: Invalid type" Let me know of you want HTTP tracings or the gzipped feeds. Regards Stuart</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/download/HttpDownloader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/a39fed6757cf2f798c419b4b13016636d24a224a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="2129">
+		<buginformation>
+			<summary>[Proposed Enhancement] Preference settings to customize fastforward and rewind delta </summary>
+			<description>This enhancement adds two preference settings to the application preferences to control the delta when clicking fast forward of rewind. Currently these values can be changed by long pressing on the fast forward/rewind button, but this is somewhat hard to discover. This enhancement adds these preferences to the "Settings" view.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>core/src/main/res/values-az/strings.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/MediaplayerActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/preferences/PreferenceController.java</file>
+			<file>core/src/main/res/values-cs-rCZ/strings.xml</file>
+			<file>core/src/main/res/values-ca/strings.xml</file>
+			<file>app/src/main/res/xml/preferences.xml</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/preferences/UserPreferences.java</file>
+			<file>core/src/main/res/values-da/strings.xml</file>
+			<file>core/src/main/java/de/danoeh/antennapod/core/service/playback/PlaybackService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/970d41bb784ac366af58bf374ad49d54f7aa5587</commit_url>
+		</Commits>
+	</bug>
+	<bug id="76">
+		<buginformation>
+			<summary>AntennaPod forgets downloaded podcasts </summary>
+			<description>Sometimes the downloaded podcasts are forgotten. The download icon just disappears from the list. But in the download log it is still visible that the download was successful. If I look into the "Android/data/de.danoeh.antennapod/files/media" directory I can see that the file is there. I haven't found a way to reproduce this, but this problem happened at least on two different devices.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/service/download/DownloadService.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/9bd7c3108023c4a822c1e02bf3de9bc560c4abab</commit_url>
+		</Commits>
+	</bug>
+	<bug id="107">
+		<buginformation>
+			<summary>Back button in Settings menu exits app </summary>
+			<description>If you press the Back button when in the Settings menu, the app exits. It should return you to the app's home screen.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/activity/PreferenceActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/e715a43ac978a1d0593b7a4fb17730d6c2dae79a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="488">
+		<buginformation>
+			<summary>Queue count doesn't update when a podcast is removed </summary>
+			<description>If there is an item in the queue of a podcast that is removed completely, the podcast will get removed from the queue, but the queue count on the slide panel will not update.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/feed/FeedComponent.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/bdc677bc767288815b04324d0774380286652499</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1743">
+		<buginformation>
+			<summary>Statistics </summary>
+			<description>It would be nice to have a statistics tab that shows how many hours of podcasts you have already listened to. Looks like this is quite easy to implement because the info is already in the app's database.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>app/src/main/java/de/danoeh/antennapod/adapter/StatisticsListAdapter.java</file>
+			<file>app/src/main/res/layout/statistics_activity.xml</file>
+			<file>app/src/main/java/de/danoeh/antennapod/activity/StatisticsActivity.java</file>
+			<file>app/src/main/java/de/danoeh/antennapod/preferences/PreferenceController.java</file>
+			<file>app/src/main/AndroidManifest.xml</file>
+			<file>app/src/main/res/layout/statistics_listitem.xml</file>
+			<file>app/src/main/res/xml/preferences.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/aa56d6822aee8a1a98555aa9c0203c3efd4608b5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="339">
+		<buginformation>
+			<summary>Case-insensitive ordering of podcast feed list </summary>
+			<description>The order of the list of podcast feeds seems to be ordered in ASCII order, i.e. it is case-sensitive. Thus, the position of a podcast named abcdef is after that of ZYXWVU, which seems counter-intuitive to me. It would be better if the order would be case-insensitive, i.e. AABB -> abcdef -> ZYWWVU.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/de/danoeh/antennapod/storage/PodDBAdapter.java</file>
+			<file>src/instrumentationTest/de/test/antennapod/storage/DBReaderTest.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/AntennaPod/AntennaPod/commit/fa1789b7dc1997cf933c7cfa3edb891cbd9cedf6</commit_url>
+		</Commits>
+	</bug>

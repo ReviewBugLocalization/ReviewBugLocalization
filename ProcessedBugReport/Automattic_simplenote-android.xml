@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bugrepository name="Automattic_simplenote-android">
+	<bug id="308">
+		<buginformation>
+			<summary>FAB covers up editor text on landscape tablet </summary>
+			<description>If you are on a landscape tablet, the FAB covers up the text in the note editor. The FAB should be shown over the notes list.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/res/layout/activity_notes.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/res/layout/fragment_notes_list.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/fb542619ca6ab897a42c5911219ab88ff03cabfa</commit_url>
+		</Commits>
+	</bug>
+	<bug id="136">
+		<buginformation>
+			<summary>Can't unpin a note </summary>
+			<description>Running develop, I can pin a note but unpinning it doesn't work.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/instrumentTest/java/com/automattic/simplenote/models/NoteTest.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/6002862487abf8f621a42ff16e7fcdfa6215fa8a</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/a58ab10f2b9175a794cf6ec0f5e4e7ae9bfadd5d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="91">
+		<buginformation>
+			<summary>App should sign you out if your credentials are no longer valid </summary>
+			<description>If you change your password on the web app, then go back to the android app you will still be shown as logged in. We should log out the user and ask for the credentials again if the credentials are invalid.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>tests/project.properties</file>
+			<file>Simplenote/src/main/res/drawable-mdpi/ab_icon_empty_trash_disabled.png</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/PreferencesActivity.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/res/menu/notes_list.xml</file>
+			<file>Simplenote/src/main/res/drawable-xhdpi/ab_icon_empty_trash_disabled.png</file>
+			<file>Simplenote/src/main/res/drawable-hdpi/ab_icon_empty_trash_disabled.png</file>
+			<file>Simperium</file>
+			<file>Simplenote/src/main/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/c1e45ca3bbad1417d3914ca05eae271041b384ca</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/dd9c1c39c7e3ebaceea6502b1b29124dbe9235f1</commit_url>
+		</Commits>
+	</bug>
+	<bug id="52">
+		<buginformation>
+			<summary>Screen flashes when changing orientation. </summary>
+			<description>Maybe related to #47. Just rotate the device. When the layout changes there is a startling transition to black and then to the new layout. Observed on a Nexus 7.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/layout/empty_list.xml</file>
+			<file>res/layout-large-land/activity_notes.xml</file>
+			<file>res/layout/notes_list.xml</file>
+			<file>res/values/strings.xml</file>
+			<file>res/layout/activity_notes.xml</file>
+			<file>res/values/arrays.xml</file>
+			<file>res/layout/fragment_note_editor.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/2ee859abfefd9f47035a74409d92979127c94268</commit_url>
+		</Commits>
+	</bug>
+	<bug id="46">
+		<buginformation>
+			<summary>Edit Tags: Show the number of notes associated with each tag. </summary>
+			<description>This would be useful when deleting unused tags.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/Simplenote.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Tag.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/NoteCountIndexer.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/d4ead4511712d697ad747ea6a4369ea3a9b31a20</commit_url>
+		</Commits>
+	</bug>
+	<bug id="268">
+		<buginformation>
+			<summary>ClassCastException in NoteEditorFragment </summary>
+			<description>java.lang.ClassCastException: com.automattic.simplenote.NotesActivity cannot be cast to com.automattic.simplenote.NoteEditorActivity</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/56131740b280649f6d91771acd86ff58ed115873</commit_url>
+		</Commits>
+	</bug>
+	<bug id="254">
+		<buginformation>
+			<summary>Multi-panel interface not shown on extra large tablets </summary>
+			<description>DisplayUtils should check for both large and xlarge to set up the multi pane interface.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/DisplayUtils.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/059841a02190bfeb88d128f67d0d8d9e941d257d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="47">
+		<buginformation>
+			<summary>Changing orientation returns you to All Notes. </summary>
+			<description>Steps to reproduce: Select a tag from the drop down to view its notes. Rotate to a different orientation. Outcome: The UI reverts to All Tags and shows the first tag in that list in the detail if orientation is landscape.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/layout/empty_list.xml</file>
+			<file>res/layout-large-land/activity_notes.xml</file>
+			<file>res/layout/notes_list.xml</file>
+			<file>res/values/strings.xml</file>
+			<file>res/layout/activity_notes.xml</file>
+			<file>res/values/arrays.xml</file>
+			<file>res/layout/fragment_note_editor.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/2ee859abfefd9f47035a74409d92979127c94268</commit_url>
+		</Commits>
+	</bug>
+	<bug id="53">
+		<buginformation>
+			<summary>Tag field's keyboard has a 'Next' button that does nothing. </summary>
+			<description>To reproduce: Add new note. Tap into the tag field. Tap the 'Next' button on the keyboard. Outcome: Nothing happens. I'd expect the cursor to move to the next text field.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/values/strings.xml</file>
+			<file>res/layout/fragment_note_editor.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/8eb7cd4245033314d686e41d9c71eaa761fda82c</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/9efea1082830f9b9112d55de7104764cc0d3e95c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="90">
+		<buginformation>
+			<summary>Don't show list placeholder until after notes have been queried </summary>
+			<description>The 'no notes here' placeholder shows for a split second when you relaunch the app (I think the backgrounded cursor caused this). We should not show that message until we know for sure that there are no notes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/6a8e2d4b18c2bbccc29cab3a1edb1529768ec6d0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="109">
+		<buginformation>
+			<summary>No notes shown for a while when starting app on slow connection. </summary>
+			<description>I've been in Montana with EDGE connection only, and when I start the app it doesn't show the notes from the db straight away. It takes a few seconds and then it shows up. If I put the phone in airplane mode it will load the list instantly.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/1771d47ce1590fe920a794bdc526cc894520c912</commit_url>
+		</Commits>
+	</bug>
+	<bug id="135">
+		<buginformation>
+			<summary>Crash in landscape tablet </summary>
+			<description>Opening a note in landscape on a table instantly crashes, I think because ARG_MATCH_OFFSETS is not set.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/MatchOffsetHighlighter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/48a9895a17c50921efec90368d9061662ef37ec0</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/525c4d8c9529012251ccd3d9f5faab335242b240</commit_url>
+		</Commits>
+	</bug>
+	<bug id="121">
+		<buginformation>
+			<summary>Make translation less of a pain </summary>
+			<description>Remove HTML tags and newlines where possible from source strings Provide better context messaging</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/res/layout/tags_list_activity.xml</file>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/res/layout/welcome_view_switcher.xml</file>
+			<file>Simplenote/src/main/res/layout/notes_list.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/916773cf9625eaaee4ca33a22318c98ee6dd6e88</commit_url>
+		</Commits>
+	</bug>
+	<bug id="51">
+		<buginformation>
+			<summary>Tag can be added multiple times to individual note. </summary>
+			<description>This feels like a bug but maybe its by design? To reproduce: Add a new note. Add a tag. Add the same tag again. Repeat if desired. Save note. Outcome: The same tag appears on the note multiple times. However it appears in the tag's list of notes only once. I think I'd expect dup tags to not appear in the edit field at all.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>src/com/automattic/simplenote/models/Note.java</file>
+			<file>src/com/automattic/simplenote/models/Tag.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/c1a740df421b8d5b6382ce3caa8777281575eb08</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/9f19beeab4e72f1b282f667e04b50d64eaa1e6c6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="79">
+		<buginformation>
+			<summary>UI Pause when returning to notes list from changed note </summary>
+			<description>On a phone, tap on a note. Change something in the note. Press the back button Observe that there is a visible lag before you are taken back to the notes list.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/bb9beec3887f8da06778bbd4cdfd47d77d0ddef0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="281">
+		<buginformation>
+			<summary>PIN lock can be skipped by sharing a note </summary>
+			<description>If you share content to simplenote, you don't get prompted for the PIN lock if it is enabled.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorActivity.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/3daba3147fe86a525edc37b1b3f3d3b7a970e450</commit_url>
+		</Commits>
+	</bug>
+	<bug id="78">
+		<buginformation>
+			<summary>Placeholder not shown for app in landscape after signing in </summary>
+			<description>On a tablet, after you sign in when in landscape you see an empty note detail view. The placeholder should be shown instead.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/9ecd6a7665b7856fe6bf409391f458e1cdd77a61</commit_url>
+		</Commits>
+	</bug>
+	<bug id="50">
+		<buginformation>
+			<summary>Editing a tag moves it to the bottom of the list. </summary>
+			<description>To reproduce: Go to the edit tags screen. Tap a tag and save a change. Outcome: The tag is now at the bottom of the list. Seems like it would be better to edit in place.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/cf3befcdbe3a000346a6ccb09a4ed3dbd92272a3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="87">
+		<buginformation>
+			<summary>Content preview still shows the title </summary>
+			<description>In the notes list I see the title twice. It should show the content preview without the title on the second line.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/e6dbfbccd21b9cd6cdf8fe216541a0f771374da0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="120">
+		<buginformation>
+			<summary>Update trash icon when remote change occurs </summary>
+			<description>If you view the trash (while empty) on one device and then send a note to trash on another device, then the empty trash button doesn't reactivate on the first device when the note appears.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/66fae0bd7b774a4ca2bff91f329e721af42eebae</commit_url>
+		</Commits>
+	</bug>
+	<bug id="108">
+		<buginformation>
+			<summary>Tablet: Detail view doesn't update when changing tags </summary>
+			<description>If you change to from all notes to something else like a tag or trash, the detail view won't update. I think this is because we are threading the list refresh now.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/e1186d56861facf79c1994d7e71822299f826dc7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="8">
+		<buginformation>
+			<summary>Can't restore notes from trash </summary>
+			<description>You should be able to restore a trash note with an action bar button.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/values/strings.xml</file>
+			<file>src/com/automattic/simplenote/NotesActivity.java</file>
+			<file>src/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/47fac2e36426d36d19a1d9314c7b03fc6b440fdb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="68">
+		<buginformation>
+			<summary>Show note count in tag filter Spinner </summary>
+			<description>All Notes, Trash, and each tag should have the note count on the right to match other clients.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/Simplenote.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Tag.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/NoteCountIndexer.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/d4ead4511712d697ad747ea6a4369ea3a9b31a20</commit_url>
+		</Commits>
+	</bug>
+	<bug id="247">
+		<buginformation>
+			<summary>Crashy McCrashy on Android 5.0 </summary>
+			<description>10-29 14:58:56.467    1457-1481/com.automattic.simplenote.debug E/AndroidRuntime﹕ FATAL EXCEPTION: GAThread</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorActivity.java</file>
+			<file>Simplenote/build.gradle</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/5667fe66f6c24dc8da079192c342ab5afccf99f3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="69">
+		<buginformation>
+			<summary>Deleting Tag crashes </summary>
+			<description>Open Tag list. Tap trash icon. Confirm delete. Crash.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/59349645cc8990fdecca8fe1a1235eb346cb910e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="119">
+		<buginformation>
+			<summary>Add tag when creating note from tag filter </summary>
+			<description>User feedack: While viewing a tag, creating a new note makes a note with no tags, whereas I might have thought that the tag I'm viewing would be added automatically. Especially when viewing an empty tag that says "No notes here. Why not create one?"</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/18a17713bd8075274566c18e6dccbc24a7e18467</commit_url>
+		</Commits>
+	</bug>
+	<bug id="125">
+		<buginformation>
+			<summary>Signing out should clear tag filter </summary>
+			<description>Select a tag from the menu Sign out Go back to list, it's still being filtered by previously selected tag that no longer exists.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/fd2519921d01ad35a922dfb742b648aab36f3d4a</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/0520b29dc035c001fb02412d09587f6cef271240</commit_url>
+		</Commits>
+	</bug>
+	<bug id="333">
+		<buginformation>
+			<summary>History: Cursor jumps to beginning of note </summary>
+			<description>If you're browsing a note's history, the cursor will jump to the first line. It should try to keep the current position if possible.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/e8d69db307f3d51ccc3f7428cecf47eab14b2f29</commit_url>
+		</Commits>
+	</bug>
+	<bug id="80">
+		<buginformation>
+			<summary>Deleting currently selected tags returns to empty "All Notes" list </summary>
+			<description>Select a tag Select Edit Tag Delete tag selected in step 1 Go back The spinner shows "All Tags" as the selection but the list is empty.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/TagSpinnerAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/4c31e23f51da8548b95c67d4c704abbdb90395cb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="244">
+		<buginformation>
+			<summary>Crash when renaming tag </summary>
+			<description>Introduced in 1.2.0: java.lang.ClassCastException: com.automattic.simplenote.widgets.SourceSansTextView cannot be cast to android.widget.EditText</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/layout/edit_tag.xml</file>
+			<file>Simplenote/build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/e8c0cc6eb145965734732c7ccbf4c00c49ed6e23</commit_url>
+		</Commits>
+	</bug>
+	<bug id="42">
+		<buginformation>
+			<summary>Remove option to "show dates" </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/layout/note_list_row.xml</file>
+			<file>res/xml/preferences.xml</file>
+			<file>src/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/d46b01d982f8e02c0e1525766530407fffd55645</commit_url>
+		</Commits>
+	</bug>
+	<bug id="95">
+		<buginformation>
+			<summary>Remove note title on editor </summary>
+			<description>And add the share button back?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+			<file>Simplenote/src/main/res/menu/notes_list.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/5d541142a4bc991eb91afb8b6ee5fc1a60b1d1e5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="132">
+		<buginformation>
+			<summary>Crash on LG Devices </summary>
+			<description>Hopefully removing HTML from the strings fixed this in 1.0.2: java.lang.IllegalArgumentException: Invalid payload item type at android.util.EventLog.writeEvent(Native Method) at android.app.Activity.onMenuItemSelected(Activity.java:2716) at com.android.internal.widget.ActionBarView$3.onClick(ActionBarView.java:172) at android.view.View.performClick(View.java:4095) at android.view.View$PerformClick.run(View.java:17078) at android.os.Handler.handleCallback(Handler.java:615) at android.os.Handler.dispatchMessage(Handler.java:92) at android.os.Looper.loop(Looper.java:137) at android.app.ActivityThread.main(ActivityThread.java:4872) at java.lang.reflect.Method.invokeNative(Native Method) at java.lang.reflect.Method.invoke(Method.java:511) at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:790) at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:557) at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/67e4659596926ce570adf0edc5a8a00a0f1b8d36</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/a3b92ce8fe1c629262b4a4e08da7fca2138e599f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="126">
+		<buginformation>
+			<summary>NPE in NoteEditorActivity.onOptionsItemSelected </summary>
+			<description>Looks like deletedNote is null in NoteEditorActivity.onOptionsItemSelected. java.lang.NullPointerException</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/37fc403606483a9c8a7c70ce362c14ac697fdcd8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="324">
+		<buginformation>
+			<summary>Track Facebook Installs </summary>
+			<description>Doc: https://developers.facebook.com/docs/marketing-api/mobile-conversions-endpoint/v2.5</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/build.gradle</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/analytics/FacebookManager.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/Simplenote.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/aba4d3656d7e1067ae9f634da2cb90b3e59b9836</commit_url>
+		</Commits>
+	</bug>
+	<bug id="223">
+		<buginformation>
+			<summary>Auto Lists/Bullets </summary>
+			<description>Apparently the iOS app has a cool feature that automatically inserts bullet points when it detects that you're writing a list. Why don't Androids get to have nice things? Here's the breakdown: If a user starts typing a list using one of the markdown list prefixes (-, +, *), let's help them out by automatically inserting a new bullet when they add a line break. Users can add multiple levels for the list and we'll automatically add the necessary spaces. Adding a line break on an empty list item will either decrement the list level or remove the empty item.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/AutoBullet.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/33159178db5dfa964a91fa2ffdedf2734739a95a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="18">
+		<buginformation>
+			<summary>When you edit a tag name, the cursor needs to be placed after the text, not the beginning </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/41629c83295ddf215b03692092716b73d122b694</commit_url>
+		</Commits>
+	</bug>
+	<bug id="154">
+		<buginformation>
+			<summary>Crash when searching on older samsung devices </summary>
+			<description>Devices: Galaxy S3, Galaxy S3 Mini, Galaxy Note II, etc: java.lang.NullPointerException</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/26e0bf4628b37fd47576e886884a54491649ef98</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/20b76cccbe524f620ece0e5813b6fc6c11f9ae25</commit_url>
+		</Commits>
+	</bug>
+	<bug id="142">
+		<buginformation>
+			<summary>Crash on 4.0.3 device </summary>
+			<description>Got this crash on an LG I borrowed from a pal: 11-06 20:56:21.740  21994-21994/com.automattic.simplenote E/AndroidRuntime﹕ FATAL EXCEPTION: main</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/instrumentTest/java/com/automattic/simplenote/NotesActivityTest.java</file>
+			<file>Simplenote/src/instrumentTest/java/com/automattic/simplenote/NoteListFragmentTest.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/11eb5c511e5018d410166c4ca502eb152c9a5599</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/6d8db87a0617a30c41cad4cd4ff6e959f816dac1</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/f1de5e5b4da955315b57ff51b05445726297497e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="27">
+		<buginformation>
+			<summary>Make "Go Premium!" say "Go premium" </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/f522facdd579f8f92bcf6995f5af2c2b50d9b469</commit_url>
+		</Commits>
+	</bug>
+	<bug id="180">
+		<buginformation>
+			<summary>Remember active list when returning to Notes List </summary>
+			<description>Switch to Trash (or a tag) from the Drawer Go to Settings from the ActionBar Back Button Return to "All Notes" View Same thing happens if you switch to an alternate list, go home (or another app), and then return to Simplenote.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/fd2519921d01ad35a922dfb742b648aab36f3d4a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="219">
+		<buginformation>
+			<summary>Update source sans pro font </summary>
+			<description>Source sans pro now supports cyrillic characters, let's update it in the app: https://github.com/adobe/source-sans-pro/releases</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/assets/fonts/SourceSansPro-Regular.ttf</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/232d7a3d31ce9dd527728cbe9815c872e5ea60bd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="230">
+		<buginformation>
+			<summary>No line break in very large note causes lag </summary>
+			<description>Randomly found this. generate a large note with thousands of characters in it, but no line breaks Go to the notes list. Observe the lag as you scroll the note in and out of view. My money is on the code that creates the title causes the lag as it hunts for a line break.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/e235a58fbdbd6caeecd907178d176391dc19a95b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="22">
+		<buginformation>
+			<summary>Settings should say "Settings" not "Simplenote" in action bar </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/xml/preferences.xml</file>
+			<file>res/values/strings.xml</file>
+			<file>res/menu/notes_list.xml</file>
+			<file>src/com/automattic/simplenote/PreferencesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/1ed8151a16eac73dccb5a6f0a6a23a1af8635d74</commit_url>
+		</Commits>
+	</bug>
+	<bug id="185">
+		<buginformation>
+			<summary>Make the disabled "Empty Trash" icon look more disabled </summary>
+			<description>Per the discussion in #179, we should may try a gray variation on the disabled icon since it currently doesn't look disabled.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/drawable-mdpi/ab_icon_empty_trash_disabled.png</file>
+			<file>Simplenote/src/main/res/drawable-xhdpi/ab_icon_empty_trash_disabled.png</file>
+			<file>Simplenote/src/main/res/drawable-hdpi/ab_icon_empty_trash_disabled.png</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/0d14a39810c4ca3393cd0811b64362887328b29a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="152">
+		<buginformation>
+			<summary>Creating tags with special chars won't show in drawer list. </summary>
+			<description>Start a new note. Enter 'Ötest' as a new tag. Return to the notes list and open the navigation drawer. Observe that the new tag is not in the list, but it is still there in the note editor.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/instrumentTest/java/com/automattic/simplenote/models/NoteTaggerTest.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/NoteTagger.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/153972af57e9b6850afbe0a1d51fd1449f1a093c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="144">
+		<buginformation>
+			<summary>Tablet in landscape gets stuck in multiple choice mode </summary>
+			<description>On a landscape tablet, long press to select mutliple notes. If you choose 'Done' to close the action mode, the next row you tap will bring up the action mode again.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/9f0cec8577f4a9a41982ec745bada9a3f25b7ba8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="34">
+		<buginformation>
+			<summary>Note List View loading and scrolling is laggy </summary>
+			<description>ListView loading shouldn't be blocking the UI thread. The culprit is most likely Simperium/simperium-android#3.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/com/automattic/simplenote/models/Note.java</file>
+			<file>src/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/599318b95d871c26522fa2e505815506592a5874</commit_url>
+		</Commits>
+	</bug>
+	<bug id="21">
+		<buginformation>
+			<summary>Button colors should be consistent (probably blue) </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/drawable-mdpi/ab_icon_search.png</file>
+			<file>res/drawable-mdpi/ab_icon_share.png</file>
+			<file>res/drawable-hdpi/ab_icon_search.png</file>
+			<file>res/drawable-mdpi/ab_icon_overflow</file>
+			<file>res/values/styles_simplestyle.xml</file>
+			<file>res/drawable-hdpi/ab_icon_share.png</file>
+			<file>res/drawable-xhdpi/ab_icon_search.png</file>
+			<file>res/drawable-xhdpi/ab_icon_share.png</file>
+			<file>res/drawable-xhdpi/ab_icon_overflow</file>
+			<file>res/drawable-hdpi/ab_icon_overflow.png</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/d5d36b3281f6d6b7a72103e2308145c1eabe57a0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="353">
+		<buginformation>
+			<summary>1.5: Can't Empty Trash </summary>
+			<description>Select the trash Observe that the 'empty trash' button is no longer there.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/cd13360e8a0956f2643e84ddd2b899b72a20a770</commit_url>
+		</Commits>
+	</bug>
+	<bug id="148">
+		<buginformation>
+			<summary>Crash when sharing to a tablet in landscape orientation </summary>
+			<description>12-31 10:05:04.990    3165-3165/com.automattic.simplenote E/AndroidRuntime﹕ FATAL EXCEPTION: main</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/10d690cca7278622a3a672b3c8453b32fb7d3ed5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="39">
+		<buginformation>
+			<summary>Create a new account should be the default option on 1st launch </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>AndroidManifest.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorActivity.java</file>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+			<file>res/layout/fragment_note_editor.xml</file>
+			<file>res/menu/notes_list.xml</file>
+			<file>Simplenote/src/main/res/layout/fragment_note_editor.xml</file>
+			<file>Simplenote/src/main/res/layout/tag_drawer_row.xml</file>
+			<file>src/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>res/layout/note_list_row.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>res/xml/preferences.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+			<file>res/values/strings.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/Typefaces.java</file>
+			<file>src/com/automattic/simplenote/PreferencesActivity.java</file>
+			<file>Simplenote/src/main/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/1ed8151a16eac73dccb5a6f0a6a23a1af8635d74</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/e37a7a4dc487c299275304215068bfdc9aa7e148</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/ae2f1b5c58fbb27756951272f46b9d651116fce1</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/6099a3b4e720625b647346d65d88faaa10d05928</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/ad71d07033af9c26f1821fb6c4f3d558198a749c</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/b58e88e7cfd5a5010beb57c277603f250fbbe884</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/6002862487abf8f621a42ff16e7fcdfa6215fa8a</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/50b3f22d1fc506ee5df6c79737b51731b43aa5f2</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/6a8e2d4b18c2bbccc29cab3a1edb1529768ec6d0</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/855b04724de4cd4b266719530d530c0ead03045a</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/0db56ea06e414ffcece2507f76f8c6faf2d6e1f3</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/d46b01d982f8e02c0e1525766530407fffd55645</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/9efea1082830f9b9112d55de7104764cc0d3e95c</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/2615fcb82b0ddd827c5fa082acb5c047beb96d4f</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/37fc403606483a9c8a7c70ce362c14ac697fdcd8</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/bb1527b089b915034816ce4d8d35e9a91dd4804d</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/9ecd6a7665b7856fe6bf409391f458e1cdd77a61</commit_url>
+		</Commits>
+	</bug>
+	<bug id="188">
+		<buginformation>
+			<summary>Changes may not be saved when switching away from app </summary>
+			<description>Seen multiple reports similar to the following: "When using the latest Android app and composing a note, I pressed Recent Apps button at the bottom-right of the screen by accident. When returning to Simplenote, my recent changes to the note had not been saved."</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/50b3f22d1fc506ee5df6c79737b51731b43aa5f2</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/46d44d77e7727cbdac4c83f57606b80d3332c66e</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/adddf29d2687cc2a6eb86e1240f053f9f28669de</commit_url>
+		</Commits>
+	</bug>
+	<bug id="215">
+		<buginformation>
+			<summary>IllegalStateException when bulk deleting notes </summary>
+			<description>java.lang.RuntimeException: An error occured while executing doInBackground()</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/8d9f377746be36a3a218e164d1f9754496648def</commit_url>
+		</Commits>
+	</bug>
+	<bug id="189">
+		<buginformation>
+			<summary>Editing Lag on Large Notes </summary>
+			<description>Add a really large note via webapp (I used 100 paragraphs from http://www.lipsum.com) Open note in Android app Start typing a sentence; initials letters are fast but get progressively slower (in some cases, a second or more to produce a single letter) and keyboard starts to lag as well the faster you type.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/2f50b6102d49015cc912d36ce0a88fc0afbfeae5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="162">
+		<buginformation>
+			<summary>MatchOffsetHighlighter gives invalid indices </summary>
+			<description>java.lang.IndexOutOfBoundsException: setSpan (-448 ... -452) has end before start</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/MatchOffsetHighlighter.java</file>
+			<file>...note/src/androidTest/java/com/automattic/simplenote/utils/MatchOffsetHighlighterTest.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/4040a80b3d22896aab11b13cf4faeef473736858</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/4eb31ba45bf2ceae83aef2ec990c7e75edc7f6cc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="16">
+		<buginformation>
+			<summary>The tag popdown should have more padding on the left and right sides </summary>
+			<description>match the width of the tag autocomplete popdown in note editor</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/Simplenote.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Tag.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/NoteCountIndexer.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/d4ead4511712d697ad747ea6a4369ea3a9b31a20</commit_url>
+		</Commits>
+	</bug>
+	<bug id="238">
+		<buginformation>
+			<summary>Adjustable font sizes </summary>
+			<description>From the play store Potentially brilliant Do please carry on the good work! And PLEASE give us variable font sizes...</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/res/xml/preferences.xml</file>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/PrefUtils.java</file>
+			<file>Simplenote/src/main/res/values/arrays.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/7e603074bc90dc9424bd1e186c33099ae0dbe66e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="165">
+		<buginformation>
+			<summary>Note content loss on landscape tablet </summary>
+			<description>I was able to reproduce this after reading a user comment. This is a nexus 7 in landscape: Create a new note. Quicky add some content. Press the home button. Kill the app. Return to the app, and the new note will be there, but will be empty.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorActivity.java</file>
+			<file>Simplenote/build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/9b8342db2ecacd1bd68cd5e6ed8fdcc93696cbe8</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/1085355eae834bb5d119e174697decf00459d7d0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="15">
+		<buginformation>
+			<summary>Action bar should say "All Notes", not "Notes", in list view </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/f522facdd579f8f92bcf6995f5af2c2b50d9b469</commit_url>
+		</Commits>
+	</bug>
+	<bug id="213">
+		<buginformation>
+			<summary>Empty trash task should use thread pool executor </summary>
+			<description>emptyTrashTask should use the thread pool so it is run parallel.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/af23c623f91706c8571931f7b0a682f1e2d62f2b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="28">
+		<buginformation>
+			<summary>Use a condensed font for character count </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>res/layout/fragment_note_editor.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/83ff32ff4c16f5d6de14f8c6e7b52db6caf9cca3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="170">
+		<buginformation>
+			<summary>Add option to use Roboto instead of Source Sans Pro </summary>
+			<description>Adobe is taking their sweet time in updating Source Sans Pro to support cyllic characters: adobe-fonts/source-sans-pro#6 We should probably add an option to use Roboto so Greek users and the like can use the app.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/Typefaces.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/6099a3b4e720625b647346d65d88faaa10d05928</commit_url>
+		</Commits>
+	</bug>
+	<bug id="98">
+		<buginformation>
+			<summary>Move the pin icon in the list view to left side </summary>
+			<description>Match up with iOS/OS X</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/layout/note_list_row.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/dced178b0e80a50f0b9f6105900fa84136dc60dc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="67">
+		<buginformation>
+			<summary>Note selection jumps when changing notes in landscape </summary>
+			<description>Use a table in landscape Add a tag, then switch to another note. Observe that selection changes back to the first note.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/ad71d07033af9c26f1821fb6c4f3d558198a749c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="261">
+		<buginformation>
+			<summary>'Edit tags' button hard to tap </summary>
+			<description>Touch target is too small on the 'Edit tags' button.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/layout/tag_drawer_row.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/b58e88e7cfd5a5010beb57c277603f250fbbe884</commit_url>
+		</Commits>
+	</bug>
+	<bug id="260">
+		<buginformation>
+			<summary>NPE in NoteListFragment </summary>
+			<description>java.lang.RuntimeException: An error occured while executing doInBackground()</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/0db56ea06e414ffcece2507f76f8c6faf2d6e1f3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="72">
+		<buginformation>
+			<summary>Searching should apply to selected tag or trash </summary>
+			<description>When searching for a note it should respect the applied tag and only show matches for that tag.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/utils/TagSpinnerAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/8de22c051d0df3446fb28443128c8d12d03bd7a0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="99">
+		<buginformation>
+			<summary>Biggify the note title in the note editor field </summary>
+			<description>If the other apps can do it, why can't we?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/layout/note_list_row.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/45d945b9ed4473d076437e90ccd9b815259bdc62</commit_url>
+		</Commits>
+	</bug>
+	<bug id="6">
+		<buginformation>
+			<summary>Can't scroll large notes </summary>
+			<description>If you have a large note, you cant scroll up or down to view it.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/855b04724de4cd4b266719530d530c0ead03045a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="128">
+		<buginformation>
+			<summary>Search is broken on landscape tablets </summary>
+			<description>When you perform a search on a tablet, then tap on a note it doesn't load the note in the detail view.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/4e587054da8ef10d1f765b13e7b9fa7662f16975</commit_url>
+		</Commits>
+	</bug>
+	<bug id="114">
+		<buginformation>
+			<summary>Tap highlight color is incorrect in TagsListActivity </summary>
+			<description>Title has it.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/layout/tags_list_row.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/38a8aea4a7b7283095ae9015e35817235079299b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="4">
+		<buginformation>
+			<summary>Stickied notes don't stay at the top of the list </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/com/automattic/simplenote/NoteDB.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/542c4ba73917705acaf73274d6ad581808378563</commit_url>
+		</Commits>
+	</bug>
+	<bug id="70">
+		<buginformation>
+			<summary>Tag counts are incorrect for tags </summary>
+			<description>Add a tag to the note and the tag count doesn't update correctly. Happens with both a new note and an existing note.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/NoteTagger.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/589f6363e056ec65161721878410a20a3129c8da</commit_url>
+		</Commits>
+	</bug>
+	<bug id="58">
+		<buginformation>
+			<summary>Inertial scrolling doesn't work when viewing / editing a single note. </summary>
+			<description>The note only tracks to the finger when scrolling and doesn't have any inertia.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/layout/fragment_note_editor.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/febdf72faf503f6f6c46d002bbdf853f150d44f6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="262">
+		<buginformation>
+			<summary>Google Analytics Crash Reports Stopped Working </summary>
+			<description>Since we updated the google analytics module, it stopped reporting crashes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/Simplenote.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/634d502304d72ba3a1e1793a1aaf3bbf9b05c8a2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="289">
+		<buginformation>
+			<summary>PIN unlock screen tiny in landscape </summary>
+			<description>The PIN unlock screen doesn't fill up the whole screen when the tablet is in landscape. It works in Portrait. A user on Twitter reported this and I have confirmed: https://twitter.com/frumble/status/602243768482459648/photo/1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/PreferencesFragment.java</file>
+			<file>Simplenote/src/main/res/xml/preferences.xml</file>
+			<file>Simplenote/src/main/res/values/colors.xml</file>
+			<file>Simplenote/build.gradle</file>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/PreferencesActivity.java</file>
+			<file>Simplenote/src/main/res/layout/activity_preferences.xml</file>
+			<file>Simplenote/src/main/res/drawable/passcode_logo.png</file>
+			<file>Simplenote/src/main/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/029e0f69b14078a59898eb16e494f02ab446dc79</commit_url>
+		</Commits>
+	</bug>
+	<bug id="59">
+		<buginformation>
+			<summary>Securely store Simperium credentials in app </summary>
+			<description>Currently the credentials are in the res folder which is stored in plain text and can be read by anyone who unzips the apk.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>.gitignore</file>
+			<file>Simplenote/build.gradle</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/Simplenote.java</file>
+			<file>README.md</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/1c8ba62857c8d826db5d90a254537f29341f0b9a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="71">
+		<buginformation>
+			<summary>Add confirm dialog for Tag deletion </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/1326acd03178d13439453ae28c317f34303b119b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="5">
+		<buginformation>
+			<summary>Tags don't clear properly with backspace press </summary>
+			<description>When deleting a tag on my gs4 it makes me press backspace a bunch before it deletes. Can't repro in the simulator.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/com/automattic/simplenote/utils/TagsMultiAutoCompleteTextview.java</file>
+			<file>src/com/automattic/simplenote/NotesActivity.java</file>
+			<file>src/com/automattic/simplenote/models/Note.java</file>
+			<file>src/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/3be0f4d3dbbbbd7bedc08d1f105f0427d0b8ee8e</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/599318b95d871c26522fa2e505815506592a5874</commit_url>
+		</Commits>
+	</bug>
+	<bug id="101">
+		<buginformation>
+			<summary>Title text can overlap with body text in the note editor </summary>
+			<description>To reproduce: tap into a note tap in the tags field, start typing a tag tap "Next" on the keyboard focus changes to the editing field, start typing the title will go onto a 2nd line, but the body will not move. picture (I can't figure out how to take screenshots…): http://cl.ly/image/0D3x3T472S24</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/res/layout/fragment_note_editor.xml</file>
+			<file>Simplenote/src/main/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/68449c5e30d201370ae1c1ec4c70561eb0d5057f</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/ae2f1b5c58fbb27756951272f46b9d651116fce1</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/bb1527b089b915034816ce4d8d35e9a91dd4804d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="115">
+		<buginformation>
+			<summary>Tag displays incorrect count after editing </summary>
+			<description>Go to edit your tags Select a tag that has a count Edit the tag's name Observe that the count disappears for the edited tag</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Note.java</file>
+			<file>Simplenote/src/androidTest/java/com/automattic/simplenote/simperium/MockAndroidClient.java</file>
+			<file>Simplenote/build.gradle</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/Tag.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/20a67e7bf18049e5c87f21b4fe8870b907467190</commit_url>
+		</Commits>
+	</bug>
+	<bug id="129">
+		<buginformation>
+			<summary>App overwrites remote changes </summary>
+			<description>User report, confirmed with web app: Open a note on the android app, make some changes then press the home button. Open the note in the web app, make some changes. Open the android app, notice the note doesn't sync and when you press back the changes from the web app are removed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/d98c9a114e2d431b2bf8f41c0bb48423b8bc01bc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="307">
+		<buginformation>
+			<summary>CAB is wrong color in Dark Theme </summary>
+			<description>The CAB has a white background color, it should be dark grey.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/values/styles_simplestyle_dark.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/ffc3af5d6c50386a3a1df37a78e7be296e61256e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="139">
+		<buginformation>
+			<summary>Add xxxhdpi app icon </summary>
+			<description>KitKat makes the icons larger, so for the Nexus 5 we need a 216x216 app icon.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/drawable-xxxhdpi/ic_launcher.png</file>
+			<file>Simplenote/src/main/res/values/colors.xml</file>
+			<file>Simplenote/src/main/res/drawable/list_background_simplestyle.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/31bcc5b6a21b5237837c9b8d68f363198106f0cf</commit_url>
+		</Commits>
+	</bug>
+	<bug id="61">
+		<buginformation>
+			<summary>Multiple tag selection in the "Edit Tags" view does not highlight selected tags or delete the selected tags </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>src/com/automattic/simplenote/TagsListActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/20279c862696f156d42fbdab7ae10281f312fb27</commit_url>
+		</Commits>
+	</bug>
+	<bug id="272">
+		<buginformation>
+			<summary>Duplicate menu items showing on landscape tablet </summary>
+			<description>Share and trash are duplicated on landscape tablets.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/res/menu/notes_list.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/81c7926632f4cdee65c7cc4e1ea89c0a53ae6cb8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="74">
+		<buginformation>
+			<summary>View note's history </summary>
+			<description>From a note detail a user should be able to open a note's revisions.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/models/NoteTagger.java</file>
+			<file>Simplenote/build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/979ca37f88679889c41493936c3f84aedf747fef</commit_url>
+		</Commits>
+	</bug>
+	<bug id="60">
+		<buginformation>
+			<summary>Long delay when launching app </summary>
+			<description>I'm seeing a delay of 2-4 seconds or so between the app launching and the ListView of notes populating. Also noticed a lot going on in the log at that time.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>libraries/Simperium</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/15e4299007450187ff16f83e7e528d75507ad9a6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="48">
+		<buginformation>
+			<summary>Tapping Add Note > Back will spam blank notes. </summary>
+			<description>To reproduce: Tap the new note button. Tap the back button without making any edits. Go to step 1. Outcome: You can spam blank notes. Maybe just delete them if blank and unedited instead?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/21b30bcc9018559938a985506c879b013e723492</commit_url>
+		</Commits>
+	</bug>
+	<bug id="338">
+		<buginformation>
+			<summary>Google Now can bypass passcode </summary>
+			<description>Steps: Install Google now and enable voice detection Set up a pin lock on Simplenote Launch Simplenote but don't type in the pin code Say "Ok Google" then "Simplenote" All the notes appear without having to type in the pin code Reported here: https://simplenotep2.wordpress.com/2016/01/19/activating-simplenote-through-google-now-skips-the-pin-lock/</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/a1a73bcedb6ff852ba6f964aad5995cbebb921f0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="264">
+		<buginformation>
+			<summary>NPE when doing shared element transition </summary>
+			<description>Might be best to not do the fancy element transition if it's going to crash :( java.lang.NullPointerException: Attempt to invoke virtual method 'int android.view.ViewGroup.getScrollX()' on a null object reference</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorActivity.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/src/main/res/layout/fragment_note_editor.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/eca9110e912032eedae9c1b8c773ed294c6068f9</commit_url>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/bedadf6e9dc45abfaf82dcf55d15003f933538bc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="271">
+		<buginformation>
+			<summary>Search results not showing in editor </summary>
+			<description>Since 1.3, search results aren't showing in the post editor.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/31fe3a3b8bf4825ae0a45323a3b220ed52a9f3e1</commit_url>
+		</Commits>
+	</bug>
+	<bug id="77">
+		<buginformation>
+			<summary>Add Google Analytics </summary>
+			<description>Thinking of tracking these events, add more if you have ideas! Application launch Application close User signed in User signed out User created account New note created Edited note Added tag to note Pinned note Shared note Unpinned note Deleted note Searched notes Viewed trash Emptied trash Restored note Edited tag Deleted tag Changed settings</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/values/analytics.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteListFragment.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NoteEditorFragment.java</file>
+			<file>Simplenote/build.gradle</file>
+			<file>Simplenote/src/main/res/values/strings.xml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/PreferencesActivity.java</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/NotesActivity.java</file>
+			<file>Simplenote/Simplenote.iml</file>
+			<file>Simplenote/src/main/java/com/automattic/simplenote/TagsListActivity.java</file>
+			<file>libraries/Simperium</file>
+			<file>Simplenote/libs/libGoogleAnalyticsV2.jar</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/27ac7e1297ab8290bad96db09337bad40e3e7c71</commit_url>
+		</Commits>
+	</bug>
+	<bug id="305">
+		<buginformation>
+			<summary>Two Panel Tablet Layout is Broken </summary>
+			<description>The two panel table layout isn't rendering correctly in develop.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>Simplenote/src/main/res/layout/activity_notes.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/Automattic/simplenote-android/commit/11308837c99b8911b57931a9d48027df5581d73a</commit_url>
+		</Commits>
+	</bug>

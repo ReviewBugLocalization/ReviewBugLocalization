@@ -1,0 +1,2308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bugrepository name="chrislacy_TweetLanes">
+	<bug id="334">
+		<buginformation>
+			<summary>Put DM notification statuses into the cache </summary>
+			<description>This relies on other DM status being in a cache. Split from #280</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...raries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterManager.java</file>
+			<file>...id/libraries/SocialNetLib/src/org/tweetalib/android/fetch/TwitterFetchDirectMessages.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessages.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/AlarmReceiver.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/SocialNetApi.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/3f6061492abf47729710a6fbc851a1b29c1380a6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="85">
+		<buginformation>
+			<summary>Notifications For Direct Messages (Twitter) </summary>
+			<description>Not sure if it's an enhancement or a bug, but i don't seem to get push notifications for direct messages.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterConstant.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/App.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/SocialNetApi.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/Notifier.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterManager.java</file>
+			<file>...id/libraries/SocialNetLib/src/org/tweetalib/android/fetch/TwitterFetchDirectMessages.java</file>
+			<file>...c/org/tweetalib/android/callback/TwitterFetchDirectMessagesFinishedCallbackInterface.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/arrays.xml</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessages.java</file>
+			<file>...braries/TweetLanesCore/src/com/tweetlanes/android/core/dashclock/TweetLanesExtension.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/8cc556e9e2b6924d09be90bd2127b90952a52064</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/322893a68dba1156a378f3fb3ee299e900e1c992</commit_url>
+		</Commits>
+	</bug>
+	<bug id="268">
+		<buginformation>
+			<summary>Refresh on send issue </summary>
+			<description>When sending a tweet or replying mid timeline you get jumped to top when refresh triggered.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...weetLanesCore/src/com/tweetlanes/android/core/widget/pulltorefresh/PullToRefreshBase.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/4e79673607fbfd4677e6796d27419b01bf943399</commit_url>
+		</Commits>
+	</bug>
+	<bug id="297">
+		<buginformation>
+			<summary>Account switcher formatting </summary>
+			<description>The account switcher alignment is wrong and when horizontal on my one s, I only see half the name.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/layout/account_row.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/811ab3f06b8c8185b1cfe9ab21a0c062eb112755</commit_url>
+		</Commits>
+	</bug>
+	<bug id="283">
+		<buginformation>
+			<summary>Url handling for new tweet </summary>
+			<description>Add support so Urls like this: https://twitter.com/intent/tweet?hashtags=Super6&original_referer=http%3A%2F%2Fsuper6.skysports.com%2Fplayed&related=Super6&text=My+%40Super6%3A+BRA+2-2+BRN%2C+CAR+1-2+PRV%2C+CWT+2-0+GIL%2C+CRE+1-3+PET%2C+RTM+2-1+SHU%2C+TRN+1-0+STE&tw_p=tweetbutton&url=http%3A%2F%2Fsky.me%2FSuper6 prompt to open in tweetlanes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/clientbeta/AndroidManifest.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BootActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/client/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/644eb991d749248421b2c7252cf44841c57c35fe</commit_url>
+		</Commits>
+	</bug>
+	<bug id="296">
+		<buginformation>
+			<summary>Compose Rotate </summary>
+			<description>Rotate when compose not hidden means you loose your message you were typing. Expect message to stay.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/367876e7e475b7f23d81a1df852aff2bc6cc82a8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="255">
+		<buginformation>
+			<summary>java.lang.IllegalStateException after refresh </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.IllegalStateException: Fragment TweetFeedFragment{41531a40} not attached to Activity 1 at android.support.v4.app.Fragment.getResources(Fragment.java:571) 2 at android.support.v4.app.Fragment.getString(Fragment.java:593) 3 at com.tweetlanes.android.core.view.TweetFeedFragment.updateListHeading(TweetFeedFragment.java:777) 4 at com.tweetlanes.android.core.view.TweetFeedFragment.onRefreshFinished(TweetFeedFragment.java:888) 5 at com.tweetlanes.android.core.view.TweetFeedFragment.access$200(TweetFeedFragment.java:75) 6 at com.tweetlanes.android.core.view.TweetFeedFragment$2.finished(TweetFeedFragment.java:278) 7 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.onPostExecute(TwitterFetchStatuses.java:598) 8 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.onPostExecute(TwitterFetchStatuses.java:298) 9 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:689) 10 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 11 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:702) 12 at android.os.Handler.dispatchMessage(Handler.java:99) 13 at android.os.Looper.loop(Looper.java:155) 14 at android.app.ActivityThread.main(ActivityThread.java:5454) 15 at java.lang.reflect.Method.invokeNative(Native Method) 16 at java.lang.reflect.Method.invoke(Method.java:511) 17 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029) 18 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:796) 19 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/4cff05c9586de668fb57cf9f8cf8955a2735d05b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="47">
+		<buginformation>
+			<summary>Switching accounts while loading statuses displays previous accounts statuses in new account's lane </summary>
+			<description>This was spun off #34 (and not directly related). If you, ideally on a slow connection, start loading on tweets on account 1 (scroll down until you get "Loading") and then quickly switch to account 2, the statuses from account 1 are loaded into the lane for account 2.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/appdotnet4j/model/AdnMedia.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/fetch/TwitterFetchStatuses.java</file>
+			<file>...Lib/src/org/tweetalib/android/callback/TwitterFetchStatusesFinishedCallbackInterface.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/ConversationView.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ffabca018146bcbea76fb88094a9a561cd0e2348</commit_url>
+		</Commits>
+	</bug>
+	<bug id="53">
+		<buginformation>
+			<summary>In account switcher, use icon instead of names </summary>
+			<description>Currently (App.net) and (Twitter) follow the account name. This causes long account names to cut off (App.net) or (Twitter).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...oid/libraries/TweetLanesCore/src/com/tweetlanes/android/core/model/AccountDescriptor.java</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-mdpi/adn_logo_small.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-mdpi/twitter_logo_small.png</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchUser.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/ConsumerKeyConstants.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/App.java</file>
+			<file>android/libraries/TweetLanesCore/res/layout/account_row.xml</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-mdpi/adn_logo.png</file>
+			<file>android/libraries/TweetLanesCore/res/values/dimens.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/6150569388cd1357ab6a771ed0c86d119b76c07e</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/9ededc8a5139dc0ce190ff3961e3cbba2a01cb4a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="309">
+		<buginformation>
+			<summary>SaveState java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 119 times for 114 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.InflatedLayoutFragment.onSaveInstanceState(InflatedLayoutFragment.java:92) 2 at android.support.v4.app.Fragment.performSaveInstanceState(Fragment.java:1607) 3 at android.support.v4.app.FragmentManagerImpl.saveFragmentBasicState(FragmentManager.java:1587) 4 at android.support.v4.app.FragmentManagerImpl.saveAllState(FragmentManager.java:1655) 5 at android.support.v4.app.FragmentActivity.onSaveInstanceState(FragmentActivity.java:527) 6 at android.app.Activity.performSaveInstanceState(Activity.java:1183) 7 at android.app.Instrumentation.callActivityOnSaveInstanceState(Instrumentation.java:1327) 8 at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:4234) 9 at android.app.ActivityThread.access$700(ActivityThread.java:162) 10 at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1376) 11 at android.os.Handler.dispatchMessage(Handler.java:99) 12 at android.os.Looper.loop(Looper.java:158) 13 at android.app.ActivityThread.main(ActivityThread.java:5777) 14 at java.lang.reflect.Method.invokeNative(Native Method) 15 at java.lang.reflect.Method.invoke(Method.java:511) 16 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1083) 17 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:850) 18 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/InflatedLayoutFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/daf37fe9f949c9906bd4deba447812e47478325a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="121">
+		<buginformation>
+			<summary>Downloaded profile image always bigger </summary>
+			<description>The "bigger" image always downloaded. Then scaled down. Could this not download image closer to the required size. I.e mini, normal or bigger?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/c47152ddbaab11acbdee467b0c9432b994680c93</commit_url>
+		</Commits>
+	</bug>
+	<bug id="243">
+		<buginformation>
+			<summary>Link on Profile </summary>
+			<description>The link on profile is a t.co Needs to be expanded. Should be an easy fix.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ProfileFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0d99b31108bf632ac921d8e92b7ad41f20990c81</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b07a00125071711aaef17d7c112fd5abce192165</commit_url>
+		</Commits>
+	</bug>
+	<bug id="257">
+		<buginformation>
+			<summary>java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 13 times for 11 users 0 java.lang.NullPointerException 1 at ph.finished(TweetSpotlightActivity.java:106) 2 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.onPostExecute(TwitterFetchStatus.java:376) 3 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.onPostExecute(TwitterFetchStatus.java:237) 4 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:689) 5 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 6 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:702) 7 at android.os.Handler.dispatchMessage(Handler.java:99) 8 at android.os.Looper.loop(Looper.java:137) 9 at android.app.ActivityThread.main(ActivityThread.java:4898) 10 at java.lang.reflect.Method.invokeNative(Native Method) 11 at java.lang.reflect.Method.invoke(Method.java:511) 12 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1008) 13 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:775) 14 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/a5f20c6bd1ae25672f4e012805d1fea24acd2efd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="280">
+		<buginformation>
+			<summary>Put notification statuses into the cache </summary>
+			<description>Added as work around to proper cache. Lane to auto refresh when loading from a notification. (original name: Refresh lane following notification open, renamed 17/09/2013)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/App.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/AlarmReceiver.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/6db2922e4d0710c25724247e933f5c70c5b05cab</commit_url>
+		</Commits>
+	</bug>
+	<bug id="294">
+		<buginformation>
+			<summary>Photo app.net intent filter </summary>
+			<description>Photo app.net link opens wrong status when open in tweetlanes. Same issue as the Twitter links. Example link http://photos.app.net/10853407/1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BootActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/AppdotnetApi.java</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e625d8da2a90bde1b5a56cbdc38f915b137785b7</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/a5f6f9bf2a84579240bdad811d3dc41f9179983b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="281">
+		<buginformation>
+			<summary>DM summary refresh </summary>
+			<description>Dm summary refresh seems unlinked to the contents of thread. When you refresh and a new status shows, you go into thread and have to refresh again.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...raries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageFeedFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/Constant.java</file>
+			<file>.../libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/2667eb7c9904f8ddd5ede7ddbc93441ac3cca6bd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="242">
+		<buginformation>
+			<summary>URL handling for profiles </summary>
+			<description>#42 does URL handing for status updates. Add support for profiles.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BootActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/eff59061fedc2ed027110f427f1ce66ebe85aca7</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0316ba4ad5d79c34aa5adca882b46840f18cd440</commit_url>
+		</Commits>
+	</bug>
+	<bug id="44">
+		<buginformation>
+			<summary>Tutorial doesn't mention App.net </summary>
+			<description>When you use Tweet Lanes for the first time, you can select the App.net as your service, but the tutorial that follows is Twitter specific. The users to follow (@chrismlacy and @tweetlanes) are hard coded to the Twitter IDs, and don't follow on App.net.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/364f0bd48a144cdde52980f42a4b8cae45c3e3ce</commit_url>
+		</Commits>
+	</bug>
+	<bug id="120">
+		<buginformation>
+			<summary>Add check for 0kb images before adding to cache. </summary>
+			<description>Sometimes we seem to get an error downloading profile image. Files appear to be 0kb when this happens. Retry image download, and don't add broken image to cache.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/util/LazyImageLoader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/483fdfdae7a0aa629631ed147c3dc8ac49afbf55</commit_url>
+		</Commits>
+	</bug>
+	<bug id="322">
+		<buginformation>
+			<summary>Account Switcher With No Images </summary>
+			<description>When the images don't show the account names don't either.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/clientbeta/AndroidManifest.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/layout/account_row.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/d08c5df0f99326fda7e7734b2d5db87c096f97c6</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/37a616c0383d5f4967e56c8aec879fb9986a5f53</commit_url>
+		</Commits>
+	</bug>
+	<bug id="336">
+		<buginformation>
+			<summary>java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetFeedFragment.getDataToCache(TweetFeedFragment.java:506) 2 at com.tweetlanes.android.core.view.HomeActivity$1.run(HomeActivity.java:415) 3 at java.lang.Thread.run(Thread.java:856)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ee06a5c562cfdcc08a4fe61621ab2ed8cd243140</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/688890204b999ed35eaa72d23b94150f50756dfe</commit_url>
+		</Commits>
+	</bug>
+	<bug id="124">
+		<buginformation>
+			<summary>Smarter fetching </summary>
+			<description>Currently, we fetch 50 statuses at a time. With rate limiting, you can reach your limit pretty fast if you haven't fetched in a while. I've previously set it to 100, but users on slow data connections have to wait twice as long to get data and complained. Proposal: Get a small number, say 25, show those, and while the user is reading those 25 fetch the max (250 or so).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/fetch/TwitterFetchStatuses.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterPaging.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/417afb27b02c4bb3cd7367fed93dd47f84c96015</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/65d520e1fc9ab722bfa84e25ea5b9de168d9e70f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="118">
+		<buginformation>
+			<summary>Not including yourself on replies </summary>
+			<description>When replying (even if the reply tweet was yours) don't include your own handle in the reply.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/model/ComposeTweetDefault.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/1541a2d40d7152b4e13ab07094059ccf607403db</commit_url>
+		</Commits>
+	</bug>
+	<bug id="246">
+		<buginformation>
+			<summary>Absolute time in the lanes </summary>
+			<description>Add a option to have absolute time in the lanes vs relative time.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedItemView.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/arrays.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/util/Util.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+			<file>.../libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageItemView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/68cd7f0230e11ec1fdf30e9c4fd62e2c017b9776</commit_url>
+		</Commits>
+	</bug>
+	<bug id="285">
+		<buginformation>
+			<summary>Share doesn't work </summary>
+			<description>When choosing to share something to tweetlanes you go to direct message screen, and nothing in compose box. Should go to main timeline with share text in compose box</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/dbeaea5b2d49abb86f987f332cbfe07e2a509d87</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/39d737c7e4a8d54d7dc23988679987d96a809ef4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="291">
+		<buginformation>
+			<summary>Auto Rotate </summary>
+			<description>When device rotate is off, the app still rotates.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/fe11999fafda8e50a821e582e7872c99009447c8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="290">
+		<buginformation>
+			<summary>java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 2 times for 2 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetFeedFragment.a(TweetFeedFragment.java:922) 2 at com.tweetlanes.android.core.view.TweetFeedFragment.a(TweetFeedFragment.java:76) 3 at od.finished(TweetFeedFragment.java:286) 4 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.onPostExecute(TwitterFetchStatuses.java:598) 5 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.onPostExecute(TwitterFetchStatuses.java:298) 6 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:689) 7 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 8 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:702) 9 at android.os.Handler.dispatchMessage(Handler.java:99) 10 at android.os.Looper.loop(Looper.java:137) 11 at android.app.ActivityThread.main(ActivityThread.java:4898) 12 at java.lang.reflect.Method.invokeNative(Native Method) 13 at java.lang.reflect.Method.invoke(Method.java:511) 14 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1006) 15 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:773) 16 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/fe11999fafda8e50a821e582e7872c99009447c8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="253">
+		<buginformation>
+			<summary>Un-retweet icon </summary>
+			<description>When you try and unretweet you get a toast (which is correct). But the icon goes to the pressed version. Then changes to not retweeted. When you press again, it gives option to retweet which causes a fatal crash. Once retweeted button should just show toast. This happened in the tweet spotlight.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/a8ccea3e17f578e2d85adb6193a9c242ab8b8eb3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="41">
+		<buginformation>
+			<summary>Status within lane not remembered </summary>
+			<description>When switching accounts, the last read status is not always remember (or remembered wrong). This often puts you at the top of the timeline when looking at the new account.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/src/com/tweetlanes/android/view/HomeActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/56a76721accc03408726940f3834ec9cc8fa53f1</commit_url>
+		</Commits>
+	</bug>
+	<bug id="96">
+		<buginformation>
+			<summary>Reply lost on orientation change </summary>
+			<description>Repo steps: In portrait mode Open a tweet to reply. Start writing reply Change to landscape Modify tweet, or do nothing (both have same effect) Go back to portrait Try and carry on with reply All previous text gone</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>...ies/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeDirectMessageFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/App.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/widget/EditClearText.java</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/98dc9878bc64695ab62c1365549efe3f27ee927c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="131">
+		<buginformation>
+			<summary>Make credit handles clickable </summary>
+			<description>Handles now added to credits. Make them clickable links. Possibly app.net and Twitter open in tweetlanes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/raw/changelog.txt</file>
+			<file>android/libraries/TweetLanesCore/res/layout/credits.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/bcff1530bb9a9ec90affaf4b2cd2835749c16a35</commit_url>
+		</Commits>
+	</bug>
+	<bug id="333">
+		<buginformation>
+			<summary>Rotate During Post </summary>
+			<description>When the device is rotated during a post you get a draft and no post success, even if it was. Display should be locked when sending.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>...ies/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeDirectMessageFragment.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/47c9c5bc1d8c924e8df923118b41d4bb012cb8cd</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/be02b61debf0e6f8843ff8f2ea112df5d8d89855</commit_url>
+		</Commits>
+	</bug>
+	<bug id="319">
+		<buginformation>
+			<summary>ADN can't repost? </summary>
+			<description>I can't repost anything on ADN.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/org/appdotnet4j/model/AdnPost.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/94244a1cea084835847d54e2e49753667be6b3b1</commit_url>
+		</Commits>
+	</bug>
+	<bug id="43">
+		<buginformation>
+			<summary>"Tweet contains invalid characters" error </summary>
+			<description>When posting a long ADN post, you get the following error, even though the post is not 256 characters. Message also needs to contain the word "post" if ADN.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/src/com/tweetlanes/android/view/ComposeBaseFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Validator.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/ComposeTweetFragment.java</file>
+			<file>android/client/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/1b904099f3d746b41a1af2336aeb6684a416f057</commit_url>
+		</Commits>
+	</bug>
+	<bug id="279">
+		<buginformation>
+			<summary>Unable to send tweet from closed compose </summary>
+			<description>Repo steps. Write status Close compose Try and send Error saying status is empty</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/cde8c534c0f174dc61c265d1deeac7216995f4dd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="287">
+		<buginformation>
+			<summary>Save Direct messages to Cache </summary>
+			<description>Need to implement the functions that save and restore direct messages to the cache so they don't have to redownload. This is already implemented accross all other lanes as they share the tweet feed fragment. Direct messages have their own fragment so this logic dow not work.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessage.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessages.java</file>
+			<file>.../libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageActivity.java</file>
+			<file>.../libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageItemView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b004f520fefcf09ccc5f85136720e98fde63b975</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/f8c5f658b607f7fac72c11c6676854e5541f52b7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="293">
+		<buginformation>
+			<summary>Markdown links in ADN not clickable. </summary>
+			<description>ADN has markdown links and they are not being treated as links.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterUtil.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Autolink.java</file>
+			<file>android/libraries/SocialNetLib/src/org/appdotnet4j/model/AdnUrl.java</file>
+			<file>android/libraries/SocialNetLib/src/org/appdotnet4j/model/AdnPost.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ff5d78588db619a6c0228a32fc3d4cb356887714</commit_url>
+		</Commits>
+	</bug>
+	<bug id="278">
+		<buginformation>
+			<summary>New dm send doesn't grey username </summary>
+			<description>When sending a new dm, the text is greyed out, but the username isn't.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...ies/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeDirectMessageFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/a030d7e4d5e56abbfd999c6575f89f3ce2ab98aa</commit_url>
+		</Commits>
+	</bug>
+	<bug id="244">
+		<buginformation>
+			<summary>Forgetting lane position </summary>
+			<description>Tweetlanes seems to be able to forget the list position. You have lots of lanes set up a, b, c, d, e, f, g, h, i (d to i could be lists, but this can also be reproduced on timeline and mentions etc). Open app refresh an active lane (i.e. lane g) with a few (i.e. 15) new tweets. Scroll to top of lane (i.e. lane g). Swipe two (or more) lanes left (i.e. to lane e) or right (i.e. to lane i) Swipe back to lane g position is back to what it was before reloading lane at 1. You can make it remember position by swiping 1 left or right then back to lane or not fully scrolling to the top (although this can be temperamental and cause other lanes to jump to top, however this specific jump may be unrelated as i haven't been able to reproduce on the build BlythMeister supplied today). You can also open tweet detail and go back to lane, or exit app and reopen and it will remember the last position. If you need some lists to subscribe to for checking with multiple lanes, there are a few busy ones here:- https://twitter.com/London2012/lists/olympians https://twitter.com/NASA/lists/astronauts There are plenty of others, or make your own - tweetlanes is awesome with lots of lists ;)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ProfileFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/53b7d8398bb83cb0c086c4bd0c84b6d70055d1d1</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b07a00125071711aaef17d7c112fd5abce192165</commit_url>
+		</Commits>
+	</bug>
+	<bug id="250">
+		<buginformation>
+			<summary>Out Of Memory Fetching Status </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.RuntimeException: An error occured while executing doInBackground() 1 at org.asynctasktex.AsyncTaskEx$3.done(AsyncTaskEx.java:342) 2 at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352) 3 at java.util.concurrent.FutureTask.setException(FutureTask.java:219) 4 at java.util.concurrent.FutureTask.run(FutureTask.java:239) 5 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 6 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 7 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 8 at java.lang.Thread.run(Thread.java:856) 9 Caused by: java.lang.OutOfMemoryError 10 at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:94) 11 at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:132) 12 at java.lang.StringBuilder.append(StringBuilder.java:124) 13 at twitter4j.internal.org.json.JSONArray.toString(JSONArray.java:605) 14 at twitter4j.internal.http.HttpResponse.asJSONArray(HttpResponse.java:192) 15 at twitter4j.internal.json.StatusJSONImpl.createStatusList(StatusJSONImpl.java:435) 16 at twitter4j.internal.json.z_T4JInternalJSONImplFactory.createStatusList(z_T4JInternalJSONImplFactory.java:74) 17 at twitter4j.TwitterImpl.getUserTimeline(TwitterImpl.java:157) 18 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:468) 19 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:295) 20 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 21 at java.util.concurrent.FutureTask.run(FutureTask.java:234) 22 ... 4 more 23 java.lang.OutOfMemoryError 24 at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:94) 25 at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:132) 26 at java.lang.StringBuilder.append(StringBuilder.java:124) 27 at twitter4j.internal.org.json.JSONArray.toString(JSONArray.java:605) 28 at twitter4j.internal.http.HttpResponse.asJSONArray(HttpResponse.java:192) 29 at twitter4j.internal.json.StatusJSONImpl.createStatusList(StatusJSONImpl.java:435) 30 at twitter4j.internal.json.z_T4JInternalJSONImplFactory.createStatusList(z_T4JInternalJSONImplFactory.java:74) 31 at twitter4j.TwitterImpl.getUserTimeline(TwitterImpl.java:157) 32 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:468) 33 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:295) 34 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 35 at java.util.concurrent.FutureTask.run(FutureTask.java:234) 36 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 37 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 38 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 39 at java.lang.Thread.run(Thread.java:856)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/fetch/TwitterFetchStatuses.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/67c2d37474de1dd05e7e2dcf12dcfc71d4db5571</commit_url>
+		</Commits>
+	</bug>
+	<bug id="42">
+		<buginformation>
+			<summary>URL handling </summary>
+			<description>Handle https://alpha.app.net/... so that Android prompts to user to open it with Tweet Lanes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/raw/changelog.txt</file>
+			<file>android/libraries/TweetLanesCore/res/layout/credits.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/bcff1530bb9a9ec90affaf4b2cd2835749c16a35</commit_url>
+		</Commits>
+	</bug>
+	<bug id="81">
+		<buginformation>
+			<summary>Removing an account </summary>
+			<description>I may miss something, but is it possible to REMOVE an account from TweetLanes? I didn't find anything in settings and the regular gestures (long press, swipe ...) didn't do anything on the account selection drop down.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/App.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/114e2d8564986ea77429fa3670d8b420b0d56d6c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="95">
+		<buginformation>
+			<summary>Refresh after post </summary>
+			<description>Optional (from settings) refresh active column after sending tweet. Had this feature on tweetings and worked nicely.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ProfileFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/3d80c7392cce4eb16cadf3079f777266209aa134</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b07a00125071711aaef17d7c112fd5abce192165</commit_url>
+		</Commits>
+	</bug>
+	<bug id="330">
+		<buginformation>
+			<summary>java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 87 times for 41 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetSpotlightActivity$2.finished(TweetSpotlightActivity.java:280) 2 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.onPostExecute(TwitterFetchStatus.java:376) 3 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.onPostExecute(TwitterFetchStatus.java:237) 4 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:689) 5 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 6 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:702) 7 at android.os.Handler.dispatchMessage(Handler.java:99) 8 at android.os.Looper.loop(Looper.java:155) 9 at android.app.ActivityThread.main(ActivityThread.java:5520) 10 at java.lang.reflect.Method.invokeNative(Native Method) 11 at java.lang.reflect.Method.invoke(Method.java:511) 12 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029) 13 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:796) 14 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/d7a5bedf4eba7399efc41ca8395f83941bb2f78f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="324">
+		<buginformation>
+			<summary>Lanes all show </summary>
+			<description>Some times the lanes all enable themselves again. Seems to be no reason why.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...oid/libraries/TweetLanesCore/src/com/tweetlanes/android/core/model/AccountDescriptor.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ea4ac849504000cf2d475c148a675b322371be71</commit_url>
+		</Commits>
+	</bug>
+	<bug id="380">
+		<buginformation>
+			<summary>Feed Single Tap java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 375 times for 323 users 0 java.lang.NullPointerException 1 at android.content.ComponentName.(ComponentName.java:77) 2 at android.content.Intent.(Intent.java:3813) 3 at com.tweetlanes.android.core.view.TweetFeedFragment.onTweetFeedItemSingleTap(TweetFeedFragment.java:1254) 4 at com.tweetlanes.android.core.view.TweetFeedFragment.access$2700(TweetFeedFragment.java:78) 5 at com.tweetlanes.android.core.view.TweetFeedFragment$TweetFeedListAdapter$1.onSingleTapConfirmed(TweetFeedFragment.java:1887) 6 at com.tweetlanes.android.core.view.TweetFeedItemView$7.onSingleTapConfirmed(TweetFeedItemView.java:575) 7 at android.view.GestureDetector$GestureHandler.handleMessage(GestureDetector.java:273) 8 at android.os.Handler.dispatchMessage(Handler.java:102) 9 at android.os.Looper.loop(Looper.java:136) 10 at android.app.ActivityThread.main(ActivityThread.java:5017) 11 at java.lang.reflect.Method.invokeNative(Native Method) 12 at java.lang.reflect.Method.invoke(Method.java:515) 13 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779) 14 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595) 15 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/013debe97f4649b4b23d37f93026fe62d5cee64b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="394">
+		<buginformation>
+			<summary>Cache size config </summary>
+			<description>1.3.0 added a reduced cache to prevent out of memory errors. This is causing some users annoyance. Add config to enable a user to overide the tweetlanes recommend cache size.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/fb85055af75da709154d490d0890ea1c43d53f5e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="169">
+		<buginformation>
+			<summary>Media links case sensitive </summary>
+			<description>The example i have seen is that an instagram link with a capital I will not be regarded as a media link. The string checking for types of link (by definition of using java) is case sensitive. Both sides of the comparison should have their case the same. Also to note, on a lot of these types of links, the case of the "code" needs to remain in tact.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterMediaEntity.java</file>
+			<file>android/libraries/TweetLanesCore/res/raw/changelog.txt</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e659beac44d9e9f6949c33034283324d95f5719a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="155">
+		<buginformation>
+			<summary>java.lang.NullPointerException tweet spotlight </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.RuntimeException: Unable to start activity ComponentInfo{com.tweetlanes.android.beta/com.tweetlanes.android.core.view.TweetSpotlightActivity}: java.lang.NullPointerException 1 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2351) 2 at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387) 3 at android.app.ActivityThread.access$600(ActivityThread.java:151) 4 at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1331) 5 at android.os.Handler.dispatchMessage(Handler.java:99) 6 at android.os.Looper.loop(Looper.java:155) 7 at android.app.ActivityThread.main(ActivityThread.java:5454) 8 at java.lang.reflect.Method.invokeNative(Native Method) 9 at java.lang.reflect.Method.invoke(Method.java:511) 10 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029) 11 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:796) 12 at dalvik.system.NativeStart.main(Native Method) 13 Caused by: java.lang.NullPointerException 14 at org.tweetalib.android.model.TwitterStatus.setStatusMarkup(TwitterStatus.java:653) 15 at org.tweetalib.android.model.TwitterStatus.(TwitterStatus.java:64) 16 at com.tweetlanes.android.core.view.TweetSpotlightActivity.onGetStatus(TweetSpotlightActivity.java:197) 17 at com.tweetlanes.android.core.view.TweetSpotlightActivity.onCreate(TweetSpotlightActivity.java:82) 18 at android.app.Activity.performCreate(Activity.java:5066) 19 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1101) 20 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2307) 21 ... 11 more 22 java.lang.NullPointerException 23 at org.tweetalib.android.model.TwitterStatus.setStatusMarkup(TwitterStatus.java:653) 24 at org.tweetalib.android.model.TwitterStatus.(TwitterStatus.java:64) 25 at com.tweetlanes.android.core.view.TweetSpotlightActivity.onGetStatus(TweetSpotlightActivity.java:197) 26 at com.tweetlanes.android.core.view.TweetSpotlightActivity.onCreate(TweetSpotlightActivity.java:82) 27 at android.app.Activity.performCreate(Activity.java:5066) 28 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1101) 29 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2307) 30 at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387) 31 at android.app.ActivityThread.access$600(ActivityThread.java:151) 32 at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1331) 33 at android.os.Handler.dispatchMessage(Handler.java:99) 34 at android.os.Looper.loop(Looper.java:155) 35 at android.app.ActivityThread.main(ActivityThread.java:5454) 36 at java.lang.reflect.Method.invokeNative(Native Method) 37 at java.lang.reflect.Method.invoke(Method.java:511) 38 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029) 39 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:796) 40 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterModifyStatuses.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e58182c4d04293d6ab0090e1ddcbfd799afc2dcb</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/40728ab330860b5584489d8556afb892d004c34c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="196">
+		<buginformation>
+			<summary>Reply stuck </summary>
+			<description>When unselecting tweets the reply doesnt reset to the what's new.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/1cbdd90fd0eb947e209caa70a2c4f1f9a9b72045</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b23d0dc59fc24aedf4a19fe26653557e4fc8aa00</commit_url>
+		</Commits>
+	</bug>
+	<bug id="25">
+		<buginformation>
+			<summary>Background service polling for new tweets </summary>
+			<description>Biggest feature request from users. This should just be the setup for polling and not the full implementation with notifications. I believe it will be a big undertaking and we should split it up into small simple tasks. How do we want to break it down?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/src/com/tweetlanes/android/Constant.java</file>
+			<file>android/client/src/com/tweetlanes/android/App.java</file>
+			<file>android/client/src/com/tweetlanes/android/INotificationService.aidl</file>
+			<file>android/client/src/com/tweetlanes/android/view/AlarmReceiver.java</file>
+			<file>android/client/AndroidManifest.xml</file>
+			<file>android/client/src/com/tweetlanes/android/view/DeleteNotificationsReceiver.java</file>
+			<file>android/client/src/com/tweetlanes/android/Notifier.java</file>
+			<file>android/client/res/xml/preferences.xml</file>
+			<file>android/client/Tweet_Lanes_Release_Notes.txt</file>
+			<file>android/client/src/com/tweetlanes/android/view/HomeActivity.java</file>
+			<file>android/client/res/values/strings.xml</file>
+			<file>android/client/src/com/tweetlanes/android/view/TweetFeedFragment.java</file>
+			<file>android/client/src/com/tweetlanes/android/AppBroadcastReceiver.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/f7e9dc99d1fa8e5e347c9d314d5f2fc1d1b6e521</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ff9e830a98a050f64f961c6d0de53d66c0b7e4b3</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/2c5cb029e1d8f04baa788e6e36a1495e9ce0d8f3</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/66da97b5e324db47716f05b4405e62c3d5c35112</commit_url>
+		</Commits>
+	</bug>
+	<bug id="19">
+		<buginformation>
+			<summary>Discussion doesn't load </summary>
+			<description>When going into the tweet details view and there to the discussion tab, the current version of TweetLanes in the play store displays only "No content loaded at this time." Refreshing that view displays "Loading...", but nothing ever happens. In previous versions this worked.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Regex.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/ComposeBaseFragment.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Autolink.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/TwitterAuthActivity.java</file>
+			<file>android/libraries/SocialNetLib/.classpath</file>
+			<file>android/client/libs/twitter4j-core-3.0.3.jar</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/AppdotnetApi.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/TwitterApi.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/SocialNetApi.java</file>
+			<file>android/client/.classpath</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchLists.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/AppDotNetAuthActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Validator.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Extractor.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchUser.java</file>
+			<file>android/libraries/SocialNetLib/libs/twitter4j-core-3.0.3-sources.jar</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchBooleans.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/AutolinkEx.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/681e6591f0c24ac96002e70ccabed346a4657aef</commit_url>
+		</Commits>
+	</bug>
+	<bug id="236">
+		<buginformation>
+			<summary>Notification bar re-appears if you have "screen rotation" on and tilt your phone </summary>
+			<description>So I can reproduce this consistently. If i have "screen rotation" enabled while viewing my timeline if I change the phone orientation the "notification bar" shows up.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e7549eb2538930f3502d1a72d885f3f38f4da922</commit_url>
+		</Commits>
+	</bug>
+	<bug id="197">
+		<buginformation>
+			<summary>Share to tweetlanes </summary>
+			<description>When sharing the item being shared is lost.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/dc07cb6039c56e6edeaf775f01c09f56368a74bc</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/4dff79c48761d4b7693a791ad7eafe60098aca87</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b23d0dc59fc24aedf4a19fe26653557e4fc8aa00</commit_url>
+		</Commits>
+	</bug>
+	<bug id="140">
+		<buginformation>
+			<summary>Crash when RT on action bar fails </summary>
+			<description>Note for me mainly. Null pointer around line 1190 in tweet fragment. Would appear I need a check so make sure that the status is not null. A null status mean failure.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ImageViewActivity.java</file>
+			<file>android/client/Tweet_Lanes_Release_Notes.txt</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>...nesCore/src/com/tweetlanes/android/core/widget/urlimageviewhelper/UrlImageViewHelper.java</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7c774c3b4f70266638b612a628bb5a33a29b37ee</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/afaf33ed9a35fd0e441d9056a767ad5d82783990</commit_url>
+		</Commits>
+	</bug>
+	<bug id="156">
+		<buginformation>
+			<summary>Retweet missing dogear </summary>
+			<description>When acting on callback. It would seem in some cases the tweet cannot be located to apply the dogear. This is very tricky to replicate!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatuses.java</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/9248d9eb20adcc122af64c6efe65741d855a4937</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/bed4b54be144832eb288e227411393b5c7734fe2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="142">
+		<buginformation>
+			<summary>Vibration setting for notifications </summary>
+			<description>Requested by @HorayNarea on Twitter.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/Notifier.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e0b1831834a4848b1b8419e1d1073582fc1f86b7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="234">
+		<buginformation>
+			<summary>Username in compose after viewing profile </summary>
+			<description>I thought I had fixed this one, but looks like it's back. Repo steps: Open a profile Leave profile by back button, or in app back Go into compose window Usename already populated.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ProfileActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e8f41e88937d7ae9363513478e7cca7e9f911330</commit_url>
+		</Commits>
+	</bug>
+	<bug id="209">
+		<buginformation>
+			<summary>Only show profile picture and service icon when... </summary>
+			<description>The top bar looks a little cluttered for users with one or two accounts. We should only show the profile picture and service icon when there are 3 or more accounts added. If this doesn't get changed until the ui overhaul maybe it can also be in a display settings or advanced settings. (Emails with Chris Lacy)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/layout/account_row.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/dimens.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/bd87fb4e88fde490ae5a65abfc00f547230b14f1</commit_url>
+		</Commits>
+	</bug>
+	<bug id="157">
+		<buginformation>
+			<summary>Change Log reshow </summary>
+			<description>Change from having its own item to being part of the version one. At present this setting icon has no action. Remove the item added to reshow change log.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/23a1cfa8a07fb1e1a8e62f99af8e5f6ced062ea9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="382">
+		<buginformation>
+			<summary>User List java.lang.OutOfMemoryError </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 24 times for 21 users 0 java.lang.RuntimeException: An error occured while executing doInBackground() 1 at org.asynctasktex.AsyncTaskEx$3.done(AsyncTaskEx.java:342) 2 at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355) 3 at java.util.concurrent.FutureTask.setException(FutureTask.java:222) 4 at java.util.concurrent.FutureTask.run(FutureTask.java:242) 5 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 6 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112) 7 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587) 8 at java.lang.Thread.run(Thread.java:841) 9 Caused by: java.lang.OutOfMemoryError 10 at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:94) 11 at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:145) 12 at java.lang.StringBuilder.append(StringBuilder.java:216) 13 at twitter4j.internal.org.json.JSONArray.join(JSONArray.java:363) 14 at twitter4j.internal.org.json.JSONArray.toString(JSONArray.java:605) 15 at twitter4j.internal.http.HttpResponse.asJSONArray(HttpResponse.java:192) 16 at twitter4j.internal.json.UserJSONImpl.createUserList(UserJSONImpl.java:613) 17 at twitter4j.internal.json.z_T4JInternalJSONImplFactory.createUserList(z_T4JInternalJSONImplFactory.java:135) 18 at twitter4j.TwitterImpl.lookupUsers(TwitterImpl.java:834) 19 at org.tweetalib.android.TwitterFetchUsers$FetchUsersTask.doInBackground(TwitterFetchUsers.java:761) 20 at org.tweetalib.android.TwitterFetchUsers$FetchUsersTask.doInBackground(TwitterFetchUsers.java:472) 21 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 22 at java.util.concurrent.FutureTask.run(FutureTask.java:237) 23 ... 4 more 24 java.lang.OutOfMemoryError 25 at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:94) 26 at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:145) 27 at java.lang.StringBuilder.append(StringBuilder.java:216) 28 at twitter4j.internal.org.json.JSONArray.join(JSONArray.java:363) 29 at twitter4j.internal.org.json.JSONArray.toString(JSONArray.java:605) 30 at twitter4j.internal.http.HttpResponse.asJSONArray(HttpResponse.java:192) 31 at twitter4j.internal.json.UserJSONImpl.createUserList(UserJSONImpl.java:613) 32 at twitter4j.internal.json.z_T4JInternalJSONImplFactory.createUserList(z_T4JInternalJSONImplFactory.java:135) 33 at twitter4j.TwitterImpl.lookupUsers(TwitterImpl.java:834) 34 at org.tweetalib.android.TwitterFetchUsers$FetchUsersTask.doInBackground(TwitterFetchUsers.java:761) 35 at org.tweetalib.android.TwitterFetchUsers$FetchUsersTask.doInBackground(TwitterFetchUsers.java:472) 36 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 37 at java.util.concurrent.FutureTask.run(FutureTask.java:237) 38 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 39 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112) 40 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587) 41 at java.lang.Thread.run(Thread.java:841)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchUsers.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ff1b381989139811604a8a82c63f9afec29e4d12</commit_url>
+		</Commits>
+	</bug>
+	<bug id="396">
+		<buginformation>
+			<summary>Potential infinite refresh recusion </summary>
+			<description>With a previous release I added recusion to get all new statuses. However, if everytime Twitter is called an extra 1 status is found, you could end up in a nasty loop. I've seen situations where refresh takes ages, this could be an explanation.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/aba8594e0a120af853ad0f871d1e6fa9d230c410</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/c665603abbf652ba37f4c44ea7201c32130068f3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="379">
+		<buginformation>
+			<summary>Autolink java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth Status: Unresolved This Crash occured 13 times for 1 users 0 java.lang.NullPointerException 1 at com.twitter.Autolink.escapeBrackets(Autolink.java:78) 2 at com.twitter.Autolink.autoLinkAll(Autolink.java:249) 3 at org.tweetalib.android.TwitterUtil.getStatusMarkup(TwitterUtil.java:94) 4 at org.tweetalib.android.model.TwitterDirectMessage.(TwitterDirectMessage.java:85) 5 at com.tweetlanes.android.core.view.DirectMessageFeedFragment.addCachedStatusesFromString(DirectMessageFeedFragment.java:290) 6 at com.tweetlanes.android.core.view.DirectMessageFeedFragment.configureCachedStatuses(DirectMessageFeedFragment.java:271) 7 at com.tweetlanes.android.core.view.DirectMessageFeedFragment.configureInitialStatuses(DirectMessageFeedFragment.java:238) 8 at com.tweetlanes.android.core.view.DirectMessageFeedFragment.onCreateView(DirectMessageFeedFragment.java:185) 9 at android.support.v4.app.Fragment.performCreateView(Fragment.java:1460) 10 at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:911) 11 at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1088) 12 at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:682) 13 at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1444) 14 at android.support.v4.app.FragmentManagerImpl.executePendingTransactions(FragmentManager.java:461) 15 at android.support.v4.app.FragmentStatePagerAdapter.finishUpdate(FragmentStatePagerAdapter.java:163) 16 at android.support.v4.view.ViewPager.populate(ViewPager.java:1064) 17 at android.support.v4.view.ViewPager.populate(ViewPager.java:911) 18 at android.support.v4.view.ViewPager.onMeasure(ViewPager.java:1432) 19 at android.view.View.measure(View.java:15473) 20 at android.widget.RelativeLayout.measureChildHorizontal(RelativeLayout.java:617) 21 at android.widget.RelativeLayout.onMeasure(RelativeLayout.java:399) 22 at android.view.View.measure(View.java:15473) 23 at android.widget.LinearLayout.measureVertical(LinearLayout.java:833) 24 at android.widget.LinearLayout.onMeasure(LinearLayout.java:574) 25 at android.view.View.measure(View.java:15473) 26 at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5056) 27 at android.widget.FrameLayout.onMeasure(FrameLayout.java:310) 28 at android.view.View.measure(View.java:15473) 29 at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5056) 30 at android.widget.FrameLayout.onMeasure(FrameLayout.java:310) 31 at android.view.View.measure(View.java:15473) 32 at android.widget.LinearLayout.measureVertical(LinearLayout.java:833) 33 at android.widget.LinearLayout.onMeasure(LinearLayout.java:574) 34 at android.view.View.measure(View.java:15473) 35 at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5056) 36 at android.widget.FrameLayout.onMeasure(FrameLayout.java:310) 37 at com.android.internal.policy.impl.PhoneWindow$DecorView.onMeasure(PhoneWindow.java:2361) 38 at android.view.View.measure(View.java:15473) 39 at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:1974) 40 at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1217) 41 at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1390) 42 at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1112) 43 at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:4472) 44 at android.view.Choreographer$CallbackRecord.run(Choreographer.java:725) 45 at android.view.Choreographer.doCallbacks(Choreographer.java:555) 46 at android.view.Choreographer.doFrame(Choreographer.java:525) 47 at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:711) 48 at android.os.Handler.handleCallback(Handler.java:615) 49 at android.os.Handler.dispatchMessage(Handler.java:92) 50 at android.os.Looper.loop(Looper.java:137) 51 at android.app.ActivityThread.main(ActivityThread.java:4898) 52 at java.lang.reflect.Method.invokeNative(Native Method) 53 at java.lang.reflect.Method.invoke(Method.java:511) 54 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1006) 55 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:773) 56 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...raries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessage.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/eac2c7445a9a16c4ba8769ddad33d4ec934af13d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="392">
+		<buginformation>
+			<summary>Auto complete mid status error </summary>
+			<description>When using auto complete mid status the status is modified and overwritten. Sometimes the username just goes on the end.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/aba8594e0a120af853ad0f871d1e6fa9d230c410</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7ec43e40ef4c6446ffe36937fefe5d73ead3410e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="386">
+		<buginformation>
+			<summary>Spotlight Media </summary>
+			<description>When status is a RT, in main feed picture shows, but when you view spotlight it doesn't show the media.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedItemView.java</file>
+			<file>android/libraries/TweetLanesCore/res/layout/tweet_feed_item_spotlight.xml</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/4c423908dfd185efbc59e50dc9bffdc127744deb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="147">
+		<buginformation>
+			<summary>Some tweets with images don't have preview </summary>
+			<description>This includes some pic.twitter tweets.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterMediaEntity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5ec4764233f4eb38ed43a34eea8caf131544e53d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="185">
+		<buginformation>
+			<summary>Repeat refresh error </summary>
+			<description>Error when refresh and reload saying something like too many terms in search. Happens a lot, and prob should be fixed before store version.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchUsers.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7980401cf95c8652cfefef975be2bbeab31848e8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="191">
+		<buginformation>
+			<summary>Auto complete wildcard </summary>
+			<description>Current version is great. But can we add extra features like if I put @jas @fammy will show as that's his name. Also, if you put @lanes the tweetlanes user will show. Both these make it easier to reply to users.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/698a7b02406e6dabbe51a17ba7370b630549d5aa</commit_url>
+		</Commits>
+	</bug>
+	<bug id="146">
+		<buginformation>
+			<summary>Update to latest version of Crittercism </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/TweetLanesCore.iml</file>
+			<file>...nt/.idea/libraries/crittercism_v2_0_1.xml</file>
+			<file>android/libraries/TweetLanesCore/libs/crittercism_v2_0_1.jar</file>
+			<file>android/libraries/TweetLanesCore/libs/crittercism_v3_0_11.jar</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/73c3a3131dfcbac6dd15ff6c2f195792c2fa85fe</commit_url>
+		</Commits>
+	</bug>
+	<bug id="152">
+		<buginformation>
+			<summary>java.lang.NullPointerException adding tweets </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 6 times for 1 users 0 java.lang.RuntimeException: An error occured while executing doInBackground() 1 at org.asynctasktex.AsyncTaskEx$3.done(AsyncTaskEx.java:346) 2 at java.util.concurrent.FutureTask$Sync.innerSetException(FutureTask.java:273) 3 at java.util.concurrent.FutureTask.setException(FutureTask.java:124) 4 at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:307) 5 at java.util.concurrent.FutureTask.run(FutureTask.java:137) 6 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 7 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076) 8 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569) 9 at java.lang.Thread.run(Thread.java:864) 10 Caused by: java.lang.NullPointerException 11 at org.tweetalib.android.model.TwitterStatus.(TwitterStatus.java:114) 12 at org.tweetalib.android.model.TwitterStatuses.add(TwitterStatuses.java:239) 13 at org.tweetalib.android.fetch.TwitterFetchStatuses.setStatuses(TwitterFetchStatuses.java:116) 14 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:498) 15 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:278) 16 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:334) 17 at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305) 18 ... 5 more 19 java.lang.NullPointerException 20 at org.tweetalib.android.model.TwitterStatus.(TwitterStatus.java:114) 21 at org.tweetalib.android.model.TwitterStatuses.add(TwitterStatuses.java:239) 22 at org.tweetalib.android.fetch.TwitterFetchStatuses.setStatuses(TwitterFetchStatuses.java:116) 23 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:498) 24 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:278) 25 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:334) 26 at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305) 27 at java.util.concurrent.FutureTask.run(FutureTask.java:137) 28 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 29 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076) 30 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569) 31 at java.lang.Thread.run(Thread.java:864)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e3ae38abc869bfae3bf4c480a2287b140646b24f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="387">
+		<buginformation>
+			<summary>Selected Status Rotate Error </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetFeedFragment$MultipleTweetSelectionCallback.onActionItemClicked(TweetFeedFragment.java:1430) 2 at android.widget.AbsListView$MultiChoiceModeWrapper.onActionItemClicked(AbsListView.java:6326) 3 at com.android.internal.policy.impl.PhoneWindow$DecorView$ActionModeCallbackWrapper.onActionItemClicked(PhoneWindow.java:2724) 4 at com.android.internal.app.ActionBarImpl$ActionModeImpl.onMenuItemSelected(ActionBarImpl.java:931) 5 at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:735) 6 at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:149) 7 at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:874) 8 at com.android.internal.view.menu.ActionMenuView.invokeItem(ActionMenuView.java:524) 9 at com.android.internal.view.menu.ActionMenuItemView.onClick(ActionMenuItemView.java:131) 10 at android.view.View.performClick(View.java:4102) 11 at android.view.View$PerformClick.run(View.java:17085) 12 at android.os.Handler.handleCallback(Handler.java:615) 13 at android.os.Handler.dispatchMessage(Handler.java:92) 14 at android.os.Looper.loop(Looper.java:155) 15 at android.app.ActivityThread.main(ActivityThread.java:5454) 16 at java.lang.reflect.Method.invokeNative(Native Method) 17 at java.lang.reflect.Method.invoke(Method.java:511) 18 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029) 19 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:796) 20 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e6dc799de5e47ce9dc97c343c6046bb4390deee6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="393">
+		<buginformation>
+			<summary>Refresh Screen Rotate </summary>
+			<description>When refreshing in landscape with camera on the right, the screen rotates a full 180, then back again. Would guess the lock rotate is having strange effects.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/aba8594e0a120af853ad0f871d1e6fa9d230c410</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5f70cec4b72516993194f14a53e31e6b285477ba</commit_url>
+		</Commits>
+	</bug>
+	<bug id="346">
+		<buginformation>
+			<summary>Optimistic interactions </summary>
+			<description>Make the UI update before HTTP requests complete. This will make the UI feel faster. Will need to make sure that on HTTP request fail the UI reverts to previous state and notifies the user.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...oid/libraries/TweetLanesCore/src/com/tweetlanes/android/core/model/AccountDescriptor.java</file>
+			<file>...raries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageFeedFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>...ies/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeDirectMessageFragment.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/App.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/603b115a9362fb95ec5e30ffaeebc29f4176104c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="144">
+		<buginformation>
+			<summary>Change log pop up </summary>
+			<description>Make a change log show up as a pop up after updating. This is where we can show who contributed to the most recent build. Kinda like Press. I will upload a screenshot tonight.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/clientbeta/AndroidManifest.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/styles.xml</file>
+			<file>android/client/Tweet_Lanes_Release_Notes.txt</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/raw/changelog.txt</file>
+			<file>README.md</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7bbaf65b2f34c242823314844eb7bf9e0767f30a</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/336d951adfe93945a248bec1b82c4977bf9da53b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="187">
+		<buginformation>
+			<summary>Multiple refresh jump to top </summary>
+			<description>When refreshing, if you have more unread than the max reteival about, the client jumps to the top of the previous refresh. (hope that makes sense, dificult to explain & repo)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterPaging.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/926eda2c113b74fca8f5a1c05db8ad57b0652edc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="193">
+		<buginformation>
+			<summary>Unattach images </summary>
+			<description>Once an image is attached to a message, there is no way to get rid of it. This would (at one stage) have been done using the clear "X" button that we got rid of a couple of releases ago.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/model/ComposeTweetDefault.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/86559e3b43e021d6df516d58bc96c7d866dc05cf</commit_url>
+		</Commits>
+	</bug>
+	<bug id="232">
+		<buginformation>
+			<summary>Http added to links </summary>
+			<description>Auto link now puts http at start of link. If I put the text app.net Twitter make this a t.co. When it's displayed, it gets http:// put on front. Not sure if we can stop it, but makes some text look funny. In particular when talking about something .net. I.e app.net, asp.net, vb.net.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterUtil.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessage.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Autolink.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ef2cede1a77f183de4f8642b691ed6754ef982f4</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/81a29dc3a93b7f65155b49bd8ee2b24afea3eb5b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="35">
+		<buginformation>
+			<summary>Large font size setting clips user names in TL view </summary>
+			<description>See the screenshot. When you choose the Large font size in the settings, the font size of the user name is also larger and the lower part of the character (most stuff under the baseline) is clipped. This does not happen if you choose any other font size. With any other font size, from Extra small to Extra large, the font size of the user name appears to stay the same. Hence no clipping. Only when you choose the Large font, the user names are also displayed larger and get clipped.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/src/com/tweetlanes/android/view/TweetFeedItemView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/79fbe23c6868e8ccb9e190ea1e9079dad30be3e4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="179">
+		<buginformation>
+			<summary>Auto complete bugs </summary>
+			<description>A fullstop the @ doesn't show auto complete. Also, I seem to be missing people I follow on my auto complete.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchUsers.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/644d84a30c3b93d55916498c73d4a537e04d1627</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/28611a8d79f0910c48afed494d6be8550d6b322c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="151">
+		<buginformation>
+			<summary>Dm notification loads mention lane </summary>
+			<description>When you get a notification for dm, would expect the dm lane to load, not the mention one.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/2ee26c75158a532266f1ee680b9415c2a1b039c3</commit_url>
+		</Commits>
+	</bug>
+	<bug id="347">
+		<buginformation>
+			<summary>Remove success toasts </summary>
+			<description>Work on action being a success unless otherwise stated. Only show toast for errors.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...oid/libraries/TweetLanesCore/src/com/tweetlanes/android/core/model/AccountDescriptor.java</file>
+			<file>...raries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageFeedFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>...ies/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeDirectMessageFragment.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/App.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/603b115a9362fb95ec5e30ffaeebc29f4176104c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="376">
+		<buginformation>
+			<summary>Remaining Characters and image attachment </summary>
+			<description>Character count doesn't take into account the attached image url length. When image attached, a set number of extra characters should be added.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/27cbb8d48e3dff70f2925a4773ca79a292bb150e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="160">
+		<buginformation>
+			<summary>Delete tweet from cache on callback </summary>
+			<description>Currently, tweets are removed straight away, not after callback completes.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterModifyStatuses.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/91d102b4a0410f18313d156e12cdb6556359531b</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e58182c4d04293d6ab0090e1ddcbfd799afc2dcb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="174">
+		<buginformation>
+			<summary>java.lang.NullPointerException On Delete Tweet. </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 30 times for 26 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetFeedFragment$MultipleTweetSelectionCallback.onActionItemClicked(TweetFeedFragment.java:1311) 2 at android.widget.AbsListView$MultiChoiceModeWrapper.onActionItemClicked(AbsListView.java:6018) 3 at com.android.internal.policy.impl.PhoneWindow$DecorView$ActionModeCallbackWrapper.onActionItemClicked(PhoneWindow.java:2558) 4 at com.android.internal.app.ActionBarImpl$ActionModeImpl.onMenuItemSelected(ActionBarImpl.java:936) 5 at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:735) 6 at com.android.internal.view.menu.SubMenuBuilder.dispatchMenuItemSelected(SubMenuBuilder.java:81) 7 at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:149) 8 at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:874) 9 at com.android.internal.view.menu.MenuPopupHelper.onItemClick(MenuPopupHelper.java:156) 10 at android.widget.AdapterView.performItemClick(AdapterView.java:298) 11 at android.widget.AbsListView.performItemClick(AbsListView.java:1100) 12 at android.widget.AbsListView$PerformClick.run(AbsListView.java:2749) 13 at android.widget.AbsListView$1.run(AbsListView.java:3423) 14 at android.os.Handler.handleCallback(Handler.java:725) 15 at android.os.Handler.dispatchMessage(Handler.java:92) 16 at android.os.Looper.loop(Looper.java:137) 17 at android.app.ActivityThread.main(ActivityThread.java:5041) 18 at java.lang.reflect.Method.invokeNative(Native Method) 19 at java.lang.reflect.Method.invoke(Method.java:511) 20 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793) 21 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560) 22 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/12f5713e3ee571e133e4cc43412f7828d1ec1314</commit_url>
+		</Commits>
+	</bug>
+	<bug id="10">
+		<buginformation>
+			<summary>Reload Avatars when they change </summary>
+			<description>Currently, TweetLanes only loads avatars once and keeps them, independent of the actual current avatar of the user. This should be fixed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/src/com/tweetlanes/android/util/LazyImageLoader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/f847e9ef9574b9a5cca088602072bf4836f531bc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="38">
+		<buginformation>
+			<summary>Rate Limit Exceeded easily </summary>
+			<description>It's fairly easy to get the "Rate Limit Exceeded" message on a Twitter account. Unsure if this is due to API 1.1 changes or the App.net changes (or some combination of the two). Reproduce: Keep scrolling through timeline Switch between Twitter and App.net account</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/src/com/tweetlanes/android/view/BaseLaneActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/61470e3538e63fea29a550f6a6b6538b112c3ee2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="217">
+		<buginformation>
+			<summary>Show some sort of interaction/animation/feedback when favoriting a tweet </summary>
+			<description>Would be nice to see some sort of visual after pressing the favorite (star) icon. Right now it can take several seconds for a tweet to become "favorite". Currently i look to see if there's any network activity to see if it's "working"</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_ic_action_star_pressed_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xxhdpi/ic_action_star_pressed_dark.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-hdpi/ic_action_star_pressed_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_action_star_pressed_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-hdpi/ic_action_star_pressed_dark.png</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-mdpi/ic_action_star_pressed_dark.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_action_star_pressed_dark.png</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-hdpi/ic_ic_action_star_pressed_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-mdpi/ic_ic_action_star_pressed_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_action_rt_pressed_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_action_star_off_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_action_rt_pressed_dark.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_action_star_on_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xxhdpi/ic_ic_action_star_pressed_light.png</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-mdpi/ic_action_star_pressed_light.png</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7dec8c3f60a81a0bef9757103db9533769c3c3c6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="39">
+		<buginformation>
+			<summary>Tap a link in a tweet - incorrect behaviour </summary>
+			<description>Steps to reproduce:- Find tweet with a link to user/hashtag/link. Click link on the tweet Tweet detail is opened (or url if external link) - Unwanted action Press back or close browser and the users profile/hashtag search is opened - this is what should have been shown at 3 Press back again to take you to the tweet list. What should happen: click username/hashtag/link within tweet user profile/search/url opens press back to return to tweet list This may have been caused by this merge as I never noticed this behaviour prior to this:- #9</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...weetLanesCore/src/com/tweetlanes/android/core/widget/pulltorefresh/PullToRefreshBase.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedItemView.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatuses.java</file>
+			<file>android/client/src/com/tweetlanes/android/dashclock/TweetLanesSettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/AlarmReceiver.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/AppdotnetApi.java</file>
+			<file>android/client/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7cc313c16b27cf4a635755617bcdac66d950ad63</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/f5424c8723b9709ff5d416086047b2d386871ce6</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/4e79673607fbfd4677e6796d27419b01bf943399</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0da57609c4daec69ab5e0bcb5a71f2b593ba04c4</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ddfbec2b6582c6a3ebfb62f73ee2675ff6723c10</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7e9e21bdd47db895f0c297551c280f0fd5421f45</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/a5f6f9bf2a84579240bdad811d3dc41f9179983b</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5ec3c8cd25ab666a2ac426361e00aa4557b063c5</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/61470e3538e63fea29a550f6a6b6538b112c3ee2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="175">
+		<buginformation>
+			<summary>Whole tweet not passed back from spotlight </summary>
+			<description>Only RT and favorite info passed back, other bits aren't. For example number of retweets.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7c116ed8febe5eeead5030185aa9ce3f63facd5f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="149">
+		<buginformation>
+			<summary>Image Too Large Error </summary>
+			<description>reported by @xodeus on twitter. On looking into the image, the details are as follows: 3.7mb image at a resolution of 4208 x 3120. It is believed that tweetlanes should be resizing the image.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchStatus.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatusUpdate.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/util/LazyImageLoader.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/raw/changelog.txt</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/61eb9fa8876376dbfa24d2a56373ec7809cdbe58</commit_url>
+		</Commits>
+	</bug>
+	<bug id="388">
+		<buginformation>
+			<summary>ADN File Error </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.RuntimeException: An error occured while executing doInBackground() 1 at org.asynctasktex.AsyncTaskEx$3.done(AsyncTaskEx.java:342) 2 at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355) 3 at java.util.concurrent.FutureTask.setException(FutureTask.java:222) 4 at java.util.concurrent.FutureTask.run(FutureTask.java:242) 5 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 6 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112) 7 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587) 8 at java.lang.Thread.run(Thread.java:811) 9 Caused by: java.lang.NullPointerException: Attempt to read from field 'java.lang.String org.appdotnet4j.model.AdnFile.mId' on a null object reference 10 at org.socialnetlib.android.AppdotnetApi.setAdnStatus(AppdotnetApi.java:349) 11 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.doInBackground(TwitterFetchStatus.java:261) 12 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.doInBackground(TwitterFetchStatus.java:237) 13 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 14 at java.util.concurrent.FutureTask.run(FutureTask.java:237) 15 ... 4 more 16 java.lang.NullPointerException: Attempt to read from field 'java.lang.String org.appdotnet4j.model.AdnFile.mId' on a null object reference 17 at org.socialnetlib.android.AppdotnetApi.setAdnStatus(AppdotnetApi.java:349) 18 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.doInBackground(TwitterFetchStatus.java:261) 19 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.doInBackground(TwitterFetchStatus.java:237) 20 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 21 at java.util.concurrent.FutureTask.run(FutureTask.java:237) 22 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 23 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112) 24 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587) 25 at java.lang.Thread.run(Thread.java:811)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/AppdotnetApi.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0b9deec6d9a1323c0d9dfb3a80f92370b5830766</commit_url>
+		</Commits>
+	</bug>
+	<bug id="363">
+		<buginformation>
+			<summary>Save image doesn't work </summary>
+			<description>Save image on ADN doesn't seem to work.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ImageViewActivity.java</file>
+			<file>...oid/libraries/TweetLanesCore/src/com/tweetlanes/android/core/util/SingleMediaScanner.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/767d1742f4e0ae21cbb549578e479941bbf3c790</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/3a6ef61d9be9d9f72516a0c360dd6d891c1d453a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="361">
+		<buginformation>
+			<summary>java.lang.NullPointerException TweetFeedItemView onClick </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetFeedItemView$4.onClick(TweetFeedItemView.java:447) 2 at android.view.View.performClick(View.java:4475) 3 at android.view.View$PerformClick.run(View.java:18786) 4 at android.os.Handler.handleCallback(Handler.java:730) 5 at android.os.Handler.dispatchMessage(Handler.java:92) 6 at android.os.Looper.loop(Looper.java:137) 7 at android.app.ActivityThread.main(ActivityThread.java:5419) 8 at java.lang.reflect.Method.invokeNative(Native Method) 9 at java.lang.reflect.Method.invoke(Method.java:525) 10 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1187) 11 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003) 12 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedItemView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/451fb069d6feb4f413b0bb513b1d658d0919d3b4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="407">
+		<buginformation>
+			<summary>Favorites Don't Work </summary>
+			<description>When favorite a status icon shows but not sent to Twitter.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterModifyStatuses.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/f46849b17692c5b7d288fe6382695b0dba4381a9</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/a692e99716b8d51bc5a79ff5fc326688ea3eed52</commit_url>
+		</Commits>
+	</bug>
+	<bug id="163">
+		<buginformation>
+			<summary>Notifications don't auto-start after a reboot </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/clientbeta/AndroidManifest.xml</file>
+			<file>...oid/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/DeviceBootReciever.java</file>
+			<file>android/libraries/TweetLanesCore/res/raw/changelog.txt</file>
+			<file>android/client/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/2f4d778318bf26f49c7cde032097e28a403b583f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="13">
+		<buginformation>
+			<summary>List don't work </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/.settings/org.eclipse.jdt.core.prefs</file>
+			<file>android/client/src/com/tweetlanes/android/view/TwitterAuthActivity.java</file>
+			<file>android/client/libs/twitter4j-core-3.0.3.jar</file>
+			<file>android/libraries/SocialNetLib/.project</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/TwitterApi.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/SocialNetApi.java</file>
+			<file>android/client/.classpath</file>
+			<file>android/libraries/SocialNetLib/.settings/org.eclipse.jdt.core.prefs</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchLists.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/AppDotNetAuthActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchUser.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/AutolinkEx.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Regex.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/ComposeBaseFragment.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Autolink.java</file>
+			<file>android/libraries/SocialNetLib/.classpath</file>
+			<file>android/libraries/SupportLibraryV4/.settings/org.eclipse.jdt.core.prefs</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/AppdotnetApi.java</file>
+			<file>android/libraries/SocialNetLib/src/org/twitter4j/TwitterImpl.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Validator.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Extractor.java</file>
+			<file>android/libraries/SocialNetLib/libs/twitter4j-core-3.0.3-sources.jar</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchBooleans.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e97f99bb3444d06ab369a7364fa68e39e0b162d5</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/681e6591f0c24ac96002e70ccabed346a4657aef</commit_url>
+		</Commits>
+	</bug>
+	<bug id="201">
+		<buginformation>
+			<summary>Link extract on profile text </summary>
+			<description>@Fammy profile has a t.co link in the text. not sure what it's meant to say but t.co links look nasty.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/clientbeta/AndroidManifest.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ProfileFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterUtil.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/inscription/ChangeLogDialog.java</file>
+			<file>android/client/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0bc77217685a84df7b67a6501b4dbe32d142b2cb</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/449106978b04192da9e90d486d1a6a64f2e2297e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="215">
+		<buginformation>
+			<summary>Show full URL in the tweet </summary>
+			<description>It looks like TweetLanes is expanding the t.co links, but then it cuts it short at some hardcoded length? and adds "..." to the end. Would be nice to see the full URL though.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/com/twitter/AutolinkEx.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b38d415e2a3f91df1e3e7f7f0a5c707eec6980c9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="200">
+		<buginformation>
+			<summary>Reply box on profile </summary>
+			<description>When open profile from a link in tweet the @ user doesn't show. When open from profile pic it does.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/clientbeta/AndroidManifest.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ProfileFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterUtil.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/inscription/ChangeLogDialog.java</file>
+			<file>android/client/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0bc77217685a84df7b67a6501b4dbe32d142b2cb</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/055322d2fc98653861fe81393e3421cd0859aa3d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="189">
+		<buginformation>
+			<summary>URL Expand </summary>
+			<description>It looks like we do an auto expand of the t.co URL. though i had a DM which still shows the t.co url. Can we also auto expand these.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterMediaEntity.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessage.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterUtil.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/c9678fdd3fbb8a2d45acdde72b94bd0f7b9a54a2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="360">
+		<buginformation>
+			<summary>java.lang.NullPointerException TweetFeedFragment MultipleTweetSelectionCallback </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 4 times for 3 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetFeedFragment$MultipleTweetSelectionCallback$4.finished(TweetFeedFragment.java:1569) 2 at org.tweetalib.android.TwitterModifyStatuses$ModifyStatusesTask.onPostExecute(TwitterModifyStatuses.java:346) 3 at org.tweetalib.android.TwitterModifyStatuses$ModifyStatusesTask.onPostExecute(TwitterModifyStatuses.java:229) 4 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:689) 5 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 6 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:702) 7 at android.os.Handler.dispatchMessage(Handler.java:99) 8 at android.os.Looper.loop(Looper.java:137) 9 at android.app.ActivityThread.main(ActivityThread.java:5293) 10 at java.lang.reflect.Method.invokeNative(Native Method) 11 at java.lang.reflect.Method.invoke(Method.java:525) 12 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:738) 13 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:554) 14 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/536692a38c026371764415a883ab470027826d99</commit_url>
+		</Commits>
+	</bug>
+	<bug id="374">
+		<buginformation>
+			<summary>VolScroll disabled by default </summary>
+			<description>Seems a lot of people don't use volscroll.. I don't think we should remove it, but disable it by default.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/d15d9948db411ea19fa511203b9da3ba60b4c9f1</commit_url>
+		</Commits>
+	</bug>
+	<bug id="402">
+		<buginformation>
+			<summary>Sharing a post from App.Net provides a Twitter URL instead </summary>
+			<description>Hi! This is my first post here, so I hope I didn't miss anything. Using Android 4.2 and Tweet Lanes 1.3.0 When sharing a post from App.Net and selecting "Link to Tweet", it shares a wrong URL: https://twitter.com/username/status/12345678 Instead of this URL from App.Net: https://alpha.app.net/username/post/12345678 Besides, "Link to Tweet" could also be changed to "Link to Post" to match ADN's terminology. Thanks!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/bcafe227232022e340c468eccba683f1aa054e96</commit_url>
+		</Commits>
+	</bug>
+	<bug id="364">
+		<buginformation>
+			<summary>Quote/Canceled quote still shows RT </summary>
+			<description>When choosing quote shouldn't mark as RT.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...d/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeTweetFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e92ccd7bddef1524dd2acededd1e92f1d6f762ad</commit_url>
+		</Commits>
+	</bug>
+	<bug id="166">
+		<buginformation>
+			<summary>NullPointerException when switching accounts </summary>
+			<description>View Crash Report on Crittercism Reported by: None (jason@famularo.org) Status: Unresolved This Crash occured 514 times for 371 users 0 java.lang.RuntimeException: An error occured while executing doInBackground() 1 at org.asynctasktex.AsyncTaskEx$3.done(AsyncTaskEx.java:346) 2 at java.util.concurrent.FutureTask$Sync.innerSetException(FutureTask.java:273) 3 at java.util.concurrent.FutureTask.setException(FutureTask.java:124) 4 at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:307) 5 at java.util.concurrent.FutureTask.run(FutureTask.java:137) 6 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 7 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076) 8 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569) 9 at java.lang.Thread.run(Thread.java:856) 10 Caused by: java.lang.NullPointerException 11 at libcore.net.UriCodec.encode(UriCodec.java:132) 12 at java.net.URLEncoder.encode(URLEncoder.java:57) 13 at twitter4j.internal.http.HttpParameter.encode(HttpParameter.java:261) 14 at twitter4j.auth.OAuthAuthorization.encodeParameters(OAuthAuthorization.java:419) 15 at twitter4j.auth.OAuthAuthorization.encodeParameters(OAuthAuthorization.java:402) 16 at twitter4j.auth.OAuthAuthorization.normalizeRequestParameters(OAuthAuthorization.java:381) 17 at twitter4j.auth.OAuthAuthorization.generateAuthorizationHeader(OAuthAuthorization.java:231) 18 at twitter4j.auth.OAuthAuthorization.generateAuthorizationHeader(OAuthAuthorization.java:280) 19 at twitter4j.auth.OAuthAuthorization.getAuthorizationHeader(OAuthAuthorization.java:72) 20 at twitter4j.internal.http.HttpClientImpl.setHeaders(HttpClientImpl.java:206) 21 at twitter4j.internal.http.HttpClientImpl.request(HttpClientImpl.java:89) 22 at twitter4j.internal.http.HttpClientWrapper.request(HttpClientWrapper.java:61) 23 at twitter4j.internal.http.HttpClientWrapper.post(HttpClientWrapper.java:98) 24 at twitter4j.auth.OAuthAuthorization.getOAuthAccessToken(OAuthAuthorization.java:145) 25 at twitter4j.auth.OAuthAuthorization.getOAuthAccessToken(OAuthAuthorization.java:165) 26 at twitter4j.TwitterBaseImpl.getOAuthAccessToken(TwitterBaseImpl.java:381) 27 at org.tweetalib.android.TwitterSignIn$FetchOAuthAccessTokenTask.doInBackground(TwitterSignIn.java:344) 28 at org.tweetalib.android.TwitterSignIn$FetchOAuthAccessTokenTask.doInBackground(TwitterSignIn.java:325) 29 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:334) 30 at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305) 31 ... 5 more 32 java.lang.NullPointerException 33 at libcore.net.UriCodec.encode(UriCodec.java:132) 34 at java.net.URLEncoder.encode(URLEncoder.java:57) 35 at twitter4j.internal.http.HttpParameter.encode(HttpParameter.java:261) 36 at twitter4j.auth.OAuthAuthorization.encodeParameters(OAuthAuthorization.java:419) 37 at twitter4j.auth.OAuthAuthorization.encodeParameters(OAuthAuthorization.java:402) 38 at twitter4j.auth.OAuthAuthorization.normalizeRequestParameters(OAuthAuthorization.java:381) 39 at twitter4j.auth.OAuthAuthorization.generateAuthorizationHeader(OAuthAuthorization.java:231) 40 at twitter4j.auth.OAuthAuthorization.generateAuthorizationHeader(OAuthAuthorization.java:280) 41 at twitter4j.auth.OAuthAuthorization.getAuthorizationHeader(OAuthAuthorization.java:72) 42 at twitter4j.internal.http.HttpClientImpl.setHeaders(HttpClientImpl.java:206) 43 at twitter4j.internal.http.HttpClientImpl.request(HttpClientImpl.java:89) 44 at twitter4j.internal.http.HttpClientWrapper.request(HttpClientWrapper.java:61) 45 at twitter4j.internal.http.HttpClientWrapper.post(HttpClientWrapper.java:98) 46 at twitter4j.auth.OAuthAuthorization.getOAuthAccessToken(OAuthAuthorization.java:145) 47 at twitter4j.auth.OAuthAuthorization.getOAuthAccessToken(OAuthAuthorization.java:165) 48 at twitter4j.TwitterBaseImpl.getOAuthAccessToken(TwitterBaseImpl.java:381) 49 at org.tweetalib.android.TwitterSignIn$FetchOAuthAccessTokenTask.doInBackground(TwitterSignIn.java:344) 50 at org.tweetalib.android.TwitterSignIn$FetchOAuthAccessTokenTask.doInBackground(TwitterSignIn.java:325) 51 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:334) 52 at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305) 53 at java.util.concurrent.FutureTask.run(FutureTask.java:137) 54 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 55 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076) 56 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569) 57 at java.lang.Thread.run(Thread.java:856)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterSignIn.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/352bfb7f8461a3c329370f8594d9183d7648ca24</commit_url>
+		</Commits>
+	</bug>
+	<bug id="199">
+		<buginformation>
+			<summary>clear compose java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.ComposeBaseFragment.clearCompose(ComposeBaseFragment.java:682) 2 at com.tweetlanes.android.core.view.ComposeTweetFragment.clearCompose(ComposeTweetFragment.java:268) 3 at com.tweetlanes.android.core.view.ComposeBaseFragment.releaseFocus(ComposeBaseFragment.java:248) 4 at com.tweetlanes.android.core.view.ComposeTweetFragment$1.finished(ComposeTweetFragment.java:161) 5 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.onPostExecute(TwitterFetchStatus.java:380) 6 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.onPostExecute(TwitterFetchStatus.java:241) 7 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:733) 8 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 9 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:746) 10 at android.os.Handler.dispatchMessage(Handler.java:99) 11 at android.os.Looper.loop(Looper.java:155) 12 at android.app.ActivityThread.main(ActivityThread.java:5454) 13 at java.lang.reflect.Method.invokeNative(Native Method) 14 at java.lang.reflect.Method.invoke(Method.java:511) 15 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029) 16 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:796) 17 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/1c31dc2c5633edebbb71b575e71d72248afbbdb4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="204">
+		<buginformation>
+			<summary>What's New Dialogue </summary>
+			<description>This didn't show on my device post update.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/clientbeta/AndroidManifest.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ProfileFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterUtil.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/inscription/ChangeLogDialog.java</file>
+			<file>android/client/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0bc77217685a84df7b67a6501b4dbe32d142b2cb</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ad50639a63ca1f31d94a616dd3ebb88f30d8ebc4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="239">
+		<buginformation>
+			<summary>Auto complete mid status </summary>
+			<description>At the moment auto complete only kicks in if you were typing at the end of the status. Not sure if it's possible. But adding the logic to work wherever in the status you are would be great.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...id/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ComposeBaseFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/59f5c858c2772626ea7d5ccfe5b9287d48bf12f7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="17">
+		<buginformation>
+			<summary>DashClock support </summary>
+			<description>Jason started working on this, but needs the data the notifications/background service will provide.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/TweetLanes.iml</file>
+			<file>android/client/res/values/strings.xml</file>
+			<file>android/client/src/com/tweetlanes/android/dashclock/TweetLanesSettingsActivity.java</file>
+			<file>android/client/AndroidManifest.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/00225363867c7a2d9f9ffdbd14ec7dc8252f81a7</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0da57609c4daec69ab5e0bcb5a71f2b593ba04c4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="167">
+		<buginformation>
+			<summary>IllegalStateException when switching accounts </summary>
+			<description>View Crash Report on Crittercism Reported by: None (jason@famularo.org) Status: Unresolved This Crash occured 7 times for 1 users 0 java.lang.IllegalStateException: The application's PagerAdapter changed the adapter's contents without calling PagerAdapter#notifyDataSetChanged! Expected adapter item count: 9, found: 10 Pager id: com.tweetlanes.android.beta:id/pager Pager class: class android.support.v4.view.ViewPager Problematic adapter: class com.tweetlanes.android.core.view.HomeActivity$HomeLaneAdapter 1 at android.support.v4.view.ViewPager.populate(ViewPager.java:959) 2 at android.support.v4.view.ViewPager.populate(ViewPager.java:911) 3 at android.support.v4.view.ViewPager.onMeasure(ViewPager.java:1432) 4 at android.view.View.measure(View.java:15525) 5 at android.widget.RelativeLayout.measureChildHorizontal(RelativeLayout.java:681) 6 at android.widget.RelativeLayout.onMeasure(RelativeLayout.java:461) 7 at android.view.View.measure(View.java:15525) 8 at android.widget.LinearLayout.measureVertical(LinearLayout.java:847) 9 at android.widget.LinearLayout.onMeasure(LinearLayout.java:588) 10 at android.view.View.measure(View.java:15525) 11 at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4825) 12 at android.widget.FrameLayout.onMeasure(FrameLayout.java:310) 13 at android.view.View.measure(View.java:15525) 14 at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4825) 15 at android.widget.FrameLayout.onMeasure(FrameLayout.java:310) 16 at android.view.View.measure(View.java:15525) 17 at android.widget.LinearLayout.measureVertical(LinearLayout.java:847) 18 at android.widget.LinearLayout.onMeasure(LinearLayout.java:588) 19 at android.view.View.measure(View.java:15525) 20 at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4825) 21 at android.widget.FrameLayout.onMeasure(FrameLayout.java:310) 22 at com.android.internal.policy.impl.PhoneWindow$DecorView.onMeasure(PhoneWindow.java:2434) 23 at android.view.View.measure(View.java:15525) 24 at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:1874) 25 at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1089) 26 at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1265) 27 at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:989) 28 at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:4351) 29 at android.view.Choreographer$CallbackRecord.run(Choreographer.java:749) 30 at android.view.Choreographer.doCallbacks(Choreographer.java:562) 31 at android.view.Choreographer.doFrame(Choreographer.java:532) 32 at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:735) 33 at android.os.Handler.handleCallback(Handler.java:725) 34 at android.os.Handler.dispatchMessage(Handler.java:92) 35 at android.os.Looper.loop(Looper.java:137) 36 at android.app.ActivityThread.main(ActivityThread.java:5227) 37 at java.lang.reflect.Method.invokeNative(Native Method) 38 at java.lang.reflect.Method.invoke(Method.java:511) 39 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795) 40 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:562) 41 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/3a3edfbbb2d2a4930543bc4ec5a2876f83800f0c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="371">
+		<buginformation>
+			<summary>Display URL </summary>
+			<description>I persnally don't like the recent change to show a full url. I prefer the shorter one with "..." At the end. Can add config defulted to full URL to choose URL type.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterUtil.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Autolink.java</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/15511121863db1683f03f3ffd39df401696c0eb7</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/eafb071f379ca43a150f785a9aa511ce482a7305</commit_url>
+		</Commits>
+	</bug>
+	<bug id="171">
+		<buginformation>
+			<summary>Compose bar inconsistent colours </summary>
+			<description>The compose bar changes colour depending on I'd you are composing or not Also dm bar is always the same colour as when composing. I think standardise on the non composing colour (the new one)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/layout/compose_tweet.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/abcfa8d0d14e62169e71bc228bd27daecfcfd3b7</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/9e4538c9d1d87cf19b4ab0a88ffe0a84e0f34138</commit_url>
+		</Commits>
+	</bug>
+	<bug id="206">
+		<buginformation>
+			<summary>Need larger font </summary>
+			<description>One of our users needs a larger font than that provided in the app.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedItemView.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/arrays.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+			<file>.../libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageItemView.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/dimens.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/64333ad7cc76f5b2800320e0f901e22d835894cb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="14">
+		<buginformation>
+			<summary>Follow / Unfollow buttons do not appear </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Regex.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/ComposeBaseFragment.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/ComposeTweetFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Autolink.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/TwitterAuthActivity.java</file>
+			<file>android/libraries/SocialNetLib/.classpath</file>
+			<file>android/client/libs/twitter4j-core-3.0.3.jar</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/AppdotnetApi.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/TwitterApi.java</file>
+			<file>android/libraries/SocialNetLib/src/org/twitter4j/TwitterImpl.java</file>
+			<file>android/client/AndroidManifest.xml</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/SocialNetApi.java</file>
+			<file>android/client/.classpath</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchLists.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/AppDotNetAuthActivity.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Validator.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/Extractor.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchUser.java</file>
+			<file>android/libraries/SocialNetLib/libs/twitter4j-core-3.0.3-sources.jar</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchBooleans.java</file>
+			<file>android/libraries/SocialNetLib/src/com/twitter/AutolinkEx.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/deb94c00126f6c733de7bb6a6ba602c64a43eb99</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/09c1ab2e8934c1d869594d0c05761da1d8014157</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/681e6591f0c24ac96002e70ccabed346a4657aef</commit_url>
+		</Commits>
+	</bug>
+	<bug id="158">
+		<buginformation>
+			<summary>Can't tell which account posting too </summary>
+			<description>You don't know how often I post to the wrong account. Mostly personal tweets to tweetlanes :( Can we work out a way to show which account in the app? Maybe change the logo to the account picture when composing a new post?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...oid/libraries/TweetLanesCore/src/com/tweetlanes/android/core/model/AccountDescriptor.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/App.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/9ededc8a5139dc0ce190ff3961e3cbba2a01cb4a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="399">
+		<buginformation>
+			<summary>Comment appearing under wrong conversation </summary>
+			<description>When I expand some discussion whith several replys, I see that it duplicates in another thread which I don't expand</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedItemView.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/f5424c8723b9709ff5d416086047b2d386871ce6</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/23cd103fbd254b264fe10fa6c40fa30f57ec0a6e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="329">
+		<buginformation>
+			<summary>java.lang.OutOfMemoryError </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 121 times for 74 users 0 java.lang.OutOfMemoryError 1 at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:94) 2 at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:132) 3 at java.lang.StringBuilder.append(StringBuilder.java:124) 4 at org.json.JSONStringer.string(JSONStringer.java:344) 5 at org.json.JSONStringer.value(JSONStringer.java:252) 6 at org.json.JSONArray.writeTo(JSONArray.java:572) 7 at org.json.JSONStringer.value(JSONStringer.java:233) 8 at org.json.JSONObject.writeTo(JSONObject.java:671) 9 at org.json.JSONObject.toString(JSONObject.java:640) 10 at com.tweetlanes.android.core.view.TweetFeedFragment.getDataToCache(TweetFeedFragment.java:474) 11 at com.tweetlanes.android.core.view.HomeActivity$1.run(HomeActivity.java:408) 12 at java.lang.Thread.run(Thread.java:841)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ddfbec2b6582c6a3ebfb62f73ee2675ff6723c10</commit_url>
+		</Commits>
+	</bug>
+	<bug id="301">
+		<buginformation>
+			<summary>Report spam </summary>
+			<description>This only removes from first cache, so saved cache still shows status on restart.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/85e38421ed1f5a93fef50af9b289f717403870ef</commit_url>
+		</Commits>
+	</bug>
+	<bug id="315">
+		<buginformation>
+			<summary>HomeActivity java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 3 times for 1 users 0 java.lang.RuntimeException: Unable to start activity ComponentInfo{com.tweetlanes.android.beta/com.tweetlanes.android.core.view.HomeActivity}: java.lang.NullPointerException 1 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2460) 2 at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2521) 3 at android.app.ActivityThread.access$600(ActivityThread.java:162) 4 at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1370) 5 at android.os.Handler.dispatchMessage(Handler.java:99) 6 at android.os.Looper.loop(Looper.java:158) 7 at android.app.ActivityThread.main(ActivityThread.java:5777) 8 at java.lang.reflect.Method.invokeNative(Native Method) 9 at java.lang.reflect.Method.invoke(Method.java:511) 10 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1083) 11 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:850) 12 at dalvik.system.NativeStart.main(Native Method) 13 Caused by: java.lang.NullPointerException 14 at com.tweetlanes.android.core.view.HomeActivity.showAccount(HomeActivity.java:556) 15 at com.tweetlanes.android.core.view.HomeActivity.onCreate(HomeActivity.java:119) 16 at android.app.Activity.performCreate(Activity.java:5165) 17 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1103) 18 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416) 19 ... 11 more 20 java.lang.NullPointerException 21 at com.tweetlanes.android.core.view.HomeActivity.showAccount(HomeActivity.java:556) 22 at com.tweetlanes.android.core.view.HomeActivity.onCreate(HomeActivity.java:119) 23 at android.app.Activity.performCreate(Activity.java:5165) 24 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1103) 25 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416) 26 at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2521) 27 at android.app.ActivityThread.access$600(ActivityThread.java:162) 28 at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1370) 29 at android.os.Handler.dispatchMessage(Handler.java:99) 30 at android.os.Looper.loop(Looper.java:158) 31 at android.app.ActivityThread.main(ActivityThread.java:5777) 32 at java.lang.reflect.Method.invokeNative(Native Method) 33 at java.lang.reflect.Method.invoke(Method.java:511) 34 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1083) 35 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:850) 36 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/HomeActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/22718eabd1ad7c9a613114d8aeb93a614412f015</commit_url>
+		</Commits>
+	</bug>
+	<bug id="7">
+		<buginformation>
+			<summary>Implement deleting a tweet </summary>
+			<description>I think it is necessary to be able to delete own tweets in TweetLanes as it is possible in nearly (?) all other Twitter clients.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterManager.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterModifyStatuses.java</file>
+			<file>android/client/Tweet_Lanes_Release_Notes.txt</file>
+			<file>android/client/res/menu/single_tweet_selected.xml</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/client/res/values/strings.xml</file>
+			<file>android/libraries/SocialNetLib/src/org/appdotnet4j/model/AdnPost.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterConstant.java</file>
+			<file>android/client/src/com/tweetlanes/android/view/TweetFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/AppdotnetApi.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/SocialNetApi.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/665c90e9c20c0a3e8ff6e6b61638856455ec5e33</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/a425932b8a7b88cd684cfe40a248ba0862b2f661</commit_url>
+		</Commits>
+	</bug>
+	<bug id="73">
+		<buginformation>
+			<summary>Use HTTPS for all Twitter calls </summary>
+			<description>Reported by @mls768: couple of weeks ago I found that some @TweetLanes api are done over http since I was able to see full http api request on wireshark. All calls should be HTTPS.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/socialnetlib/android/TwitterApi.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/d288f81a2e01dd4eab4f9ed0e6b185754ebe0ba4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="275">
+		<buginformation>
+			<summary>java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 5 times for 2 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetFeedFragment$MultipleTweetSelectionCallback$1.finished(TweetFeedFragment.java:1297) 2 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.onPostExecute(TwitterFetchStatus.java:376) 3 at org.tweetalib.android.TwitterFetchStatus$FetchStatusTask.onPostExecute(TwitterFetchStatus.java:237) 4 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:689) 5 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 6 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:702) 7 at android.os.Handler.dispatchMessage(Handler.java:99) 8 at android.os.Looper.loop(Looper.java:137) 9 at android.app.ActivityThread.main(ActivityThread.java:5289) 10 at java.lang.reflect.Method.invokeNative(Native Method) 11 at java.lang.reflect.Method.invoke(Method.java:525) 12 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:739) 13 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:555) 14 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/de8153d1ea9ae3eca65b121e469c48ffc6e532e0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="248">
+		<buginformation>
+			<summary>Holo Light w/Dark action bar missing conversation icon </summary>
+			<description>The new theme seems to not load the conversation icon until you click on it. See below... Middle one is the one missing the arrow, left shows it after it's been clicked on and right shows that the icon is fine on dark theme - also fine on light theme.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/styles.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/8e2240731e340431bd6afd2ccaeb9c56d9fb1b97</commit_url>
+		</Commits>
+	</bug>
+	<bug id="6">
+		<buginformation>
+			<summary>Larger inline media </summary>
+			<description>A few of the other Twitter clients for Android have larger previews for inline media (spanning the width of the text area), instead of a small thumbnail floated to the right of the text. Should this be considered for TweetLanes too? Reasons: It looks a bit slicker when scanning the timeline, as elements are more aligned. It's easier to see the content of the image in a (slightly) larger preview.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedItemView.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/arrays.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/arrays.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/res/layout/tweet_feed_item_received.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/dimens.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5762d40c3e6a4e7eda61178ec8252052aa2ec921</commit_url>
+		</Commits>
+	</bug>
+	<bug id="300">
+		<buginformation>
+			<summary>Status Deletes </summary>
+			<description>When deleting a status it doesn't disapear from timeline. Report for spam does Investigate differences and mirror code :-)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/85e38421ed1f5a93fef50af9b289f717403870ef</commit_url>
+		</Commits>
+	</bug>
+	<bug id="316">
+		<buginformation>
+			<summary>FeedFragment Multiple Callback java.lang.IllegalStateException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 1 times for 1 users 0 java.lang.IllegalStateException: Fragment TweetFeedFragment{4194aef0} not attached to Activity 1 at android.support.v4.app.Fragment.getResources(Fragment.java:571) 2 at android.support.v4.app.Fragment.getString(Fragment.java:593) 3 at com.tweetlanes.android.core.view.TweetFeedFragment$MultipleTweetSelectionCallback$2.finished(TweetFeedFragment.java:1393) 4 at org.tweetalib.android.TwitterModifyStatuses$ModifyStatusesTask.onPostExecute(TwitterModifyStatuses.java:346) 5 at org.tweetalib.android.TwitterModifyStatuses$ModifyStatusesTask.onPostExecute(TwitterModifyStatuses.java:229) 6 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:689) 7 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 8 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:702) 9 at android.os.Handler.dispatchMessage(Handler.java:99) 10 at android.os.Looper.loop(Looper.java:155) 11 at android.app.ActivityThread.main(ActivityThread.java:5454) 12 at java.lang.reflect.Method.invokeNative(Native Method) 13 at java.lang.reflect.Method.invoke(Method.java:511) 14 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029) 15 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:796) 16 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0095288f93ce3e0374f05d244b9278ecf29b437b</commit_url>
+		</Commits>
+	</bug>
+	<bug id="302">
+		<buginformation>
+			<summary>null pointer on configure status </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 4 times for 1 users 0 java.lang.NullPointerException 1 at com.tweetlanes.android.core.view.TweetFeedFragment.configureCachedStatuses(TweetFeedFragment.java:494) 2 at com.tweetlanes.android.core.view.TweetFeedFragment.configureInitialStatuses(TweetFeedFragment.java:211) 3 at com.tweetlanes.android.core.view.TweetFeedFragment.onCreateView(TweetFeedFragment.java:180) 4 at android.support.v4.app.Fragment.performCreateView(Fragment.java:1460) 5 at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:911) 6 at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1088) 7 at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:682) 8 at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1444) 9 at android.support.v4.app.FragmentManagerImpl.executePendingTransactions(FragmentManager.java:461) 10 at android.support.v4.app.FragmentStatePagerAdapter.finishUpdate(FragmentStatePagerAdapter.java:163) 11 at android.support.v4.view.ViewPager.populate(ViewPager.java:1064) 12 at android.support.v4.view.ViewPager.setCurrentItemInternal(ViewPager.java:548) 13 at android.support.v4.view.ViewPager.setCurrentItemInternal(ViewPager.java:507) 14 at android.support.v4.view.ViewPager.dataSetChanged(ViewPager.java:905) 15 at android.support.v4.view.ViewPager$PagerObserver.onChanged(ViewPager.java:2772) 16 at android.database.DataSetObservable.notifyChanged(DataSetObservable.java:37) 17 at android.support.v4.view.PagerAdapter.notifyDataSetChanged(PagerAdapter.java:276) 18 at com.tweetlanes.android.core.view.HomeActivity.showAccount(HomeActivity.java:556) 19 at com.tweetlanes.android.core.view.HomeActivity.access$200(HomeActivity.java:73) 20 at com.tweetlanes.android.core.view.HomeActivity$2.onNavigationItemSelected(HomeActivity.java:500) 21 at com.android.internal.widget.ActionBarView$1.onItemSelected(ActionBarView.java:147) 22 at android.widget.AdapterView.fireOnSelected(AdapterView.java:892) 23 at android.widget.AdapterView.access$200(AdapterView.java:49) 24 at android.widget.AdapterView$SelectionNotifier.run(AdapterView.java:860) 25 at android.os.Handler.handleCallback(Handler.java:615) 26 at android.os.Handler.dispatchMessage(Handler.java:92) 27 at android.os.Looper.loop(Looper.java:155) 28 at android.app.ActivityThread.main(ActivityThread.java:5520) 29 at java.lang.reflect.Method.invokeNative(Native Method) 30 at java.lang.reflect.Method.invoke(Method.java:511) 31 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1029) 32 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:796) 33 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b724c7f12c9904a9091899708a23fc382d985615</commit_url>
+		</Commits>
+	</bug>
+	<bug id="276">
+		<buginformation>
+			<summary>DM refresh on send </summary>
+			<description>Changes in 1.2.1 only refresh normal lanes on send, not dm lanes and dm drill downs.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>...raries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageFeedFragment.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/d1fb00fe4d9936f8cee57a6166a924b604eaf9bb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="289">
+		<buginformation>
+			<summary>Auto Refresh </summary>
+			<description>(re)Add refresh on start and account switch.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/40eecef6ee21ffbf4585ca80915cf455a30d8695</commit_url>
+		</Commits>
+	</bug>
+	<bug id="288">
+		<buginformation>
+			<summary>New Tweets after reboot </summary>
+			<description>All new status in the cache, but the number new isn't, so bar doesn't show how many new status there are.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/6e531f5cd37f7911cae82ae8ccb6f4193b8a867c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="277">
+		<buginformation>
+			<summary>DM reply </summary>
+			<description>Add symbol on dm lane to show if last message was from other person, or is your reply.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/values/styles.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/attrs.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>android/libraries/TweetLanesCore/res/layout/direct_message_feed_item_received.xml</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_action_reply_dark.png</file>
+			<file>android/libraries/TweetLanesCore/res/layout/direct_message_feed_item_sent.xml</file>
+			<file>android/libraries/TweetLanesCore/res/drawable-xhdpi/ic_action_reply_light.png</file>
+			<file>.../libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/DirectMessageItemView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7b599576ef1ae07e1b33333887df839fe2f2c828</commit_url>
+		</Commits>
+	</bug>
+	<bug id="71">
+		<buginformation>
+			<summary>self blocking </summary>
+			<description>Fir some reason there is an option to block the current user. Also there is no place to unblock users (I.e. to remove myself from the list). when I tried to block myself the app forced closed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/31b514010d5a3dfadc09d3aa8b4ee1d4b55eeb19</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/ca25af6d5ae7f4f560b6bb3c3752ea80d89f3e8c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="307">
+		<buginformation>
+			<summary>Empty pull to refresh </summary>
+			<description>When refreshing if there is no new status position is off my a couple of pixels. Means you can't just pull again, but need a little scroll first.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/437e1fe3f5ae1e95b4c2124a46855bb03e45f810</commit_url>
+		</Commits>
+	</bug>
+	<bug id="111">
+		<buginformation>
+			<summary>New tweets bar incorrect </summary>
+			<description>The number always seems to be one lower than actual. I.e. 3 new tweets, bar says 2.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterManager.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessage.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5d7a470eb48d6498dec1d91b5ee5259ac16cb9cd</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/a078808e0817b24a14731065fa3d2f25d17c5862</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1">
+		<buginformation>
+			<summary>Tweetlanes forgets the last viewed lane on opening </summary>
+			<description>Occasionally rather than displaying the last viewed lane (usually the timeline) Tweetlanes will display another lane when opened. In my case this is usually the "My Tweets" lane, though this may depend on the order of the lanes and which you have visible. Ideally you should be able to mark a lane as default and have it always open there, or opt to display whichever lane was visible when the app was closed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/src/com/tweetlanes/android/Constant.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/64e94176a978228434ccea61cf9370679f6953dd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="75">
+		<buginformation>
+			<summary>New posts/tweets bar will reappear after reading all new posts </summary>
+			<description>The "{count} New Posts" blue bar will reappear in the lanes after viewing all new posts. To reproduce: Go to a lane with new posts, Scroll to the top until the message appears, Scroll a few posts back down, When scrolling up the blue bar will reappear.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/b0283a8d02085e22b0da04d48ab3fa4d8df22d36</commit_url>
+		</Commits>
+	</bug>
+	<bug id="267">
+		<buginformation>
+			<summary>Clicking on twitter picture links prompts to open in Tweet Lanes, then doesn't do anything </summary>
+			<description>No description provided.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BootActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/21e9cf240319008c2b9f895ae291f16e12cc441a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="273">
+		<buginformation>
+			<summary>Prevent rotate during refresh </summary>
+			<description>If screen rotates, results can get lost and position goes wrong. Generally not good. Idea to actually stop the rotate function when pull to refresh running.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e7789e83688275dd973089e4fee46f2597b9ae8d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="48">
+		<buginformation>
+			<summary>Save image created duplicates </summary>
+			<description>When pressing the save image button in the image viewer, 2 copies are saved. One in dcim/camera/ folder and a second in pictures/tweet lanes/</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/client/src/com/tweetlanes/android/view/ImageViewActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0017340f2f66b7af8e5a658f5967c25ecd5be301</commit_url>
+		</Commits>
+	</bug>
+	<bug id="138">
+		<buginformation>
+			<summary>Status' not being passed back from spotlight </summary>
+			<description>This is a blocker on the release. Needs to be fixed before we can put out...sorry.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ImageViewActivity.java</file>
+			<file>android/client/Tweet_Lanes_Release_Notes.txt</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+			<file>...nesCore/src/com/tweetlanes/android/core/widget/urlimageviewhelper/UrlImageViewHelper.java</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7c774c3b4f70266638b612a628bb5a33a29b37ee</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/afaf33ed9a35fd0e441d9056a767ad5d82783990</commit_url>
+		</Commits>
+	</bug>
+	<bug id="110">
+		<buginformation>
+			<summary>Mention count incorrect </summary>
+			<description>Notification often has the wrong number of new mentions. Not sure if dm notifications also effected.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/Notifier.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/AlarmReceiver.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7cc313c16b27cf4a635755617bcdac66d950ad63</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/1729a7664fc87896c1374d921d2d03affd13a115</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/d244580f4a2a0040fd55b0c403d96ada2285947c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="306">
+		<buginformation>
+			<summary>Pull to refresh orientation </summary>
+			<description>When pull to refresh in landscape screen goes back to protrait after refresh.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/d6730a9dc1a9d40c03985cf7c094be2a213c9ae6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="312">
+		<buginformation>
+			<summary>Turn off Inline Image Previews </summary>
+			<description>Is it possible to add an option NOT to show Inline Image previews? The image should still probably load when going to the tweet (detail) screen, just not in the timeline/lane.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedItemView.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/SettingsActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/arrays.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/arrays.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values-ru/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/values/strings.xml</file>
+			<file>android/libraries/TweetLanesCore/res/xml/preferences.xml</file>
+			<file>android/libraries/TweetLanesCore/res/layout/tweet_feed_item_received.xml</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+			<file>android/libraries/TweetLanesCore/res/values/dimens.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5762d40c3e6a4e7eda61178ec8252052aa2ec921</commit_url>
+		</Commits>
+	</bug>
+	<bug id="310">
+		<buginformation>
+			<summary>Status java.lang.NullPointerException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 57 times for 26 users 0 java.lang.RuntimeException: An error occured while executing doInBackground() 1 at org.asynctasktex.AsyncTaskEx$3.done(AsyncTaskEx.java:342) 2 at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352) 3 at java.util.concurrent.FutureTask.setException(FutureTask.java:219) 4 at java.util.concurrent.FutureTask.run(FutureTask.java:239) 5 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 6 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 7 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 8 at java.lang.Thread.run(Thread.java:864) 9 Caused by: java.lang.NullPointerException 10 at org.tweetalib.android.model.TwitterStatus.(TwitterStatus.java:178) 11 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:395) 12 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:298) 13 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 14 at java.util.concurrent.FutureTask.run(FutureTask.java:234) 15 ... 4 more 16 java.lang.NullPointerException 17 at org.tweetalib.android.model.TwitterStatus.(TwitterStatus.java:178) 18 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:395) 19 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.doInBackground(TwitterFetchStatuses.java:298) 20 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 21 at java.util.concurrent.FutureTask.run(FutureTask.java:234) 22 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 23 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 24 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 25 at java.lang.Thread.run(Thread.java:864)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/526db35dd7d437ca4de2e0466d6bc3f6269f0696</commit_url>
+		</Commits>
+	</bug>
+	<bug id="106">
+		<buginformation>
+			<summary>Character count on direct message </summary>
+			<description>Seems to be missing.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterManager.java</file>
+			<file>android/libraries/TweetLanesCore/res/layout/compose_direct_message.xml</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessage.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/4798552e9fd4996c41f8e584d3f6a84574807c5c</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5d7a470eb48d6498dec1d91b5ee5259ac16cb9cd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="264">
+		<buginformation>
+			<summary>Conversation view and long names </summary>
+			<description>Unlike the main tweets, when in pop out conversation view, names show in full. As a result, the timestamps are displayed in a smaller space and sometimes in a vertical line.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/res/layout/tweet_feed_conversation_item.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5a129de6efea85ea9564ecb9f7131e986db2b974</commit_url>
+		</Commits>
+	</bug>
+	<bug id="258">
+		<buginformation>
+			<summary>java.lang.IndexOutOfBoundsException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 24 times for 13 users 0 java.lang.IndexOutOfBoundsException: Invalid index 1, size is 1 1 at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255) 2 at java.util.ArrayList.get(ArrayList.java:308) 3 at org.tweetalib.android.model.TwitterStatuses.get(TwitterStatuses.java:488) 4 at org.tweetalib.android.model.TwitterStatuses.getStatus(TwitterStatuses.java:130) 5 at com.tweetlanes.android.core.view.TweetFeedFragment.c(TweetFeedFragment.java:769) 6 at com.tweetlanes.android.core.view.TweetFeedFragment.a(TweetFeedFragment.java:888) 7 at com.tweetlanes.android.core.view.TweetFeedFragment.a(TweetFeedFragment.java:75) 8 at od.finished(TweetFeedFragment.java:278) 9 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.onPostExecute(TwitterFetchStatuses.java:598) 10 at org.tweetalib.android.fetch.TwitterFetchStatuses$FetchStatusesTask.onPostExecute(TwitterFetchStatuses.java:298) 11 at org.asynctasktex.AsyncTaskEx.finish(AsyncTaskEx.java:689) 12 at org.asynctasktex.AsyncTaskEx.access$500(AsyncTaskEx.java:233) 13 at org.asynctasktex.AsyncTaskEx$InternalHandler.handleMessage(AsyncTaskEx.java:702) 14 at android.os.Handler.dispatchMessage(Handler.java:99) 15 at android.os.Looper.loop(Looper.java:137) 16 at android.app.ActivityThread.main(ActivityThread.java:5103) 17 at java.lang.reflect.Method.invokeNative(Native Method) 18 at java.lang.reflect.Method.invoke(Method.java:525) 19 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737) 20 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553) 21 at dalvik.system.NativeStart.main(Native Method)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatuses.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/7e9e21bdd47db895f0c297551c280f0fd5421f45</commit_url>
+		</Commits>
+	</bug>
+	<bug id="259">
+		<buginformation>
+			<summary>Feed position incorrect after clicking a link </summary>
+			<description>When clicking a link when not at the top of the feed the position on returning to the app is incorrect.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetFeedFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5ec3c8cd25ab666a2ac426361e00aa4557b063c5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="265">
+		<buginformation>
+			<summary>Change image save location </summary>
+			<description>Currently this puts images into camera folder. This shouldnt happen since auto uploaders often run off this folder. Should be downloads or its own folder.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/ImageViewActivity.java</file>
+			<file>android/libraries/TweetLanesCore/res/xml/changelog.xml</file>
+			<file>...nesCore/src/com/tweetlanes/android/core/widget/urlimageviewhelper/UrlImageViewHelper.java</file>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/AppSettings.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/0c06ced55080d4dca19e31fe5b74e475526a0e4d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="77">
+		<buginformation>
+			<summary>Star/retweets post corners don't show up </summary>
+			<description>When I star or retweet a post the corner of the post does not show the star or retweet corner. (I'm very sleepy so I hope this makes sense)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterModifyStatuses.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/de090b23121753d037dbdbe59681f48318839033</commit_url>
+		</Commits>
+	</bug>
+	<bug id="107">
+		<buginformation>
+			<summary>Reply user gets lost </summary>
+			<description>Repo steps Open tweet Press on reply box Press back to leave box Reply usernames gone</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterManager.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterDirectMessage.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterStatus.java</file>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/model/TwitterUser.java</file>
+			<file>...libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/TweetSpotlightActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/e02def4ad4d8b645c64eb9d73be6ddbd536661e5</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/5d7a470eb48d6498dec1d91b5ee5259ac16cb9cd</commit_url>
+		</Commits>
+	</bug>
+	<bug id="311">
+		<buginformation>
+			<summary>Fetch users java.lang.ArrayIndexOutOfBoundsException </summary>
+			<description>View Crash Report on Crittercism Reported by: Chris Blyth (blythmeister@gmail.com) Status: Unresolved This Crash occured 672 times for 140 users 0 java.lang.RuntimeException: An error occured while executing doInBackground() 1 at org.asynctasktex.AsyncTaskEx$3.done(AsyncTaskEx.java:342) 2 at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352) 3 at java.util.concurrent.FutureTask.setException(FutureTask.java:219) 4 at java.util.concurrent.FutureTask.run(FutureTask.java:239) 5 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 6 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 7 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 8 at java.lang.Thread.run(Thread.java:856) 9 Caused by: java.lang.ArrayIndexOutOfBoundsException: length=0; index=0 10 at org.tweetalib.android.TwitterFetchUsers$FetchUsersTask.doInBackground(TwitterFetchUsers.java:737) 11 at org.tweetalib.android.TwitterFetchUsers$FetchUsersTask.doInBackground(TwitterFetchUsers.java:472) 12 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 13 at java.util.concurrent.FutureTask.run(FutureTask.java:234) 14 ... 4 more 15 java.lang.ArrayIndexOutOfBoundsException: length=0; index=0 16 at org.tweetalib.android.TwitterFetchUsers$FetchUsersTask.doInBackground(TwitterFetchUsers.java:737) 17 at org.tweetalib.android.TwitterFetchUsers$FetchUsersTask.doInBackground(TwitterFetchUsers.java:472) 18 at org.asynctasktex.AsyncTaskEx$2.call(AsyncTaskEx.java:330) 19 at java.util.concurrent.FutureTask.run(FutureTask.java:234) 20 at org.asynctasktex.PriorityExecutor$1.run(PriorityExecutor.java:61) 21 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 22 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 23 at java.lang.Thread.run(Thread.java:856)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/SocialNetLib/src/org/tweetalib/android/TwitterFetchUsers.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/da27c76a52fdf0495ccebf70f824d2b81ba3c9bb</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/1488f070084d862abd5ae850592f56abb7ad67c5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="305">
+		<buginformation>
+			<summary>Compose issue </summary>
+			<description>Seen some random example when both standard and dm compose boxes present. Not ideal.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>android/libraries/TweetLanesCore/src/com/tweetlanes/android/core/view/BaseLaneActivity.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/adc859ab165a13e485e0eb74c657928a2acfdb80</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/4139e3cc0f62e88e25b9e3079e0ea4aca9085535</commit_url>
+			<commit_url>https://github.com/chrislacy/TweetLanes/commit/8cfde29a70db56531aa2f9813031e40da77ab154</commit_url>
+		</Commits>
+	</bug>

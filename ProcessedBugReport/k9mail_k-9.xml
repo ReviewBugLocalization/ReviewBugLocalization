@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bugrepository name="k9mail_k-9">
+	<bug id="1607">
+		<buginformation>
+			<summary>Composer crashes when an invalid mail address is about to be shown in recipient selector </summary>
+			<description>Steps to reproduce create a contact with a name and an invalid mail address, e. g. "(none)" click '+' to compose new message type first letters of the contact name until it should be shown Logcat 09-09 22:12:26.740 10531 10531 E AndroidRuntime: FATAL EXCEPTION: main</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/view/RecipientSelectView.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/RecipientLoader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/ca2e96eb45bfc8fcd6873aad6b363f7b579d23ff</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/521c9129a51ac743f0482e64e42ce4505b8590fe</commit_url>
+		</Commits>
+	</bug>
+	<bug id="690">
+		<buginformation>
+			<summary>Runtime exception when loading an email in the background. </summary>
+			<description>Steps to reproduce: Open an email that contains more data than the threshold to load. Click "Download complete message" and immediately back out of the message. When the message finishes downloading, the following exception occurs: com.fsck.k9.debug E/AndroidRuntime﹕ FATAL EXCEPTION: main</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/controller/MessagingController.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/messageview/MessageViewFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/a6b938463543fa523a6d0b58b1fac7b2798315c4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="915">
+		<buginformation>
+			<summary>key-aware recipient chooser </summary>
+			<description>For sending of encrypted mail, the recipient picker should be crypto-aware. There are a couple of things to consider, and some design choices to make. Let's-a go: So first off, the material way to go is chips. There are a couple of libraries for that, in OpenKeychain we use TokenAutoComplete, which is mature and flexible but not quite material-design. There are also libraries based on Google's internal chips library from the GMail app, like android-chips, but those aren't really made to be anything else but regular contact pickers and I havn't found one which looked mature. Since material design in k-9 isn't really there yet anyways, I would go with the more established and maintained option here, i.e. TokenAutoComplete. So, what do we actually want to show in the list? At the moment, a list of e-mail addresses (not contacts) is shown, queried from ContactsContract.CommonDataKinds.Email. This is the obvious thing to show, and it seems more reasonable than a list of contacts so I would just keep it that way. What I would like to add is an annotation to each address about its crypto-status. In OpenKeychain, we have icons to show the key status - a green checkmark, yellow question mark, and some red ones for revoked/expired/unsuitable for operation. The problem is, outside of an explicit crypto context, it's not clear that these icons are about the status of some encryption key, so we really can't use them here. We also don't need info about special states of a key - revoked or expired keys are simply irrelevant for recipient selection. My proposal would be to use Threema's concept: Three dots, with three states "one in red" / "two in yellow" / "three in green", all others greyed out. Check out ma mock-up. The idea is to be mildly alarming ("just one of three"), but also suggest a way to progress ("key available, two out of three", "verified that thing, three out of three!"). A different approach would be a lock in different states (red/yellow/green with open / closed+questionmark / closed+checkmark), but I'm a) missing the progress aspect of the three-dots concept, and b) an open red lock next to each mail address is just a tad too alarming - if the UI tells the user "this is unsafe!", they might just migrate to a different program which is equally unsafe but does nothing to inform the user about that fact. Some more thoughts: if a valid (or even confirmed) key is available, the user will likely want to encrypt - optimize for that. encryption without signing is not a reasonable use case and I would not support it. pgp/mime vs pgp/inline is an orthogonal problem to everything mentioned here, I would leave it for later do we need a contact-picker-button? the gmail app removed theirs recently. If we do, the information it displays should be identical to the dropdown.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>images/drawables-pgp/status_lock_disabled.svg</file>
+			<file>k9mail/build.gradle</file>
+			<file>images/update-drawables-pgp.sh</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/Accounts.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/Address.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/AlternateRecipientAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/667ac923bddd348eab32596d0b24330a815b3a64</commit_url>
+		</Commits>
+	</bug>
+	<bug id="732">
+		<buginformation>
+			<summary>My k9 does not verify Sign after download </summary>
+			<description>If I compile K9 and install on my phone, select the OpenKeyChain provider, and my key and then receive a Signed Mail, K9 says me that the mail is signed but he does not have the key, so i presso "lookup", it searchs the key, download It (via OpenKeyChain) and when it turn back to K9, my mail is not "signed" yet, but if i exit the mail view fragment and re-open the mail, now it see the key on OpenKeyChain and verify the Sign, just like if It returns after download It does not refresh the fragment view. How can I fix that? please help, I'm going crazy .</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/messageview/MessageCryptoPresenter.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/messageview/MessageTopView.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/messageview/MessageViewFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/d98f579b3472f031dd6ff28677ebf6e8b2dce5f6</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1204">
+		<buginformation>
+			<summary>Issue when deleting recipient "chip" </summary>
+			<description>Expected behaviour Pressing backspace on (soft) keyboard should remove recipient "chip". Actual behaviour Still seeing the toString() output (see PR #1202). Steps to reproduce Add two recipients Move focus to different input field Move focus back to "To" field Press backspace See toString() output for second recipient Environment K-9 Mail version: b586522 Android version: 6.0.1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/build.gradle</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/91c60a4639706839949ec152f40510ab76bad6f7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1629">
+		<buginformation>
+			<summary>Attempting to save an attachment causes K-9 to enter a download loop </summary>
+			<description>Expected behavior Tell us what should happen Actual behavior A modal for Downloading attachment comes on screen, the background activity darkens, then the dialog closes, the screen goes white, then the dialog reappears, etc: Log trace: 09-23 00:55:51.979 24747-24765/com.fsck.k9.debug I/k9:  Command 'loadAttachment' completed</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/messageview/AttachmentController.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/fc79b290d03bad5a20347c8bc12c467ad6700dcf</commit_url>
+		</Commits>
+	</bug>
+	<bug id="864">
+		<buginformation>
+			<summary>Loop when decrypting PGP/MIME mail </summary>
+			<description>Using the current master branch I'm trying to decrypt PGP/MIME mails using OpenKeychain. When I open the message, K9 correctly starts OpenKeychain which lets me enter my PIN and then asks me to hold my YubiKey NEO to the NFC scanner. After the decryption is done, I remove the key and OpenKeychain gives control back to K9 which in turn opens OpenKeychain again. This repeats forever. When I click "Cancel", it stops the loop but also crashes K9 (probably issue ##588).</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/crypto/MessageCryptoHelper.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/a7c9b8040c60b254a4d25a45dbcf83dfbed0613d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1950">
+		<buginformation>
+			<summary>Contact auto selecting first item </summary>
+			<description>If there are "FirstUser@example.com" and "SecondUser@example.com" in my Contacts and i type "User@example.com" then app selects first entry from contacts and i cannot send email to "User@example.com". Previous versions allowed me type address and select one from suggestions if i want. Work around is to end the address with a comma & a space so new address object is created. K-9 Mail version: 5.201</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/view/RecipientSelectView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/bb514f7140052ea9a0b85cb4ba34c275419c7013</commit_url>
+		</Commits>
+	</bug>
+	<bug id="899">
+		<buginformation>
+			<summary>backslash in username does not work for IMAP login </summary>
+			<description>I need to access an exchange server via IMAP. My username has the form username@domain\special_mailbox . Authentication with just username for the personal mailbox works fine but not for the special mailbox with the backslash syntax above. I tried two backslashes since I suspected some java string escaping problem, but that did not work either.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/imap/ImapConnection.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/0366633ff83086f3c7620a618ae7b3b5cc6ade1a</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/f018902ebcab396af22f54916d18595155212285</commit_url>
+		</Commits>
+	</bug>
+	<bug id="872">
+		<buginformation>
+			<summary>In account wizard, pre-populate the user name field with full mail address vs.user-name only </summary>
+			<description>When setting up a new account, currently the user name field is pre-populated with the user-name part from the mail address entered at step one (the part before the @). But all mail accounts i have ever used since many years, now want the full mail address as user name. Am i using only untypical mail services? Or could the default be changed to pre-populating with the full mail address?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/setup/AccountSetupBasics.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/ded66625780584066d4dba01ef40d15bbd37c3d4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1164">
+		<buginformation>
+			<summary>Local Save Failure </summary>
+			<description>Expected behaviour Large messages should always be saved correctly to local storage Actual behaviour Occasionally it appears to fail to create the file. It doesn't appear to be a persistent failure - it did succeed on retry. Maybe we should retry if we get an ENOENT error? com.fsck.k9.mail.MessagingException: Error appending message: <<SUBJECT>></description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/message/preview/MessagePreviewCreator.java</file>
+			<file>k9mail/src/test/java/com/fsck/k9/message/preview/PreviewTextExtractorTest.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/message/preview/PreviewExtractionException.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/message/preview/PreviewTextExtractor.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/245deef57c211035551c18784feeccf07c84f8f2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1275">
+		<buginformation>
+			<summary>Thread listed multiple times in the message list </summary>
+			<description>Sometimes threads are listed more than once in the message list. This is because of a bug in the query to create the threaded message list in EmailProvider. Usually the latest message in a thread is displayed. But when multiple messages have the same timestamp all of them are displayed. Environment K-9 Mail version: 5.108</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/androidTest/java/com/fsck/k9/provider/EmailProviderTest.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/provider/EmailProvider.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/289c93d9d1505f18fb113f9d8e3f01436a55f468</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/60f6af03bfe31cad3761e0224be0be391f0fe5b6</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/050316ea91762136870614ff9065c0479ed466a9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="746">
+		<buginformation>
+			<summary>In the mail notifications some text fields are hardcoded to black </summary>
+			<description>While the rest of the notification fonts adjust to the current theme the recipient or the subject is always displayed in black. This ruins the readability on dark system themes. Examples are attached.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/res/values-v21/styles.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/ef04d07af038475ae0d550302231fa17a7d5326f</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/442e8e120435d9c32e8765f63bacc25f1082da36</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1923">
+		<buginformation>
+			<summary>No way to supress "mark all as read" confirmation dialog. </summary>
+			<description>Expected behavior Menu > settings > interaction > confirm actions: should contain "mark all as read" Actual behavior Irritating dialog shows up every time "mark all as read" is selected Steps to reproduce Select "Mark all as read" Get mandatory dialog. Search for new mail app, note many similar complaints on play store Sad face. Environment K-9 Mail version: 5.201 Android version: any Account type (IMAP, POP3, WebDAV/Exchange): any 👍 1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/preferences/Settings.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/setup/Prefs.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/preferences/GlobalSettings.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/fragment/MessageListFragment.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/K9.java</file>
+			<file>k9mail/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/d0c137662e4572f9b0f2099a2b980ed8a1615a89</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1089">
+		<buginformation>
+			<summary>Option to warn on no subject </summary>
+			<description>It would be nice to have an option which would pop up a warning if message being sent has no subject. While there may be occasions where no subject is what you want, it is generally considered bad form. I rarely do it, but occasionally happens when in a rush to get the email out before I get to my stop when on public transit. Kinda embarrassing.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/res/values/strings.xml</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/MessageCompose.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/6b4c0f457168e7fa7e1e8113c008c6cc171f7890</commit_url>
+		</Commits>
+	</bug>
+	<bug id="618">
+		<buginformation>
+			<summary>Resource leak -- file not closed -- found by Facebook's static analyzer </summary>
+			<description>Hello, This resource leak report, included with comments below, were found by running Facebook's Infer static analyzer on K-9. Regards, Dulma Rodriguez Facebook Static Analysis Tools Team File: k9mail/src/androidTest/java/com/fsck/k9/helper/HtmlConverterTest.java Report: Resource Leak: resource acquired by call to FileWriter(...) at line 143 is not released after line 147. Remarks: The problem seems to be that out.write(...) can throw an exception, in which case out.close() won't get called. A simple fix is to put the call to close in a finally clause.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/androidTest/java/com/fsck/k9/helper/HtmlConverterTest.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/d538278be62687758c956af62ee47c53637d67d8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="744">
+		<buginformation>
+			<summary>WhatsApp sharing problem (8-bit encoding) </summary>
+			<description>Using K9 from PlayStore, v5.006, Samsung Galaxy S5. Open a WhatsApp chat where you received an image. Push for a long time on image to select it, choose to share with K9. K9 will compose and send the message, but the image attachment is unreadable for the recipient. The problem does not appear when you single tap on a WhatsApp image to zoom it, and then share from here. Analyzing the received email: K9 is encoding the attachment with Content-Transfer-Encoding: 8bit, but I think the 8bit body is not correct, because it contains \r\n in the wrong position, not permitted by MIME RFC 2045 https://tools.ietf.org/html/rfc2045#section-2.8 I think K9 should encode attachments in the usual base64 way. Also posted here Google Code</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/loader/AttachmentInfoLoader.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/065088feb2f91ad5a51c8acb8166f18e56d2e34e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1666">
+		<buginformation>
+			<summary>Switching from dark to light theme (or vise versa) inside message doesn't work </summary>
+			<description>Expected behavior When fixed message theme option is disabled, switching the theme when viewing a message should switch the theme immediately. Actual behavior After switching the theme inside the message, the message view reloads but the theme stays the same. I need to leave the message and open it again to get the other theme. Steps to reproduce Disable fixed message theme option Open message and switch to dark / light theme Environment K-9 Mail version: v5.111 + v5.112 (iirc, before v5.111 I didn't have this problem) Android version: 6.0.1 Account type : IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/MessageLoaderHelper.java</file>
+			<file>k9mail/src/main/res/values-v24/themes.xml</file>
+			<file>k9mail/src/main/res/values/themes.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/88eb0f663a322ebf69016e9a6085aa7f5714f477</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/ab4f8e39072862267d131e323f7ad96dccfc9cb0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="786">
+		<buginformation>
+			<summary>K9 don´t show folder that begin with brackets </summary>
+			<description>Imap folders that begin (or end) with brackets don´t appear on k9. example: [games] [aviation] [soccer]</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/imap/ImapResponse.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/imap/ImapList.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/de401db9cd9658ea6c545863838e98889a38cbe5</commit_url>
+		</Commits>
+	</bug>
+	<bug id="745">
+		<buginformation>
+			<summary>Downloads go into root folder instead of standard »Downloads« </summary>
+			<description>It seems K-9 Mail is not using the standard Downloads folder. Instead stuff is downloaded into the root of the internal storage. This results in some issues opening files up from other apps.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/preferences/Settings.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/preferences/GlobalSettings.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/K9.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/a8ed1752ca23fc3fbc9a6dc23b142d11fb5c2950</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1277">
+		<buginformation>
+			<summary>Recipient box background colour not changed in dark theme when composing. </summary>
+			<description>Expected behaviour The recipient box with the real name/email in it should be themed to be dark when the user has a dark theme enabled. Actual behaviour The background stays the same colour, but the text is themed to be lighter. This makes the background and foreground very similar, making the box hard to read. Steps to reproduce Enable dark theme Enter any recipient in the "To: " box Environment K-9 Mail version: 5.108 Android version: 5.1.1 Account type (IMAP, POP3, WebDAV/Exchange): IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/res/values/attrs.xml</file>
+			<file>k9mail/src/main/res/layout/recipient_token_item.xml</file>
+			<file>k9mail/src/main/res/values/themes.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/2d67b499f2c84dbe236e90a877b44325f16cb295</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/855f1c3d5d5068e525e367bf18a5236a44ef360a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="619">
+		<buginformation>
+			<summary>Add android wear support </summary>
+			<description>Gmail has the possibility to answer with predefined answers or voice. Something similar would be awesome.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/setup/Prefs.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/service/NotificationActionService.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/K9.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/controller/MessagingController.java</file>
+			<file>k9mail/build.gradle</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/setup/AccountSetupCheckSettings.java</file>
+			<file>k9mail/src/main/res/values/strings.xml</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/MessageCompose.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/FolderList.java</file>
+			<file>k9mail/src/main/AndroidManifest.xml</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/NotificationDeleteConfirmation.java</file>
+			<file>k9mail/src/main/res/values-de/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/e76c489941d9bb0164541ed53425662c31e2a7bb</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/64e22a72ed711b84cf88ffa7d50f2a3666d6d020</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1908">
+		<buginformation>
+			<summary>Cannot zoom HTML messages properly if at all </summary>
+			<description>Expected behavior HTML mail should pinch zoom as it always has Actual behavior In 5.201 I tried zooming a few HTML emails. Nether would pinch zoom (though double tapping made them a tiny bit bigger). At least once this led to a crash of the app. I reverted to 5.010 and zoom works just fine with the same mail - in fact, it never had any such issue so I'm not upgrading until this is fixed. Steps to reproduce Open html email e.g. from Xbox.com Pinch zoom Either nothing happens, it moves a tiny bit, or it ends up crashing. Environment K-9 Mail version: 5.201 is broken for this. Works fine in 5.010 Android version: 7.0 on Nexus 6 IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/view/NonLockingScrollView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/c7c0ad0b7b77db1960dcf8956e54e549d9599644</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1930">
+		<buginformation>
+			<summary>Black text in quotation in replies </summary>
+			<description>Expected behavior When replying to a mail the quoted part should be shown in white, also when the black design is used. Actual behavior Steps to reproduce Additionally you may need to use a black design in Cyanogenmod. The pre-5.0 version the quote was shown correctly. Environment K-9 Mail version: 5.20 Android version: CM 13</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/view/MessageWebView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/1af2f23f50625c8e523b1e5c12573b939bf05db7</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1893">
+		<buginformation>
+			<summary>Cc/Bcc expander barely visible in dark theme </summary>
+			<description>Expected behavior K-9 Mail version 5.115 used to provide the option of choosing a TO, CC or BCC recipient in the selection field at the very top of the compose an email window. This is no longer available in version 5.2. There should also be the option to choose a To, CC or BCC recipient in the pull down list Actual behavior When composing an email one can't select a CC nor BCC recipient unless one has checked "Always show Cc/Bcc" in the settings for each email account. Steps to reproduce Compose an email Can't select Cc nor Bcc recipients for the email Environment K-9 Mail version: 5.2 Android version: 6.0.1 Account type (IMAP, POP3, WebDAV/Exchange): POP.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/res/layout/message_compose_recipients.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/f0ac353a21e06f4838c50ec1a47006bbb3c2586c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1139">
+		<buginformation>
+			<summary>Error with message count 0 in imap folders </summary>
+			<description>Expected behaviour nothing (no error) Actual behaviour 03-03 11:54:12.420 E/k9      (22700): java.lang.Exception: Message count 0 for folder Drafts</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/controller/MessagingController.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/d93a7de36706dcfa62e45c63f9bd7603c7528fef</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1662">
+		<buginformation>
+			<summary>AssertionError: getNewNotificationId() called with no free notification ID </summary>
+			<description>Crash reported via Google Play. App version: 5.111 Android versions: 6.0, 5.1 java.lang.AssertionError: getNewNotificationId() called with no free notification ID</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/test/java/com/fsck/k9/notification/NotificationDataTest.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/notification/NotificationData.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/302b668d585fba903b38ca3486394ff45668c8cc</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1110">
+		<buginformation>
+			<summary>Notification stays after reading e-mail </summary>
+			<description>Expected behaviour Notification disappears after reading an e-mail. Actual behaviour The notification stays after reading the e-mail, when the e-mail was received by refreshing the inbox out of the inbox. Steps to reproduce Go to the inbox, where you expect to get an e-mail in. Refresh the inbox, so you receive the e-mail. Click on the new e-mail to read it. (optional) Go back to the inbox by any back button. You see the e-mail is definitely marked unread. Press the home button to leave K-9. Environment K-9 Mail version: 5.008 Android version: 5.1.1 Account type (IMAP, POP3, WebDAV/Exchange): IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/controller/MessagingController.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/41a32bd3472a25a392037bc9cb71730395cd3e9f</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1879">
+		<buginformation>
+			<summary>Crash: OOM during migration </summary>
+			<description>Via Play Developer Console App version: 5.200 java.lang.OutOfMemoryError: Failed to allocate a 2060 byte allocation with 1974 free bytes and 1974B until OOM</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/mailstore/migrations/MigrationTo55.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/mailstore/LocalFolder.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/e7653c4725a2f8c63d5fed561a190f37e79b52df</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1070">
+		<buginformation>
+			<summary>Add option to copy sender/recipient email addresses to clipboard </summary>
+			<description>May you implement a copy funktion to the email adress? Currently there is only the possibillity to add the email to the contacts.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/view/MessageHeader.java</file>
+			<file>k9mail/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/af7e0a1b70e178c6f11e21f3be721b67472de9b2</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1919">
+		<buginformation>
+			<summary>ImapResponseParser.parseLiteral timeout error </summary>
+			<description>k9-log.txt Expected behavior Tell us what should happen K9 should be able to read IMAP mail Actual behavior Tell us what happens instead It logs in the IMAP account but doesn't read the mail box. Steps to reproduce Environment K-9 Mail version: 5.201 Android version: 6.0.1 Account type (IMAP, POP3, WebDAV/Exchange): IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail-library/src/test/java/com/fsck/k9/mail/store/imap/ImapResponseParserTest.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/imap/ImapResponseParser.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/filter/FixedLengthInputStream.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/imap/ImapResponseParserException.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/55c87fcaaf11e209afa88013aaca3aa99a3679ff</commit_url>
+		</Commits>
+	</bug>
+	<bug id="811">
+		<buginformation>
+			<summary>ClassCastException on IMAP sync </summary>
+			<description>On a fresh install of k9Mail on a new phone, one of my IMAP accounts stops suddenly with the below error. It worked like a charm for a few days prior to that. I've another IMAP account on the same server which still works and isn't affected. K9-Mail version: 5.006 Device make: motorola Device model: MotoG3 Android version: 5.1.1 java.lang.ClassCastException: com.fsck.k9.mail.store.ImapResponseParser$ImapList cannot be cast to java.lang.String at com.fsck.k9.mail.store.ImapResponseParser.readTokens(ImapResponseParser.java:69) at com.fsck.k9.mail.store.ImapResponseParser.readResponse(ImapResponseParser.java:51) at com.fsck.k9.mail.store.ImapResponseParser.readResponse(ImapResponseParser.java:29) at com.fsck.k9.mail.store.ImapStore$ImapConnection.readStatusResponse(ImapStore.java:2775) at com.fsck.k9.mail.store.ImapStore$ImapConnection.saslAuthPlain(ImapStore.java:2727) at com.fsck.k9.mail.store.ImapStore$ImapConnection.open(ImapStore.java:2530) at com.fsck.k9.mail.store.ImapStore$ImapConnection.sendCommand(ImapStore.java:2872) at com.fsck.k9.mail.store.ImapStore$ImapConnection.executeSimpleCommand(ImapStore.java:2921) at com.fsck.k9.mail.store.ImapStore$ImapConnection.executeSimpleCommand(ImapStore.java:2902) at com.fsck.k9.mail.store.ImapStore$ImapFolder.executeSimpleCommand(ImapStore.java:858) at com.fsck.k9.mail.store.ImapStore$ImapFolder.internalOpen(ImapStore.java:904) at com.fsck.k9.mail.store.ImapStore$ImapFolder.open(ImapStore.java:867) at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:1041) at com.fsck.k9.controller.MessagingController.access$400(MessagingController.java:111) at com.fsck.k9.controller.MessagingController$8.run(MessagingController.java:934) at com.fsck.k9.controller.MessagingController.run(MessagingController.java:435) at java.lang.Thread.run(Thread.java:818)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail-library/src/test/java/com/fsck/k9/mail/store/imap/ImapResponseParserTest.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/imap/ImapResponseParser.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/14054ec977f94d42c8648acd6d05ef295ce598a8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1271">
+		<buginformation>
+			<summary>Crash viewing an application/pgp message </summary>
+			<description>Hi Philip, as discussed on the mailing list, here a crash log. To repeat: I have a message with Content-Type: application/pgp; format=text; x-action=encrypt</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/crypto/MessageDecryptVerifier.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/internet/MessageExtractor.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/240c5c8ea87f36fd04b285c7b9b2c5724eaa4508</commit_url>
+		</Commits>
+	</bug>
+	<bug id="969">
+		<buginformation>
+			<summary>Make UidReverseComparator transitive </summary>
+			<description>After loading a new mail message from pop3 server all messages dissapeared and in the inbox was visible just the message IllegalArgumentException. All messages were lost. I reinstalled K9, downloaded messages from pop3 server again, but two days later the same error arose and messages were lost again. I encountered this bug a year ago for the first time but now it's here again.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/test/java/com/fsck/k9/controller/UidReverseComparatorTest.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/controller/MessagingController.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/e1ca89bd5db7d273da5628bd208f2182dcae4bf0</commit_url>
+		</Commits>
+	</bug>
+	<bug id="773">
+		<buginformation>
+			<summary>Hide "Load up to X more" button </summary>
+			<description>Hide "Load up to X more" button when there are no more messages on the server.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/ChooseFolder.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/FolderInfoHolder.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/webdav/WebDavStore.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/controller/MessagingListener.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/controller/MessagingController.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/Folder.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/imap/ImapStore.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/store/pop3/Pop3Store.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/FolderList.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/d4d701ae105b60ba283c4bc77b5e320972a06627</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1914">
+		<buginformation>
+			<summary>Crypto indicator displayed in token dropdown when no crypto provider configured </summary>
+			<description>See this screenshot provided by someone on the mailing list. The three dots were mistaken for a broken menu indicator.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/res/layout/recipient_alternate_item.xml</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/AlternateRecipientAdapter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/b516af2af0e9d1161c3eea8b31a2d55c28d96e98</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1243">
+		<buginformation>
+			<summary>FileBackedBody parts are sometimes not saved correctly </summary>
+			<description>Expected behaviour Tell us what should happen Content should be displayed Actual behaviour Tell us what happens instead Empty view with warnings about the non encryption status. Clicking on reply shows the plain text part of the mail, so it really is just an ui rendering problem. Steps to reproduce Open a multipart mail in k9 2. 3. Environment K-9 Mail version: latest dev release (5.108) Android version: 6 Account type (IMAP, POP3, WebDAV/Exchange): IMAP I guess this behavior was probably already reported, but I couldn't find am issue. Sorry. Happy to help debugging this if I am the first reporter.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/helper/FileHelper.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/mailstore/LocalFolder.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/aaa904e0757a3154aaa4a2f2d21b416406a9727c</commit_url>
+		</Commits>
+	</bug>
+	<bug id="765">
+		<buginformation>
+			<summary>Export folder-settings only works for top level folders </summary>
+			<description>I have a folder structure with 3 or 4 levels of (sub-)folders in my IMAP account. After configuring all the folders (display class, sync class, push class, ...) I exported the settings and imported them on my new phone, but only the settings for the top level folders where transferred. I checked the k9s file and saw that only the top level folders where exported. I edited the file and added all my folders (with a script) and imported that file after clearing the K9 data. This time, all settings were imported. So the export skips sub-folders but the import (fortunately) does not. Sub-folders should also be exported. I tested this with v5.006 and v5.107 on Nexus 5 with stock Android 5.1.1.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/preferences/SettingsExporter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/4b11974e0dfc6399f70e2be3348b4e6d7776847e</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/696579fcd5d6004a7ecb2ea4459ece28ff49f960</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1874">
+		<buginformation>
+			<summary>Crash: NPE in Address.hashCode() </summary>
+			<description>Via Play Developer Console App version: 5.200 java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.hashCode()' on a null object reference</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail-library/src/test/java/com/fsck/k9/mail/AddressTest.java</file>
+			<file>k9mail-library/src/main/java/com/fsck/k9/mail/Address.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/40e5f038044f208b345842bf726e009aea86c87e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1685">
+		<buginformation>
+			<summary>"Fetching headers null:null 3/3" </summary>
+			<description>Obviously it shouldn't be null. Also it seems to be stuck like that.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/res/values-eu/strings.xml</file>
+			<file>k9mail/src/main/res/values-fi/strings.xml</file>
+			<file>k9mail/src/main/res/values-cs/strings.xml</file>
+			<file>k9mail/src/main/res/values-et/strings.xml</file>
+			<file>k9mail/build.gradle</file>
+			<file>gradle/wrapper/gradle-wrapper.properties</file>
+			<file>k9mail/src/main/res/values-de/strings.xml</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/ActivityListener.java</file>
+			<file>k9mail/src/main/res/values-el/strings.xml</file>
+			<file>k9mail/src/main/res/values-hr/strings.xml</file>
+			<file>k9mail/src/main/res/values-ca/strings.xml</file>
+			<file>k9mail/src/main/res/values-gl/strings.xml</file>
+			<file>k9mail/src/main/res/values-es/strings.xml</file>
+			<file>k9mail/src/main/res/values-fr/strings.xml</file>
+			<file>k9mail/src/main/res/values-gl-rES/strings.xml</file>
+			<file>k9mail/src/main/res/values-da/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/2087f0476ca6e4468bb854b2c0ac0cd88c1bc08d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1861">
+		<buginformation>
+			<summary>Don't limit subject in message view to 3 lines </summary>
+			<description>5.200-rc2 ls-4001/lyf android 5.1 aosp if the subject is more than 3 lines occupying almost 50% of screen area, please find screenshot [z]. please implement any one of the following: [q] remove subject on top of the e-mail. [w] reduce the size of the subject. [e] if you intend to keep both [ subject on top & subject w/ to & from e-mail address], please try not to occupy not more than 25% of screen area. i mean message body occupies nearly or almost 75% of screen area. [r] introduce a button to increase the text size of e-mail body. [z] http://m.imgur.com/TzujsMS</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/res/layout/message_view_header.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/177f5df8390e98a2b043d9b1eafa64112ba2ca62</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1252">
+		<buginformation>
+			<summary>Some e-mails are unreadable after decryption </summary>
+			<description>Expected behaviour Mail should be readable Actual behaviour See screenshot Steps to reproduce I don't know when this will happens. Some mails shown correct, some mails like on screenshot. Environment Environment K-9 Mail version: 5.108 (current alpha) Android version: 5.0 Account type (IMAP, POP3, WebDAV/Exchange): IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/mailstore/DecryptStreamParser.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/mailstore/LocalMessageExtractor.java</file>
+			<file>...fsck/k9/crypto/DecryptedTempFileBody.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/36f890f4360dfdbef9b4873bc30d4d881b439c8c</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/7614c8fd5ec96f266d847faedc6ed7e6f2a87848</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1092">
+		<buginformation>
+			<summary>Allow import of settings exported by newer version of the app </summary>
+			<description>Currently we don't import settings files with a settings version number higher than our own. That means users often run into trouble when downgrading. Since we do strict input validation and discard unknown/invalid settings it shouldn't be a problem to allow the import of settings from a newer K-9 Mail version.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/preferences/SettingsImporter.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/7e43b5848412ad7c0b5a20c578c55eea0aa337d8</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1251">
+		<buginformation>
+			<summary>App crashed by typing address in the address field when composing a message </summary>
+			<description>Expected behaviour Should be possible typing addresses into the address field. Actual behaviour App crashed by typing address in the address field Steps to reproduce Click the compose icon Try to type a address into the "To:" field Environment K-9 Mail version: 5.108 (current alpha) Android version: 5.0 Account type (IMAP, POP3, WebDAV/Exchange): IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/RecipientPresenter.java</file>
+			<file>k9mail/src/test/java/com/fsck/k9/activity/compose/RecipientPresenterTest.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/RecipientMvpView.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/view/RecipientSelectView.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/MessageCompose.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/034b1eda410d3756ef1f7a073661f1c3776f96ad</commit_url>
+		</Commits>
+	</bug>
+	<bug id="818">
+		<buginformation>
+			<summary>Viewing/saving inline images doesn't work </summary>
+			<description>Long-pressing inline images displays a popup with items "View image" and "Save image". Both currently don't work. Since we no longer rewrite cid:-URIs to content://-URIs pointing to our content provider for attachments we need to change the code that handles viewing and saving inline images. See MessageContainerView.onCreateContextMenu()</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/messageview/MessageContainerView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/d84ce23ecf784e553ffe9fe3d1b3bd9a00a6d87a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1495">
+		<buginformation>
+			<summary>"To" field does not convert typed email addresses to tokens on send </summary>
+			<description>Expected behavior Autocomplete address field "To" should convert typed email addresses to tokens when clicking send Actual behavior It does not, shows "Recipient field contains incomplete input!" Steps to reproduce compose mail write body subject and in the last step write email address into "To" field without selecting an email address from the dropdown click send Environment K-9 Mail version: 5.110 Android version: 6 Account type (IMAP, POP3, WebDAV/Exchange): IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/RecipientPresenter.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/RecipientMvpView.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/view/RecipientSelectView.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/b3f2974962df4789331578f1afdeef3baef5f311</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1250">
+		<buginformation>
+			<summary>Reply flag is not set anymore when replying to a mail </summary>
+			<description>Expected behaviour Reply flag is set when replying to a mail. Actual behaviour When replying to a mail I do not see a reply flag for the original mail I replied to. When checking the account with a different client (web/Thunderbird) I do not see a flag, too. So it is no frontend bug, the flag is not set anymore, beginning with 5.108. Steps to reproduce See above. Environment K-9 Mail version: 5.108 Android version: CM 12.1 Account type (IMAP, POP3, WebDAV/Exchange): IMAP</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/MessageCompose.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/ba4121aa25937b5303355ee9d6553177f0d57c9e</commit_url>
+		</Commits>
+	</bug>
+	<bug id="616">
+		<buginformation>
+			<summary>Account setting "Delete from Server" lost after SSLError </summary>
+			<description>Hi, ever and anon I get an SSLCertificate error with my provider gmx.net. When this happens the account settings changes and mails will be no longer deleted from the mail server after they are deleted localy. I have to change the settings by hand back. regards dieter</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/setup/AccountSetupIncoming.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/d8aef84127fb6be9edf8c97ae4ae69d456ea371a</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1625">
+		<buginformation>
+			<summary>Wrong order for multipart/alternative children </summary>
+			<description>We create multipart/alternative parts with a text/html part as first child and text/plain as second child. This isn't what other clients do. And it seems to confuse Thunderbird which then only displays the text/plain part. Affected version: 5.111</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/test/java/com/fsck/k9/message/MessageBuilderTest.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/message/MessageBuilder.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/0cd52bc26b1c1f34d569d7370216b81b9369bbb4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1027">
+		<buginformation>
+			<summary>Improvement request: supress confirmation when closing totally empty new mail </summary>
+			<description>After accidentally having created a new mail and closing it without having entered any receiver / subject / text (only automatic signature appeared), I am asked to confirm this action. This is annoying and I would be happy if the confirmation dialogue would be suppressed in those situations (as Thunderbird does). Thanks!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/MessageCompose.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/61771533587f162eea973629aab38e3f6c3cb66d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1595">
+		<buginformation>
+			<summary>Dialog is shown every time "Enable PGP/INLINE" is selected </summary>
+			<description>This gets old fast. We should display the dialog maybe 2-3 times and then assume the user knows what it's all about and not show the dialog anymore. PS: The light area in the background is where the keyboard used to be before the dialog was displayed.</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/RecipientPresenter.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/preferences/Settings.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/preferences/GlobalSettings.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/K9.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/327a47d2efdc75424457295ffb63b6567330e3b9</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1581">
+		<buginformation>
+			<summary>Android Nougat: Email Context Menu at Wrong Position </summary>
+			<description>Expected behavior If I long tap on a message the context menu should appear besides the finger position. Actual behavior The context menu appears at the lower end of the screen and is only 1-2 lines in size. Steps to reproduce Select a message Long tap See what happens Environment K-9 Mail version: 5.010 Android version: Nougat (7) Release Account type (IMAP, POP3, WebDAV/Exchange): All (type independent)</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/res/values-v24/styles.xml</file>
+			<file>build.gradle</file>
+			<file>.travis.yml</file>
+			<file>k9mail/src/main/res/values-v24/themes.xml</file>
+			<file>k9mail/src/main/res/values/themes.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/c8c33f47107ba17e72e5eee62b1afba5f27b76eb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1150">
+		<buginformation>
+			<summary>Can't send message without crypto provider </summary>
+			<description>Expected behaviour Message should be sent unsigned. Actual behaviour Without an installed crypto provider sending a message fails with the message "No key configured for signing! Please check your settings." Steps to reproduce Open compose activity Fill in recipient, subject and message text Tap 'send' Environment K-9 Mail version: master / 833e1cc Android version: 5.1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/RecipientPresenter.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/ComposeCryptoStatus.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/MessageCompose.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/474c7493ec7d5d13419e4a262fc76dd5cbc4ce97</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1151">
+		<buginformation>
+			<summary>State of crypto mode selector lost on configuration change </summary>
+			<description>Expected behaviour Retain selected state on configuration changes. Actual behaviour Selected state is lost on configuration change. Steps to reproduce Use crypto mode selector to change crypto mode Rotate device Observe crypto mode indicator reverting display to default mode. Environment K-9 Mail version: master / 833e1cc Android version: 5.1</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/RecipientPresenter.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/compose/ComposeCryptoStatus.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/41bfaf28caef99bfef0a70d6cfba9533afad446d</commit_url>
+		</Commits>
+	</bug>
+	<bug id="926">
+		<buginformation>
+			<summary>checking hide password checkbock makes carret move </summary>
+			<description>When creating a new account. 1- Enter a few characters in the password field. Let's call these characters "part 1". 2- Check the show password checkbox. 3- Enter a few characters. Let's call these characters "part 2" => the latest characters (part 2) are entered before the earliest (part 1) Example : part 1 = abc part 2 = xyz What is shown in the password field : 1- *** 2- abc 3- xyzabc We should see abcxyz</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/setup/AccountSetupBasics.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/acc2e428f16c82c600a28487c6980f33bcbd0bf4</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1227">
+		<buginformation>
+			<summary>Crash on screen rotate with OpenPGP handled message </summary>
+			<description>Expected behaviour Message should be re-rendered in landscape. Actual behaviour Application crashes with following exception. 03-29 08:40:55.041 12045-12045/com.fsck.k9.debug E/AndroidRuntime: FATAL EXCEPTION: main</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/messageview/MessageViewFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/679f87fa259564643fc8b341a56cbe218cbf2bdf</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/fd89879f384c0d3e55d9ab98f9401ea98247c225</commit_url>
+		</Commits>
+	</bug>
+	<bug id="1582">
+		<buginformation>
+			<summary>Crash while moving message </summary>
+			<description>Reported via Google Play: java.lang.RuntimeException: Failure delivering result ResultInfo{who=android:fragment:1, request=1, result=-1, data=Intent { (has extras) }} to activity {com.fsck.k9/com.fsck.k9.activity.MessageList}: java.lang.IllegalStateException: got an activity result that wasn't meant for us. this is a bug!</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/ui/messageview/MessageViewFragment.java</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/5a1776890e26c73fe267ca857f6596996e1dc76d</commit_url>
+			<commit_url>https://github.com/k9mail/k-9/commit/dcd27d9f56547dd43f4fba35e683eee5602ee6cb</commit_url>
+		</Commits>
+	</bug>
+	<bug id="661">
+		<buginformation>
+			<summary>(Optionally) Disable notifications in Quiet Time </summary>
+			<description>I use quiet time to ignore work e-mails at night. However I can still see the notifications and then I 'must' read the emails. Can this be optionally disabled?</description>
+		</buginformation>
+		<fixedFiles>
+			<file>k9mail/src/main/java/com/fsck/k9/activity/setup/Prefs.java</file>
+			<file>k9mail/src/main/res/xml/global_preferences.xml</file>
+			<file>k9mail/src/main/java/com/fsck/k9/K9.java</file>
+			<file>k9mail/src/main/java/com/fsck/k9/controller/MessagingController.java</file>
+			<file>k9mail/src/main/res/values/strings.xml</file>
+		</fixedFiles>
+		<Commits>
+			<commit_url>https://github.com/k9mail/k-9/commit/07c12e83d0dd7b1d8d9d84273878adf66d366383</commit_url>
+		</Commits>
+	</bug>
